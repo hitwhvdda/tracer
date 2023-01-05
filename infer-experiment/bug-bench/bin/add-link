@@ -1,0 +1,80 @@
+#!/usr/bin/env python3
+
+import json
+import sys
+from utils import check_single_point_skip_link, check_two_point_skip_link
+
+HEADER = "https://github.com/prosyslab-warehouse"
+TAIL = "blob/master"
+LINE_TOK = "#L"
+CODE = "code"
+SRC = "source"
+SINK = "sink"
+FILE = "file"
+LINE = "line"
+PROJECT = "project"
+VERSION = "version"
+
+
+def get_code_link(prog, file, line):
+    line_num = "".join([file, LINE_TOK, str(line)])
+    return "/".join([HEADER, prog, TAIL, line_num])
+
+
+def is_formatted(item):
+    if CODE in item:
+        code_link = item[CODE]
+        return HEADER in code_link and TAIL in code_link and LINE_TOK in code_link
+    else:
+        return False
+
+
+def investigate(item):
+    targets = []
+    if check_two_point_skip_link(item):
+        if item[SRC][LINE] < 0 or is_formatted(item[SRC]):
+            pass
+        else:
+            targets.append(SRC)
+        if item[SINK][LINE] < 0 or is_formatted(item[SINK]):
+            pass
+        else:
+            targets.append(SINK)
+    elif check_single_point_skip_link(item):
+        if item[LINE] < 0 or is_formatted(item):
+            pass
+        else:
+            targets.append("")
+    return targets
+
+
+def add_code_field(item):
+    changed = False
+    targets = investigate(item)
+    for target in targets:
+        program = "-".join([item[PROJECT], item[VERSION]])
+        if target:
+            code = get_code_link(program, item[target][FILE],
+                                 item[target][LINE])
+            item[target][CODE] = code
+        else:
+            code = get_code_link(program, item[FILE], item[LINE])
+            item[CODE] = code
+        changed = True
+    return changed
+
+
+if __name__ == "__main__":
+    json_file = sys.argv[1]
+    with open(json_file, 'r') as f:
+        items = json.load(f)
+        new_items = []
+        changed = False
+        for item in items:
+            assert (item[PROJECT])
+            assert (item[VERSION])
+            c = add_code_field(item)
+            changed = changed or c
+    if changed:
+        with open(json_file, 'w') as f:
+            json.dump(items, f)

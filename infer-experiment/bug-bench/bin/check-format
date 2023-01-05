@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -e
+
+PROJECT_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && cd ../ && pwd)"
+
+for file in $(find $PROJECT_HOME -name "label.json"); do
+  echo "Checking $file"
+  tmp=$(mktemp)
+  js-beautify -s 2 -n $file > $tmp
+  diff $file $tmp ||
+  if [[ $? -ne 0 ]]; then
+    if [[ $CHECK_ONLY == "ON" ]]; then
+      echo "Failed: Please check json format"
+      echo "See error message after running js-beautify -s 2 $file"
+      exit 1
+    else
+      echo "Formatting $file"
+      cp $tmp $file
+    fi
+  fi
+  $PROJECT_HOME/bin/check-schema $file
+done
+
+echo "Done"
