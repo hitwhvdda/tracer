@@ -1,0 +1,538 @@
+[
+  {
+    "program": "w3m",
+    "src": 8580,
+    "sink": 521,
+    "weighted_traces": [
+      {
+        "signature": "latex2rtf-2.1.1-1",
+        "trace": [
+          {
+            "file": "file.c",
+            "line": 8580,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "file.c",
+            "line": 8584,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8588,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8594,
+            "col": 9,
+            "feature": [ "Call", "Sprintf" ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 521,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 2,
+          "FormatString": 1,
+          "Prune == true": 6,
+          "Prune ! true": 5,
+          "Input getenv": 1
+        },
+        "score": 0.9561495664805121
+      },
+      {
+        "signature":
+          "CWE134_08-CWE134_Uncontrolled_Format_String__char_console_printf-1",
+        "trace": [
+          {
+            "file": "file.c",
+            "line": 8580,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "file.c",
+            "line": 8584,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8588,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8594,
+            "col": 9,
+            "feature": [ "Call", "Sprintf" ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 521,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 2,
+          "FormatString": 1,
+          "Prune == true": 6,
+          "Prune ! true": 5,
+          "Input getenv": 1
+        },
+        "score": 0.6556300376497836
+      },
+      {
+        "signature":
+          "CWE134_63-CWE134_Uncontrolled_Format_String__char_console_printf-1",
+        "trace": [
+          {
+            "file": "file.c",
+            "line": 8580,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "file.c",
+            "line": 8584,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8588,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8594,
+            "col": 9,
+            "feature": [ "Call", "Sprintf" ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 521,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 2,
+          "FormatString": 1,
+          "Prune == true": 6,
+          "Prune ! true": 5,
+          "Input getenv": 1
+        },
+        "score": 0.6556300376497836
+      },
+      {
+        "signature":
+          "CWE134_54-CWE134_Uncontrolled_Format_String__char_console_fprintf-1",
+        "trace": [
+          {
+            "file": "file.c",
+            "line": 8580,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "file.c",
+            "line": 8584,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8588,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8594,
+            "col": 9,
+            "feature": [ "Call", "Sprintf" ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 521,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 2,
+          "FormatString": 1,
+          "Prune == true": 6,
+          "Prune ! true": 5,
+          "Input getenv": 1
+        },
+        "score": 0.6556300376497836
+      },
+      {
+        "signature":
+          "CWE134_64-CWE134_Uncontrolled_Format_String__char_console_vprintf-1",
+        "trace": [
+          {
+            "file": "file.c",
+            "line": 8580,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "file.c",
+            "line": 8584,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8588,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "file.c",
+            "line": 8594,
+            "col": 9,
+            "feature": [ "Call", "Sprintf" ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 503,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 505,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Str.c",
+            "line": 521,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 2,
+          "FormatString": 1,
+          "Prune == true": 6,
+          "Prune ! true": 5,
+          "Input getenv": 1
+        },
+        "score": 0.6556300376497836
+      }
+    ]
+  }
+]

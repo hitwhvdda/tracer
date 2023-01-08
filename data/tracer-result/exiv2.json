@@ -1,0 +1,507 @@
+[
+  {
+    "program": "exiv2",
+    "src": 321,
+    "sink": 152,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 321,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_42-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 321,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_33-CWE134_Uncontrolled_Format_String__char_connect_socket_vprintf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 321,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_64-CWE134_Uncontrolled_Format_String__char_listen_socket_vfprintf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 321,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_08-CWE134_Uncontrolled_Format_String__char_connect_socket_printf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 321,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      }
+    ]
+  },
+  {
+    "program": "exiv2",
+    "src": 386,
+    "sink": 152,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 386,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_42-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 386,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_33-CWE134_Uncontrolled_Format_String__char_connect_socket_vprintf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 386,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_64-CWE134_Uncontrolled_Format_String__char_listen_socket_vfprintf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 386,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature":
+          "CWE134_08-CWE134_Uncontrolled_Format_String__char_connect_socket_printf-1",
+        "trace": [
+          {
+            "file": "src/http.cpp",
+            "line": 386,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 332,
+            "col": 48,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 395,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 401,
+            "col": 9,
+            "feature": [ "Call", "error" ]
+          },
+          {
+            "file": "src/http.cpp",
+            "line": 152,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall snprintf": 1,
+          "Input recv": 1
+        },
+        "score": 0.5345224838248487
+      }
+    ]
+  },
+  { "program": "exiv2", "src": -1, "sink": -1, "weighted_traces": [] }
+]

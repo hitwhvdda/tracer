@@ -1,0 +1,1346 @@
+[
+  {
+    "program": "printer-driver-cjet",
+    "src": 60,
+    "sink": 53,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 60,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 43,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 45,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 55,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 358,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 362,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 368,
+            "col": 17,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.828078671210825
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 60,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 43,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 45,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 55,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 358,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 362,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 368,
+            "col": 17,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7807200583588266
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 60,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 43,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 45,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 55,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 358,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 362,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 368,
+            "col": 17,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7803902927439635
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 60,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 43,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 45,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 55,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 358,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 362,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 368,
+            "col": 17,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "autotrace-20200219.65-4",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 60,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 43,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 45,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 55,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 358,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 362,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 368,
+            "col": 17,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7542472332656507
+      }
+    ]
+  },
+  {
+    "program": "printer-driver-cjet",
+    "src": 89,
+    "sink": 53,
+    "weighted_traces": [
+      {
+        "signature": "sam2p-0.49.4-4",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 24,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 103,
+            "col": 18,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 115,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 116,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 186,
+            "col": 20,
+            "feature": [ "Call", "DownLoadChar" ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 7,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.74535599249993
+      },
+      {
+        "signature": "sam2p-0.49.4-4",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 24,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 103,
+            "col": 18,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 115,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 116,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 249,
+            "col": 16,
+            "feature": [ "Call", "logical_page" ]
+          },
+          {
+            "file": "page.c",
+            "line": 438,
+            "col": 7,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.74535599249993
+      },
+      {
+        "signature": "sam2p-0.49.4-4",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 24,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 103,
+            "col": 18,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 115,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 116,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 315,
+            "col": 16,
+            "feature": [ "Call", "TransparentPrint" ]
+          },
+          {
+            "file": "function.c",
+            "line": 567,
+            "col": 3,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.74535599249993
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 24,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 103,
+            "col": 18,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 115,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 116,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 186,
+            "col": 20,
+            "feature": [ "Call", "DownLoadChar" ]
+          },
+          {
+            "file": "fonts.c",
+            "line": 348,
+            "col": 7,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.7016464154456235
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 24,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 89,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 103,
+            "col": 18,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 115,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 116,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 249,
+            "col": 16,
+            "feature": [ "Call", "logical_page" ]
+          },
+          {
+            "file": "page.c",
+            "line": 438,
+            "col": 7,
+            "feature": [ "Call", "get_buffer" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 51,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 53,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.7016464154456235
+      }
+    ]
+  }
+]

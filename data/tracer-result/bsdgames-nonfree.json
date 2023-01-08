@@ -1,0 +1,139 @@
+[
+  {
+    "program": "bsdgames-nonfree",
+    "src": 373,
+    "sink": 488,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "rogue/machdep.c",
+            "line": 373,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "rogue/room.c",
+            "line": 670,
+            "col": 2,
+            "feature": [ "Call", "md_shell" ]
+          },
+          {
+            "file": "rogue/machdep.c",
+            "line": 488,
+            "col": 3,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "rogue/machdep.c",
+            "line": 373,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "rogue/room.c",
+            "line": 670,
+            "col": 2,
+            "feature": [ "Call", "md_shell" ]
+          },
+          {
+            "file": "rogue/machdep.c",
+            "line": 488,
+            "col": 3,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "rogue/machdep.c",
+            "line": 373,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "rogue/room.c",
+            "line": 670,
+            "col": 2,
+            "feature": [ "Call", "md_shell" ]
+          },
+          {
+            "file": "rogue/machdep.c",
+            "line": 488,
+            "col": 3,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "rogue/machdep.c",
+            "line": 373,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "rogue/room.c",
+            "line": 670,
+            "col": 2,
+            "feature": [ "Call", "md_shell" ]
+          },
+          {
+            "file": "rogue/machdep.c",
+            "line": 488,
+            "col": 3,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "rogue/machdep.c",
+            "line": 373,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "rogue/room.c",
+            "line": 670,
+            "col": 2,
+            "feature": [ "Call", "md_shell" ]
+          },
+          {
+            "file": "rogue/machdep.c",
+            "line": 488,
+            "col": 3,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "program": "os-prober",
+    "src": 8,
+    "sink": 25,
+    "weighted_traces": [
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "newns.c",
+            "line": 8,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "newns.c",
+            "line": 25,
+            "col": 2,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "newns.c",
+            "line": 8,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "newns.c",
+            "line": 25,
+            "col": 2,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "newns.c",
+            "line": 8,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "newns.c",
+            "line": 25,
+            "col": 2,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "newns.c",
+            "line": 8,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "newns.c",
+            "line": 25,
+            "col": 2,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "newns.c",
+            "line": 8,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "newns.c",
+            "line": 25,
+            "col": 2,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  }
+]

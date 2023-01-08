@@ -1,0 +1,4572 @@
+[
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 1665,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1664,
+            "col": 27,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 32767 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1665,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.935483870967742
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1664,
+            "col": 27,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 32767 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1665,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.935483870967742
+      },
+      {
+        "signature": "autotrace-20200219.65-9",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1664,
+            "col": 27,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 32767 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1665,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.935483870967742
+      },
+      {
+        "signature": "autotrace-20200219.65-9",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1664,
+            "col": 27,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 32767 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1665,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.935483870967742
+      },
+      {
+        "signature": "autotrace-20200219.65-10",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1664,
+            "col": 27,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 32767 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1665,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                    [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.935483870967742
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 790,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 780,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 779,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 780,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 779,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-9",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 780,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 790,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 3227,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3217,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3216,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3217,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3216,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      },
+      {
+        "signature": "autotrace-20200219.65-9",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3217,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3227,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.9339475705392295
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 3110,
+    "weighted_traces": [
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3106,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3108,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3109,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3110,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8634624345543499
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3106,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3108,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3109,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3110,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8634624345543499
+      },
+      {
+        "signature": "gimp-2.6.7-3",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3106,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3108,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3109,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3110,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8051610483161057
+      },
+      {
+        "signature": "gimp-2.6.7-3",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3106,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3108,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3109,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3110,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8051610483161057
+      },
+      {
+        "signature": "gimp-2.6.7-2",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3106,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3108,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3109,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 3110,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8051610483161057
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 71,
+    "sink": 1455,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "fuji_green.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1452,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                      [ "Var" ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 31,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "BinOp", "%", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1455,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.8571428571428571
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "fuji_green.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1452,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                      [ "Var" ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 31,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "BinOp", "%", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1455,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.8189230248533257
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "fuji_green.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1452,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                      [ "Var" ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 31,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "BinOp", "%", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1455,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.8081220356417685
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "fuji_green.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1452,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                      [ "Var" ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 31,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "BinOp", "%", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1455,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7908745952947444
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "fuji_green.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1452,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                      [ "Var" ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 31,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "BinOp", "%", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 0 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1453,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 1455,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7783117824941563
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 782,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 752,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 28 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.8509629433967633
+      },
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 752,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 28 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.8509629433967633
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 752,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 28 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.8509629433967633
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 752,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 28 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.8509629433967633
+      },
+      {
+        "signature": "sam2p-0.49.4-9",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 752,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 28 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 782,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.7859052479933757
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 468,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 426,
+            "col": 19,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8304547985373997
+      },
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 426,
+            "col": 19,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8304547985373997
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 426,
+            "col": 19,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8304547985373997
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 426,
+            "col": 19,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8304547985373997
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 426,
+            "col": 19,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 468,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.8032193289024988
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 830,
+    "sink": 868,
+    "weighted_traces": [
+      {
+        "signature": "sam2p-0.49.4-5",
+        "trace": [
+          {
+            "file": "dcraw.c",
+            "line": 830,
+            "col": 5,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 833,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "*",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                    [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 15 ] ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 840,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 859,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 860,
+            "col": 46,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 868,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 2,
+          "Input fread": 1
+        },
+        "score": 0.8101972166313899
+      },
+      {
+        "signature": "sam2p-0.49.4-10",
+        "trace": [
+          {
+            "file": "dcraw.c",
+            "line": 830,
+            "col": 5,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 833,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "*",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                    [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 15 ] ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 840,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 859,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 860,
+            "col": 46,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 868,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 2,
+          "Input fread": 1
+        },
+        "score": 0.8101972166313899
+      },
+      {
+        "signature": "sam2p-0.49.4-15",
+        "trace": [
+          {
+            "file": "dcraw.c",
+            "line": 830,
+            "col": 5,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 833,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "*",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                    [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 15 ] ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 840,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 859,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 860,
+            "col": 46,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 868,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 2,
+          "Input fread": 1
+        },
+        "score": 0.8101972166313899
+      },
+      {
+        "signature": "autotrace-20200219.65-12",
+        "trace": [
+          {
+            "file": "dcraw.c",
+            "line": 830,
+            "col": 5,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 833,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "*",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                    [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 15 ] ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 840,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 859,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 860,
+            "col": 46,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 868,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 2,
+          "Input fread": 1
+        },
+        "score": 0.7954673856179907
+      },
+      {
+        "signature": "autotrace-20200219.65-18",
+        "trace": [
+          {
+            "file": "dcraw.c",
+            "line": 830,
+            "col": 5,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 833,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "*",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                    [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 15 ] ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 840,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 859,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 860,
+            "col": 46,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 868,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 3,
+          "BinOp &": 2,
+          "Input fread": 1
+        },
+        "score": 0.7954673856179907
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 70,
+    "sink": 6981,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6981,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.6531561093841245
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6981,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.6531561093841245
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6981,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.15811388300841897
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 61,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "Var" ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6981,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.15811388300841897
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 70,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 10,
+            "feature": [ "Call", "sget4" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 63,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 71,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6981,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 3,
+          "BinOp <<": 3,
+          "Input fread": 1
+        },
+        "score": 0.15811388300841897
+      }
+    ]
+  },
+  {
+    "program": "dcraw",
+    "src": 54,
+    "sink": 6953,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 54,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "sget2" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 47,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6950,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6953,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "Input fread": 1
+        },
+        "score": 0.5715005715008572
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 54,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "sget2" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 45,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "Var" ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6950,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6953,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "Input fread": 1
+        },
+        "score": 0.5715005715008572
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 54,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "sget2" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 47,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6950,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6953,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "Input fread": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 54,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "sget2" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 45,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "Var" ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6950,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6953,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "Input fread": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "parse.c",
+            "line": 54,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "sget2" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 47,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 55,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6950,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dcraw.c",
+            "line": 6953,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "Input fread": 1
+        },
+        "score": 0.35355339059327373
+      }
+    ]
+  }
+]

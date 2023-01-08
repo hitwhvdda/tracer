@@ -1,0 +1,2917 @@
+[
+  {
+    "program": "jove",
+    "src": 66,
+    "sink": 75,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 66,
+    "sink": 79,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 66,
+    "sink": 86,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 86,
+            "col": 9,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 86,
+            "col": 9,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 86,
+            "col": 9,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 86,
+            "col": 9,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 86,
+            "col": 9,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 118,
+    "sink": 669,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6201736729460423
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 850,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6201736729460423
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6201736729460423
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 850,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6201736729460423
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.24096579867074966
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 41,
+    "sink": 80,
+    "weighted_traces": [
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 2,
+          "Input main": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 2,
+          "Input main": 1
+        },
+        "score": 0.5303300858899106
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 2,
+          "Input main": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 2,
+          "Input main": 1
+        },
+        "score": 0.43301270189221935
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 2,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 636,
+    "sink": 669,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 636,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 637,
+            "col": 22,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 636,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 637,
+            "col": 22,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 850,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 636,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 637,
+            "col": 22,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 636,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 637,
+            "col": 22,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 850,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 636,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 637,
+            "col": 22,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4472135954999579
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 638,
+    "sink": 669,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 638,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 639,
+            "col": 23,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 638,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 639,
+            "col": 23,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 850,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 638,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 639,
+            "col": 23,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 638,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 639,
+            "col": 23,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 850,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "io.c",
+            "line": 638,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "io.c",
+            "line": 639,
+            "col": 23,
+            "feature": [ "Call", "chkCWD" ]
+          },
+          {
+            "file": "io.c",
+            "line": 606,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 609,
+            "col": 2,
+            "feature": [ "Call", "PathParse" ]
+          },
+          {
+            "file": "io.c",
+            "line": 851,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 852,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "io.c",
+            "line": 854,
+            "col": 4,
+            "feature": [ "Call", "null_ncpy" ]
+          },
+          {
+            "file": "util.c",
+            "line": 669,
+            "col": 9,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4472135954999579
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 66,
+    "sink": 80,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 66,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 69,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 75,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 80,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 118,
+    "sink": 298,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "add_name" ]
+          },
+          {
+            "file": "recover.c",
+            "line": 298,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "add_name" ]
+          },
+          {
+            "file": "recover.c",
+            "line": 298,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "add_name" ]
+          },
+          {
+            "file": "recover.c",
+            "line": 298,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "add_name" ]
+          },
+          {
+            "file": "recover.c",
+            "line": 298,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "scandir.c",
+            "line": 118,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "scandir.c",
+            "line": 119,
+            "col": 27,
+            "feature": [ "Call", "add_name" ]
+          },
+          {
+            "file": "recover.c",
+            "line": 298,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 41,
+    "sink": 65,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input main": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input main": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input main": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input main": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input main": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "jove",
+    "src": 41,
+    "sink": 79,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.08770580193070293
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.08770580193070293
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "teachjove.c",
+            "line": 41,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 52,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 53,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 65,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "teachjove.c",
+            "line": 79,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.05679618342470648
+      }
+    ]
+  }
+]

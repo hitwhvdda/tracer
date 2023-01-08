@@ -1,0 +1,2088 @@
+[
+  {
+    "program": "dpkg",
+    "src": 60,
+    "sink": 209,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 60,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 61,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.7735449421179451
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 60,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 61,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.7385489458759965
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 60,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 61,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.674199862463242
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 60,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 61,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.674199862463242
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 60,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 61,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.674199862463242
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 62,
+    "sink": 209,
+    "weighted_traces": [
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 62,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 62,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6556300376497836
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 62,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 62,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 62,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 63,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 90,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/dpkg/pager.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "Call", "command_shell" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5999999999999999
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 200,
+    "sink": 209,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 200,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 206,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 200,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 206,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 200,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 206,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 200,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 206,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 200,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 206,
+            "col": 6,
+            "feature": [ "Call", "str_is_unset" ]
+          },
+          {
+            "file": "lib/dpkg/string.h",
+            "line": 43,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/dpkg/command.c",
+            "line": 209,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 2308,
+    "sink": 1567,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 2308,
+    "sink": 1696,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 2308,
+    "sink": 1994,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2308,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2309,
+            "col": 17,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 2339,
+    "sink": 1567,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2255,
+            "col": 25,
+            "feature": [ "Call", "pid_is_child" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1874,
+            "col": 13,
+            "feature": [ "Call", "proc_status_field" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1567,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 2339,
+    "sink": 1696,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2253,
+            "col": 19,
+            "feature": [ "Call", "pid_is_exec" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1696,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 2339,
+    "sink": 1994,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2339,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2346,
+            "col": 16,
+            "feature": [ "Call", "pid_check" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 2257,
+            "col": 19,
+            "feature": [ "Call", "pid_is_user" ]
+          },
+          {
+            "file": "utils/start-stop-daemon.c",
+            "line": 1994,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dpkg",
+    "src": 97,
+    "sink": 111,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 97,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 110,
+            "col": 45,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 111,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 97,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 110,
+            "col": 45,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 111,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 97,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 110,
+            "col": 45,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 111,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 97,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 110,
+            "col": 45,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 111,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 97,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 110,
+            "col": 45,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dpkg-split/queue.c",
+            "line": 111,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  }
+]

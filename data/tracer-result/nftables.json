@@ -1,0 +1,214 @@
+[
+  {
+    "program": "nftables",
+    "src": 205,
+    "sink": 440,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 205,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 334,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 336,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 338,
+            "col": 10,
+            "feature": [ "Call", "nft_run_cmd_from_buffer" ]
+          },
+          {
+            "file": "src/libnftables.c",
+            "line": 440,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcat": 2,
+          "Input main": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 205,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 334,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 336,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 338,
+            "col": 10,
+            "feature": [ "Call", "nft_run_cmd_from_buffer" ]
+          },
+          {
+            "file": "src/libnftables.c",
+            "line": 440,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcat": 2,
+          "Input main": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 205,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 334,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 336,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 338,
+            "col": 10,
+            "feature": [ "Call", "nft_run_cmd_from_buffer" ]
+          },
+          {
+            "file": "src/libnftables.c",
+            "line": 440,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcat": 2,
+          "Input main": 1
+        },
+        "score": 0.08006407690254358
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 205,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 334,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 336,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 338,
+            "col": 10,
+            "feature": [ "Call", "nft_run_cmd_from_buffer" ]
+          },
+          {
+            "file": "src/libnftables.c",
+            "line": 440,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcat": 2,
+          "Input main": 1
+        },
+        "score": 0.08006407690254358
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 205,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 334,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 336,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 338,
+            "col": 10,
+            "feature": [ "Call", "nft_run_cmd_from_buffer" ]
+          },
+          {
+            "file": "src/libnftables.c",
+            "line": 440,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcat": 2,
+          "Input main": 1
+        },
+        "score": 0.05184758473652126
+      }
+    ]
+  }
+]

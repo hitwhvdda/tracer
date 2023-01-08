@@ -1,0 +1,816 @@
+[
+  {
+    "program": "alien-arena",
+    "src": 349,
+    "sink": 354,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 349,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 350,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 353,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 354,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.45291081365783836
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 349,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 350,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 353,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 354,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.45291081365783836
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 349,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 350,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 353,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 354,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 349,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 350,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 353,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 354,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 349,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 350,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 353,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 354,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.10998533626601498
+      }
+    ]
+  },
+  {
+    "program": "alien-arena",
+    "src": 368,
+    "sink": 373,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 368,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 369,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 372,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 373,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.45291081365783836
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 368,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 369,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 372,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 373,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.45291081365783836
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 368,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 369,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 372,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 373,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 368,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 369,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 372,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 373,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 368,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 369,
+            "col": 24,
+            "feature": [ "Call", "glob_match" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 124,
+            "col": 11,
+            "feature": [ "Call", "glob_match_after_star" ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 47,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 49,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "source/unix/glob.c",
+            "line": 106,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 372,
+            "col": 8,
+            "feature": [ "Call", "CompareAttributes" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 310,
+            "col": 32,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "source/unix/q_shunix.c",
+            "line": 373,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.10998533626601498
+      }
+    ]
+  }
+]

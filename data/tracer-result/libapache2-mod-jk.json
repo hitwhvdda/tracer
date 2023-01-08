@@ -1,0 +1,526 @@
+[
+  {
+    "program": "libapache2-mod-jk",
+    "src": 2114,
+    "sink": 2120,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2114,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2118,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2120,
+            "col": 13,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2114,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2118,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2120,
+            "col": 13,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2114,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2118,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2120,
+            "col": 13,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2114,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2118,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2120,
+            "col": 13,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2114,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2118,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_util.c",
+            "line": 2120,
+            "col": 13,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "libapache2-mod-jk",
+    "src": 721,
+    "sink": 446,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "native/common/jk_map.c",
+            "line": 721,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 741,
+            "col": 49,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 747,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 748,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 705,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 706,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 740,
+            "col": 50,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 496,
+            "col": 25,
+            "feature": [ "Call", "jk_map_handle_duplicates" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 437,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 446,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 2,
+          "Input getenv": 1
+        },
+        "score": 0.32444284226152503
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "native/common/jk_map.c",
+            "line": 721,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 741,
+            "col": 49,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 747,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 748,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 705,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 706,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 740,
+            "col": 50,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 496,
+            "col": 25,
+            "feature": [ "Call", "jk_map_handle_duplicates" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 437,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 446,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 2,
+          "Input getenv": 1
+        },
+        "score": 0.16222142113076252
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "native/common/jk_map.c",
+            "line": 721,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 741,
+            "col": 49,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 747,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 748,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 705,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 706,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 740,
+            "col": 50,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 496,
+            "col": 25,
+            "feature": [ "Call", "jk_map_handle_duplicates" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 437,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 446,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 2,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "native/common/jk_map.c",
+            "line": 721,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 741,
+            "col": 49,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 747,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 748,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 705,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 706,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 740,
+            "col": 50,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 496,
+            "col": 25,
+            "feature": [ "Call", "jk_map_handle_duplicates" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 437,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 446,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 2,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "native/common/jk_map.c",
+            "line": 721,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 741,
+            "col": 49,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 747,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 748,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 705,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 706,
+            "col": 25,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 740,
+            "col": 50,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 496,
+            "col": 25,
+            "feature": [ "Call", "jk_map_handle_duplicates" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 437,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "native/common/jk_map.c",
+            "line": 446,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 2,
+          "Input getenv": 1
+        },
+        "score": 0.029135827337403247
+      }
+    ]
+  }
+]

@@ -1,0 +1,2182 @@
+[307866][      debug] Loading models took 16.272ms
+[307866][environment] CWD = /home/wooseok/workspace/infer-experiment
+[307866][environment] No .inferconfig file found
+[307866][environment] Project root = /home/wooseok/workspace/infer-experiment
+[307866][environment] INFER_ARGS =   @/tmp/args.tmp.7a4b7d  ++Contents of '/tmp/args.tmp.7a4b7d':
+[307866][environment]                                         run --api-misuse --no-starvation
+[307866][environment]                                         --no-self-in-block --no-uninit
+[307866][environment]                                         --no-siof --no-racerd --no-liveness
+[307866][environment]                                         --no-inefficient-keyset-iterator
+[307866][environment]                                         --no-fragment-retains-view
+[307866][environment]                                         --no-biabduction --debug -j 1
+[307866][environment]                                         --bo-debug 3
+[307866][environment]                                       
+[307866][environment] 
+[307866][environment] command line arguments:   /home/wooseok/workspace/infer-experiment/infer/infer/bin/infer
+[307866][environment]                           run --api-misuse --no-starvation --no-self-in-block
+[307866][environment]                           --no-uninit --no-siof --no-racerd --no-liveness
+[307866][environment]                           --no-inefficient-keyset-iterator
+[307866][environment]                           --no-fragment-retains-view --no-biabduction --debug
+[307866][environment]                           -j 1 --bo-debug 3 -- clang -c
+[307866][environment]                           tutorial/command-injection3.c
+[307866][environment] Available memory at startup: 155297 MB
+[307866][environment] Active checkers: api-misuse (C/C++/ObjC), bufferoverrun-analysis (C/C++/ObjC, Java)
+[307866][   progress] Logs in /home/wooseok/workspace/infer-experiment/infer-out/logs
+[307866][environment] Scheduler: file
+[307866][environment] Cores used: 1
+[307866][environment] Infer version v1.0.0-c13db4e62
+[307866][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[307866][environment] Driver mode:
+[307866][environment] Clang driver mode:
+[307866][environment] prog = 'clang'
+[307866][environment] args =   -c tutorial/command-injection3.c
+[307866][   progress] Capturing in make/cc mode...
+[307866][      debug] Clang options stored in file /home/wooseok/workspace/infer-experiment/infer-out/tmp/clang_command_.tmp.ba384e.txt
+[307866][      debug] clang -### invocation: '/home/wooseok/workspace/infer-experiment/infer/infer/bin/../../facebook-clang-plugins/clang/install/bin/clang' '@/home/wooseok/workspace/infer-experiment/infer-out/tmp/clang_command_.tmp.ba384e.txt' 2>&1
+[307866][      debug] 
+[307866][      debug] *** Beginning capture of file /home/wooseok/workspace/infer-experiment/tutorial/command-injection3.c ***
+[307866][      debug] Clang options stored in file /home/wooseok/workspace/infer-experiment/infer-out/tmp/clang_command_.tmp.617804.txt
+[307866][      debug] Clang options stored in file /home/wooseok/workspace/infer-experiment/infer-out/tmp/clang_command_.tmp.4ee48c.txt
+[307866][      debug] Processing command-injection3.cStart linting, translating the AST of stdin of tutorial/command-injection3.c
+[307866][      debug] Loading the following linters files: /home/wooseok/workspace/infer-experiment/infer/infer/bin/../lib/linter_rules/linters.al
+[307866][      debug] Loading linters rules from /home/wooseok/workspace/infer-experiment/infer/infer/bin/../lib/linter_rules/linters.al
+[307866][      debug] 	Parsed identifier 'DIRECT_ATOMIC_PROPERTY_ACCESS'
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'context_in_synchronized_block'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed identifier 'is_ivar_atomic'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_method_property_accessor_of_ivar'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_objc_constructor'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_objc_dealloc'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'ObjCIvarRefExpr'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: DIRECT_ATOMIC_PROPERTY_ACCESS
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCIvarRefExpr: (((((NOT(context_in_synchronized_block()) AND is_ivar_atomic()) AND NOT(is_method_property_accessor_of_ivar())) AND NOT(is_objc_constructor())) AND NOT(is_objc_dealloc())))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Direct access to ivar %ivar_name% of an atomic property
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Accessing an ivar of an atomic property makes the property nonatomic.
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'ASSIGN_POINTER_WARNING'
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'is_assign_property'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'is_property_pointer_type'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'ObjCPropertyDecl'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: ASSIGN_POINTER_WARNING
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCPropertyDecl: ((is_assign_property() AND is_property_pointer_type()))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Property %decl_name% is a pointer type marked with the `assign` attribute
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Use a different attribute like `strong` or `weak`.
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'BAD_POINTER_COMPARISON'
+[307866][      debug] 	Parsed identifier 'bool_op'
+[307866][      debug] 	Parsed formula identifier 'bool_op'
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'LAnd'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'LOr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_unop_with_kind'
+[307866][      debug] 	Parsed string constant 'LNot'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_unop_with_kind'
+[307866][      debug] 	Parsed string constant 'LNot'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'comparison_with_integral'
+[307866][      debug] 	Parsed formula identifier 'comparison_with_integral'
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'EQ'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'NE'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'GT'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'GE'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'LT'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_binop_with_kind'
+[307866][      debug] 	Parsed string constant 'LE'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'ImplicitCastExpr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'has_type'
+[307866][      debug] 	Parsed string constant 'NSNumber *'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'has_cast_kind'
+[307866][      debug] 	Parsed string constant 'IntegralToPointer'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed EX
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'root_is_stmt_expecting_bool'
+[307866][      debug] 	Parsed formula identifier 'root_is_stmt_expecting_bool'
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'IfStmt'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'ForStmt'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'WhileStmt'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'use_num_as_bool'
+[307866][      debug] 	Parsed formula identifier 'use_num_as_bool'
+[307866][      debug] 	Parsed identifier 'bool_op'
+[307866][      debug] 	Parsed formula identifier 'bool_op'
+[307866][      debug] 	Parsed identifier 'root_is_stmt_expecting_bool'
+[307866][      debug] 	Parsed formula identifier 'root_is_stmt_expecting_bool'
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'has_type'
+[307866][      debug] 	Parsed string constant 'NSNumber *'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed EX
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'bad_conditional'
+[307866][      debug] 	Parsed formula identifier 'bad_conditional'
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'ConditionalOperator'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'has_type'
+[307866][      debug] 	Parsed string constant 'NSNumber *'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed EX WITH-TRANSITION 'Cond'
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'use_num_as_bool'
+[307866][      debug] 	Parsed formula identifier 'use_num_as_bool'
+[307866][      debug] 	Parsed identifier 'comparison_with_integral'
+[307866][      debug] 	Parsed formula identifier 'comparison_with_integral'
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'bad_conditional'
+[307866][      debug] 	Parsed formula identifier 'bad_conditional'
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: BAD_POINTER_COMPARISON
+[307866][      debug]     bool_op=  
+[307866][      debug]     (((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot))
+[307866][      debug] 
+[307866][      debug]     comparison_with_integral=  
+[307866][      debug]     ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND has_cast_kind(IntegralToPointer))))
+[307866][      debug] 
+[307866][      debug]     root_is_stmt_expecting_bool=  
+[307866][      debug]     ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))
+[307866][      debug] 
+[307866][      debug]     use_num_as_bool=  
+[307866][      debug]     ((bool_op() OR root_is_stmt_expecting_bool()) AND EX[->_](has_type(NSNumber *)))
+[307866][      debug] 
+[307866][      debug]     bad_conditional=  
+[307866][      debug]     (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *)))
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     ((use_num_as_bool() OR comparison_with_integral()) OR bad_conditional())
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Implicitly checking whether NSNumber pointer is nil or comparing to integral value
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Did you mean to use/compare against the unboxed value instead? Please either explicitly compare the NSNumber instance to nil, or use one of the NSNumber accessors before the comparison.
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'STRONG_DELEGATE_WARNING'
+[307866][      debug] 	Parsed identifier 'name_contains_delegate'
+[307866][      debug] 	Parsed formula identifier 'name_contains_delegate'
+[307866][      debug] 	Parsed identifier 'declaration_has_name'
+[307866][      debug] 	Parsed regular expression '[dD]elegate'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'name_does_not_contain_delegates'
+[307866][      debug] 	Parsed formula identifier 'name_does_not_contain_delegates'
+[307866][      debug] 	Parsed identifier 'declaration_has_name'
+[307866][      debug] 	Parsed regular expression '[dD]elegates'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'name_does_not_contains_queue'
+[307866][      debug] 	Parsed formula identifier 'name_does_not_contains_queue'
+[307866][      debug] 	Parsed identifier 'declaration_has_name'
+[307866][      debug] 	Parsed regular expression '[qQ]ueue'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'name_contains_delegate'
+[307866][      debug] 	Parsed formula identifier 'name_contains_delegate'
+[307866][      debug] 	Parsed identifier 'name_does_not_contain_delegates'
+[307866][      debug] 	Parsed formula identifier 'name_does_not_contain_delegates'
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'name_does_not_contains_queue'
+[307866][      debug] 	Parsed formula identifier 'name_does_not_contains_queue'
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_strong_property'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'ObjCPropertyDecl'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: STRONG_DELEGATE_WARNING
+[307866][      debug]     name_contains_delegate=  
+[307866][      debug]     declaration_has_name([dD]elegate)
+[307866][      debug] 
+[307866][      debug]     name_does_not_contain_delegates=  
+[307866][      debug]     NOT(declaration_has_name([dD]elegates))
+[307866][      debug] 
+[307866][      debug]     name_does_not_contains_queue=  
+[307866][      debug]     NOT(declaration_has_name([qQ]ueue))
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCPropertyDecl: ((((name_contains_delegate() AND name_does_not_contain_delegates()) AND name_does_not_contains_queue()) AND is_strong_property()))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Property or ivar %decl_name% declared strong
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     In general delegates should be declared weak or assign.
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL'
+[307866][      debug] 	Parsed identifier 'is_global_but_not_const_variable'
+[307866][      debug] 	Parsed formula identifier 'is_global_but_not_const_variable'
+[307866][      debug] 	Parsed identifier 'is_objc_extension'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'is_global_var'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_const_expr_var'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_init_integral_constant_expr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'makes_an_expensive_call'
+[307866][      debug] 	Parsed formula identifier 'makes_an_expensive_call'
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'CallExpr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'call_function'
+[307866][      debug] 	Parsed string constant 'CGPointMake'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'CXXTemporaryObjectExpr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'CXXMemberCallExpr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'CXXOperatorCallExpr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'ObjCMessageExpr'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'is_initialized_with_expensive_call'
+[307866][      debug] 	Parsed formula identifier 'is_initialized_with_expensive_call'
+[307866][      debug] 	Parsed identifier 'VarDecl'
+[307866][      debug] 	Parsed identifier 'makes_an_expensive_call'
+[307866][      debug] 	Parsed formula identifier 'makes_an_expensive_call'
+[307866][      debug] 	Parsed EF
+[307866][      debug] 	Parsed ET with transition 'InitExpr'
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'is_global_but_not_const_variable'
+[307866][      debug] 	Parsed formula identifier 'is_global_but_not_const_variable'
+[307866][      debug] 	Parsed identifier 'is_initialized_with_expensive_call'
+[307866][      debug] 	Parsed formula identifier 'is_initialized_with_expensive_call'
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'VarDecl'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[307866][      debug]     is_global_but_not_const_variable=  
+[307866][      debug]     (((is_objc_extension() AND is_global_var()) AND NOT(is_const_expr_var())) AND NOT(is_init_integral_constant_expr()))
+[307866][      debug] 
+[307866][      debug]     makes_an_expensive_call=  
+[307866][      debug]     (((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))
+[307866][      debug] 
+[307866][      debug]     is_initialized_with_expensive_call=  
+[307866][      debug]     ET[VarDecl][InitExpr](EF[->_](makes_an_expensive_call()))
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE VarDecl: ((is_global_but_not_const_variable() AND is_initialized_with_expensive_call()))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Global variable %decl_name% is initialized using a function or method call
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     If the function/method call is expensive, it can affect the starting time of the app.
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK'
+[307866][      debug] 	Parsed identifier 'capture_reference'
+[307866][      debug] 	Parsed formula identifier 'capture_reference'
+[307866][      debug] 	Parsed identifier 'is_node'
+[307866][      debug] 	Parsed string constant 'BlockDecl'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'captures_cxx_references'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed EX
+[307866][      debug] 	Parsed identifier 'BlockExpr'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'block_definition_capture_reference'
+[307866][      debug] 	Parsed formula identifier 'block_definition_capture_reference'
+[307866][      debug] 	Parsed identifier 'capture_reference'
+[307866][      debug] 	Parsed formula identifier 'capture_reference'
+[307866][      debug] 	Parsed EF
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'variable_initialized_with_block'
+[307866][      debug] 	Parsed formula identifier 'variable_initialized_with_block'
+[307866][      debug] 	Parsed identifier 'VarDecl'
+[307866][      debug] 	Parsed identifier 'block_definition_capture_reference'
+[307866][      debug] 	Parsed formula identifier 'block_definition_capture_reference'
+[307866][      debug] 	Parsed ET with transition 'InitExpr'
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'variable_block_definition'
+[307866][      debug] 	Parsed formula identifier 'variable_block_definition'
+[307866][      debug] 	Parsed identifier 'DeclRefExpr'
+[307866][      debug] 	Parsed identifier 'variable_initialized_with_block'
+[307866][      debug] 	Parsed formula identifier 'variable_initialized_with_block'
+[307866][      debug] 	Parsed ET with transition 'PointerToDecl'
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'has_no_escape_attribute'
+[307866][      debug] 	Parsed formula identifier 'has_no_escape_attribute'
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed identifier 'block_definition_capture_reference'
+[307866][      debug] 	Parsed formula identifier 'block_definition_capture_reference'
+[307866][      debug] 	Parsed identifier 'variable_block_definition'
+[307866][      debug] 	Parsed formula identifier 'variable_block_definition'
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'CallExpr'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'mode'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[307866][      debug]     capture_reference=  
+[307866][      debug]     IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))
+[307866][      debug] 
+[307866][      debug]     block_definition_capture_reference=  
+[307866][      debug]     EF[->_](capture_reference())
+[307866][      debug] 
+[307866][      debug]     variable_initialized_with_block=  
+[307866][      debug]     ET[VarDecl][InitExpr](block_definition_capture_reference())
+[307866][      debug] 
+[307866][      debug]     variable_block_definition=  
+[307866][      debug]     ET[DeclRefExpr][PointerToDecl](variable_initialized_with_block())
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE CallExpr: ((NOT(has_no_escape_attribute()) AND (block_definition_capture_reference() OR variable_block_definition())))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     C++ Reference variable(s) %cxx_ref_captured_in_block% captured by Objective-C block
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     This will very likely cause a crash because C++ References are unmanaged and may be invalid by the time the block executes.
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     ERROR
+[307866][      debug] 
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'POINTER_TO_INTEGRAL_IMPLICIT_CAST'
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'has_cast_kind'
+[307866][      debug] 	Parsed string constant 'PointerToIntegral'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'ImplicitCastExpr'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'doc_url'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ImplicitCastExpr: (has_cast_kind(PointerToIntegral))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Implicit conversion from %child_type% to %type% in usage of %name%
+[307866][      debug] 
+[307866][      debug]     doc_url=  
+[307866][      debug]     https://clang.llvm.org/docs/DiagnosticsReference.html#wint-conversion
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'POINTER_TO_CONST_OBJC_CLASS'
+[307866][      debug] 	Parsed identifier 'name'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'is_decl'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'has_type_const_ptr_to_objc_class'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'mode'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: POINTER_TO_CONST_OBJC_CLASS
+[307866][      debug]     name_hum_readable=  
+[307866][      debug]     Pointer To const Objective-C Class
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     (is_decl() AND has_type_const_ptr_to_objc_class())
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     `const %class_name%*` may not mean what you want:
+                   it represents a mutable pointer pointing to an Objective-C
+                   class where the ivars cannot be changed.
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Consider using `%class_name% *const` instead, meaning
+                      the destination of the pointer cannot be changed.
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER'
+[307866][      debug] 	Parsed identifier 'has_body'
+[307866][      debug] 	Parsed formula identifier 'has_body'
+[307866][      debug] 	Parsed True
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed EX with transition 'Body'
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'is_weak_property_setter'
+[307866][      debug] 	Parsed formula identifier 'is_weak_property_setter'
+[307866][      debug] 	Parsed string constant 'setter'
+[307866][      debug] 	Parsed identifier 'is_weak_property'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed EX with transition 'AccessorForProperty setter'
+[307866][      debug] 	Parsed LET clause
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'has_body'
+[307866][      debug] 	Parsed formula identifier 'has_body'
+[307866][      debug] 	Parsed identifier 'is_weak_property_setter'
+[307866][      debug] 	Parsed formula identifier 'is_weak_property_setter'
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'ObjCMethodDecl'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'mode'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[307866][      debug]     has_body=  
+[307866][      debug]     EX[->Body](True)
+[307866][      debug] 
+[307866][      debug]     is_weak_property_setter=  
+[307866][      debug]     EX[->AccessorForProperty setter](is_weak_property())
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCMethodDecl: ((has_body() AND is_weak_property_setter()))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Custom setters are not called when ARC sets weak properties to nil.
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     mode=  
+[307866][      debug]     OFF
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'WRONG_SCOPE_FOR_DISPATCH_ONCE_T'
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'is_global_var'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed identifier 'is_static_local_var'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed OR
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed identifier 'has_type'
+[307866][      debug] 	Parsed string constant 'dispatch_once_t'
+[307866][      debug] 	Parsed predicate
+[307866][      debug] 	Parsed atomic formula
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'VarDecl'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'mode'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: WRONG_SCOPE_FOR_DISPATCH_ONCE_T
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE VarDecl: ((NOT((is_global_var() OR is_static_local_var())) AND has_type(dispatch_once_t)))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Variables of type dispatch_once_t must have global or static scope. The result of using this type with automatic or dynamic allocation is undefined.
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 	Parsed identifier 'UNSAFE_CALL_TO_OPTIONAL_METHOD'
+[307866][      debug] 	Parsed identifier 'report_when'
+[307866][      debug] 	Parsed identifier 'is_call_to_optional_objc_method'
+[307866][      debug] 	Parsed formula identifier 'is_call_to_optional_objc_method'
+[307866][      debug] 	Parsed identifier 'objc_method_call_within_responds_to_selector_block'
+[307866][      debug] 	Parsed formula identifier 'objc_method_call_within_responds_to_selector_block'
+[307866][      debug] 	Parsed NOT
+[307866][      debug] 	Parsed AND
+[307866][      debug] 	Parsed identifier 'ObjCMessageExpr'
+[307866][      debug] 	Parsed InNode
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'message'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'suggestion'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'severity'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 	Parsed identifier 'mode'
+[307866][      debug] 	Parsed SET clause
+[307866][      debug] 
+[307866][      debug] Parsed checker definition
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: UNSAFE_CALL_TO_OPTIONAL_METHOD
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCMessageExpr: ((is_call_to_optional_objc_method() AND NOT(objc_method_call_within_responds_to_selector_block())))
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     This is a call to an `@optional` protocol method. Calling it without checking if its implemented can lead to crashes at run time.
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Please make sure to test the method is implemented by first calling `if ([object respondsToSelector:@selector(%decl_name%)]) ...` 
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     ERROR
+[307866][      debug] 
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] #### Start parsing import macros #####
+[307866][      debug] #### Add global macros to import macros #####
+[307866][      debug] #### Start Expanding checkers #####
+[307866][      debug]  +Start expanding DIRECT_ATOMIC_PROPERTY_ACCESS
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding ASSIGN_POINTER_WARNING
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding BAD_POINTER_COMPARISON
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding STRONG_DELEGATE_WARNING
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding POINTER_TO_CONST_OBJC_CLASS
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding WRONG_SCOPE_FOR_DISPATCH_ONCE_T
+[307866][      debug]   -Expanding report_when
+[307866][      debug]  +Start expanding UNSAFE_CALL_TO_OPTIONAL_METHOD
+[307866][      debug]   -Expanding report_when
+[307866][      debug] #### Checkers Expanded #####
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: DIRECT_ATOMIC_PROPERTY_ACCESS
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Accessing an ivar of an atomic property makes the property nonatomic.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Direct access to ivar %ivar_name% of an atomic property
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCIvarRefExpr: (((((NOT(context_in_synchronized_block()) AND is_ivar_atomic()) AND NOT(is_method_property_accessor_of_ivar())) AND NOT(is_objc_constructor())) AND NOT(is_objc_dealloc())))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: ASSIGN_POINTER_WARNING
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Use a different attribute like `strong` or `weak`.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Property %decl_name% is a pointer type marked with the `assign` attribute
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCPropertyDecl: ((is_assign_property() AND is_property_pointer_type()))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: BAD_POINTER_COMPARISON
+[307866][      debug]     suggestion=  
+[307866][      debug]     Did you mean to use/compare against the unboxed value instead? Please either explicitly compare the NSNumber instance to nil, or use one of the NSNumber accessors before the comparison.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Implicitly checking whether NSNumber pointer is nil or comparing to integral value
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     (((((((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot)) OR ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))) AND EX[->_](has_type(NSNumber *))) OR ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND has_cast_kind(IntegralToPointer))))) OR (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *))))
+[307866][      debug] 
+[307866][      debug]     bad_conditional=  
+[307866][      debug]     (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *)))
+[307866][      debug] 
+[307866][      debug]     use_num_as_bool=  
+[307866][      debug]     ((bool_op() OR root_is_stmt_expecting_bool()) AND EX[->_](has_type(NSNumber *)))
+[307866][      debug] 
+[307866][      debug]     root_is_stmt_expecting_bool=  
+[307866][      debug]     ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))
+[307866][      debug] 
+[307866][      debug]     comparison_with_integral=  
+[307866][      debug]     ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND has_cast_kind(IntegralToPointer))))
+[307866][      debug] 
+[307866][      debug]     bool_op=  
+[307866][      debug]     (((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: STRONG_DELEGATE_WARNING
+[307866][      debug]     suggestion=  
+[307866][      debug]     In general delegates should be declared weak or assign.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Property or ivar %decl_name% declared strong
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCPropertyDecl: ((((declaration_has_name([dD]elegate) AND NOT(declaration_has_name([dD]elegates))) AND NOT(declaration_has_name([qQ]ueue))) AND is_strong_property()))
+[307866][      debug] 
+[307866][      debug]     name_does_not_contains_queue=  
+[307866][      debug]     NOT(declaration_has_name([qQ]ueue))
+[307866][      debug] 
+[307866][      debug]     name_does_not_contain_delegates=  
+[307866][      debug]     NOT(declaration_has_name([dD]elegates))
+[307866][      debug] 
+[307866][      debug]     name_contains_delegate=  
+[307866][      debug]     declaration_has_name([dD]elegate)
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[307866][      debug]     suggestion=  
+[307866][      debug]     If the function/method call is expensive, it can affect the starting time of the app.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Global variable %decl_name% is initialized using a function or method call
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE VarDecl: (((((is_objc_extension() AND is_global_var()) AND NOT(is_const_expr_var())) AND NOT(is_init_integral_constant_expr())) AND ET[VarDecl][InitExpr](EF[->_]((((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))))))
+[307866][      debug] 
+[307866][      debug]     is_initialized_with_expensive_call=  
+[307866][      debug]     ET[VarDecl][InitExpr](EF[->_](makes_an_expensive_call()))
+[307866][      debug] 
+[307866][      debug]     makes_an_expensive_call=  
+[307866][      debug]     (((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))
+[307866][      debug] 
+[307866][      debug]     is_global_but_not_const_variable=  
+[307866][      debug]     (((is_objc_extension() AND is_global_var()) AND NOT(is_const_expr_var())) AND NOT(is_init_integral_constant_expr()))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     ERROR
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     This will very likely cause a crash because C++ References are unmanaged and may be invalid by the time the block executes.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     C++ Reference variable(s) %cxx_ref_captured_in_block% captured by Objective-C block
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE CallExpr: ((NOT(has_no_escape_attribute()) AND (EF[->_](IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))) OR ET[DeclRefExpr][PointerToDecl](ET[VarDecl][InitExpr](EF[->_](IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))))))))
+[307866][      debug] 
+[307866][      debug]     variable_block_definition=  
+[307866][      debug]     ET[DeclRefExpr][PointerToDecl](variable_initialized_with_block())
+[307866][      debug] 
+[307866][      debug]     variable_initialized_with_block=  
+[307866][      debug]     ET[VarDecl][InitExpr](block_definition_capture_reference())
+[307866][      debug] 
+[307866][      debug]     block_definition_capture_reference=  
+[307866][      debug]     EF[->_](capture_reference())
+[307866][      debug] 
+[307866][      debug]     capture_reference=  
+[307866][      debug]     IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[307866][      debug]     doc_url=  
+[307866][      debug]     https://clang.llvm.org/docs/DiagnosticsReference.html#wint-conversion
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Implicit conversion from %child_type% to %type% in usage of %name%
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ImplicitCastExpr: (has_cast_kind(PointerToIntegral))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: POINTER_TO_CONST_OBJC_CLASS
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Consider using `%class_name% *const` instead, meaning
+                      the destination of the pointer cannot be changed.
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     `const %class_name%*` may not mean what you want:
+                   it represents a mutable pointer pointing to an Objective-C
+                   class where the ivars cannot be changed.
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     (is_decl() AND has_type_const_ptr_to_objc_class())
+[307866][      debug] 
+[307866][      debug]     name_hum_readable=  
+[307866][      debug]     Pointer To const Objective-C Class
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[307866][      debug]     mode=  
+[307866][      debug]     OFF
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Custom setters are not called when ARC sets weak properties to nil.
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCMethodDecl: ((EX[->Body](True) AND EX[->AccessorForProperty setter](is_weak_property())))
+[307866][      debug] 
+[307866][      debug]     is_weak_property_setter=  
+[307866][      debug]     EX[->AccessorForProperty setter](is_weak_property())
+[307866][      debug] 
+[307866][      debug]     has_body=  
+[307866][      debug]     EX[->Body](True)
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: WRONG_SCOPE_FOR_DISPATCH_ONCE_T
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     WARNING
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     Variables of type dispatch_once_t must have global or static scope. The result of using this type with automatic or dynamic allocation is undefined.
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE VarDecl: ((NOT((is_global_var() OR is_static_local_var())) AND has_type(dispatch_once_t)))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Checker name: UNSAFE_CALL_TO_OPTIONAL_METHOD
+[307866][      debug]     mode=  
+[307866][      debug]     ON
+[307866][      debug] 
+[307866][      debug]     severity=  
+[307866][      debug]     ERROR
+[307866][      debug] 
+[307866][      debug]     suggestion=  
+[307866][      debug]     Please make sure to test the method is implemented by first calling `if ([object respondsToSelector:@selector(%decl_name%)]) ...` 
+[307866][      debug] 
+[307866][      debug]     message=  
+[307866][      debug]     This is a call to an `@optional` protocol method. Calling it without checking if its implemented can lead to crashes at run time.
+[307866][      debug] 
+[307866][      debug]     report_when=  
+[307866][      debug]     IN-NODE ObjCMessageExpr: ((is_call_to_optional_objc_method() AND NOT(objc_method_call_within_responds_to_selector_block())))
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] -------------------- 
+[307866][      debug] 
+[307866][      debug] Converting checkers in (condition, issue) pairs
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'DIRECT_ATOMIC_PROPERTY_ACCESS'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE ObjCIvarRefExpr: (((((NOT(context_in_synchronized_block()) AND is_ivar_atomic()) AND NOT(is_method_property_accessor_of_ivar())) AND NOT(is_objc_constructor())) AND NOT(is_objc_dealloc())))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = DIRECT_ATOMIC_PROPERTY_ACCESS
+[307866][      debug] {  Name = Direct Atomic Property Access
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Direct access to ivar %ivar_name% of an atomic property
+[307866][      debug]    Suggestion = Accessing an ivar of an atomic property makes the property nonatomic.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'ASSIGN_POINTER_WARNING'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE ObjCPropertyDecl: ((is_assign_property() AND is_property_pointer_type()))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = ASSIGN_POINTER_WARNING
+[307866][      debug] {  Name = Assign Pointer Warning
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Property %decl_name% is a pointer type marked with the `assign` attribute
+[307866][      debug]    Suggestion = Use a different attribute like `strong` or `weak`.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'BAD_POINTER_COMPARISON'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     (((((((is_binop_with_kind(LAnd) OR is_binop_with_kind(LOr)) OR is_unop_with_kind(LNot)) OR is_unop_with_kind(LNot)) OR ((is_node(IfStmt) OR is_node(ForStmt)) OR is_node(WhileStmt))) AND EX[->_](has_type(NSNumber *))) OR ((((((is_binop_with_kind(EQ) OR is_binop_with_kind(NE)) OR is_binop_with_kind(GT)) OR is_binop_with_kind(GE)) OR is_binop_with_kind(LT)) OR is_binop_with_kind(LE)) AND EX[->_](((is_node(ImplicitCastExpr) AND has_type(NSNumber *)) AND has_cast_kind(IntegralToPointer))))) OR (is_node(ConditionalOperator) AND EX[->Cond](has_type(NSNumber *))))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = BAD_POINTER_COMPARISON
+[307866][      debug] {  Name = Bad Pointer Comparison
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Implicitly checking whether NSNumber pointer is nil or comparing to integral value
+[307866][      debug]    Suggestion = Did you mean to use/compare against the unboxed value instead? Please either explicitly compare the NSNumber instance to nil, or use one of the NSNumber accessors before the comparison.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'STRONG_DELEGATE_WARNING'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE ObjCPropertyDecl: ((((declaration_has_name([dD]elegate) AND NOT(declaration_has_name([dD]elegates))) AND NOT(declaration_has_name([qQ]ueue))) AND is_strong_property()))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = STRONG_DELEGATE_WARNING
+[307866][      debug] {  Name = Strong Delegate Warning
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Property or ivar %decl_name% declared strong
+[307866][      debug]    Suggestion = In general delegates should be declared weak or assign.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE VarDecl: (((((is_objc_extension() AND is_global_var()) AND NOT(is_const_expr_var())) AND NOT(is_init_integral_constant_expr())) AND ET[VarDecl][InitExpr](EF[->_]((((((is_node(CallExpr) AND NOT(call_function(CGPointMake))) OR is_node(CXXTemporaryObjectExpr)) OR is_node(CXXMemberCallExpr)) OR is_node(CXXOperatorCallExpr)) OR is_node(ObjCMessageExpr))))))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[307866][      debug] {  Name = Global Variable Initialized With Function Or Method Call
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Global variable %decl_name% is initialized using a function or method call
+[307866][      debug]    Suggestion = If the function/method call is expensive, it can affect the starting time of the app.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE CallExpr: ((NOT(has_no_escape_attribute()) AND (EF[->_](IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))) OR ET[DeclRefExpr][PointerToDecl](ET[VarDecl][InitExpr](EF[->_](IN-NODE BlockExpr: (EX[->_]((is_node(BlockDecl) AND captures_cxx_references())))))))))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[307866][      debug] {  Name = Cxx Reference Captured In Objc Block
+[307866][      debug]    Severity = ERROR
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = C++ Reference variable(s) %cxx_ref_captured_in_block% captured by Objective-C block
+[307866][      debug]    Suggestion = This will very likely cause a crash because C++ References are unmanaged and may be invalid by the time the block executes.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'POINTER_TO_INTEGRAL_IMPLICIT_CAST'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE ImplicitCastExpr: (has_cast_kind(PointerToIntegral))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[307866][      debug] {  Name = Pointer To Integral Implicit Cast
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Implicit conversion from %child_type% to %type% in usage of %name%
+[307866][      debug]    Suggestion = 
+[307866][      debug]    Docs URL = https://clang.llvm.org/docs/DiagnosticsReference.html#wint-conversion
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'POINTER_TO_CONST_OBJC_CLASS'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     (is_decl() AND has_type_const_ptr_to_objc_class())
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = POINTER_TO_CONST_OBJC_CLASS
+[307866][      debug] {  Name = Pointer To const Objective-C Class
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = `const %class_name%*` may not mean what you want:
+                   it represents a mutable pointer pointing to an Objective-C
+                   class where the ivars cannot be changed.
+[307866][      debug]    Suggestion = Consider using `%class_name% *const` instead, meaning
+                      the destination of the pointer cannot be changed.
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE ObjCMethodDecl: ((EX[->Body](True) AND EX[->AccessorForProperty setter](is_weak_property())))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[307866][      debug] {  Name = Discouraged Weak Property Custom Setter
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = Off
+[307866][      debug]    Description = Custom setters are not called when ARC sets weak properties to nil.
+[307866][      debug]    Suggestion = 
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'WRONG_SCOPE_FOR_DISPATCH_ONCE_T'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE VarDecl: ((NOT((is_global_var() OR is_static_local_var())) AND has_type(dispatch_once_t)))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = WRONG_SCOPE_FOR_DISPATCH_ONCE_T
+[307866][      debug] {  Name = Wrong Scope For Dispatch Once T
+[307866][      debug]    Severity = WARNING
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = Variables of type dispatch_once_t must have global or static scope. The result of using this type with automatic or dynamic allocation is undefined.
+[307866][      debug]    Suggestion = 
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Making condition and issue desc for checker 'UNSAFE_CALL_TO_OPTIONAL_METHOD'
+[307866][      debug] 
+[307866][      debug] Condition =
+[307866][      debug]     IN-NODE ObjCMessageExpr: ((is_call_to_optional_objc_method() AND NOT(objc_method_call_within_responds_to_selector_block())))
+[307866][      debug] 
+[307866][      debug] Issue_desc = {
+[307866][      debug]    Id = UNSAFE_CALL_TO_OPTIONAL_METHOD
+[307866][      debug] {  Name = Unsafe Call To Optional Method
+[307866][      debug]    Severity = ERROR
+[307866][      debug]    Mode = On
+[307866][      debug]    Description = This is a call to an `@optional` protocol method. Calling it without checking if its implemented can lead to crashes at run time.
+[307866][      debug]    Suggestion = Please make sure to test the method is implemented by first calling `if ([object respondsToSelector:@selector(%decl_name%)]) ...` 
+[307866][      debug]    Docs URL = 
+[307866][      debug]    Loc = -1
+[307866][      debug] }
+[307866][      debug] 
+[307866][      debug] Start linting file tutorial/command-injection3.c with rules: 
+[307866][      debug] DIRECT_ATOMIC_PROPERTY_ACCESS
+[307866][      debug] ASSIGN_POINTER_WARNING
+[307866][      debug] BAD_POINTER_COMPARISON
+[307866][      debug] STRONG_DELEGATE_WARNING
+[307866][      debug] GLOBAL_VARIABLE_INITIALIZED_WITH_FUNCTION_OR_METHOD_CALL
+[307866][      debug] CXX_REFERENCE_CAPTURED_IN_OBJC_BLOCK
+[307866][      debug] POINTER_TO_INTEGRAL_IMPLICIT_CAST
+[307866][      debug] POINTER_TO_CONST_OBJC_CLASS
+[307866][      debug] DISCOURAGED_WEAK_PROPERTY_CUSTOM_SETTER
+[307866][      debug] WRONG_SCOPE_FOR_DISPATCH_ONCE_T
+[307866][      debug] UNSAFE_CALL_TO_OPTIONAL_METHOD
+[307866][      debug] 
+[307866][      debug] Starting parsing type string 'dispatch_once_t'
+[307866][      debug] 	Type_name parsed: `dispatch_once_t`
+[307866][      debug] 	Type effectively parsed: `TypeName (dispatch_once_t)`
+[307866][      debug] 
+[307866][      debug] Comparing c_type/abs_ctype for equality... Type compared: 
+[307866][      debug] c_type = `<"PointerType":({"pointer":165},{"type_ptr":3038})>`  
+[307866][      debug] abs_ctype =`TypeName (dispatch_once_t)`
+[307866][      debug] [WARNING:] Type Comparison failed... This might indicate that the types are different or the specified type is internally represented in a different way and therefore not recognized.
+[307866][      debug] #####POINTER LOOP UP: '2974'
+[307866][      debug] #####POINTER LOOK UP: '1490'
+[307866][      debug] #####POINTER LOOK UP: '1490'
+[307866][      debug] 
+[307866][      debug] Comparing c_type/abs_ctype for equality... Type compared: 
+[307866][      debug] c_type = `<"PointerType":({"pointer":165},{"type_ptr":3038})>`  
+[307866][      debug] abs_ctype =`TypeName (dispatch_once_t)`
+[307866][      debug] [WARNING:] Type Comparison failed... This might indicate that the types are different or the specified type is internally represented in a different way and therefore not recognized.
+[307866][      debug] #####POINTER LOOP UP: '2984'
+[307866][      debug] #####POINTER LOOK UP: '1398'
+[307866][      debug] #####POINTER LOOK UP: '1398'
+[307866][      debug] #####POINTER LOOK UP: '2006'
+[307866][      debug] #####POINTER LOOK UP: '2979'
+[307866][      debug] #####POINTER LOOK UP: '2006'
+[307866][      debug] #####POINTER LOOP UP: '2989'
+[307866][      debug] #####POINTER LOOK UP: '2006'
+[307866][      debug] #####POINTER LOOK UP: '2006'
+[307866][      debug] #####POINTER LOOK UP: '2979'
+[307866][      debug] #####POINTER LOOP UP: '2996'
+[307866][      debug] #####POINTER LOOK UP: '2006'
+[307866][      debug] #####POINTER LOOK UP: '2006'
+[307866][      debug] Starting parsing type string 'NSNumber *'
+[307866][      debug] 	Type_name parsed: `NSNumber`
+[307866][      debug] 	Type effectively parsed: `Pointer (TypeName (NSNumber))`
+[307866][      debug] 
+[307866][      debug] Comparing c_type/abs_ctype for equality... Type compared: 
+[307866][      debug] c_type = `<"PointerType":({"pointer":165},{"type_ptr":3038})>`  
+[307866][      debug] abs_ctype =`Pointer (TypeName (NSNumber))`
+[307866][      debug] 
+[307866][      debug] Comparing c_type/abs_ctype for equality... Type compared: 
+[307866][      debug] c_type = `<"BuiltinType":({"pointer":3038},<"Char_S">)>`  
+[307866][      debug] abs_ctype =`TypeName (NSNumber)`
+[307866][      debug] [WARNING:] Type Comparison failed... This might indicate that the types are different or the specified type is internally represented in a different way and therefore not recognized.
+[307866][      debug] #####POINTER LOOP UP: '3008'
+[307866][      debug] #####POINTER LOOK UP: '1804'
+[307866][      debug] #####POINTER LOOK UP: '1804'
+[307866][      debug] #####POINTER LOOK UP: '3001'
+[307866][      debug] #####POINTER LOOK UP: '2979'
+[307866][      debug] #####POINTER LOOP UP: '3017'
+[307866][      debug] #####POINTER LOOK UP: '1823'
+[307866][      debug] #####POINTER LOOK UP: '1823'
+[307866][      debug] #####POINTER LOOK UP: '3001'
+[307866][      debug] #####POINTER LOOP UP: '3025'
+[307866][      debug] #####POINTER LOOK UP: '2327'
+[307866][      debug] #####POINTER LOOK UP: '2327'
+[307866][      debug] #####POINTER LOOK UP: '3001'
+[307866][      debug] End linting file tutorial/command-injection3.c
+[307866][      debug] 
+[307866][      debug]  Start building call/cfg graph for 'tutorial/command-injection3.c'....
+[307866][      debug] 
+[307866][      debug]  Start creating icfg
+[307866][      debug] 
+[307866][      debug] Creating a new procdesc for function: 'main'
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] ms = Method main []->int ({"file":"/home/wooseok/workspace/infer-experiment/tutorial/command-injection3.c","line":10,"column":1},{"file":"/home/wooseok/workspace/infer-experiment/tutorial/command-injection3.c","line":18,"column":1})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] >>---------- ADDING METHOD: 'main' ---------<<
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] >>---------- Start translating body of function: 'main' ---------<<
+[307866][      debug] 
+[307866][      debug] CompoundStmt{}
+[307866][      debug] <Compound|
+[307866][      debug]    
+[307866][      debug]    DeclStmt{}
+[307866][      debug]    +home
+[307866][      debug]    
+[307866][      debug]    DeclStmt{home}
+[307866][      debug]    +cmd
+[307866][      debug]    
+[307866][      debug]    IfStmt{cmd,home}
+[307866][      debug]    <Compound|
+[307866][      debug]       
+[307866][      debug]       ImplicitCastExpr{}
+[307866][      debug]       
+[307866][      debug]       DeclRefExpr{}
+[307866][      debug]       
+[307866][      debug]       CompoundStmt{}
+[307866][      debug]       <Compound|
+[307866][      debug]          
+[307866][      debug]          CallExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          CallExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          StringLiteral{}
+[307866][      debug]          
+[307866][      debug]          CallExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          DeclRefExpr{}
+[307866][      debug]          
+[307866][      debug]          ImplicitCastExpr{}
+[307866][      debug]          
+[307866][      debug]          ParenExpr{}
+[307866][      debug]          
+[307866][      debug]          CStyleCastExpr{}
+[307866][      debug]          
+[307866][      debug]          IntegerLiteral{}
+[307866][      debug]          
+[307866][      debug]       /Compound>~[3005:]
+[307866][      debug]    /Compound>~[3002:]
+[307866][      debug] /Compound>~[2970:cmd,home]
+[307866][      debug] Translating statement 'CompoundStmt' (pointer= '2970')
+[307866][      debug]   trans_state={succ_nodes=[2]; continuation=[None] priority=Free;
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'IfStmt' (pointer= '3002')
+[307866][      debug]     trans_state={succ_nodes=[2]; continuation=[None] priority=Free;
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     cond_trans trans_state: {succ_nodes=[]; continuation=[Some empty]
+[307866][      debug]                             priority=Free; var_exp_typ=[None];
+[307866][      debug]                             opaque_exp=[None];
+[307866][      debug]                             is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                             passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating Condition for If-then-else/Loop/Conditional Operator
+[307866][      debug]     No short-circuit condition
+[307866][      debug]     Translating statement 'ImplicitCastExpr' (pointer= '3003')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[Some empty] priority=Free;
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Translating statement 'DeclRefExpr' (pointer= '3004')
+[307866][      debug]         trans_state={succ_nodes=[]; continuation=[Some empty] priority=Free;
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         var_deref_trans for &cmd:char*
+[307866][      debug]         
+[307866][      debug]         
+[307866][      debug]       Result of translating statement 'DeclRefExpr' (pointer= '3004')
+[307866][      debug]       control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'ImplicitCastExpr' (pointer= '3003')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]             instrs=[n$0=*&cmd:char* [line 13, column 7]]; initd_exps=[]}
+[307866][      debug]     Translating statement 'CompoundStmt' (pointer= '3005')
+[307866][      debug]       trans_state={succ_nodes=[3]; continuation=[None] priority=Free;
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Translating statement 'CallExpr' (pointer= '3023')
+[307866][      debug]         trans_state={succ_nodes=[3]; continuation=[None] priority=Free;
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         Priority is free. Locking priority node in 3023
+[307866][      debug]         Translating statement 'ImplicitCastExpr' (pointer= '3024')
+[307866][      debug]           trans_state={succ_nodes=[]; continuation=[None]
+[307866][      debug]                       priority=Busy(3023); var_exp_typ=[None];
+[307866][      debug]                       opaque_exp=[None];
+[307866][      debug]                       is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                       passed_as_noescape_block_to=[None]}
+[307866][      debug]           Translating statement 'DeclRefExpr' (pointer= '3025')
+[307866][      debug]             trans_state={succ_nodes=[]; continuation=[None]
+[307866][      debug]                         priority=Busy(3023); var_exp_typ=[None];
+[307866][      debug]                         opaque_exp=[None];
+[307866][      debug]                         is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                         passed_as_noescape_block_to=[None]}
+[307866][      debug]             
+[307866][      debug]             Creating a new procdesc for function: 'execl'
+[307866][      debug]             
+[307866][      debug] 
+[307866][      debug] ms = Method execl [__path, char const * (is_no_escape_block=false),__arg, char const * (is_no_escape_block=false)]->int ({"file":"/usr/include/unistd.h","line":573,"column":1},{"file":"/usr/include/unistd.h","line":574,"column":14})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclRefExpr' (pointer= '3025')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3024')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '3027')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '3028')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'DeclRefExpr' (pointer= '3029')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       var_deref_trans for &cmd:char*
+[307866][      debug]       
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'DeclRefExpr' (pointer= '3029')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '3028')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]           instrs=[n$1=*&cmd:char* [line 16, column 11]]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3027')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$1=*&cmd:char* [line 16, column 11]]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '3030')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'ParenExpr' (pointer= '3031')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'CStyleCastExpr' (pointer= '3032')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Translating statement 'IntegerLiteral' (pointer= '3033')
+[307866][      debug]         trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3023);
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         
+[307866][      debug]       Result of translating statement 'IntegerLiteral' (pointer= '3033')
+[307866][      debug]       control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'CStyleCastExpr' (pointer= '3032')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ParenExpr' (pointer= '3031')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3030')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$1=*&cmd:char* [line 16, column 11];n$2=_fun_execl(n$1:char*,null:char const *) [line 16, column 5]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Created node 7 with instrs [n$1=*&cmd:char* [line 16, column 11];n$2=_fun_execl(n$1:char*,null:char const *) [line 16, column 5]], returning control 
+[307866][      debug] {root_nodes=[7]; leaf_nodes=[7]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '3023')
+[307866][      debug] control={root_nodes=[7]; leaf_nodes=[7]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'CallExpr' (pointer= '3015')
+[307866][      debug]   trans_state={succ_nodes=[7]; continuation=[None] priority=Free;
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Priority is free. Locking priority node in 3015
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '3016')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'DeclRefExpr' (pointer= '3017')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       
+[307866][      debug]       Creating a new procdesc for function: 'strcat'
+[307866][      debug]       
+[307866][      debug] 
+[307866][      debug] ms = Method strcat [__dest, char* (is_no_escape_block=false),__src, char const * (is_no_escape_block=false)]->char* ({"file":"/usr/include/string.h","line":130,"column":1},{"file":"/usr/include/string.h","line":131,"column":14})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclRefExpr' (pointer= '3017')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3016')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '3018')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'DeclRefExpr' (pointer= '3019')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     var_deref_trans for &cmd:char*
+[307866][      debug]     
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'DeclRefExpr' (pointer= '3019')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3018')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$3=*&cmd:char* [line 15, column 12]]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '3020')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '3021')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'StringLiteral' (pointer= '3022')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3015);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'StringLiteral' (pointer= '3022')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]     WARNING: Missing translation for Cast Kind <"ArrayToPointerDecay">. The construct has been ignored...
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '3021')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3020')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$3=*&cmd:char* [line 15, column 12];n$4=_fun_strcat(n$3:char*,"init":char*) [line 15, column 5]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Created node 8 with instrs [n$3=*&cmd:char* [line 15, column 12];n$4=_fun_strcat(n$3:char*,"init":char*) [line 15, column 5]], returning control 
+[307866][      debug] {root_nodes=[8]; leaf_nodes=[8]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '3015')
+[307866][      debug] control={root_nodes=[8]; leaf_nodes=[8]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'CallExpr' (pointer= '3006')
+[307866][      debug]   trans_state={succ_nodes=[8]; continuation=[None] priority=Free;
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Priority is free. Locking priority node in 3006
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '3007')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'DeclRefExpr' (pointer= '3008')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       
+[307866][      debug]       Creating a new procdesc for function: 'strcpy'
+[307866][      debug]       
+[307866][      debug] 
+[307866][      debug] ms = Method strcpy [__dest, char* (is_no_escape_block=false),__src, char const * (is_no_escape_block=false)]->char* ({"file":"/usr/include/string.h","line":122,"column":1},{"file":"/usr/include/string.h","line":123,"column":14})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclRefExpr' (pointer= '3008')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3007')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '3010')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'DeclRefExpr' (pointer= '3011')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     var_deref_trans for &cmd:char*
+[307866][      debug]     
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'DeclRefExpr' (pointer= '3011')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3010')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$5=*&cmd:char* [line 14, column 12]]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '3012')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '3013')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'DeclRefExpr' (pointer= '3014')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(3006);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       var_deref_trans for &home:char*
+[307866][      debug]       
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'DeclRefExpr' (pointer= '3014')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '3013')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]           instrs=[n$6=*&home:char* [line 14, column 17]]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '3012')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$6=*&home:char* [line 14, column 17]]; initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$5=*&cmd:char* [line 14, column 12];n$6=*&home:char* [line 14, column 17];n$7=_fun_strcpy(n$5:char*,n$6:char*) [line 14, column 5]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Created node 9 with instrs [n$5=*&cmd:char* [line 14, column 12];n$6=*&home:char* [line 14, column 17];n$7=_fun_strcpy(n$5:char*,n$6:char*) [line 14, column 5]], returning control 
+[307866][      debug] {root_nodes=[9]; leaf_nodes=[9]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '3006')
+[307866][      debug] control={root_nodes=[9]; leaf_nodes=[9]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CompoundStmt' (pointer= '3005')
+[307866][      debug] control={root_nodes=[9]; leaf_nodes=[7]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'NullStmt' (pointer= '-1')
+[307866][      debug]   trans_state={succ_nodes=[3]; continuation=[None] priority=Free;
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'NullStmt' (pointer= '-1')
+[307866][      debug] control={root_nodes=[3]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'IfStmt' (pointer= '3002')
+[307866][      debug] control={root_nodes=[5;6]; leaf_nodes=[3]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'DeclStmt' (pointer= '2980')
+[307866][      debug]   trans_state={succ_nodes=[5;6]; continuation=[None] priority=Free;
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   init_expr_trans false {succ_nodes=[5;6]; continuation=[None] priority=Free;
+[307866][      debug]                         var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                         is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                         passed_as_noescape_block_to=[None]} (&cmd,
+[307866][      debug]   char*) <?qual_type> <stmt_info> [Some CStyleCastExpr]
+[307866][      debug]   Force-locking priority node in 2980 (was Free)
+[307866][      debug]   Priority is Busy(2980). No claim possible in -2
+[307866][      debug]   Translating statement 'CStyleCastExpr' (pointer= '2981')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                 var_exp_typ=[Some (&cmd,char*)]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'CallExpr' (pointer= '2982')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                   var_exp_typ=[Some (&cmd,char*)]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Priority is Busy(2980). No claim possible in 2982
+[307866][      debug]       Translating statement 'ImplicitCastExpr' (pointer= '2983')
+[307866][      debug]         trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         Translating statement 'DeclRefExpr' (pointer= '2984')
+[307866][      debug]           trans_state={succ_nodes=[]; continuation=[None]
+[307866][      debug]                       priority=Busy(2980); var_exp_typ=[None];
+[307866][      debug]                       opaque_exp=[None];
+[307866][      debug]                       is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                       passed_as_noescape_block_to=[None]}
+[307866][      debug]           
+[307866][      debug]           Creating a new procdesc for function: 'malloc'
+[307866][      debug]           
+[307866][      debug] 
+[307866][      debug] ms = Method malloc [__size, unsigned long (is_no_escape_block=false)]->void* ({"file":"/usr/include/stdlib.h","line":539,"column":1},{"file":"/usr/include/stdlib.h","line":539,"column":45})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclRefExpr' (pointer= '2984')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '2983')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'BinaryOperator' (pointer= '2986')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]     BinaryOperator '<"Add">' Priority is Busy(2980). No claim possible in 2986
+[307866][      debug]   Translating statement 'CallExpr' (pointer= '2987')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Priority is Busy(2980). No claim possible in 2987
+[307866][      debug]     Translating statement 'ImplicitCastExpr' (pointer= '2988')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Translating statement 'DeclRefExpr' (pointer= '2989')
+[307866][      debug]         trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         
+[307866][      debug]         Creating a new procdesc for function: 'strlen'
+[307866][      debug]         
+[307866][      debug] 
+[307866][      debug] ms = Method strlen [__s, char const * (is_no_escape_block=false)]->unsigned long ({"file":"/usr/include/string.h","line":385,"column":1},{"file":"/usr/include/string.h","line":386,"column":33})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclRefExpr' (pointer= '2989')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '2988')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '2991')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '2992')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'DeclRefExpr' (pointer= '2993')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       var_deref_trans for &home:char*
+[307866][      debug]       
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'DeclRefExpr' (pointer= '2993')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '2992')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]           instrs=[n$10=*&home:char* [line 12, column 37]]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '2991')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$10=*&home:char* [line 12, column 37]]; initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                 leaf_nodes=[];
+[307866][      debug]                                                 instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30]];
+[307866][      debug]                                                 initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '2987')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30]];
+[307866][      debug]         initd_exps=[]}
+[307866][      debug] Translating statement 'CallExpr' (pointer= '2994')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Priority is Busy(2980). No claim possible in 2994
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '2995')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'DeclRefExpr' (pointer= '2996')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'DeclRefExpr' (pointer= '2996')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]     WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '2995')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '2997')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'ImplicitCastExpr' (pointer= '2998')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Translating statement 'StringLiteral' (pointer= '2999')
+[307866][      debug]         trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2980);
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         
+[307866][      debug]       Result of translating statement 'StringLiteral' (pointer= '2999')
+[307866][      debug]       control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]       
+[307866][      debug]       WARNING: Missing translation for Cast Kind <"ArrayToPointerDecay">. The construct has been ignored...
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'ImplicitCastExpr' (pointer= '2998')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '2997')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                       instrs=[n$12=_fun_strlen("init":char*) [line 12, column 45]];
+[307866][      debug]                       initd_exps=[]}
+[307866][      debug]   Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                   leaf_nodes=[];
+[307866][      debug]                                                   instrs=[n$12=_fun_strlen("init":char*) [line 12, column 45]];
+[307866][      debug]                                                   initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '2994')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$12=_fun_strlen("init":char*) [line 12, column 45]];
+[307866][      debug]         initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                 leaf_nodes=[];
+[307866][      debug]                                                 instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45]];
+[307866][      debug]                                                 initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'BinaryOperator' (pointer= '2986')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45]];
+[307866][      debug]         initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                 leaf_nodes=[];
+[307866][      debug]                                                 instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23]];
+[307866][      debug]                                                 initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '2982')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23]];
+[307866][      debug]         initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CStyleCastExpr' (pointer= '2981')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23]];
+[307866][      debug]         initd_exps=[]}
+[307866][      debug] init expr result: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                   instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23]];
+[307866][      debug]                   initd_exps=[]}
+[307866][      debug] Sub-expr did not initialize &cmd, initializing with (char*)n$13
+[307866][      debug] sending init_expr_trans results to parent
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23];*&cmd:char*=(char*)n$13 [line 12, column 3]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                 leaf_nodes=[];
+[307866][      debug]                                                 instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23];*&cmd:char*=(char*)n$13 [line 12, column 3]];
+[307866][      debug]                                                 initd_exps=[]}
+[307866][      debug] sequential composition :
+[307866][      debug]   {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]   instrs=[VARIABLE_DECLARED(cmd:char*); [line 12, column 3]]; initd_exps=[]}
+[307866][      debug] ;
+[307866][      debug]   {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]   instrs=[n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23];*&cmd:char*=(char*)n$13 [line 12, column 3]];
+[307866][      debug]   initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[VARIABLE_DECLARED(cmd:char*); [line 12, column 3];n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23];*&cmd:char*=(char*)n$13 [line 12, column 3]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Created node 10 with instrs [VARIABLE_DECLARED(cmd:char*); [line 12, column 3];n$10=*&home:char* [line 12, column 37];n$11=_fun_strlen(n$10:char*) [line 12, column 30];n$12=_fun_strlen("init":char*) [line 12, column 45];n$13=_fun_malloc((n$11 + n$12):unsigned long) [line 12, column 23];*&cmd:char*=(char*)n$13 [line 12, column 3]], returning control 
+[307866][      debug] {root_nodes=[10]; leaf_nodes=[10]; instrs=[]; initd_exps=[]}
+[307866][      debug] res_trans_tmp.control={root_nodes=[10]; leaf_nodes=[10]; instrs=[];
+[307866][      debug]                       initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclStmt' (pointer= '2980')
+[307866][      debug] control={root_nodes=[10]; leaf_nodes=[10]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'DeclStmt' (pointer= '2971')
+[307866][      debug]   trans_state={succ_nodes=[10]; continuation=[None] priority=Free;
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   init_expr_trans false {succ_nodes=[10]; continuation=[None] priority=Free;
+[307866][      debug]                         var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                         is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                         passed_as_noescape_block_to=[None]} (&home,
+[307866][      debug]   char*) <?qual_type> <stmt_info> [Some CallExpr]
+[307866][      debug]   Force-locking priority node in 2971 (was Free)
+[307866][      debug]   Priority is Busy(2971). No claim possible in -3
+[307866][      debug]   Translating statement 'CallExpr' (pointer= '2972')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2971);
+[307866][      debug]                 var_exp_typ=[Some (&home,char*)]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Priority is Busy(2971). No claim possible in 2972
+[307866][      debug]     Translating statement 'ImplicitCastExpr' (pointer= '2973')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2971);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       Translating statement 'DeclRefExpr' (pointer= '2974')
+[307866][      debug]         trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2971);
+[307866][      debug]                     var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                     is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                     passed_as_noescape_block_to=[None]}
+[307866][      debug]         
+[307866][      debug]         Creating a new procdesc for function: 'getenv'
+[307866][      debug]         
+[307866][      debug] 
+[307866][      debug] ms = Method getenv [__name, char const * (is_no_escape_block=false)]->char* ({"file":"/usr/include/stdlib.h","line":634,"column":1},{"file":"/usr/include/stdlib.h","line":634,"column":50})(passed_as_noescape_block_to=[None])
+[307866][      debug] 
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclRefExpr' (pointer= '2974')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] WARNING: Missing translation for Cast Kind <"FunctionToPointerDecay">. The construct has been ignored...
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '2973')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] Translating statement 'ImplicitCastExpr' (pointer= '2976')
+[307866][      debug]   trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2971);
+[307866][      debug]               var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]               is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]               passed_as_noescape_block_to=[None]}
+[307866][      debug]   Translating statement 'ImplicitCastExpr' (pointer= '2977')
+[307866][      debug]     trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2971);
+[307866][      debug]                 var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                 is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                 passed_as_noescape_block_to=[None]}
+[307866][      debug]     Translating statement 'StringLiteral' (pointer= '2978')
+[307866][      debug]       trans_state={succ_nodes=[]; continuation=[None] priority=Busy(2971);
+[307866][      debug]                   var_exp_typ=[None]; opaque_exp=[None];
+[307866][      debug]                   is_fst_arg_objc_instance_method_call=false;
+[307866][      debug]                   passed_as_noescape_block_to=[None]}
+[307866][      debug]       
+[307866][      debug]     Result of translating statement 'StringLiteral' (pointer= '2978')
+[307866][      debug]     control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]     
+[307866][      debug]     WARNING: Missing translation for Cast Kind <"ArrayToPointerDecay">. The construct has been ignored...
+[307866][      debug]     
+[307866][      debug]   Result of translating statement 'ImplicitCastExpr' (pointer= '2977')
+[307866][      debug]   control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug]   
+[307866][      debug] Result of translating statement 'ImplicitCastExpr' (pointer= '2976')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[]; instrs=[]; initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                 leaf_nodes=[];
+[307866][      debug]                                                 instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16]];
+[307866][      debug]                                                 initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CallExpr' (pointer= '2972')
+[307866][      debug] control={root_nodes=[]; leaf_nodes=[];
+[307866][      debug]         instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16]];
+[307866][      debug]         initd_exps=[]}
+[307866][      debug] init expr result: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                   instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16]];
+[307866][      debug]                   initd_exps=[]}
+[307866][      debug] Sub-expr did not initialize &home, initializing with n$14
+[307866][      debug] sending init_expr_trans results to parent
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16];*&home:char*=n$14 [line 11, column 3]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Delegating node creation to parent with control {root_nodes=[];
+[307866][      debug]                                                 leaf_nodes=[];
+[307866][      debug]                                                 instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16];*&home:char*=n$14 [line 11, column 3]];
+[307866][      debug]                                                 initd_exps=[]}
+[307866][      debug] sequential composition :
+[307866][      debug]   {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]   instrs=[VARIABLE_DECLARED(home:char*); [line 11, column 3]]; initd_exps=[]}
+[307866][      debug] ;
+[307866][      debug]   {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]   instrs=[n$14=_fun_getenv("APPHOME":char*) [line 11, column 16];*&home:char*=n$14 [line 11, column 3]];
+[307866][      debug]   initd_exps=[]}
+[307866][      debug] collected controls: {root_nodes=[]; leaf_nodes=[];
+[307866][      debug]                     instrs=[VARIABLE_DECLARED(home:char*); [line 11, column 3];n$14=_fun_getenv("APPHOME":char*) [line 11, column 16];*&home:char*=n$14 [line 11, column 3]];
+[307866][      debug]                     initd_exps=[]}
+[307866][      debug] Created node 11 with instrs [VARIABLE_DECLARED(home:char*); [line 11, column 3];n$14=_fun_getenv("APPHOME":char*) [line 11, column 16];*&home:char*=n$14 [line 11, column 3]], returning control 
+[307866][      debug] {root_nodes=[11]; leaf_nodes=[11]; instrs=[]; initd_exps=[]}
+[307866][      debug] res_trans_tmp.control={root_nodes=[11]; leaf_nodes=[11]; instrs=[];
+[307866][      debug]                       initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'DeclStmt' (pointer= '2971')
+[307866][      debug] control={root_nodes=[11]; leaf_nodes=[11]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug] Result of translating statement 'CompoundStmt' (pointer= '2970')
+[307866][      debug] control={root_nodes=[11]; leaf_nodes=[3]; instrs=[]; initd_exps=[]}
+[307866][      debug] 
+[307866][      debug]  Finished creating icfg
+[307866][      debug] 
+[307866][      debug]  End building call/cfg graph for 'tutorial/command-injection3.c'.
+[307866][      debug] Stored on disk:METHOD SIGNATURES
+[307866][      debug]                execl [undefined, Return type: int, Formals:  __path:char const * __arg:char const *, Locals: None]
+[307866][      debug]                getenv [undefined, Return type: char*, Formals:  __name:char const *, Locals: None]
+[307866][      debug]                main [defined, Return type: int, Formals: None, Locals:  cmd:char* home:char*]
+[307866][      debug]                malloc [undefined, Return type: void*, Formals:  __size:unsigned long, Locals: None]
+[307866][      debug]                strcat [undefined, Return type: char*, Formals:  __dest:char* __src:char const *, Locals: None]
+[307866][      debug]                strcpy [undefined, Return type: char*, Formals:  __dest:char* __src:char const *, Locals: None]
+[307866][      debug]                strlen [undefined, Return type: unsigned long, Formals:  __s:char const *, Locals: None]
+[307866][      debug]                
+[307866][      debug] End linting, translating the AST of file stdin of tutorial/command-injection3.c... OK!
+[307866][      debug] Elapsed: 65.58ms.
+[307866][      debug] GC stats for capture:
+[307866][      debug]   minor_words: 2.9073e+06
+[307866][      debug]   promoted_words: 437061
+[307866][      debug]   major_words: 461433
+[307866][      debug]   minor_collections: 4
+[307866][      debug]   major_collections: 1
+[307866][      debug]   compactions: 0
+[307866][      debug]   top_heap_words: 875008
+[307866][      debug]   
+[307866][   progress] Found 1 source file to analyze in /home/wooseok/workspace/infer-experiment/infer-out
+[307866][   progress] tutorial/command-injection3.c starting
+[307866][      debug] alarm start line 16, column 5
+alarm line 11, column 16
+
+[307866][      debug] tutorial/command-injection3.c:16: ERROR: Api Misuse CmdInjection
+[307866][      debug] 
+[307866][      debug] 
+[307866][   progress] tutorial/command-injection3.c DONE
+[307866][      debug] Elapsed analysis time: main: 22.654ms
+[307866][      debug] Backend stats:
+[307866][      debug]   summary_file_try_load= 74
+[307866][      debug]   summary_read_from_disk= 0
+[307866][      debug]   summary_cache_hits= 371 (83%)
+[307866][      debug]   summary_cache_misses= 74
+[307866][      debug]   ondemand_procs_analyzed= 1
+[307866][      debug]   ondemand_local_cache_hits= 0 (0%)
+[307866][      debug]   ondemand_local_cache_misses= 2
+[307866][      debug]   proc_locker_lock_time_user= 0.00000000
+[307866][      debug]   proc_locker_lock_time_sys= 0.00000000
+[307866][      debug]   proc_locker_lock_time_wall= 0.00000000
+[307866][      debug]   proc_locker_unlock_time_user= 0.00000000
+[307866][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[307866][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[307866][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[307866][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[307866][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[307866][      debug]   restart_scheduler_total_time_user= 0.00000000
+[307866][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[307866][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[307866][      debug]   
+[307866][      debug] GC stats for backend_stats.:
+[307866][      debug]   minor_words: 3.98404e+06
+[307866][      debug]   promoted_words: 14852
+[307866][      debug]   major_words: 68891
+[307866][      debug]   minor_collections: 5
+[307866][      debug]   major_collections: 1
+[307866][      debug]   compactions: 0
+[307866][      debug]   top_heap_words: 875008
+[307866][      debug]   
+[307866][      debug] Analysis phase finished in 24.576ms
+[307866][      debug] backend_stats.scheduler_process_analysis_time_user= 0.01636500
+[307866][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.00820900
+[307866][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.02457557
+[307866][      debug] GC stats for analysis_scheduler:
+[307866][      debug]   minor_words: 3.99196e+06
+[307866][      debug]   promoted_words: 14852
+[307866][      debug]   major_words: 69404
+[307866][      debug]   minor_collections: 5
+[307866][      debug]   major_collections: 1
+[307866][      debug]   compactions: 0
+[307866][      debug]   top_heap_words: 875008
+[307866][      debug]   
+[307866][      debug] GC stats for report:
+[307866][      debug]   minor_words: 17047
+[307866][      debug]   promoted_words: 0
+[307866][      debug]   major_words: 1530
+[307866][      debug]   minor_collections: 0
+[307866][      debug]   major_collections: 0
+[307866][      debug]   compactions: 0
+[307866][      debug]   top_heap_words: 875008
+[307866][      debug]   
+[307866][      debug] GC stats for main_process_full:
+[307866][      debug]   minor_words: 8.74683e+06
+[307866][      debug]   promoted_words: 623071
+[307866][      debug]   major_words: 903020
+[307866][      debug]   minor_collections: 23
+[307866][      debug]   major_collections: 5
+[307866][      debug]   compactions: 1
+[307866][      debug]   top_heap_words: 875008
+[307866][      debug]   

@@ -1,0 +1,2542 @@
+[
+  {
+    "program": "opus-tools",
+    "src": 274,
+    "sink": 444,
+    "weighted_traces": [
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 444,
+            "col": 33,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7796811755854505
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 444,
+            "col": 33,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7097954098256227
+      },
+      {
+        "signature": "shntool-3.0.5-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 444,
+            "col": 33,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.6975119433036348
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 444,
+            "col": 33,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.6929348671835833
+      },
+      {
+        "signature": "sam2p-0.49.4-5",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 444,
+            "col": 33,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.6915924962229032
+      }
+    ]
+  },
+  {
+    "program": "opus-tools",
+    "src": 274,
+    "sink": 849,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-7",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 643,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 148,
+            "col": 16,
+            "feature": [ "Call", "raw_open" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 846,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 849,
+            "col": 28,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7526178090063818
+      },
+      {
+        "signature": "autotrace-20200219.65-13",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 643,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 148,
+            "col": 16,
+            "feature": [ "Call", "raw_open" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 846,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 849,
+            "col": 28,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7526178090063818
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 643,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 148,
+            "col": 16,
+            "feature": [ "Call", "raw_open" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 846,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 849,
+            "col": 28,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7337993857053429
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 643,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 148,
+            "col": 16,
+            "feature": [ "Call", "raw_open" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 846,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 849,
+            "col": 28,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7282020546564615
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 643,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 148,
+            "col": 16,
+            "feature": [ "Call", "raw_open" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 846,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 849,
+            "col": 28,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7190924955066749
+      }
+    ]
+  },
+  {
+    "program": "opus-tools",
+    "src": 274,
+    "sink": 697,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-7",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 697,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7526178090063818
+      },
+      {
+        "signature": "autotrace-20200219.65-13",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 697,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7526178090063818
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 697,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7337993857053429
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 697,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7282020546564615
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 697,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7190924955066749
+      }
+    ]
+  },
+  {
+    "program": "opus-tools",
+    "src": 274,
+    "sink": 447,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 445,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 447,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5827165467480649
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 445,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 447,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.3149448894660933
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 445,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 447,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.3149448894660933
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 445,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 447,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.16222142113076252
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 353,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 358,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 431,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 437,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 445,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 6 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 447,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.16222142113076252
+      }
+    ]
+  },
+  {
+    "program": "opus-tools",
+    "src": 274,
+    "sink": 700,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 698,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 700,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5770175983068111
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 698,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 700,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4193139346887673
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 698,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 700,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4193139346887673
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 698,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 700,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.1889822365046136
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/audio-in.c",
+            "line": 274,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 529,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                  [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 535,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 626,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "!=",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 652,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 698,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "src/audio-in.c",
+            "line": 700,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.1889822365046136
+      }
+    ]
+  }
+]

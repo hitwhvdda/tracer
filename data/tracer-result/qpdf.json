@@ -1,0 +1,614 @@
+[{
+    "program": "qpdf",
+    "src": -1,
+    "sink": -1,
+    "weighted_traces": []
+  },
+  {
+    "program": "qpdf",
+    "src": 11,
+    "sink": 165,
+    "weighted_traces": [{
+        "signature": "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [{
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 4,
+          "Prune != true": 4
+        },
+        "score": 0.0
+      },
+      {
+        "signature": "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [{
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 4,
+          "Prune != true": 4
+        },
+        "score": 0.0
+      },
+      {
+        "signature": "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [{
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 4,
+          "Prune != true": 4
+        },
+        "score": 0.0
+      },
+      {
+        "signature": "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [{
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 4,
+          "Prune != true": 4
+        },
+        "score": 0.0
+      },
+      {
+        "signature": "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [{
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 104,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::destroy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 102,
+            "col": 10,
+            "feature": ["Prune", ["BinOp", "!=", ["Var"],
+              ["Var"]
+            ]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1099,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libqpdf/QPDFWriter.cc",
+            "line": 1101,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::operator="]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 105,
+            "col": 3,
+            "feature": ["Call", "PointerHolder<Buffer>::copy"]
+          },
+          {
+            "file": "include/qpdf/PointerHolder.hh",
+            "line": 165,
+            "col": 6,
+            "feature": ["Call", "PointerHolder<Buffer>::init"]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 4,
+          "Prune != true": 4
+        },
+        "score": 0.0
+      }
+    ]
+  }
+]

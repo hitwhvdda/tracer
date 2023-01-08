@@ -1,0 +1,2939 @@
+[
+  {
+    "program": "libss2",
+    "src": 2487,
+    "sink": 212,
+    "weighted_traces": [
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2487,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2496,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Prune == true": 1, "Input fgets": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_16-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2487,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2496,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Prune == true": 1, "Input fgets": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "CWE78_31-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2487,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2496,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Prune == true": 1, "Input fgets": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_17-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2487,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2496,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Prune == true": 1, "Input fgets": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2487,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debugfs/debugfs.c",
+            "line": 2496,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Prune == true": 1, "Input fgets": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 81,
+    "sink": 212,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lib/ss/listen.c",
+            "line": 81,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "Call", "strip_line" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 654,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 217,
+            "col": 12,
+            "feature": [ "Call", "ss_parse" ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 125,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 132,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 133,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 5,
+          "Prune ! true": 3,
+          "Input fgets": 1
+        },
+        "score": 0.8087360843031884
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "lib/ss/listen.c",
+            "line": 81,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "Call", "strip_line" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 654,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 217,
+            "col": 12,
+            "feature": [ "Call", "ss_parse" ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 125,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 132,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 133,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 5,
+          "Prune ! true": 3,
+          "Input fgets": 1
+        },
+        "score": 0.8087360843031884
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "lib/ss/listen.c",
+            "line": 81,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "Call", "strip_line" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 654,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 217,
+            "col": 12,
+            "feature": [ "Call", "ss_parse" ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 125,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 132,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 133,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 5,
+          "Prune ! true": 3,
+          "Input fgets": 1
+        },
+        "score": 0.8087360843031884
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lib/ss/listen.c",
+            "line": 81,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "Call", "strip_line" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 654,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 217,
+            "col": 12,
+            "feature": [ "Call", "ss_parse" ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 125,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 132,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 133,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 5,
+          "Prune ! true": 3,
+          "Input fgets": 1
+        },
+        "score": 0.8087360843031884
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "lib/ss/listen.c",
+            "line": 81,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "Call", "strip_line" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 654,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 217,
+            "col": 12,
+            "feature": [ "Call", "ss_parse" ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 125,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 132,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/parse.c",
+            "line": 133,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ss/listen.c",
+            "line": 104,
+            "col": 9,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 5,
+          "Prune ! true": 3,
+          "Input fgets": 1
+        },
+        "score": 0.8087360843031884
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 295,
+    "sink": 212,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 297,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 300,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 312,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.808290376865476
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 297,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 300,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 312,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.808290376865476
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 297,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 300,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 312,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.808290376865476
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 297,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 300,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 312,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.808290376865476
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 297,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 300,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tests/progs/test_icount.c",
+            "line": 312,
+            "col": 12,
+            "feature": [ "Call", "ss_execute_line" ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 207,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/ss/execute_cmd.c",
+            "line": 212,
+            "col": 21,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 3,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.808290376865476
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 199,
+    "sink": 216,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "resize/main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 203,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 211,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 216,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "resize/main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 203,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 211,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 216,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "resize/main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 203,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 211,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 216,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "resize/main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 203,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 211,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 216,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "resize/main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 203,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 211,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "resize/main.c",
+            "line": 216,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 247,
+    "sink": 264,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "misc/e2undo.c",
+            "line": 247,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 251,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 259,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 264,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "misc/e2undo.c",
+            "line": 247,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 251,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 259,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 264,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc/e2undo.c",
+            "line": 247,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 251,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 259,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 264,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "misc/e2undo.c",
+            "line": 247,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 251,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 259,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 264,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "misc/e2undo.c",
+            "line": 247,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 251,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 259,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/e2undo.c",
+            "line": 264,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 1313,
+    "sink": 1337,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1313,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1321,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1332,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1337,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1313,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1321,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1332,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1337,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1313,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1321,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1332,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1337,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1313,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1321,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1332,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1337,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1313,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1321,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1332,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "e2fsck/unix.c",
+            "line": 1337,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 2706,
+    "sink": 2730,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2706,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2714,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2725,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2730,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2706,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2714,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2725,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2730,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2706,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2714,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2725,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2730,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2706,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2714,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2725,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2730,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2706,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2714,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2725,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 2730,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 2736,
+    "sink": 2753,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2736,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2740,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2748,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2753,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2736,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2740,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2748,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2753,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2736,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2740,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2748,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2753,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2736,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2740,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2748,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2753,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2736,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2740,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2748,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "misc/tune2fs.c",
+            "line": 2753,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 119,
+    "sink": 102,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 119,
+            "col": 8,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 119,
+            "col": 8,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 119,
+            "col": 8,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 119,
+            "col": 8,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 119,
+            "col": 8,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 257,
+    "sink": 271,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/support/profile.c",
+            "line": 257,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 33,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/support/profile.c",
+            "line": 257,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 33,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/support/profile.c",
+            "line": 257,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 33,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/support/profile.c",
+            "line": 257,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 33,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/support/profile.c",
+            "line": 257,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 33,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input readdir": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 1595,
+    "sink": 271,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1595,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1598,
+            "col": 11,
+            "feature": [ "Call", "profile_init" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 339,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.32444284226152503
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1595,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1598,
+            "col": 11,
+            "feature": [ "Call", "profile_init" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 339,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.16222142113076252
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1595,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1598,
+            "col": 11,
+            "feature": [ "Call", "profile_init" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 339,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1595,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1598,
+            "col": 11,
+            "feature": [ "Call", "profile_init" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 339,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1595,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "misc/mke2fs.c",
+            "line": 1598,
+            "col": 11,
+            "feature": [ "Call", "profile_init" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 339,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 266,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 325,
+            "col": 12,
+            "feature": [ "Call", "get_dirlist" ]
+          },
+          {
+            "file": "lib/support/profile.c",
+            "line": 271,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.029135827337403247
+      }
+    ]
+  },
+  {
+    "program": "libss2",
+    "src": 94,
+    "sink": 102,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 96,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/ext2fs/finddev.c",
+            "line": 102,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.03829197905337418
+      }
+    ]
+  }
+]

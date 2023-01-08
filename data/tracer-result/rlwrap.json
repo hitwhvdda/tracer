@@ -1,0 +1,1138 @@
+[
+  {
+    "program": "rlwrap",
+    "src": 116,
+    "sink": 137,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 34,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 22,
+            "feature": [ "Call", "add3strings" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 104,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 109,
+            "col": 3,
+            "feature": [ "Call", "mystrlcpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 49,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 110,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 111,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 122,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 123,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 124,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 132,
+            "col": 14,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 137,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncat": 2,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 34,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 22,
+            "feature": [ "Call", "add3strings" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 104,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 109,
+            "col": 3,
+            "feature": [ "Call", "mystrlcpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 49,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 110,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 111,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 118,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 122,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 123,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 124,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 132,
+            "col": 14,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 137,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncat": 2,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 34,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 22,
+            "feature": [ "Call", "add3strings" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 104,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 109,
+            "col": 3,
+            "feature": [ "Call", "mystrlcpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 49,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 110,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 111,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 122,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 123,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 124,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 132,
+            "col": 14,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 137,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncat": 2,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 34,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 22,
+            "feature": [ "Call", "add3strings" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 104,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 109,
+            "col": 3,
+            "feature": [ "Call", "mystrlcpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 49,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 110,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 111,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 118,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 122,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 123,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 124,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 132,
+            "col": 14,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 137,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncat": 2,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 34,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 116,
+            "col": 22,
+            "feature": [ "Call", "add3strings" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 104,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 109,
+            "col": 3,
+            "feature": [ "Call", "mystrlcpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 49,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 110,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 111,
+            "col": 3,
+            "feature": [ "Call", "mystrlcat" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 61,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 122,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 123,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 124,
+            "col": 5,
+            "feature": [ "Call", "mysetenv" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 132,
+            "col": 14,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/filter.c",
+            "line": 137,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncat": 2,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "rlwrap",
+    "src": 155,
+    "sink": 169,
+    "weighted_traces": [
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 169,
+            "col": 32,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 169,
+            "col": 32,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 169,
+            "col": 32,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 169,
+            "col": 32,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 169,
+            "col": 32,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "rlwrap",
+    "src": 155,
+    "sink": 206,
+    "weighted_traces": [
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 174,
+            "col": 3,
+            "feature": [ "Call", "fork_child" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 206,
+            "col": 9,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 174,
+            "col": 3,
+            "feature": [ "Call", "fork_child" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 206,
+            "col": 9,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 174,
+            "col": 3,
+            "feature": [ "Call", "fork_child" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 206,
+            "col": 9,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 174,
+            "col": 3,
+            "feature": [ "Call", "fork_child" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 206,
+            "col": 9,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 155,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 174,
+            "col": 3,
+            "feature": [ "Call", "fork_child" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 206,
+            "col": 9,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "rlwrap",
+    "src": 517,
+    "sink": 532,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 36,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 30,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 502,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 521,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 328,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 522,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 329,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 523,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 524,
+            "col": 5,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 532,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 36,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 30,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 502,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 518,
+            "col": 21,
+            "feature": [ "Call", "first_of" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 521,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 328,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 522,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 329,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 523,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 524,
+            "col": 5,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 532,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 61,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 30,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 503,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 521,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 328,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 522,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 329,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 523,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 524,
+            "col": 5,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 532,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 61,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 30,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 503,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 518,
+            "col": 21,
+            "feature": [ "Call", "first_of" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 521,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 328,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 522,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 329,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 523,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 524,
+            "col": 5,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 532,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 79,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 517,
+            "col": 30,
+            "feature": [ "Call", "list4" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 504,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 521,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 328,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 522,
+            "col": 21,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/string_utils.c",
+            "line": 329,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 523,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 524,
+            "col": 5,
+            "feature": [ "Call", "search_and_replace" ]
+          },
+          {
+            "file": "src/readline.c",
+            "line": 532,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      }
+    ]
+  }
+]

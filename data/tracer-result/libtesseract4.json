@@ -1,0 +1,4025 @@
+[
+  {
+    "program": "libtesseract4",
+    "src": 57,
+    "sink": 724,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 58,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 61,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 220,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::init_to_size" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 745,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 58,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 192,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 61,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 220,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::init_to_size" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 745,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 58,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 61,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 220,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::init_to_size" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 745,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 61,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 220,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::init_to_size" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 745,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 58,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 61,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/indexmapbidi.cpp",
+            "line": 220,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::init_to_size" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 745,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7159143337951358
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 581,
+    "sink": 724,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 581,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 585,
+            "col": 7,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 589,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 592,
+            "col": 5,
+            "feature": [
+              "Call", "GenericVector<tesseract::TrainingSample*>::reserve"
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 581,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 585,
+            "col": 7,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 589,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 592,
+            "col": 5,
+            "feature": [
+              "Call", "GenericVector<tesseract::TrainingSample*>::reserve"
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 581,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 585,
+            "col": 7,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 192,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 589,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 592,
+            "col": 5,
+            "feature": [
+              "Call", "GenericVector<tesseract::TrainingSample*>::reserve"
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 581,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 585,
+            "col": 7,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 589,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 592,
+            "col": 5,
+            "feature": [
+              "Call", "GenericVector<tesseract::TrainingSample*>::reserve"
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 581,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 589,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 592,
+            "col": 5,
+            "feature": [
+              "Call", "GenericVector<tesseract::TrainingSample*>::reserve"
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 1000,
+    "sink": 724,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1000,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1004,
+            "col": 5,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1008,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1011,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1000,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1004,
+            "col": 5,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1008,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1011,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1000,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1004,
+            "col": 5,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 192,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1008,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1011,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1000,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1004,
+            "col": 5,
+            "feature": [ "Call", "Reverse32" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1008,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1011,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1000,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1008,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 1011,
+            "col": 3,
+            "feature": [ "Call", "GenericVector<int>::reserve" ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 718,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 721,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/genericvector.h",
+            "line": 724,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7488452649040593
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 57,
+    "sink": 98,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 489,
+            "col": 7,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 493,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 494,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::Resize"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 110,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::ResizeNoInit"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 95,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 96,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 98,
+            "col": 16,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7442084075352507
+      },
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 489,
+            "col": 7,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 493,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 494,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::Resize"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 110,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::ResizeNoInit"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 95,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 96,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 98,
+            "col": 16,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7442084075352507
+      },
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 489,
+            "col": 7,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 192,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 493,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 494,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::Resize"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 110,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::ResizeNoInit"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 95,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 96,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 98,
+            "col": 16,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7442084075352507
+      },
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 488,
+            "col": 7,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 492,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 494,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::Resize"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 110,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::ResizeNoInit"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 95,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 96,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 98,
+            "col": 16,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7442084075352507
+      },
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 488,
+            "col": 7,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 492,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 494,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::Resize"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 110,
+            "col": 5,
+            "feature": [
+              "Call",
+              "GENERIC_2D_ARRAY<tesseract::TrainingSampleSet::FontClassInfo>::ResizeNoInit"
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 95,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 96,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccstruct/matrix.h",
+            "line": 98,
+            "col": 16,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7442084075352507
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 93,
+    "sink": 108,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 93,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 108,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_05-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 93,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 108,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_61-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 93,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 108,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_43-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 93,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 108,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_64-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 93,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 108,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 94,
+    "sink": 113,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 106,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_05-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 106,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_61-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 106,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_43-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 106,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_64-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 94,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 106,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/classify/trainingsample.cpp",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7302967433402214
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 57,
+    "sink": 266,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 159,
+            "col": 3,
+            "feature": [ "Call", "tesseract::BitVector::Alloc" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 262,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 24,
+            "feature": [ "Call", "tesseract::BitVector::WordLength" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.h",
+            "line": 120,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 264,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 266,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.686406472983644
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 157,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 159,
+            "col": 3,
+            "feature": [ "Call", "tesseract::BitVector::Alloc" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 262,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 24,
+            "feature": [ "Call", "tesseract::BitVector::WordLength" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.h",
+            "line": 120,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 264,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 266,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.686406472983644
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 157,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 159,
+            "col": 3,
+            "feature": [ "Call", "tesseract::BitVector::Alloc" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 262,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 24,
+            "feature": [ "Call", "tesseract::BitVector::WordLength" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.h",
+            "line": 120,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 264,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 266,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.686406472983644
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 157,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 192,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 159,
+            "col": 3,
+            "feature": [ "Call", "tesseract::BitVector::Alloc" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 262,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 24,
+            "feature": [ "Call", "tesseract::BitVector::WordLength" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.h",
+            "line": 120,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 264,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 266,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.686406472983644
+      },
+      {
+        "signature": "sam2p-0.49.4-4",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 159,
+            "col": 3,
+            "feature": [ "Call", "tesseract::BitVector::Alloc" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 262,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 24,
+            "feature": [ "Call", "tesseract::BitVector::WordLength" ]
+          },
+          {
+            "file": "src/ccutil/bitvector.h",
+            "line": 120,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 263,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 264,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/ccutil/bitvector.cpp",
+            "line": 266,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6666666666666666
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": 57,
+    "sink": 80,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 163,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 165,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "STRING::truncate_at" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 266,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 268,
+            "col": 21,
+            "feature": [ "Call", "STRING::ensure_cstr" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 76,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 79,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 80,
+            "col": 50,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 163,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 192,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 165,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "STRING::truncate_at" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 266,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 268,
+            "col": 21,
+            "feature": [ "Call", "STRING::ensure_cstr" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 76,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 79,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 80,
+            "col": 50,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 163,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 165,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "STRING::truncate_at" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 266,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 268,
+            "col": 21,
+            "feature": [ "Call", "STRING::ensure_cstr" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 76,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 79,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 80,
+            "col": 50,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 165,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "STRING::truncate_at" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 266,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 268,
+            "col": 21,
+            "feature": [ "Call", "STRING::ensure_cstr" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 76,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 79,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 80,
+            "col": 50,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "src/ccutil/serialis.cpp",
+            "line": 57,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 163,
+            "col": 5,
+            "feature": [ "Call", "ReverseN" ]
+          },
+          {
+            "file": "src/ccutil/helpers.h",
+            "line": 191,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 165,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "Const", [ "Cint", 65535 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "STRING::truncate_at" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 266,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 268,
+            "col": 21,
+            "feature": [ "Call", "STRING::ensure_cstr" ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 76,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 79,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/ccutil/strngs.cpp",
+            "line": 80,
+            "col": 50,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 4,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.5871365639519862
+      }
+    ]
+  },
+  {
+    "program": "libtesseract4",
+    "src": -1,
+    "sink": -1,
+    "weighted_traces": []
+  }
+]

@@ -1,0 +1,718 @@
+[
+  {
+    "program": "wput",
+    "src": 169,
+    "sink": 466,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 461,
+            "col": 28,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 466,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 461,
+            "col": 28,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 466,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 461,
+            "col": 28,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 466,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 461,
+            "col": 28,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 466,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 461,
+            "col": 28,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 466,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "wput",
+    "src": 169,
+    "sink": 533,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 532,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 533,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 532,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 533,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 532,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 533,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 532,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 533,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 169,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 186,
+            "col": 17,
+            "feature": [ "Call", "cpy" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 389,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 390,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 532,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wput.c",
+            "line": 533,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "wput",
+    "src": 273,
+    "sink": 237,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/socketlib.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 510,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 518,
+            "col": 72,
+            "feature": [ "Call", "printip" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 237,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input recv": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/socketlib.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 510,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 518,
+            "col": 72,
+            "feature": [ "Call", "printip" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 237,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input recv": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/socketlib.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 510,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 518,
+            "col": 72,
+            "feature": [ "Call", "printip" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 237,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input recv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/socketlib.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 510,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 518,
+            "col": 72,
+            "feature": [ "Call", "printip" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 237,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input recv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/socketlib.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 510,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/socketlib.c",
+            "line": 518,
+            "col": 72,
+            "feature": [ "Call", "printip" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 237,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input recv": 1
+        },
+        "score": 0.19050019050028574
+      }
+    ]
+  }
+]

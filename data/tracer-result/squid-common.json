@@ -1,0 +1,3641 @@
+[
+  {
+    "program": "squid-common",
+    "src": 170,
+    "sink": 125,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 206,
+            "col": 9,
+            "feature": [ "Call", "Icmp4::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 102,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 122,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 125,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.6183469424008424
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 206,
+            "col": 9,
+            "feature": [ "Call", "Icmp4::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 102,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 122,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 125,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.6183469424008424
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 206,
+            "col": 9,
+            "feature": [ "Call", "Icmp4::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 102,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 122,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 125,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.3388226069985336
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 206,
+            "col": 9,
+            "feature": [ "Call", "Icmp4::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 102,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 122,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 125,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.17149858514250882
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 206,
+            "col": 9,
+            "feature": [ "Call", "Icmp4::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 102,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 122,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp4.cc",
+            "line": 125,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.17149858514250882
+      }
+    ]
+  },
+  {
+    "program": "squid-common",
+    "src": 170,
+    "sink": 160,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "Icmp6::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 135,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 157,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 160,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.6183469424008424
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "Icmp6::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 135,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 157,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 160,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.6183469424008424
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "Icmp6::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 135,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 157,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 160,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.3388226069985336
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "Icmp6::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 135,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 157,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 160,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.17149858514250882
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 170,
+            "col": 9,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 188,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/icmp/IcmpPinger.cc",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "Icmp6::SendEcho" ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 135,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 157,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/icmp/Icmp6.cc",
+            "line": 160,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input recv": 1
+        },
+        "score": 0.17149858514250882
+      }
+    ]
+  },
+  {
+    "program": "squid-common",
+    "src": 129,
+    "sink": 301,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.5749661560353624
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.5749661560353624
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.5749661560353624
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 602,
+            "col": 9,
+            "feature": [ "Call", "rfc1035HeaderUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.5749661560353624
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 602,
+            "col": 9,
+            "feature": [ "Call", "rfc1035HeaderUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.5749661560353624
+      }
+    ]
+  },
+  {
+    "program": "squid-common",
+    "src": 129,
+    "sink": 301,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.4140393356054125
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.4140393356054125
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.4140393356054125
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 602,
+            "col": 9,
+            "feature": [ "Call", "rfc1035HeaderUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.4140393356054125
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/comm.cc",
+            "line": 129,
+            "col": 13,
+            "feature": [ "Input", "recvfrom" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1395,
+            "col": 9,
+            "feature": [ "Call", "idnsGrokReply" ]
+          },
+          {
+            "file": "src/dns_internal.cc",
+            "line": 1169,
+            "col": 13,
+            "feature": [ "Call", "rfc1035MessageUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 602,
+            "col": 9,
+            "feature": [ "Call", "rfc1035HeaderUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 616,
+            "col": 13,
+            "feature": [ "Call", "rfc1035QueryUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 517,
+            "col": 9,
+            "feature": [ "Call", "rfc1035NameUnpack" ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 258,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 259,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 191 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 282,
+            "col": 20,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 63 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 290,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 291,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 293,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Var" ],
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 297,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Var" ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/dns/rfc1035.cc",
+            "line": 301,
+            "col": 13,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 3,
+          "Prune == true": 1,
+          "Prune ! true": 5,
+          "Input recvfrom": 1
+        },
+        "score": 0.4140393356054125
+      }
+    ]
+  },
+  {
+    "program": "squid-common",
+    "src": 1053,
+    "sink": 1023,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1053,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1053,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1053,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1053,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1053,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      }
+    ]
+  },
+  {
+    "program": "squid-common",
+    "src": 1070,
+    "sink": 1023,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1070,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1070,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2901716460986225
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1070,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.11624763874381928
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1070,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.11624763874381928
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1070,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1063,
+            "col": 11,
+            "feature": [ "Call", "lt__realloc" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1084,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1091,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1101,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1113,
+            "col": 16,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1118,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1122,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1129,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1133,
+            "col": 14,
+            "feature": [ "Call", "trim" ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1009,
+            "col": 20,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1014,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "libltdl/ltdl.c",
+            "line": 1023,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 5,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.10439346133241541
+      }
+    ]
+  }
+]

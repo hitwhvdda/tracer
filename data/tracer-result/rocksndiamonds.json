@@ -1,0 +1,2082 @@
+[
+  {
+    "program": "rocksndiamonds",
+    "src": 2264,
+    "sink": 1264,
+    "weighted_traces": [
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1341,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2881,
+            "col": 28,
+            "feature": [ "Call", "getMappedElement" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2370,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 1215 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2379,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2881,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2885,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2898,
+            "col": 3,
+            "feature": [ "Call", "setElementChangePages" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 1653,
+            "col": 5,
+            "feature": [ "Call", "checked_realloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1264,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 3,
+          "Input getc": 1
+        },
+        "score": 0.7907562887984084
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1341,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2880,
+            "col": 28,
+            "feature": [ "Call", "getMappedElement" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2370,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 1215 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2379,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2880,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2885,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2898,
+            "col": 3,
+            "feature": [ "Call", "setElementChangePages" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 1653,
+            "col": 5,
+            "feature": [ "Call", "checked_realloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1264,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 3,
+          "Input getc": 1
+        },
+        "score": 0.7907562887984084
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1341,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2857,
+            "col": 29,
+            "feature": [ "Call", "getMappedElement" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2370,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 1215 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2379,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2857,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2885,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2898,
+            "col": 3,
+            "feature": [ "Call", "setElementChangePages" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 1653,
+            "col": 5,
+            "feature": [ "Call", "checked_realloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1264,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 3,
+          "Input getc": 1
+        },
+        "score": 0.7907562887984084
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1338,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2881,
+            "col": 28,
+            "feature": [ "Call", "getMappedElement" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2370,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 1215 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2379,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2881,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2885,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2898,
+            "col": 3,
+            "feature": [ "Call", "setElementChangePages" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 1653,
+            "col": 5,
+            "feature": [ "Call", "checked_realloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1264,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 3,
+          "Input getc": 1
+        },
+        "score": 0.7907562887984084
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1338,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2880,
+            "col": 28,
+            "feature": [ "Call", "getMappedElement" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2370,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 1215 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2379,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2880,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2885,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 2898,
+            "col": 3,
+            "feature": [ "Call", "setElementChangePages" ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 1653,
+            "col": 5,
+            "feature": [ "Call", "checked_realloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1264,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 3,
+          "Input getc": 1
+        },
+        "score": 0.7907562887984084
+      }
+    ]
+  },
+  {
+    "program": "rocksndiamonds",
+    "src": 1472,
+    "sink": 711,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1472,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1539,
+            "col": 26,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1472,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1539,
+            "col": 26,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4902903378454601
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1472,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1539,
+            "col": 26,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4902903378454601
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1472,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1539,
+            "col": 26,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1472,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 1539,
+            "col": 26,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.19050019050028574
+      }
+    ]
+  },
+  {
+    "program": "rocksndiamonds",
+    "src": 2264,
+    "sink": 1242,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1341,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3023,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3024,
+            "col": 20,
+            "feature": [ "Call", "checked_malloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1242,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "Input getc": 1
+        },
+        "score": 0.7018624063435964
+      },
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1338,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3023,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3024,
+            "col": 20,
+            "feature": [ "Call", "checked_malloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1242,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "Input getc": 1
+        },
+        "score": 0.7018624063435964
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1341,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3023,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3024,
+            "col": 20,
+            "feature": [ "Call", "checked_malloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1242,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "Input getc": 1
+        },
+        "score": 0.7018624063435964
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1338,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3023,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3024,
+            "col": 20,
+            "feature": [ "Call", "checked_malloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1242,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "Input getc": 1
+        },
+        "score": 0.7018624063435964
+      },
+      {
+        "signature": "autotrace-20200219.65-16",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 10,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2264,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1341,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3023,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/files.c",
+            "line": 3024,
+            "col": 20,
+            "feature": [ "Call", "checked_malloc" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 1242,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "Input getc": 1
+        },
+        "score": 0.6788442333021307
+      }
+    ]
+  },
+  {
+    "program": "rocksndiamonds",
+    "src": 2436,
+    "sink": 711,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2436,
+            "col": 30,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2443,
+            "col": 30,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2444,
+            "col": 30,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5262348115842176
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2436,
+            "col": 30,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2443,
+            "col": 30,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2444,
+            "col": 30,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5262348115842176
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2436,
+            "col": 30,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2443,
+            "col": 30,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2444,
+            "col": 30,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2436,
+            "col": 30,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2443,
+            "col": 30,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2444,
+            "col": 30,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2436,
+            "col": 30,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2443,
+            "col": 30,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 2444,
+            "col": 30,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.17038855027411945
+      }
+    ]
+  },
+  {
+    "program": "rocksndiamonds",
+    "src": 7750,
+    "sink": 711,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 7750,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7752,
+            "col": 3,
+            "feature": [ "Call", "InitProgramConfig" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7684,
+            "col": 27,
+            "feature": [ "Call", "getProgramConfigFilename" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 504,
+            "col": 32,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 799,
+            "col": 3,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 507,
+            "col": 9,
+            "feature": [ "Call", "strSuffix" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 878,
+            "col": 4,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 4,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 508,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 511,
+            "col": 28,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.2090605025017727
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 7750,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7752,
+            "col": 3,
+            "feature": [ "Call", "InitProgramConfig" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7684,
+            "col": 27,
+            "feature": [ "Call", "getProgramConfigFilename" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 504,
+            "col": 32,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 799,
+            "col": 3,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 507,
+            "col": 9,
+            "feature": [ "Call", "strSuffix" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 878,
+            "col": 4,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 4,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 508,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 511,
+            "col": 28,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.2090605025017727
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 7750,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7752,
+            "col": 3,
+            "feature": [ "Call", "InitProgramConfig" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7684,
+            "col": 27,
+            "feature": [ "Call", "getProgramConfigFilename" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 504,
+            "col": 32,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 799,
+            "col": 3,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 507,
+            "col": 9,
+            "feature": [ "Call", "strSuffix" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 878,
+            "col": 4,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 4,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 508,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 511,
+            "col": 28,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.1507556722888818
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 7750,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7752,
+            "col": 3,
+            "feature": [ "Call", "InitProgramConfig" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7684,
+            "col": 27,
+            "feature": [ "Call", "getProgramConfigFilename" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 504,
+            "col": 32,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 799,
+            "col": 3,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 507,
+            "col": 9,
+            "feature": [ "Call", "strSuffix" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 878,
+            "col": 4,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 4,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 508,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 511,
+            "col": 28,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.1507556722888818
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 7750,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7752,
+            "col": 3,
+            "feature": [ "Call", "InitProgramConfig" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 7684,
+            "col": 27,
+            "feature": [ "Call", "getProgramConfigFilename" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 504,
+            "col": 32,
+            "feature": [ "Call", "getStringCopy" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 798,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 799,
+            "col": 3,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 507,
+            "col": 9,
+            "feature": [ "Call", "strSuffix" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 878,
+            "col": 4,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 879,
+            "col": 4,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 508,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/libgame/setup.c",
+            "line": 511,
+            "col": 28,
+            "feature": [ "Call", "getPath2" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 750,
+            "col": 10,
+            "feature": [ "Call", "getStringCat2WithSeparator" ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 705,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/libgame/misc.c",
+            "line": 711,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.08122955416108235
+      }
+    ]
+  }
+]

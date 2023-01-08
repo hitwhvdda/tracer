@@ -1,0 +1,1520 @@
+[
+  {
+    "program": "net-tools",
+    "src": 135,
+    "sink": 105,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rarp.c",
+            "line": 135,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 139,
+            "col": 14,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 97,
+            "col": 9,
+            "feature": [ "Call", "NETROM_hinput" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 165,
+            "col": 9,
+            "feature": [ "Call", "NETROM_input" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 133,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 105,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strtok": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "Input fgets": 1
+        },
+        "score": 0.5547001962252291
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rarp.c",
+            "line": 135,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 139,
+            "col": 14,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 97,
+            "col": 9,
+            "feature": [ "Call", "NETROM_hinput" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 165,
+            "col": 9,
+            "feature": [ "Call", "NETROM_input" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 133,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 105,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strtok": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "Input fgets": 1
+        },
+        "score": 0.5547001962252291
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rarp.c",
+            "line": 135,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 139,
+            "col": 14,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 97,
+            "col": 9,
+            "feature": [ "Call", "NETROM_hinput" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 165,
+            "col": 9,
+            "feature": [ "Call", "NETROM_input" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 133,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 105,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strtok": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "Input fgets": 1
+        },
+        "score": 0.20205596478012175
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rarp.c",
+            "line": 135,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 139,
+            "col": 14,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 97,
+            "col": 9,
+            "feature": [ "Call", "NETROM_hinput" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 165,
+            "col": 9,
+            "feature": [ "Call", "NETROM_input" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 133,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 105,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strtok": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "Input fgets": 1
+        },
+        "score": 0.12499999999999997
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rarp.c",
+            "line": 135,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 137,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 139,
+            "col": 14,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 97,
+            "col": 9,
+            "feature": [ "Call", "NETROM_hinput" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 165,
+            "col": 9,
+            "feature": [ "Call", "NETROM_input" ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 120,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/netrom.c",
+            "line": 133,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 148,
+            "col": 6,
+            "feature": [ "Call", "rarp_set" ]
+          },
+          {
+            "file": "rarp.c",
+            "line": 105,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strtok": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "Input fgets": 1
+        },
+        "score": 0.12499999999999997
+      }
+    ]
+  },
+  {
+    "program": "net-tools",
+    "src": 762,
+    "sink": 767,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/interface.c",
+            "line": 762,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lib/interface.c",
+            "line": 767,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/interface.c",
+            "line": 762,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lib/interface.c",
+            "line": 767,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/interface.c",
+            "line": 762,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lib/interface.c",
+            "line": 767,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/interface.c",
+            "line": 762,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lib/interface.c",
+            "line": 767,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/interface.c",
+            "line": 762,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lib/interface.c",
+            "line": 767,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "net-tools",
+    "src": 603,
+    "sink": 173,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 465,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 474,
+            "col": 14,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 482,
+            "col": 6,
+            "feature": [ "Call", "tty_lock" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 170,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 173,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.47304991679126607
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 465,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 474,
+            "col": 14,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 482,
+            "col": 6,
+            "feature": [ "Call", "tty_lock" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 170,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 173,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.47304991679126607
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 465,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 474,
+            "col": 14,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 482,
+            "col": 6,
+            "feature": [ "Call", "tty_lock" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 170,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 173,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 465,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 474,
+            "col": 14,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 482,
+            "col": 6,
+            "feature": [ "Call", "tty_lock" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 170,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 173,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 465,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 474,
+            "col": 14,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 482,
+            "col": 6,
+            "feature": [ "Call", "tty_lock" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 170,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 173,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.19145989526687088
+      }
+    ]
+  },
+  {
+    "program": "net-tools",
+    "src": 603,
+    "sink": 471,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 464,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 471,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 464,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 471,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 464,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 471,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.08770580193070293
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 464,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 471,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.08770580193070293
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "slattach.c",
+            "line": 603,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 705,
+            "col": 3,
+            "feature": [ "Call", "safe_strncpy" ]
+          },
+          {
+            "file": "lib/util.c",
+            "line": 64,
+            "col": 12,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 706,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 712,
+            "col": 6,
+            "feature": [ "Call", "tty_open" ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 464,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "slattach.c",
+            "line": 471,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.05679618342470648
+      }
+    ]
+  }
+]

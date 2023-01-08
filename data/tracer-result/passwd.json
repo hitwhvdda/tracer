@@ -1,0 +1,442 @@
+[
+  {
+    "program": "passwd",
+    "src": 291,
+    "sink": 321,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 291,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 291,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5669467095138409
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 291,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 291,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 291,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      }
+    ]
+  },
+  {
+    "program": "passwd",
+    "src": 293,
+    "sink": 321,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 293,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 293,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5669467095138409
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 293,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 293,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "src/vipw.c",
+            "line": 293,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 318,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 319,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/vipw.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      }
+    ]
+  }
+]

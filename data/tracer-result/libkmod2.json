@@ -1,0 +1,606 @@
+[
+  {
+    "program": "libkmod2",
+    "src": 1237,
+    "sink": 39,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 39,
+            "col": 9,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2672612419124244
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 39,
+            "col": 9,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.23570226039551584
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 39,
+            "col": 9,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.23112508176051216
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 39,
+            "col": 9,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2309401076758503
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 39,
+            "col": 9,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2253744679276044
+      }
+    ]
+  },
+  {
+    "program": "libkmod2",
+    "src": 1237,
+    "sink": 43,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 43,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2672612419124244
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 43,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.23570226039551584
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 43,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.23112508176051216
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 43,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2309401076758503
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tools/depmod.c",
+            "line": 1237,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1245,
+            "col": 31,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1247,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/depmod.c",
+            "line": 1248,
+            "col": 7,
+            "feature": [ "Call", "scratchbuf_alloc" ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 35,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "shared/scratchbuf.c",
+            "line": 43,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2253744679276044
+      }
+    ]
+  }
+]

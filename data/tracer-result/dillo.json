@@ -1,0 +1,2033 @@
+[{
+    "program": "dillo",
+    "src": 910,
+    "sink": 206,
+    "weighted_traces": [{
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "test/cookies.c",
+            "line": 206,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "test/cookies.c",
+            "line": 206,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "test/cookies.c",
+            "line": 206,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "test/cookies.c",
+            "line": 206,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "test/cookies.c",
+            "line": 206,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 910,
+    "sink": 353,
+    "weighted_traces": [{
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 353,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 353,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 353,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 353,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 353,
+            "col": 11,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 910,
+    "sink": 356,
+    "weighted_traces": [{
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 354,
+            "col": 10,
+            "feature": ["Call", "dFree"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 239,
+            "col": 10,
+            "feature": ["Call", "dFree"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 111,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 114,
+            "col": 4,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 351,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 356,
+            "col": 14,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 354,
+            "col": 10,
+            "feature": ["Call", "dFree"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 236,
+            "col": 35,
+            "feature": ["Call", "dRealloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 111,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 114,
+            "col": 4,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 351,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 356,
+            "col": 14,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 356,
+            "col": 14,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 354,
+            "col": 10,
+            "feature": ["Call", "dFree"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 239,
+            "col": 10,
+            "feature": ["Call", "dFree"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 111,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 114,
+            "col": 4,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 351,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 356,
+            "col": 14,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 354,
+            "col": 10,
+            "feature": ["Call", "dFree"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 236,
+            "col": 35,
+            "feature": ["Call", "dRealloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 111,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 114,
+            "col": 4,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 351,
+            "col": 7,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "src/IO/dpi.c",
+            "line": 356,
+            "col": 14,
+            "feature": ["CmdInjection", "execl", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 910,
+    "sink": 697,
+    "weighted_traces": [{
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 697,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 697,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 697,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 697,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 697,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 910,
+    "sink": 705,
+    "weighted_traces": [{
+        "signature": "command-injection3-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 705,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 705,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 705,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 705,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature": "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/bookmarks.c",
+            "line": 705,
+            "col": 15,
+            "feature": ["CmdInjection", "system", ["Var"]]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 910,
+    "sink": 90,
+    "weighted_traces": [{
+        "signature": "buffer-overflow1-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 90,
+            "col": 7,
+            "feature": ["BufferOverflow", "memcpy", ["Var"]]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5345224838248487
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 90,
+            "col": 7,
+            "feature": ["BufferOverflow", "memcpy", ["Var"]]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 90,
+            "col": 7,
+            "feature": ["BufferOverflow", "memcpy", ["Var"]]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 90,
+            "col": 7,
+            "feature": ["BufferOverflow", "memcpy", ["Var"]]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 90,
+            "col": 7,
+            "feature": ["BufferOverflow", "memcpy", ["Var"]]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 910,
+    "sink": 45,
+    "weighted_traces": [{
+        "signature": "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 89,
+            "col": 18,
+            "feature": ["Call", "dMalloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 45,
+            "col": 17,
+            "feature": ["IntOverflow", "malloc", ["Var"]]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature": "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 89,
+            "col": 18,
+            "feature": ["Call", "dMalloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 45,
+            "col": 17,
+            "feature": ["IntOverflow", "malloc", ["Var"]]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature": "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 89,
+            "col": 18,
+            "feature": ["Call", "dMalloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 45,
+            "col": 17,
+            "feature": ["IntOverflow", "malloc", ["Var"]]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 89,
+            "col": 18,
+            "feature": ["Call", "dMalloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 45,
+            "col": 17,
+            "feature": ["IntOverflow", "malloc", ["Var"]]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature": "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [{
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 28,
+            "feature": ["Input", "getenv"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 910,
+            "col": 20,
+            "feature": ["Call", "dStrdup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 78,
+            "col": 17,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpi/https.c",
+            "line": 210,
+            "col": 13,
+            "feature": ["Call", "a_Dpip_get_attr"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 41,
+            "feature": ["LibraryCall", "strlen"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 189,
+            "col": 18,
+            "feature": ["Call", "a_Dpip_get_attr_l"]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 136,
+            "col": 9,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 170,
+            "col": 7,
+            "feature": [
+              "Store",
+              ["Var"],
+              ["BinOp", "+", ["Var"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "dpip/dpip.c",
+            "line": 174,
+            "col": 16,
+            "feature": ["Call", "dStrndup"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 89,
+            "col": 18,
+            "feature": ["Call", "dMalloc"]
+          },
+          {
+            "file": "dlib/dlib.c",
+            "line": 45,
+            "col": 17,
+            "feature": ["IntOverflow", "malloc", ["Var"]]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      }
+    ]
+  },
+  {
+    "program": "dillo",
+    "src": 63,
+    "sink": 63,
+    "weighted_traces": [{
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "lout/container.cc",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::unref"
+            ]
+          },
+          {
+            "file": "lout/container.hh",
+            "line": 52,
+            "col": 54,
+            "feature": ["Free", "__delete", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 59,
+            "col": 8,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 63,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::ref"
+            ]
+          }
+        ],
+        "vec": {
+          "Free": 1
+        },
+        "score": 0.8944271909999159
+      },
+      {
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "lout/container.cc",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::unref"
+            ]
+          },
+          {
+            "file": "lout/container.hh",
+            "line": 52,
+            "col": 54,
+            "feature": ["Free", "__delete", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 69,
+            "col": 8,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 73,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::ref"
+            ]
+          }
+        ],
+        "vec": {
+          "Free": 1
+        },
+        "score": 0.8944271909999159
+      },
+      {
+        "signature": "CWE415_13-CWE415_Double_Free__new_delete_array_long-1",
+        "trace": [{
+            "file": "lout/container.cc",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::unref"
+            ]
+          },
+          {
+            "file": "lout/container.hh",
+            "line": 52,
+            "col": 54,
+            "feature": ["Free", "__delete", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 59,
+            "col": 8,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 63,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::ref"
+            ]
+          }
+        ],
+        "vec": {
+          "Free": 1
+        },
+        "score": 0.8944271909999159
+      },
+      {
+        "signature": "CWE415_13-CWE415_Double_Free__new_delete_array_long-1",
+        "trace": [{
+            "file": "lout/container.cc",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::unref"
+            ]
+          },
+          {
+            "file": "lout/container.hh",
+            "line": 52,
+            "col": 54,
+            "feature": ["Free", "__delete", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 69,
+            "col": 8,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 73,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::ref"
+            ]
+          }
+        ],
+        "vec": {
+          "Free": 1
+        },
+        "score": 0.8944271909999159
+      },
+      {
+        "signature": "CWE415_04-CWE415_Double_Free__malloc_free_char-1",
+        "trace": [{
+            "file": "lout/container.cc",
+            "line": 60,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::unref"
+            ]
+          },
+          {
+            "file": "lout/container.hh",
+            "line": 52,
+            "col": 54,
+            "feature": ["Free", "__delete", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 59,
+            "col": 8,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "lout/container.cc",
+            "line": 63,
+            "col": 7,
+            "feature": [
+              "Call",
+              "lout::container::untyped::Collection0::AbstractIterator::ref"
+            ]
+          }
+        ],
+        "vec": {
+          "Free": 1
+        },
+        "score": 0.8944271909999159
+      }
+    ]
+  }
+]

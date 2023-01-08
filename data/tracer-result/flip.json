@@ -1,0 +1,354 @@
+[
+  {
+    "program": "flip",
+    "src": 82,
+    "sink": 259,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "flip.c",
+            "line": 82,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 109,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 126,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "flip.c",
+            "line": 129,
+            "col": 11,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 131,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 190,
+            "col": 7,
+            "feature": [ "Call", "doarg" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 213,
+            "col": 16,
+            "feature": [ "Call", "dofile" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 259,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "flip.c",
+            "line": 82,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 109,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 126,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "flip.c",
+            "line": 129,
+            "col": 11,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 131,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 190,
+            "col": 7,
+            "feature": [ "Call", "doarg" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 213,
+            "col": 16,
+            "feature": [ "Call", "dofile" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 259,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "flip.c",
+            "line": 82,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 109,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 126,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "flip.c",
+            "line": 129,
+            "col": 11,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 131,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 190,
+            "col": 7,
+            "feature": [ "Call", "doarg" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 213,
+            "col": 16,
+            "feature": [ "Call", "dofile" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 259,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.2357022603955158
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "flip.c",
+            "line": 82,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 109,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 126,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "flip.c",
+            "line": 129,
+            "col": 11,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 131,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 190,
+            "col": 7,
+            "feature": [ "Call", "doarg" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 213,
+            "col": 16,
+            "feature": [ "Call", "dofile" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 259,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.2357022603955158
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "flip.c",
+            "line": 82,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 109,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 126,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "flip.c",
+            "line": 129,
+            "col": 11,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 131,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 190,
+            "col": 7,
+            "feature": [ "Call", "doarg" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 213,
+            "col": 16,
+            "feature": [ "Call", "dofile" ]
+          },
+          {
+            "file": "flip.c",
+            "line": 259,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.12700012700019048
+      }
+    ]
+  }
+]

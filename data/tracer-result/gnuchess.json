@@ -1,0 +1,2682 @@
+[
+  {
+    "program": "gnuchess",
+    "src": 226,
+    "sink": 370,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 354,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 358,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 367,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 368,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 370,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6821910402406466
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 354,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 358,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 367,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 368,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 370,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6821910402406466
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 354,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 358,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 367,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 368,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 370,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.3614486980061245
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 354,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 358,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 367,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 368,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 370,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.22360679774997896
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 354,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 358,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 367,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 368,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 370,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.22360679774997896
+      }
+    ]
+  },
+  {
+    "program": "gnuchess",
+    "src": 653,
+    "sink": 357,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 357,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.5817744738827396
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 357,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.5817744738827396
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 357,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.18837162994395396
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 357,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.09534625892455924
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 357,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.09534625892455924
+      }
+    ]
+  },
+  {
+    "program": "gnuchess",
+    "src": 653,
+    "sink": 363,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 360,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 363,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 6,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.5552252320230577
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 360,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 363,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 6,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.5552252320230577
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 360,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 363,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 6,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.17195898485719865
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 360,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 363,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 6,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.08703882797784891
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 653,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 655,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 552,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 566,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 580,
+            "col": 18,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 123 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 348,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 360,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "src/adapter/pgn.cpp",
+            "line": 363,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 6,
+          "Prune - true": 1,
+          "Prune ! true": 5,
+          "Input getc": 1
+        },
+        "score": 0.08703882797784891
+      }
+    ]
+  },
+  {
+    "program": "gnuchess",
+    "src": 226,
+    "sink": 200,
+    "weighted_traces": [
+      {
+        "signature": "urjtag-0.8-5",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 200,
+            "col": 4,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-4",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 200,
+            "col": 4,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-1",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 200,
+            "col": 4,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-3",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 200,
+            "col": 4,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-6",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 200,
+            "col": 4,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      }
+    ]
+  },
+  {
+    "program": "gnuchess",
+    "src": 226,
+    "sink": 201,
+    "weighted_traces": [
+      {
+        "signature": "urjtag-0.8-5",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 201,
+            "col": 25,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-4",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 201,
+            "col": 25,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-1",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 201,
+            "col": 25,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-3",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 201,
+            "col": 25,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      },
+      {
+        "signature": "urjtag-0.8-6",
+        "trace": [
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 226,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 202,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 203,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 204,
+            "col": 12,
+            "feature": [ "Call", "adapter::epd_get_op" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 353,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/adapter/epd.cpp",
+            "line": 219,
+            "col": 12,
+            "feature": [ "Call", "adapter::board_from_fen" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 126,
+            "col": 24,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 114,
+            "col": 40,
+            "feature": [ "Call", "adapter::fen_fatal" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 64,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 65,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 66,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 67,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/adapter/fen.cpp",
+            "line": 68,
+            "col": 4,
+            "feature": [ "Call", "adapter::my_fatal" ]
+          },
+          {
+            "file": "src/adapter/util.cpp",
+            "line": 201,
+            "col": 25,
+            "feature": [ "FormatString", "vfprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strstr": 3,
+          "LibraryCall strcat": 4,
+          "Input fgets": 1
+        },
+        "score": 0.42700841014689905
+      }
+    ]
+  }
+]

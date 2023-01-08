@@ -1,0 +1,513 @@
+[
+  {
+    "program": "ncftp",
+    "src": 515,
+    "sink": 522,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 515,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 522,
+            "col": 8,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 515,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 522,
+            "col": 8,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 515,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 522,
+            "col": 8,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 515,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 522,
+            "col": 8,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 515,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sh_util/gpshare.c",
+            "line": 522,
+            "col": 8,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "ncftp",
+    "src": 856,
+    "sink": 987,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "ncftp/cmds.c",
+            "line": 856,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 857,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 973,
+            "col": 9,
+            "feature": [ "Call", "Strncat" ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 987,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "ncftp/cmds.c",
+            "line": 856,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 857,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 973,
+            "col": 9,
+            "feature": [ "Call", "Strncat" ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 987,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "ncftp/cmds.c",
+            "line": 856,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 857,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 973,
+            "col": 9,
+            "feature": [ "Call", "Strncat" ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 987,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "ncftp/cmds.c",
+            "line": 856,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 857,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 973,
+            "col": 9,
+            "feature": [ "Call", "Strncat" ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 987,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "ncftp/cmds.c",
+            "line": 856,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 857,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 973,
+            "col": 9,
+            "feature": [ "Call", "Strncat" ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Strn/Strncat.c",
+            "line": 31,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ncftp/cmds.c",
+            "line": 987,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      }
+    ]
+  },
+  {
+    "program": "ncftp",
+    "src": 19,
+    "sink": 327,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "libncftp/u_slash.c",
+            "line": 19,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ncftp/bookmark.c",
+            "line": 327,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "libncftp/u_slash.c",
+            "line": 19,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ncftp/bookmark.c",
+            "line": 327,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "libncftp/u_slash.c",
+            "line": 19,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ncftp/bookmark.c",
+            "line": 327,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "libncftp/u_slash.c",
+            "line": 19,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ncftp/bookmark.c",
+            "line": 327,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "libncftp/u_slash.c",
+            "line": 19,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ncftp/bookmark.c",
+            "line": 327,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

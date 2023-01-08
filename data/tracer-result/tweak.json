@@ -1,0 +1,501 @@
+[
+  {
+    "program": "tweak",
+    "src": 420,
+    "sink": 422,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int64_t_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.5999999999999999
+      }
+    ]
+  },
+  {
+    "program": "tweak",
+    "src": 420,
+    "sink": 422,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.5111656508223583
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "buffer.c",
+            "line": 420,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 414,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 415,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "buffer.c",
+            "line": 422,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "Input fread": 1
+        },
+        "score": 0.31622776601683794
+      }
+    ]
+  }
+]

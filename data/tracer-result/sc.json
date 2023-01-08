@@ -1,0 +1,6496 @@
+[
+  {
+    "program": "sc",
+    "src": 223,
+    "sink": 2565,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.8625383733289683
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.8229452022887971
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.7500000000000001
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7205766921228922
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7016464154456235
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 1392,
+    "sink": 1407,
+    "weighted_traces": [
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1392,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1393,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1394,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1406,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8451542547285165
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1392,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1393,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1394,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1406,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7715167498104595
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1392,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1393,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1394,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1406,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1392,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1393,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1394,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1406,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1392,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1393,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1394,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1406,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6761234037828131
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 3501,
+    "sink": 2565,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8451542547285165
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4364357804719848
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 1386,
+    "sink": 1407,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1407,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 1386,
+    "sink": 1409,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1409,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1409,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1409,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1409,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "vi.c",
+            "line": 1386,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vi.c",
+            "line": 1409,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 52,
+    "sink": 2565,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.7187819777741402
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 1289,
+    "sink": 2565,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.7187819777741402
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.6139406135149205
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 327,
+    "sink": 2565,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6210590034081187
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6210590034081187
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6210590034081187
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6210590034081187
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2543,
+            "col": 14,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2565,
+            "col": 9,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.6210590034081187
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 52,
+    "sink": 3564,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.2626128657194451
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.13130643285972254
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "abbrev.c",
+            "line": 52,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "abbrev.c",
+            "line": 55,
+            "col": 10,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.11791665765914455
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 1289,
+    "sink": 3564,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.2626128657194451
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.13130643285972254
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 1289,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1291,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1292,
+            "col": 12,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3506,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "Prune == true": 3,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.11791665765914455
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 223,
+    "sink": 3564,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcmp": 1,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.3530090432487313
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcmp": 1,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input main": 1
+        },
+        "score": 0.3530090432487313
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcmp": 2,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.23533936216582083
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcmp": 2,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.23533936216582083
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 365,
+            "col": 7,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 2,
+          "LibraryCall strcmp": 2,
+          "LibraryCall strcat": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.1414213562373095
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 3501,
+    "sink": 3564,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 4,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.32444284226152503
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 4,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.16222142113076252
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 4,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 4,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 3501,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3507,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3525,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3526,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 4,
+          "LibraryCall strcat": 1,
+          "Input getenv": 1
+        },
+        "score": 0.029135827337403247
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 223,
+    "sink": 2871,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 356,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1454,
+            "col": 33,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1455,
+            "col": 11,
+            "feature": [ "Call", "writefile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 2,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.24999999999999994
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 356,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1454,
+            "col": 33,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1455,
+            "col": 11,
+            "feature": [ "Call", "writefile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 2,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.24999999999999994
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 356,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1454,
+            "col": 33,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1455,
+            "col": 11,
+            "feature": [ "Call", "writefile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 2,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.06933752452815364
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 356,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1454,
+            "col": 33,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1455,
+            "col": 11,
+            "feature": [ "Call", "writefile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 2,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.06933752452815364
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "sc.c",
+            "line": 223,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 351,
+            "col": 27,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 353,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "sc.c",
+            "line": 354,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 356,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1454,
+            "col": 33,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sc.c",
+            "line": 1455,
+            "col": 11,
+            "feature": [ "Call", "writefile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 2,
+          "Prune != true": 1,
+          "Input main": 1
+        },
+        "score": 0.04490132550669372
+      }
+    ]
+  },
+  {
+    "program": "sc",
+    "src": 327,
+    "sink": 3564,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.20628424925175867
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.20628424925175867
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.20628424925175867
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.1716388703071869
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lex.c",
+            "line": 327,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 328,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 329,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "lex.c",
+            "line": 330,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2866,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2870,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2871,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2873,
+            "col": 6,
+            "feature": [ "Call", "readfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2970,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 42 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2972,
+            "col": 15,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2987,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2991,
+            "col": 6,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3031,
+            "col": 11,
+            "feature": [ "Call", "openfile" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2524,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 124 ] ] ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2529,
+            "col": 11,
+            "feature": [ "Call", "findhome" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3496,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 2531,
+            "col": 22,
+            "feature": [ "Call", "backup_file" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3558,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3563,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 3564,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strcpy": 3,
+          "LibraryCall strcat": 2,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.1716388703071869
+      }
+    ]
+  }
+]

@@ -1,0 +1,396 @@
+[
+  {
+    "program": "at",
+    "src": 403,
+    "sink": 586,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 403,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 408,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "atd.c",
+            "line": 447,
+            "col": 5,
+            "feature": [ "Call", "write_string" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 180,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 586,
+            "col": 6,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7999999999999998
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 403,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 408,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "atd.c",
+            "line": 447,
+            "col": 5,
+            "feature": [ "Call", "write_string" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 180,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 586,
+            "col": 6,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7999999999999998
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 403,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 408,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "atd.c",
+            "line": 447,
+            "col": 5,
+            "feature": [ "Call", "write_string" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 180,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 586,
+            "col": 6,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7999999999999998
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 403,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 408,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "atd.c",
+            "line": 447,
+            "col": 5,
+            "feature": [ "Call", "write_string" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 180,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 586,
+            "col": 6,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7999999999999998
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 403,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 408,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "atd.c",
+            "line": 447,
+            "col": 5,
+            "feature": [ "Call", "write_string" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 180,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 586,
+            "col": 6,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7999999999999998
+      }
+    ]
+  },
+  {
+    "program": "at",
+    "src": 651,
+    "sink": 313,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 651,
+            "col": 22,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 744,
+            "col": 3,
+            "feature": [ "Call", "run_file" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 313,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 651,
+            "col": 22,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 744,
+            "col": 3,
+            "feature": [ "Call", "run_file" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 313,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 651,
+            "col": 22,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 744,
+            "col": 3,
+            "feature": [ "Call", "run_file" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 313,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 651,
+            "col": 22,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 744,
+            "col": 3,
+            "feature": [ "Call", "run_file" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 313,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "atd.c",
+            "line": 651,
+            "col": 22,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 744,
+            "col": 3,
+            "feature": [ "Call", "run_file" ]
+          },
+          {
+            "file": "atd.c",
+            "line": 313,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

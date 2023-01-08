@@ -1,0 +1,873 @@
+[
+  {
+    "program": "enscript",
+    "src": 2009,
+    "sink": 1773,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 128 ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1773,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.7769677791040542
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 128 ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1773,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.7769677791040542
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 128 ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1773,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.26481357066618805
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 128 ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1773,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.14744195615489714
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1769,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 128 ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1773,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.14744195615489714
+      }
+    ]
+  },
+  {
+    "program": "enscript",
+    "src": 2009,
+    "sink": 1845,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1835,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1845,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.727532837268552
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1835,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1845,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.727532837268552
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1835,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1845,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.24942329796316196
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1835,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1845,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.1543033499620919
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/util.c",
+            "line": 2009,
+            "col": 25,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/util.c",
+            "line": 2016,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1625,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1724,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1748,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1835,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/psgen.c",
+            "line": 1845,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "Input fread": 1
+        },
+        "score": 0.1543033499620919
+      }
+    ]
+  },
+  {
+    "program": "enscript",
+    "src": 746,
+    "sink": 753,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "afmlib/afm.c",
+            "line": 746,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "afmlib/afm.c",
+            "line": 753,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "afmlib/afm.c",
+            "line": 746,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "afmlib/afm.c",
+            "line": 753,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "afmlib/afm.c",
+            "line": 746,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "afmlib/afm.c",
+            "line": 753,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "afmlib/afm.c",
+            "line": 746,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "afmlib/afm.c",
+            "line": 753,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "afmlib/afm.c",
+            "line": 746,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "afmlib/afm.c",
+            "line": 753,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

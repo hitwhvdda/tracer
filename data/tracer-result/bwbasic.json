@@ -1,0 +1,1820 @@
+[
+  {
+    "program": "bwbasic",
+    "src": 36,
+    "sink": 474,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8485281374238569
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8485281374238569
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8485281374238569
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8485281374238569
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8485281374238569
+      }
+    ]
+  },
+  {
+    "program": "bwbasic",
+    "src": 283,
+    "sink": 474,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 283,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 285,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 286,
+            "col": 11,
+            "feature": [ "Call", "instr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 32,
+            "feature": [ "Call", "midstr1" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 497,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 429,
+            "col": 37,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 3,
+          "LibraryCall sprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6928203230275508
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 283,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 285,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 286,
+            "col": 11,
+            "feature": [ "Call", "instr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 289,
+            "col": 19,
+            "feature": [ "Call", "midstr2" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 32,
+            "feature": [ "Call", "midstr1" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 497,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 429,
+            "col": 37,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 3,
+          "LibraryCall sprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6928203230275508
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 283,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 285,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 286,
+            "col": 11,
+            "feature": [ "Call", "instr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 32,
+            "feature": [ "Call", "midstr1" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 497,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 429,
+            "col": 37,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 3,
+          "LibraryCall sprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5962847939999439
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 283,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 285,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 286,
+            "col": 11,
+            "feature": [ "Call", "instr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 289,
+            "col": 19,
+            "feature": [ "Call", "midstr2" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 32,
+            "feature": [ "Call", "midstr1" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 497,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 429,
+            "col": 37,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 3,
+          "LibraryCall sprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5962847939999439
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 283,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 285,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 286,
+            "col": 11,
+            "feature": [ "Call", "instr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 32,
+            "feature": [ "Call", "midstr1" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 497,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 297,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 429,
+            "col": 37,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcat": 3,
+          "LibraryCall sprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5962847939999439
+      }
+    ]
+  },
+  {
+    "program": "bwbasic",
+    "src": 19,
+    "sink": 474,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.6324555320336759
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.5303300858899106
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 474,
+            "col": 4,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      }
+    ]
+  },
+  {
+    "program": "bwbasic",
+    "src": 258,
+    "sink": 483,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "bwx_tty.c",
+            "line": 258,
+            "col": 4,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 480,
+            "col": 14,
+            "feature": [ "Call", "is_numconst" ]
+          },
+          {
+            "file": "bwb_int.c",
+            "line": 690,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 482,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "bwx_tty.c",
+            "line": 258,
+            "col": 4,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "is_ln" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 1475,
+            "col": 4,
+            "feature": [ "Call", "adv_ws" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 480,
+            "col": 14,
+            "feature": [ "Call", "is_numconst" ]
+          },
+          {
+            "file": "bwb_int.c",
+            "line": 690,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 482,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "bwx_tty.c",
+            "line": 258,
+            "col": 4,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "is_ln" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 480,
+            "col": 14,
+            "feature": [ "Call", "is_numconst" ]
+          },
+          {
+            "file": "bwb_int.c",
+            "line": 690,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 482,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "bwx_tty.c",
+            "line": 258,
+            "col": 4,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 467,
+            "col": 4,
+            "feature": [ "Call", "bwb_stripcr" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 480,
+            "col": 14,
+            "feature": [ "Call", "is_numconst" ]
+          },
+          {
+            "file": "bwb_int.c",
+            "line": 690,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 482,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "bwx_tty.c",
+            "line": 258,
+            "col": 4,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 467,
+            "col": 4,
+            "feature": [ "Call", "bwb_stripcr" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "is_ln" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 1475,
+            "col": 4,
+            "feature": [ "Call", "adv_ws" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 480,
+            "col": 14,
+            "feature": [ "Call", "is_numconst" ]
+          },
+          {
+            "file": "bwb_int.c",
+            "line": 690,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 482,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "bwbasic.c",
+            "line": 483,
+            "col": 8,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.43852900965351466
+      }
+    ]
+  },
+  {
+    "program": "bwbasic",
+    "src": 36,
+    "sink": 473,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.2357022603955158
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.2357022603955158
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 36,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 37,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 38,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 1
+        },
+        "score": 0.12700012700019048
+      }
+    ]
+  },
+  {
+    "program": "bwbasic",
+    "src": 19,
+    "sink": 473,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "renum.c",
+            "line": 19,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 48,
+            "col": 4,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "renum.c",
+            "line": 473,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 2,
+          "Input main": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  { "program": "bwbasic", "src": -1, "sink": -1, "weighted_traces": [] }
+]

@@ -1,0 +1,1736 @@
+[
+  {
+    "program": "libpam-modules-bin",
+    "src": 304,
+    "sink": 441,
+    "weighted_traces": [
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 355,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 441,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 8,
+          "Input fgets": 1
+        },
+        "score": 0.6711560552140243
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 351,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 441,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 8,
+          "Input fgets": 1
+        },
+        "score": 0.6711560552140243
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 355,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 441,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 8,
+          "Input fgets": 1
+        },
+        "score": 0.6711560552140243
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 351,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 441,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 8,
+          "Input fgets": 1
+        },
+        "score": 0.6711560552140243
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 355,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 441,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 8,
+          "Input fgets": 1
+        },
+        "score": 0.6711560552140243
+      }
+    ]
+  },
+  {
+    "program": "libpam-modules-bin",
+    "src": 304,
+    "sink": 446,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 355,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 446,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 7,
+          "Input fgets": 1
+        },
+        "score": 0.12766073029704134
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 351,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 446,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 7,
+          "Input fgets": 1
+        },
+        "score": 0.12766073029704134
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 355,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 446,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 7,
+          "Input fgets": 1
+        },
+        "score": 0.12766073029704134
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 351,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 446,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 7,
+          "Input fgets": 1
+        },
+        "score": 0.12766073029704134
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 304,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 318,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 329,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 355,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 167,
+            "col": 21,
+            "feature": [ "Call", "_parse_line" ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 404,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 424,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 451,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 406,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 409,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 426,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 432,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 440,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "modules/pam_env/pam_env.c",
+            "line": 446,
+            "col": 13,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 7,
+          "Input fgets": 1
+        },
+        "score": 0.09920404937148676
+      }
+    ]
+  }
+]

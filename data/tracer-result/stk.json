@@ -1,0 +1,3128 @@
+[
+  {
+    "program": "stk",
+    "src": 223,
+    "sink": 302,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 223,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.8725028717782317
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 223,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 28,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.8725028717782317
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 223,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7715167498104595
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 223,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 28,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7715167498104595
+      },
+      {
+        "signature": "sam2p-0.49.4-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 223,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7398300378117159
+      }
+    ]
+  },
+  {
+    "program": "stk",
+    "src": 283,
+    "sink": 302,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 283,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.8725028717782317
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 283,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 28,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.8725028717782317
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 283,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7715167498104595
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 283,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 28,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7715167498104595
+      },
+      {
+        "signature": "sam2p-0.49.4-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 283,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7398300378117159
+      }
+    ]
+  },
+  {
+    "program": "stk",
+    "src": 240,
+    "sink": 302,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 240,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 245,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 247,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 249,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 251,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 5,
+          "Prune ! true": 6,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7606388292556648
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 240,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 245,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 247,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 249,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 251,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 28,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 5,
+          "Prune ! true": 6,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7606388292556648
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 240,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 245,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 247,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 249,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 251,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 5,
+          "Prune ! true": 6,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 240,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 245,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 247,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 249,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 251,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 84,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 28,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 5,
+          "Prune ! true": 6,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 240,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 245,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 247,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 249,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 251,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 32 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 287,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "/",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 288,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 124,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 53,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 19,
+            "feature": [ "Call", "stk::FileRead::fileSize" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 77,
+            "col": 42,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 296,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune == true": 5,
+          "Prune ! true": 6,
+          "BinOp /": 2,
+          "BinOp *": 3,
+          "Input fread": 1
+        },
+        "score": 0.7115124735378854
+      }
+    ]
+  },
+  {
+    "program": "stk",
+    "src": 526,
+    "sink": 302,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 526,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 527,
+            "col": 20,
+            "feature": [ "Call", "stk::Stk::swap32" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 679,
+            "col": 12,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 680,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 41,
+            "feature": [ "Call", "stk::FileRead::channels" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 80,
+            "col": 41,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 297,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7556096518348253
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 526,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 527,
+            "col": 20,
+            "feature": [ "Call", "stk::Stk::swap32" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 142,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 679,
+            "col": 12,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 680,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 41,
+            "feature": [ "Call", "stk::FileRead::channels" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 80,
+            "col": 41,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileLoop.cpp",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 297,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7556096518348253
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 526,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 527,
+            "col": 20,
+            "feature": [ "Call", "stk::Stk::swap32" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 679,
+            "col": 12,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 680,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 46,
+            "feature": [ "Call", "stk::FileRead::channels" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 80,
+            "col": 41,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 297,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7556096518348253
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 526,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 527,
+            "col": 20,
+            "feature": [ "Call", "stk::Stk::swap32" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 142,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 679,
+            "col": 12,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 680,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 46,
+            "feature": [ "Call", "stk::FileRead::channels" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 80,
+            "col": 41,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/FileWvIn.cpp",
+            "line": 91,
+            "col": 5,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 297,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7556096518348253
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "src/FileRead.cpp",
+            "line": 526,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 527,
+            "col": 20,
+            "feature": [ "Call", "stk::Stk::swap32" ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 679,
+            "col": 12,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/FileRead.cpp",
+            "line": 680,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/Granulate.cpp",
+            "line": 90,
+            "col": 34,
+            "feature": [ "Call", "stk::FileRead::channels" ]
+          },
+          {
+            "file": "include/FileRead.h",
+            "line": 80,
+            "col": 41,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Granulate.cpp",
+            "line": 90,
+            "col": 3,
+            "feature": [ "Call", "stk::StkFrames::resize" ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 297,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 299,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 300,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/Stk.cpp",
+            "line": 302,
+            "col": 26,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "BinOp", "*", [ "Var" ], [ "Sizeof" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7556096518348253
+      }
+    ]
+  },
+  { "program": "stk", "src": -1, "sink": -1, "weighted_traces": [] }
+]

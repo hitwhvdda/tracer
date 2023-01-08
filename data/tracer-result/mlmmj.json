@@ -1,0 +1,2453 @@
+[
+  {
+    "program": "mlmmj",
+    "src": 708,
+    "sink": 806,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 709,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 710,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 796,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 797,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 756,
+            "col": 3,
+            "feature": [ "Call", "chomp" ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 37,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 806,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input readdir": 2
+        },
+        "score": 0.7822661302315618
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 710,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 796,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 797,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 756,
+            "col": 3,
+            "feature": [ "Call", "chomp" ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 37,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 806,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input readdir": 2
+        },
+        "score": 0.7629479354705706
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 709,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 710,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 796,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 797,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 756,
+            "col": 3,
+            "feature": [ "Call", "chomp" ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 37,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 806,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strcmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input readdir": 2
+        },
+        "score": 0.7013343843696722
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 710,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 796,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 797,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 756,
+            "col": 3,
+            "feature": [ "Call", "chomp" ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 37,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 806,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input readdir": 2
+        },
+        "score": 0.6537204504606134
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 710,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 796,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 708,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 774,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 797,
+            "col": 4,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 756,
+            "col": 3,
+            "feature": [ "Call", "chomp" ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/chomp.c",
+            "line": 34,
+            "col": 37,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 806,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input readdir": 2
+        },
+        "score": 0.6445033866354896
+      }
+    ]
+  },
+  {
+    "program": "mlmmj",
+    "src": 618,
+    "sink": 658,
+    "weighted_traces": [
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 618,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 619,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 620,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 657,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 658,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.7715167498104595
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 618,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 619,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 620,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 657,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 658,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 618,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 619,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 620,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 657,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 658,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.4629100498862757
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 618,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 619,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 620,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 657,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 658,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 618,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 619,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 620,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 657,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-maintd.c",
+            "line": 658,
+            "col": 4,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.26726124191242434
+      }
+    ]
+  },
+  {
+    "program": "mlmmj",
+    "src": 521,
+    "sink": 242,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 521,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 540,
+            "col": 2,
+            "feature": [ "Call", "log_set_name" ]
+          },
+          {
+            "file": "src/log_error.c",
+            "line": 44,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 542,
+            "col": 11,
+            "feature": [ "Call", "mydirname" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 201,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 659,
+            "col": 12,
+            "feature": [ "Call", "is_subbed" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 163,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 179,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 546,
+            "col": 16,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 639,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 692,
+            "col": 3,
+            "feature": [ "Call", "generate_unsubconfirm" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 174,
+            "col": 15,
+            "feature": [ "Call", "random_plus_addr" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 59,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 65,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 67,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 231,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 232,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 233,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 234,
+            "col": 18,
+            "feature": [ "Call", "prepstdreply" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 237,
+            "col": 2,
+            "feature": [ "Call", "close_text" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 1581,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 239,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 240,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 242,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 2,
+          "LibraryCall snprintf": 2,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input main": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5605518546712104
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 521,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 540,
+            "col": 2,
+            "feature": [ "Call", "log_set_name" ]
+          },
+          {
+            "file": "src/log_error.c",
+            "line": 44,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 542,
+            "col": 11,
+            "feature": [ "Call", "mydirname" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 201,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 544,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 659,
+            "col": 12,
+            "feature": [ "Call", "is_subbed" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 163,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 179,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 546,
+            "col": 16,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 639,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 692,
+            "col": 3,
+            "feature": [ "Call", "generate_unsubconfirm" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 174,
+            "col": 15,
+            "feature": [ "Call", "random_plus_addr" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 59,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 65,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 67,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 231,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 232,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 233,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 234,
+            "col": 18,
+            "feature": [ "Call", "prepstdreply" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 237,
+            "col": 2,
+            "feature": [ "Call", "close_text" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 1581,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 239,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 240,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 242,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 2,
+          "LibraryCall snprintf": 2,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input main": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5605518546712104
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 521,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 540,
+            "col": 2,
+            "feature": [ "Call", "log_set_name" ]
+          },
+          {
+            "file": "src/log_error.c",
+            "line": 44,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 542,
+            "col": 11,
+            "feature": [ "Call", "mydirname" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 201,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 544,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 659,
+            "col": 12,
+            "feature": [ "Call", "is_subbed" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 163,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 171,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 179,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 546,
+            "col": 16,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 639,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 692,
+            "col": 3,
+            "feature": [ "Call", "generate_unsubconfirm" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 174,
+            "col": 15,
+            "feature": [ "Call", "random_plus_addr" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 59,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 65,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 67,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 231,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 232,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 233,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 234,
+            "col": 18,
+            "feature": [ "Call", "prepstdreply" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 237,
+            "col": 2,
+            "feature": [ "Call", "close_text" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 1581,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 239,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 240,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 242,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 2,
+          "LibraryCall snprintf": 2,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input main": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5605518546712104
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 521,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 540,
+            "col": 2,
+            "feature": [ "Call", "log_set_name" ]
+          },
+          {
+            "file": "src/log_error.c",
+            "line": 44,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 542,
+            "col": 11,
+            "feature": [ "Call", "mydirname" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 201,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 659,
+            "col": 12,
+            "feature": [ "Call", "is_subbed" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 163,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 179,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 546,
+            "col": 16,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 639,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 692,
+            "col": 3,
+            "feature": [ "Call", "generate_unsubconfirm" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 174,
+            "col": 15,
+            "feature": [ "Call", "random_plus_addr" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 59,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 65,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 67,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 231,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 232,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 233,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 234,
+            "col": 18,
+            "feature": [ "Call", "prepstdreply" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 237,
+            "col": 2,
+            "feature": [ "Call", "close_text" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 1581,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 239,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 240,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 242,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 2,
+          "LibraryCall snprintf": 2,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input main": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5605518546712104
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 521,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 540,
+            "col": 2,
+            "feature": [ "Call", "log_set_name" ]
+          },
+          {
+            "file": "src/log_error.c",
+            "line": 44,
+            "col": 13,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 542,
+            "col": 11,
+            "feature": [ "Call", "mydirname" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 201,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 11,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 195,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 544,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 659,
+            "col": 12,
+            "feature": [ "Call", "is_subbed" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 163,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 179,
+            "col": 11,
+            "feature": [ "Call", "is_subbed_in" ]
+          },
+          {
+            "file": "src/subscriberfuncs.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Call", "find_subscriber" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 546,
+            "col": 16,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 16,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 79,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 80,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/memory.c",
+            "line": 86,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 633,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 639,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 692,
+            "col": 3,
+            "feature": [ "Call", "generate_unsubconfirm" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 174,
+            "col": 15,
+            "feature": [ "Call", "random_plus_addr" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 59,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 65,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/strgen.c",
+            "line": 67,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 231,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 232,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 233,
+            "col": 2,
+            "feature": [ "Call", "register_unformatted" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 580,
+            "col": 17,
+            "feature": [ "Call", "__mystrdup" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 234,
+            "col": 18,
+            "feature": [ "Call", "prepstdreply" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 237,
+            "col": 2,
+            "feature": [ "Call", "close_text" ]
+          },
+          {
+            "file": "src/prepstdreply.c",
+            "line": 1581,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 239,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 240,
+            "col": 2,
+            "feature": [ "Call", "__myfree" ]
+          },
+          {
+            "file": "src/mlmmj-unsub.c",
+            "line": 242,
+            "col": 2,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 2,
+          "LibraryCall snprintf": 2,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input main": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5605518546712104
+      }
+    ]
+  },
+  { "program": "mlmmj", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "mlmmj", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "mlmmj", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "mlmmj", "src": -1, "sink": -1, "weighted_traces": [] }
+]

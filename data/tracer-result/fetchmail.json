@@ -1,0 +1,1024 @@
+[
+  {
+    "program": "fetchmail",
+    "src": 159,
+    "sink": 730,
+    "weighted_traces": [
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "fetchmail.c",
+            "line": 159,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "fetchmail.c",
+            "line": 730,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "fetchmail.c",
+            "line": 159,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "fetchmail.c",
+            "line": 730,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "fetchmail.c",
+            "line": 159,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "fetchmail.c",
+            "line": 730,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "fetchmail.c",
+            "line": 159,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "fetchmail.c",
+            "line": 730,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "fetchmail.c",
+            "line": 159,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "fetchmail.c",
+            "line": 730,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "fetchmail",
+    "src": 532,
+    "sink": 39,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 519,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 53,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 567,
+            "col": 10,
+            "feature": [ "Call", "end_of_header" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 609,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 658,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 789,
+            "col": 13,
+            "feature": [ "Call", "reply_hack" ]
+          },
+          {
+            "file": "rfc822.c",
+            "line": 83,
+            "col": 62,
+            "feature": [ "Call", "sdump" ]
+          },
+          {
+            "file": "sdump.c",
+            "line": 39,
+            "col": 12,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.4003203845127179
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 519,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 53,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 567,
+            "col": 10,
+            "feature": [ "Call", "end_of_header" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 609,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 658,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 789,
+            "col": 13,
+            "feature": [ "Call", "reply_hack" ]
+          },
+          {
+            "file": "rfc822.c",
+            "line": 83,
+            "col": 62,
+            "feature": [ "Call", "sdump" ]
+          },
+          {
+            "file": "sdump.c",
+            "line": 39,
+            "col": 12,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.4003203845127179
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 519,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 53,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 567,
+            "col": 10,
+            "feature": [ "Call", "end_of_header" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 609,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 658,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 789,
+            "col": 13,
+            "feature": [ "Call", "reply_hack" ]
+          },
+          {
+            "file": "rfc822.c",
+            "line": 83,
+            "col": 62,
+            "feature": [ "Call", "sdump" ]
+          },
+          {
+            "file": "sdump.c",
+            "line": 39,
+            "col": 12,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.14433756729740646
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 519,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 53,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 567,
+            "col": 10,
+            "feature": [ "Call", "end_of_header" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 609,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 658,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 789,
+            "col": 13,
+            "feature": [ "Call", "reply_hack" ]
+          },
+          {
+            "file": "rfc822.c",
+            "line": 83,
+            "col": 62,
+            "feature": [ "Call", "sdump" ]
+          },
+          {
+            "file": "sdump.c",
+            "line": 39,
+            "col": 12,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.14433756729740646
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 519,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 26,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 536,
+            "col": 53,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 567,
+            "col": 10,
+            "feature": [ "Call", "end_of_header" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 405,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 609,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 658,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 789,
+            "col": 13,
+            "feature": [ "Call", "reply_hack" ]
+          },
+          {
+            "file": "rfc822.c",
+            "line": 83,
+            "col": 62,
+            "feature": [ "Call", "sdump" ]
+          },
+          {
+            "file": "sdump.c",
+            "line": 39,
+            "col": 12,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.12961896184130317
+      }
+    ]
+  },
+  {
+    "program": "fetchmail",
+    "src": 532,
+    "sink": 1258,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1608,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1609,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1611,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1257,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1258,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 2,
+          "Input recv": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1608,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1609,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1611,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1257,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1258,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 2,
+          "Input recv": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1608,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1609,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1611,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1257,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1258,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 2,
+          "Input recv": 1
+        },
+        "score": 0.17739371879672478
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1608,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1609,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1611,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1257,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1258,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 2,
+          "Input recv": 1
+        },
+        "score": 0.17739371879672478
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 532,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 535,
+            "col": 29,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1608,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1609,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "transact.c",
+            "line": 1611,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1257,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pop3.c",
+            "line": 1258,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 2,
+          "Input recv": 1
+        },
+        "score": 0.03829197905337418
+      }
+    ]
+  }
+]

@@ -1,0 +1,1033 @@
+[
+  {
+    "program": "original-awk",
+    "src": 199,
+    "sink": 203,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 200,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 555,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 556,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 558,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 108,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 109,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 116,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 151,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 161,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 187,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 190,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 220,
+            "col": 5,
+            "feature": [ "Call", "tokname" ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 258 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 350 ] ] ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 5,
+          "Prune < true": 1,
+          "Prune - true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 6,
+          "Input getc": 1
+        },
+        "score": 0.6240377207533828
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 200,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 555,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 556,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 558,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 108,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 109,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 116,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 151,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 161,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 187,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 190,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 220,
+            "col": 5,
+            "feature": [ "Call", "tokname" ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 258 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 350 ] ] ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 5,
+          "Prune < true": 1,
+          "Prune - true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 6,
+          "Input getc": 1
+        },
+        "score": 0.6240377207533828
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 200,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 555,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 556,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 558,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 108,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 109,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 113,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 116,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 151,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 161,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 187,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 190,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 220,
+            "col": 5,
+            "feature": [ "Call", "tokname" ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 258 ] ] ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune < true": 1,
+          "Prune - true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 6,
+          "Input getc": 1
+        },
+        "score": 0.5995560487738421
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 200,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 555,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 556,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 558,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 108,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 109,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 113,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 113,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 116,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 151,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 161,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 187,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 190,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 220,
+            "col": 5,
+            "feature": [ "Call", "tokname" ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 258 ] ] ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 5,
+          "Prune < true": 1,
+          "Prune - true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 6,
+          "Input getc": 1
+        },
+        "score": 0.5995560487738421
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 12,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 199,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 200,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 555,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 556,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 558,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 562,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 108,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 109,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 116,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 151,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 161,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 187,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lex.c",
+            "line": 188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 190,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 95 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lex.c",
+            "line": 220,
+            "col": 5,
+            "feature": [ "Call", "tokname" ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 258 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 202,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 350 ] ] ]
+            ]
+          },
+          {
+            "file": "proctab.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 5,
+          "Prune < true": 1,
+          "Prune - true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 6,
+          "Input getc": 1
+        },
+        "score": 0.25444084453793114
+      }
+    ]
+  }
+]

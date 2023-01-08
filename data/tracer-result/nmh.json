@@ -1,0 +1,1933 @@
+[
+  {
+    "program": "nmh",
+    "src": 64,
+    "sink": 36,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "sbr/folder_read.c",
+            "line": 64,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 16,
+            "feature": [ "Call", "m_atoi" ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 24,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 27,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 81,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 83,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 84,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 119,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 100 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 129,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 50,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 34,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 39,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune < true": 4,
+          "Prune ! true": 6,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "Input readdir": 1
+        },
+        "score": 0.6885439906093288
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "sbr/folder_read.c",
+            "line": 64,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 16,
+            "feature": [ "Call", "m_atoi" ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 24,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 27,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 81,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 83,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 84,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 119,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 100 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 129,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 50,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 34,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 39,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune < true": 4,
+          "Prune ! true": 6,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "Input readdir": 1
+        },
+        "score": 0.6629644034797751
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "sbr/folder_read.c",
+            "line": 64,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 16,
+            "feature": [ "Call", "m_atoi" ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 24,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 27,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 81,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 83,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 84,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 119,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 100 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 129,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 50,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 34,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 39,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune < true": 4,
+          "Prune ! true": 6,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "Input readdir": 1
+        },
+        "score": 0.6465935219596193
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "sbr/folder_read.c",
+            "line": 64,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 16,
+            "feature": [ "Call", "m_atoi" ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 24,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 27,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 81,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 83,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 84,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 119,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 100 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 129,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 50,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 34,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 39,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune < true": 4,
+          "Prune ! true": 6,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "Input readdir": 1
+        },
+        "score": 0.6240864794142966
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "sbr/folder_read.c",
+            "line": 64,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 16,
+            "feature": [ "Call", "m_atoi" ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 24,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/m_atoi.c",
+            "line": 27,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 65,
+            "col": 40,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 81,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 83,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 84,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 119,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 100 ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_read.c",
+            "line": 129,
+            "col": 9,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 50,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 54,
+            "col": 13,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 34,
+            "col": 27,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 39,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune < true": 4,
+          "Prune ! true": 6,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "Input readdir": 1
+        },
+        "score": 0.6013847793242637
+      }
+    ]
+  },
+  {
+    "program": "nmh",
+    "src": 57,
+    "sink": 36,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "uip/whom.c",
+            "line": 57,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 69,
+            "col": 17,
+            "feature": [ "Call", "getarguments" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 167,
+            "col": 20,
+            "feature": [ "Call", "m_draft" ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 65,
+            "col": 10,
+            "feature": [ "Call", "m_convert" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 69,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 24,
+            "feature": [ "Call", "m_conv" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 275,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 277,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 278,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 204,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 41,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 22,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.6646940512883968
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "uip/whom.c",
+            "line": 57,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 67,
+            "col": 9,
+            "feature": [ "Call", "nmh_init" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 429,
+            "col": 17,
+            "feature": [ "Call", "r1bindex" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 69,
+            "col": 17,
+            "feature": [ "Call", "getarguments" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 167,
+            "col": 20,
+            "feature": [ "Call", "m_draft" ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 65,
+            "col": 10,
+            "feature": [ "Call", "m_convert" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 69,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 24,
+            "feature": [ "Call", "m_conv" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 275,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 277,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 278,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 204,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 41,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 22,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.6646940512883968
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "uip/whom.c",
+            "line": 57,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 67,
+            "col": 9,
+            "feature": [ "Call", "nmh_init" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 69,
+            "col": 17,
+            "feature": [ "Call", "getarguments" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 167,
+            "col": 20,
+            "feature": [ "Call", "m_draft" ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 65,
+            "col": 10,
+            "feature": [ "Call", "m_convert" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 69,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 24,
+            "feature": [ "Call", "m_conv" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 275,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 277,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 278,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 204,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 41,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 22,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.6646940512883968
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "uip/whom.c",
+            "line": 57,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 69,
+            "col": 17,
+            "feature": [ "Call", "getarguments" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 167,
+            "col": 20,
+            "feature": [ "Call", "m_draft" ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 65,
+            "col": 10,
+            "feature": [ "Call", "m_convert" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 69,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 24,
+            "feature": [ "Call", "m_conv" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 275,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 277,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 278,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 204,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 41,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 22,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.6030226891555273
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "uip/whom.c",
+            "line": 57,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 67,
+            "col": 9,
+            "feature": [ "Call", "nmh_init" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 429,
+            "col": 17,
+            "feature": [ "Call", "r1bindex" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 69,
+            "col": 17,
+            "feature": [ "Call", "getarguments" ]
+          },
+          {
+            "file": "uip/whom.c",
+            "line": 167,
+            "col": 20,
+            "feature": [ "Call", "m_draft" ]
+          },
+          {
+            "file": "sbr/m_draft.c",
+            "line": 65,
+            "col": 10,
+            "feature": [ "Call", "m_convert" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 69,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 24,
+            "feature": [ "Call", "m_conv" ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 275,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 277,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 278,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 72,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 204,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 41,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 206,
+            "col": 37,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "sbr/m_convert.c",
+            "line": 205,
+            "col": 22,
+            "feature": [ "Call", "folder_realloc" ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 29,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 43,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/folder_realloc.c",
+            "line": 44,
+            "col": 16,
+            "feature": [ "Call", "mh_xmalloc" ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 34,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "sbr/utils.c",
+            "line": 36,
+            "col": 9,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.6030226891555273
+      }
+    ]
+  },
+  { "program": "nmh", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "nmh", "src": -1, "sink": -1, "weighted_traces": [] }
+]

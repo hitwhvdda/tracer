@@ -1,0 +1,496 @@
+[
+  {
+    "program": "id3ren",
+    "src": 790,
+    "sink": 346,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 10,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 10,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4902903378454601
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 10,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4902903378454601
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 10,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 790,
+            "col": 10,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.19050019050028574
+      }
+    ]
+  },
+  {
+    "program": "id3ren",
+    "src": 791,
+    "sink": 346,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 24,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 12,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 24,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 12,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4902903378454601
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 24,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 12,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.4902903378454601
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 24,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 12,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 24,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 791,
+            "col": 12,
+            "feature": [ "Call", "read_config" ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 335,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/id3ren.c",
+            "line": 346,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.19050019050028574
+      }
+    ]
+  }
+]

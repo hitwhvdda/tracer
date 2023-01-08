@@ -1,0 +1,285 @@
+[
+  {
+    "program": "rsync",
+    "src": 346,
+    "sink": 850,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 346,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 350,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 365,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "socket.c",
+            "line": 390,
+            "col": 10,
+            "feature": [ "Call", "sock_exec" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 850,
+            "col": 8,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 346,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 350,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 365,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "socket.c",
+            "line": 379,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "socket.c",
+            "line": 390,
+            "col": 10,
+            "feature": [ "Call", "sock_exec" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 850,
+            "col": 8,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 346,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 350,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 365,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "socket.c",
+            "line": 390,
+            "col": 10,
+            "feature": [ "Call", "sock_exec" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 850,
+            "col": 8,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 346,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 350,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 365,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "socket.c",
+            "line": 379,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "socket.c",
+            "line": 390,
+            "col": 10,
+            "feature": [ "Call", "sock_exec" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 850,
+            "col": 8,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "socket.c",
+            "line": 346,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 350,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 365,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "socket.c",
+            "line": 390,
+            "col": 10,
+            "feature": [ "Call", "sock_exec" ]
+          },
+          {
+            "file": "socket.c",
+            "line": 850,
+            "col": 8,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7302967433402214
+      }
+    ]
+  },
+  { "program": "rsync", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "rsync", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "rsync", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "rsync", "src": -1, "sink": -1, "weighted_traces": [] }
+]

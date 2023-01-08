@@ -1,0 +1,2582 @@
+[
+  {
+    "program": "epstool",
+    "src": 140,
+    "sink": 188,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 66 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 77 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 18,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 186,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 14 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 188,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.8160942667466479
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 66 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 77 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 18,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 49,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 186,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 14 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 188,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.8160942667466479
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 66 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 77 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Call", "get_word" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 18,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 186,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 14 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 188,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.8160942667466479
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 66 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 77 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Call", "get_word" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 18,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 49,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 186,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 14 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 188,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.8160942667466479
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 66 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 176,
+            "col": 33,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 77 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 18,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 182,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 186,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 14 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 188,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 2,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.6229883252610695
+      }
+    ]
+  },
+  {
+    "program": "epstool",
+    "src": 140,
+    "sink": 396,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 316,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 396,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7476671794188403
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 305,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 396,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7476671794188403
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 49,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 316,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 396,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7476671794188403
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 49,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 305,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 396,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7476671794188403
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 234,
+            "col": 19,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 316,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 396,
+            "col": 29,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp *": 1,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7476671794188403
+      }
+    ]
+  },
+  {
+    "program": "epstool",
+    "src": 140,
+    "sink": 458,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 316,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 458,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.41650534511451415
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 305,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 458,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.41650534511451415
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 49,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 316,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 458,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.41650534511451415
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 49,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 305,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 458,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.41650534511451415
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/cfile.c",
+            "line": 140,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 197,
+            "col": 11,
+            "feature": [ "Call", "bmp_to_image" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 234,
+            "col": 19,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 20,
+            "feature": [ "Call", "get_dword" ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 50,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 8 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 51,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 16 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 52,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 24 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 53,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 238,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 285,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 316,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "<<",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 7 ] ] ]
+                ],
+                [ "Const", [ "Cint", 3 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 395,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 3 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 3 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/cbmp.c",
+            "line": 458,
+            "col": 6,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "UnOp ~": 1,
+          "BinOp <<": 4,
+          "BinOp +": 5,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.41650534511451415
+      }
+    ]
+  }
+]

@@ -1,0 +1,2208 @@
+[
+  {
+    "program": "libgnutls30",
+    "src": 85,
+    "sink": 49,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.6324555320336759
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.6324555320336759
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.6324555320336759
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int64_t_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.6324555320336759
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.6324555320336759
+      }
+    ]
+  },
+  {
+    "program": "libgnutls30",
+    "src": 85,
+    "sink": 52,
+    "weighted_traces": [
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 43,
+            "col": 21,
+            "feature": [ "Call", "mmalloca" ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Sizeof" ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 2 ] ],
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [
+                              "BinOp",
+                              "|",
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ],
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ],
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Var" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Var" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 52,
+            "col": 28,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 3,
+          "BinOp -": 8,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.562147274248521
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 43,
+            "col": 21,
+            "feature": [ "Call", "mmalloca" ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Sizeof" ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 2 ] ],
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [
+                              "BinOp",
+                              "|",
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ],
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ],
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Var" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Var" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 52,
+            "col": 28,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 3,
+          "BinOp -": 8,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.5265602957000086
+      },
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 43,
+            "col": 21,
+            "feature": [ "Call", "mmalloca" ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Sizeof" ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 2 ] ],
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [
+                              "BinOp",
+                              "|",
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ],
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ],
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Var" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Var" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 52,
+            "col": 28,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 3,
+          "BinOp -": 8,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.5199041581908301
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 43,
+            "col": 21,
+            "feature": [ "Call", "mmalloca" ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Sizeof" ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 2 ] ],
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [
+                              "BinOp",
+                              "|",
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ],
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ],
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Var" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Var" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 52,
+            "col": 28,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 3,
+          "BinOp -": 8,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.5199041581908301
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 43,
+            "col": 21,
+            "feature": [ "Call", "mmalloca" ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Sizeof" ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 2 ] ],
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [
+                              "BinOp",
+                              "|",
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ],
+                              [
+                                "BinOp",
+                                "-",
+                                [ "Var" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ],
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Var" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Var" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ]
+                  ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">=", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/gl/malloca.c",
+            "line": 52,
+            "col": 28,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp |": 3,
+          "BinOp -": 8,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.5176775776887457
+      }
+    ]
+  },
+  {
+    "program": "libgnutls30",
+    "src": 85,
+    "sink": 49,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.5388159060803248
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.36980013081681945
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.36980013081681945
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.16666666666666666
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/gl/read-file.c",
+            "line": 85,
+            "col": 24,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 553,
+            "col": 8,
+            "feature": [ "Call", "read_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 311,
+            "col": 9,
+            "feature": [ "Call", "parse_pem_cert_mem" ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 203,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 227,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 232,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 209,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/cert-cred-x509.c",
+            "line": 217,
+            "col": 9,
+            "feature": [ "Call", "gnutls_x509_crt_import" ]
+          },
+          {
+            "file": "lib/x509/x509.c",
+            "line": 595,
+            "col": 12,
+            "feature": [ "Call", "_gnutls_set_datum" ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 37,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/datum.c",
+            "line": 49,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 3,
+          "Input fread": 1
+        },
+        "score": 0.16666666666666666
+      }
+    ]
+  }
+]

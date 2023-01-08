@@ -1,0 +1,3675 @@
+[
+  {
+    "program": "universal-ctags",
+    "src": 908,
+    "sink": 913,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main/routines.c",
+            "line": 908,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 912,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 913,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main/routines.c",
+            "line": 908,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 912,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 913,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main/routines.c",
+            "line": 908,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 912,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 913,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main/routines.c",
+            "line": 908,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 912,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 913,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main/routines.c",
+            "line": 908,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 912,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 913,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "universal-ctags",
+    "src": 140,
+    "sink": 110,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.5826856325833838
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 144,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.5826856325833838
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.5826856325833838
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 144,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.5826856325833838
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.3773333045092626
+      }
+    ]
+  },
+  {
+    "program": "universal-ctags",
+    "src": 140,
+    "sink": 110,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.3773333045092626
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 144,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.3773333045092626
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.3321819194149599
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 144,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.3321819194149599
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "main/main.c",
+            "line": 140,
+            "col": 19,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 143,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 17,
+            "feature": [ "Call", "combinePathAndFile" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Call", "vStringCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 142,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 461,
+            "col": 29,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 156,
+            "col": 6,
+            "feature": [ "Call", "eFree" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 268,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 277,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 727,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 151,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 154,
+            "col": 15,
+            "feature": [ "Call", "createTagsForEntry" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 245,
+            "col": 23,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 248,
+            "col": 6,
+            "feature": [ "Call", "isExcludedFile" ]
+          },
+          {
+            "file": "main/options.c",
+            "line": 1147,
+            "col": 21,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 642,
+            "col": 21,
+            "feature": [ "Call", "strRSeparator" ]
+          },
+          {
+            "file": "main/main.c",
+            "line": 259,
+            "col": 12,
+            "feature": [ "Call", "parseFile" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3355,
+            "col": 14,
+            "feature": [ "Call", "parseFileWithMio" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3400,
+            "col": 20,
+            "feature": [ "Call", "createTagsWithFallback" ]
+          },
+          {
+            "file": "main/parse.c",
+            "line": 3211,
+            "col": 7,
+            "feature": [ "Call", "openInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 678,
+            "col": 33,
+            "feature": [ "Call", "getMio" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 582,
+            "col": 7,
+            "feature": [ "Call", "eStat" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 464,
+            "col": 15,
+            "feature": [ "Call", "eStrdup" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "Call", "setOwnerDirectoryOfInputFile" ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 27,
+            "feature": [ "Call", "baseFilename" ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 645,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/routines.c",
+            "line": 649,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 352,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 356,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 360,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/read.c",
+            "line": 362,
+            "col": 3,
+            "feature": [ "Call", "vStringNCopyS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 224,
+            "col": 2,
+            "feature": [ "Call", "vStringNCatS" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 129,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 130,
+            "col": 2,
+            "feature": [ "Call", "stringCat" ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 107,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main/vstring.c",
+            "line": 110,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 3,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "Input readdir": 1
+        },
+        "score": 0.3321819194149599
+      }
+    ]
+  }
+]

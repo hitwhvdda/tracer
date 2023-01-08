@@ -1,0 +1,1871 @@
+[
+  {
+    "program": "rapmap",
+    "src": 3007,
+    "sink": 595,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7243763756186535
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.13271483675008505
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.13271483675008505
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.06835859270246632
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.06835859270246632
+      }
+    ]
+  },
+  {
+    "program": "rapmap",
+    "src": 3007,
+    "sink": 595,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.7243763756186535
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.12970131035013505
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.12970131035013505
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.12970131035013505
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int64_t_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "src/bit_array.c",
+            "line": 3007,
+            "col": 6,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 14,
+            "feature": [ "Call", "le64_to_cpu" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 2995,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "|",
+                    [
+                      "BinOp",
+                      "|",
+                      [
+                        "BinOp",
+                        "|",
+                        [
+                          "BinOp",
+                          "|",
+                          [
+                            "BinOp",
+                            "|",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [
+                              "BinOp",
+                              "<<",
+                              [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                              [ "Const", [ "Cint", 8 ] ]
+                            ]
+                          ],
+                          [
+                            "BinOp",
+                            "<<",
+                            [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                            [ "Const", [ "Cint", 16 ] ]
+                          ]
+                        ],
+                        [
+                          "BinOp",
+                          "<<",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 24 ] ]
+                        ]
+                      ],
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 32 ] ]
+                      ]
+                    ],
+                    [
+                      "BinOp",
+                      "<<",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 40 ] ]
+                    ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 48 ] ]
+                  ]
+                ],
+                [
+                  "BinOp",
+                  "<<",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 56 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3008,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 3011,
+            "col": 3,
+            "feature": [ "Call", "bit_array_resize_critical" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 608,
+            "col": 7,
+            "feature": [ "Call", "bit_array_resize" ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 554,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 63 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 64 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 563,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 590,
+            "col": 11,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 593,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/bit_array.c",
+            "line": 595,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memset", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 7,
+          "BinOp <<": 7,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.12970131035013505
+      }
+    ]
+  },
+  { "program": "rapmap", "src": -1, "sink": -1, "weighted_traces": [] }
+]

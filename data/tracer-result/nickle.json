@@ -1,0 +1,261 @@
+[
+  {
+    "program": "nickle",
+    "src": 32,
+    "sink": 36,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "nickle",
+    "src": 32,
+    "sink": 38,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 38,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 38,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 38,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 38,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "edit.c",
+            "line": 32,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 36,
+            "col": 12,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "edit.c",
+            "line": 38,
+            "col": 11,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  }
+]

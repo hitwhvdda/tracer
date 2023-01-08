@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>main.fad58de7366495db4650cfefac2fcd61</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../command-injection4.c.d0db251bc28238fee9fea276bde6b879.html#LINE7">main</a></h1></center>
+<a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:9 exn: Start
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:1 succs:10 11 exn: Instructions
+n$6=*&amp;argc:int [line 10, column 7];
+NULLIFY(&amp;argc); [line 10, column 7];
+EXIT_SCOPE(argc); [line 10, column 7];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:9 succs:13 exn: Conditional true Branch
+PRUNE((n$6 != 2), true); [line 10, column 7];
+EXIT_SCOPE(n$6); [line 10, column 7];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:10 succs:12 exn: Instructions
+n$7=_fun_printf("Error: Please enter a program to time!\n":char*) [line 11, column 5];
+EXIT_SCOPE(n$7); [line 11, column 5];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:13 succs:2 exn: Instructions
+*&amp;return:int=-1 [line 12, column 5];
+APPLY_ABSTRACTION; [line 12, column 5];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node11.html"><span class='visited with_tooltip'>C_11<span class='tooltip'>node11 preds:9 succs:8 exn: Conditional false Branch
+PRUNE(!(n$6 != 2), false); [line 10, column 7];
+EXIT_SCOPE(n$6); [line 10, column 7];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node8.html"><span class='visited with_tooltip'>J_8<span class='tooltip'>node8 preds:11 succs:7 exn: Join
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:8 succs:6 exn: Instructions
+n$5=_fun_memset(&amp;command:void*,0:int,sizeof(t=char[256*1];nbytes=256):char[256*1]) [line 15, column 3];
+EXIT_SCOPE(n$5); [line 15, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:7 succs:5 exn: Instructions
+n$4=_fun_strcat(&amp;command:char*,"time ./":char*) [line 17, column 3];
+EXIT_SCOPE(n$4); [line 17, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:6 succs:4 exn: Instructions
+n$1=*&amp;argv:char** [line 18, column 19];
+n$2=*n$1[1]:char* [line 18, column 19];
+n$3=_fun_strcat(&amp;command:char*,n$2:char*) [line 18, column 3];
+NULLIFY(&amp;argv); [line 18, column 3];
+EXIT_SCOPE(n$1,n$2,n$3,argv); [line 18, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:5 succs:3 exn: Instructions
+n$0=_fun_system(&amp;command:char*) [line 20, column 3];
+EXIT_SCOPE(n$0,command); [line 20, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:4 succs:2 exn: Instructions
+*&amp;return:int=0 [line 21, column 3];
+APPLY_ABSTRACTION; [line 21, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:12 3 succs: exn: Exit
+NULLIFY(&amp;command); [line 22, column 1];
+</span></span></a><br />@
+
+<span class='color_black'>int main(int argc, char** argv)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+<br>Api Misuse CmdInjection <a href="./nodes/node0.html">node0</a>(<a href="./../command-injection4.c.d0db251bc28238fee9fea276bde6b879.html#LINE20">20</a>)
+<hr width="100%">
+<LISTING>
+C++ API misuse checker: {mem: { argc -> {powloc: { argc }, init: Bot, int_overflow: argc, int_underflow: argc, user_input: { argc }, str: Bot, traces: { [PruneBinop (line 10, column 7), Symbol (argc), ],
+                                                                    [PruneBinop (line 10, column 7), Symbol (argc), ] }},
+                                argv -> {powloc: { *argv }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                return -> {powloc: { }, init: Init, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                command -> {powloc: { main-72223805-1-1(command) }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                *argv -> {powloc: { **argv }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                **argv -> {powloc: { }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { (1: 0)  line 7, column 1 }, str: Bot, traces: { [Input (line 7, column 1), ] }},
+                                main-72223805-1-1(command) -> {powloc: { }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { (1: 0)  line 7, column 1 }, str: Bot, traces: { [LibraryCall (line 18, column 3), Input (line 7, column 1), ] }} }, condset: 
+{ {user_input: (1: 0)  line 7, column 1, loc: line 20, column 3, traces: { [CmdInjection (line 20, column 3), LibraryCall (line 18, column 3), Input (line 7, column 1), ] }} }}
+BufferOverrunAnalysis: StackLocs: { } MemPure:
+{ argc -> (argc(s) (thresholds:{ 1, 2, 3 })(updated by +), ⊥, { }, Parameter `argc` (tutorial/command-injection4.c:7:1)),
+  return -> ([-1, 0](updated by +), ⊥, { }, Assign `{ return }` (tutorial/command-injection4.c:12:5)),
+  *argv -> M(⊥(updated by +), ⊥, { **argv -> offset : [*argv.offset.lb(s), *argv.offset.ub(s)], size : [*argv.length.lb(u), *argv.length.ub(u)] }, Parameter `**argv` (tutorial/command-injection4.c:7:1)) }
+Alias: { ret= }
+
+</LISTING>
+<hr />
+<pre>
+{ proc_name= main
+; translation_unit= tutorial/command-injection4.c
+; formals= [(argc,int);  (argv,char**)]
+; is_defined= true
+; loc= tutorial/command-injection4.c:7:1
+; locals= [{ name= command; typ= char[256*1]; modify_in_block= false; is_declared_unused= false }]
+; ret_type= int 
+; proc_id= main }</pre>
+</body>
+</html>

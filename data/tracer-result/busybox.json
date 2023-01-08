@@ -1,0 +1,698 @@
+[
+  {
+    "program": "busybox",
+    "src": 2243,
+    "sink": 2246,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2243,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2245,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2243,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2245,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2243,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2245,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2243,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2245,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2243,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2245,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "busybox",
+    "src": 184,
+    "sink": 130,
+    "weighted_traces": [
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 184,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 187,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 188,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 131,
+            "col": 43,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 130,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strdup": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 184,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 187,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 188,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 131,
+            "col": 43,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 130,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strdup": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 184,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 187,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 188,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 131,
+            "col": 43,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 130,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strdup": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 184,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 187,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 188,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 131,
+            "col": 43,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 130,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strdup": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature": "CWE190_11-CWE190_Integer_Overflow__int_fgets_add-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 184,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 187,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 188,
+            "col": 14,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 131,
+            "col": 43,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 205,
+            "col": 5,
+            "feature": [ "Call", "add_new_symbol" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/basic/docproc.c",
+            "line": 130,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strstr": 2,
+          "LibraryCall strdup": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5773502691896257
+      }
+    ]
+  },
+  {
+    "program": "busybox",
+    "src": 1056,
+    "sink": 2246,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1056,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1066,
+            "col": 2,
+            "feature": [ "Call", "conf_parse" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/zconf.tab.c",
+            "line": 1947,
+            "col": 2,
+            "feature": [ "Call", "zconf_initscan" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2255,
+            "col": 12,
+            "feature": [ "Call", "zconf_fopen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1056,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1066,
+            "col": 2,
+            "feature": [ "Call", "conf_parse" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/zconf.tab.c",
+            "line": 1947,
+            "col": 2,
+            "feature": [ "Call", "zconf_initscan" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2255,
+            "col": 12,
+            "feature": [ "Call", "zconf_fopen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1056,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1066,
+            "col": 2,
+            "feature": [ "Call", "conf_parse" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/zconf.tab.c",
+            "line": 1947,
+            "col": 2,
+            "feature": [ "Call", "zconf_initscan" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2255,
+            "col": 12,
+            "feature": [ "Call", "zconf_fopen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1056,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1066,
+            "col": 2,
+            "feature": [ "Call", "conf_parse" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/zconf.tab.c",
+            "line": 1947,
+            "col": 2,
+            "feature": [ "Call", "zconf_initscan" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2255,
+            "col": 12,
+            "feature": [ "Call", "zconf_fopen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1056,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/mconf.c",
+            "line": 1066,
+            "col": 2,
+            "feature": [ "Call", "conf_parse" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/zconf.tab.c",
+            "line": 1947,
+            "col": 2,
+            "feature": [ "Call", "zconf_initscan" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2255,
+            "col": 12,
+            "feature": [ "Call", "zconf_fopen" ]
+          },
+          {
+            "file": "debian/build/udeb/scripts/kconfig/lex.zconf.c",
+            "line": 2246,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

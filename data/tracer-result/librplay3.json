@@ -1,0 +1,1954 @@
+[
+  {
+    "program": "librplay3",
+    "src": 358,
+    "sink": 789,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "librplay/rptp.c",
+            "line": 358,
+            "col": 6,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 376,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 380,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 14,
+            "feature": [ "Call", "rptp_parse" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 652,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 781,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 787,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "Input recv": 1
+        },
+        "score": 0.6419407387663695
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "librplay/rptp.c",
+            "line": 358,
+            "col": 6,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 376,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 380,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 14,
+            "feature": [ "Call", "rptp_parse" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 560,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 781,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 787,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "Input recv": 1
+        },
+        "score": 0.6419407387663695
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "librplay/rptp.c",
+            "line": 358,
+            "col": 6,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 376,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 380,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 14,
+            "feature": [ "Call", "rptp_parse" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 652,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 781,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 787,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "Input recv": 1
+        },
+        "score": 0.6419407387663695
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "librplay/rptp.c",
+            "line": 358,
+            "col": 6,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 376,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 380,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 14,
+            "feature": [ "Call", "rptp_parse" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 560,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 781,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 787,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "Input recv": 1
+        },
+        "score": 0.6419407387663695
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "librplay/rptp.c",
+            "line": 358,
+            "col": 6,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 376,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 380,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 14,
+            "feature": [ "Call", "rptp_parse" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 652,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 768,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 779,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 781,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 787,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "Input recv": 1
+        },
+        "score": 0.33256439728421594
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 93,
+    "sink": 163,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE134_08-CWE134_Uncontrolled_Format_String__char_console_printf-1",
+        "trace": [
+          {
+            "file": "rplayd/server.c",
+            "line": 93,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 163,
+            "col": 2,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 2,
+          "Input fgets": 1
+        },
+        "score": 0.5656854249492379
+      },
+      {
+        "signature":
+          "CWE134_63-CWE134_Uncontrolled_Format_String__char_console_printf-1",
+        "trace": [
+          {
+            "file": "rplayd/server.c",
+            "line": 93,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 163,
+            "col": 2,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 2,
+          "Input fgets": 1
+        },
+        "score": 0.5656854249492379
+      },
+      {
+        "signature":
+          "CWE134_54-CWE134_Uncontrolled_Format_String__char_console_fprintf-1",
+        "trace": [
+          {
+            "file": "rplayd/server.c",
+            "line": 93,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 163,
+            "col": 2,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 2,
+          "Input fgets": 1
+        },
+        "score": 0.5656854249492379
+      },
+      {
+        "signature":
+          "CWE134_64-CWE134_Uncontrolled_Format_String__char_console_vprintf-1",
+        "trace": [
+          {
+            "file": "rplayd/server.c",
+            "line": 93,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 163,
+            "col": 2,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 2,
+          "Input fgets": 1
+        },
+        "score": 0.5656854249492379
+      },
+      {
+        "signature":
+          "CWE134_17-CWE134_Uncontrolled_Format_String__char_console_snprintf-1",
+        "trace": [
+          {
+            "file": "rplayd/server.c",
+            "line": 93,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 154,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 155,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "rplayd/server.c",
+            "line": 163,
+            "col": 2,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 2,
+          "Input fgets": 1
+        },
+        "score": 0.5656854249492379
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 153,
+    "sink": 664,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 153,
+    "sink": 699,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 699,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 699,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 699,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 699,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 699,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 153,
+    "sink": 739,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 739,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 739,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 739,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 739,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 739,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 153,
+    "sink": 789,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_get" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 789,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 256,
+    "sink": 203,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 256,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 280,
+            "col": 6,
+            "feature": [ "Call", "sound_read_directory" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 256,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 280,
+            "col": 6,
+            "feature": [ "Call", "sound_read_directory" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 256,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 280,
+            "col": 6,
+            "feature": [ "Call", "sound_read_directory" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 256,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 280,
+            "col": 6,
+            "feature": [ "Call", "sound_read_directory" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 256,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 280,
+            "col": 6,
+            "feature": [ "Call", "sound_read_directory" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 153,
+    "sink": 320,
+    "weighted_traces": [
+      {
+        "signature": "mp3rename-0.6-2",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 666,
+            "col": 13,
+            "feature": [ "Call", "rptp_command" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 435,
+            "col": 9,
+            "feature": [ "Call", "rptp_putline" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 320,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 666,
+            "col": 13,
+            "feature": [ "Call", "rptp_command" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 435,
+            "col": 9,
+            "feature": [ "Call", "rptp_putline" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 320,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE134_42-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 666,
+            "col": 13,
+            "feature": [ "Call", "rptp_command" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 435,
+            "col": 9,
+            "feature": [ "Call", "rptp_putline" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 320,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE134_02-CWE134_Uncontrolled_Format_String__char_file_printf-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 666,
+            "col": 13,
+            "feature": [ "Call", "rptp_command" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 435,
+            "col": 9,
+            "feature": [ "Call", "rptp_putline" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 320,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE134_33-CWE134_Uncontrolled_Format_String__char_connect_socket_vprintf-1",
+        "trace": [
+          {
+            "file": "rptp/rptp.c",
+            "line": 153,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 309,
+            "col": 7,
+            "feature": [ "Call", "command_put" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 664,
+            "col": 5,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "rptp/rptp.c",
+            "line": 666,
+            "col": 13,
+            "feature": [ "Call", "rptp_command" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 435,
+            "col": 9,
+            "feature": [ "Call", "rptp_putline" ]
+          },
+          {
+            "file": "librplay/rptp.c",
+            "line": 320,
+            "col": 5,
+            "feature": [ "FormatString", "vsprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall sprintf": 1,
+          "Input main": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  },
+  {
+    "program": "librplay3",
+    "src": 197,
+    "sink": 203,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 197,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 38,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 197,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 38,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 197,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 38,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.16012815380508716
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 197,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 38,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.16012815380508716
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "rplayd/sound.c",
+            "line": 197,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 199,
+            "col": 38,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "rplayd/sound.c",
+            "line": 203,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcmp": 2,
+          "Input readdir": 1
+        },
+        "score": 0.05184758473652126
+      }
+    ]
+  }
+]

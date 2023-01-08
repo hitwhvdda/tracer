@@ -1,0 +1,2721 @@
+[
+  {
+    "program": "mathomatic",
+    "src": 993,
+    "sink": 820,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "am.c",
+            "line": 993,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1013,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1014,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1022,
+            "col": 2,
+            "feature": [ "Call", "set_error_level" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 851,
+            "col": 2,
+            "feature": [ "Call", "remove_trailing_spaces" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 814,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 837,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 58 ] ] ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 482,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 735,
+            "col": 9,
+            "feature": [ "Call", "process_parse" ]
+          },
+          {
+            "file": "help.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "Call", "parse_equation" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 635,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Call", "extra_characters" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 259,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1264,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "am.c",
+            "line": 1266,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1268,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1024,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 485,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "Prune > true": 1,
+          "Prune == true": 7,
+          "Prune != true": 2,
+          "Prune ! true": 7,
+          "BinOp +": 5,
+          "Input fgets": 1
+        },
+        "score": 0.9181834322870095
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "am.c",
+            "line": 993,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1013,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1014,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1022,
+            "col": 2,
+            "feature": [ "Call", "set_error_level" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 851,
+            "col": 2,
+            "feature": [ "Call", "remove_trailing_spaces" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 814,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 837,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 58 ] ] ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 482,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 735,
+            "col": 9,
+            "feature": [ "Call", "process_parse" ]
+          },
+          {
+            "file": "help.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "Call", "parse_equation" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 635,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Call", "extra_characters" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 259,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1264,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "am.c",
+            "line": 1266,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1268,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1024,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 485,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "Prune > true": 1,
+          "Prune == true": 7,
+          "Prune != true": 2,
+          "Prune ! true": 7,
+          "BinOp +": 5,
+          "Input fgets": 1
+        },
+        "score": 0.6954006683576303
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "am.c",
+            "line": 993,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1013,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1014,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1022,
+            "col": 2,
+            "feature": [ "Call", "set_error_level" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 851,
+            "col": 2,
+            "feature": [ "Call", "remove_trailing_spaces" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 814,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 837,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 58 ] ] ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 482,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 735,
+            "col": 9,
+            "feature": [ "Call", "process_parse" ]
+          },
+          {
+            "file": "help.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "Call", "parse_equation" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 635,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Call", "extra_characters" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 259,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1264,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "am.c",
+            "line": 1266,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1268,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1024,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 485,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "Prune > true": 1,
+          "Prune == true": 7,
+          "Prune != true": 2,
+          "Prune ! true": 7,
+          "BinOp +": 5,
+          "Input fgets": 1
+        },
+        "score": 0.6954006683576303
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "am.c",
+            "line": 993,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1013,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1014,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1022,
+            "col": 2,
+            "feature": [ "Call", "set_error_level" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 851,
+            "col": 2,
+            "feature": [ "Call", "remove_trailing_spaces" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 814,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 837,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 58 ] ] ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 482,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 735,
+            "col": 9,
+            "feature": [ "Call", "process_parse" ]
+          },
+          {
+            "file": "help.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "Call", "parse_equation" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 635,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Call", "extra_characters" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 259,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1264,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "am.c",
+            "line": 1266,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1268,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1024,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 485,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "Prune > true": 1,
+          "Prune == true": 7,
+          "Prune != true": 2,
+          "Prune ! true": 7,
+          "BinOp +": 5,
+          "Input fgets": 1
+        },
+        "score": 0.6954006683576303
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "am.c",
+            "line": 993,
+            "col": 7,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1013,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1014,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1022,
+            "col": 2,
+            "feature": [ "Call", "set_error_level" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 851,
+            "col": 2,
+            "feature": [ "Call", "remove_trailing_spaces" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 814,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 837,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 58 ] ] ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 482,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 735,
+            "col": 9,
+            "feature": [ "Call", "process_parse" ]
+          },
+          {
+            "file": "help.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "Call", "parse_equation" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 635,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Call", "extra_characters" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 611,
+            "col": 12,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 13,
+            "feature": [ "Call", "parse_expr" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 7,
+            "feature": [ "Call", "parse_section" ]
+          },
+          {
+            "file": "parse.c",
+            "line": 254,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 374,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 257,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "parse.c",
+            "line": 591,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 640,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 641,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "parse.c",
+            "line": 612,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 259,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1264,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "am.c",
+            "line": 1266,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "am.c",
+            "line": 1268,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "help.c",
+            "line": 480,
+            "col": 6,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "am.c",
+            "line": 1024,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 412,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "Call", "process" ]
+          },
+          {
+            "file": "help.c",
+            "line": 485,
+            "col": 27,
+            "feature": [ "Call", "process_rv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 525,
+            "col": 7,
+            "feature": [ "Call", "skip_space" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "Prune > true": 1,
+          "Prune == true": 7,
+          "Prune != true": 2,
+          "Prune ! true": 7,
+          "BinOp +": 5,
+          "Input fgets": 1
+        },
+        "score": 0.6954006683576303
+      }
+    ]
+  },
+  {
+    "program": "mathomatic",
+    "src": 613,
+    "sink": 820,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "help.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "help.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "help.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "help.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "help.c",
+            "line": 613,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "help.c",
+            "line": 625,
+            "col": 8,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "mathomatic",
+    "src": 4619,
+    "sink": 820,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 4619,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 4619,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 4619,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 4619,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "cmds.c",
+            "line": 4619,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4628,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "cmds.c",
+            "line": 4632,
+            "col": 12,
+            "feature": [ "Call", "shell_out" ]
+          },
+          {
+            "file": "help.c",
+            "line": 820,
+            "col": 7,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      }
+    ]
+  },
+  { "program": "mathomatic", "src": -1, "sink": -1, "weighted_traces": [] }
+]

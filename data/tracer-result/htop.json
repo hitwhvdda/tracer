@@ -1,0 +1,1560 @@
+[
+  {
+    "program": "htop",
+    "src": 138,
+    "sink": 24,
+    "weighted_traces": [
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 71,
+            "col": 21,
+            "feature": [ "Call", "xMalloc" ]
+          },
+          {
+            "file": "XAlloc.c",
+            "line": 24,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.7385489458759964
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 71,
+            "col": 21,
+            "feature": [ "Call", "xMalloc" ]
+          },
+          {
+            "file": "XAlloc.c",
+            "line": 24,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.7385489458759964
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 71,
+            "col": 21,
+            "feature": [ "Call", "xMalloc" ]
+          },
+          {
+            "file": "XAlloc.c",
+            "line": 24,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.7385489458759964
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 71,
+            "col": 21,
+            "feature": [ "Call", "xMalloc" ]
+          },
+          {
+            "file": "XAlloc.c",
+            "line": 24,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.7385489458759964
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 71,
+            "col": 21,
+            "feature": [ "Call", "xMalloc" ]
+          },
+          {
+            "file": "XAlloc.c",
+            "line": 24,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.7385489458759964
+      }
+    ]
+  },
+  {
+    "program": "htop",
+    "src": 138,
+    "sink": 72,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 72,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.16724840200141816
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 72,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.16724840200141816
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 72,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.16724840200141816
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 72,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.16724840200141816
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 83,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 85,
+            "col": 7,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 189,
+            "col": 11,
+            "feature": [ "Call", "String_eq" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 82,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 190,
+            "col": 10,
+            "feature": [ "Call", "readFields" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "Call", "String_trim" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 138,
+            "col": 18,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 153,
+            "col": 16,
+            "feature": [ "Call", "xRealloc" ]
+          },
+          {
+            "file": "Settings.c",
+            "line": 183,
+            "col": 23,
+            "feature": [ "Call", "String_split" ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 80,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 70,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "StringUtils.c",
+            "line": 72,
+            "col": 7,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fgets": 3
+        },
+        "score": 0.1624591083221647
+      }
+    ]
+  }
+]

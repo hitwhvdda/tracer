@@ -1,0 +1,2739 @@
+[
+  {
+    "program": "scm",
+    "src": 84,
+    "sink": 61,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.6686478498357316
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.5204800389058843
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.5111111111111111
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.5070724870494426
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.45360921162651446
+      }
+    ]
+  },
+  {
+    "program": "scm",
+    "src": 84,
+    "sink": 56,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input main": 1
+        },
+        "score": 0.6614378277661476
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input main": 1
+        },
+        "score": 0.567733589433837
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input main": 1
+        },
+        "score": 0.4694855340334424
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input main": 1
+        },
+        "score": 0.46577582095318704
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "scmmain.c",
+            "line": 84,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 118,
+            "col": 16,
+            "feature": [ "Call", "script_process_argv" ]
+          },
+          {
+            "file": "script.c",
+            "line": 360,
+            "col": 21,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 363,
+            "col": 32,
+            "feature": [ "Call", "script_meta_arg_P" ]
+          },
+          {
+            "file": "script.c",
+            "line": 342,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 124,
+            "col": 14,
+            "feature": [ "Call", "scm_find_execpath" ]
+          },
+          {
+            "file": "scm.c",
+            "line": 876,
+            "col": 29,
+            "feature": [ "Call", "script_find_executable" ]
+          },
+          {
+            "file": "script.c",
+            "line": 135,
+            "col": 10,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 3,
+          "Prune ! true": 3,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input main": 1
+        },
+        "score": 0.4583333333333333
+      }
+    ]
+  },
+  {
+    "program": "scm",
+    "src": 123,
+    "sink": 56,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input getc": 1
+        },
+        "score": 0.6172133998483678
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input getc": 1
+        },
+        "score": 0.6172133998483678
+      },
+      {
+        "signature":
+          "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input getc": 1
+        },
+        "score": 0.6172133998483678
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input getc": 1
+        },
+        "score": 0.6172133998483678
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 56,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 3,
+          "Input getc": 1
+        },
+        "score": 0.6172133998483678
+      }
+    ]
+  },
+  {
+    "program": "scm",
+    "src": 123,
+    "sink": 61,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input getc": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input getc": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature":
+          "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input getc": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input getc": 1
+        },
+        "score": 0.5773502691896257
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 35,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "script.c",
+            "line": 123,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 131,
+            "col": 14,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "script.c",
+            "line": 64,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 125,
+            "col": 14,
+            "feature": [ "Call", "scm_find_implpath" ]
+          },
+          {
+            "file": "scmmain.c",
+            "line": 70,
+            "col": 16,
+            "feature": [ "Call", "find_impl_file" ]
+          },
+          {
+            "file": "script.c",
+            "line": 168,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "script.c",
+            "line": 172,
+            "col": 12,
+            "feature": [ "Call", "scm_cat_path" ]
+          },
+          {
+            "file": "script.c",
+            "line": 52,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "script.c",
+            "line": 61,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input getc": 1
+        },
+        "score": 0.5773502691896257
+      }
+    ]
+  },
+  { "program": "scm", "src": -1, "sink": -1, "weighted_traces": [] }
+]

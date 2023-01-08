@@ -1,0 +1,1333 @@
+[
+  {
+    "program": "cron",
+    "src": 753,
+    "sink": 690,
+    "weighted_traces": [
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 753,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_16-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 753,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "CWE78_31-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 753,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_17-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 753,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 753,
+            "col": 11,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input fgets": 1
+        },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "cron",
+    "src": 645,
+    "sink": 690,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5669467095138409
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 645,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      }
+    ]
+  },
+  {
+    "program": "cron",
+    "src": 646,
+    "sink": 690,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6761234037828131
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5669467095138409
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 646,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 684,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 689,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "crontab.c",
+            "line": 690,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5070925528371099
+      }
+    ]
+  },
+  {
+    "program": "cron",
+    "src": 174,
+    "sink": 196,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "database.c",
+            "line": 174,
+            "col": 38,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "database.c",
+            "line": 190,
+            "col": 8,
+            "feature": [ "Call", "valid_name" ]
+          },
+          {
+            "file": "database.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "database.c",
+            "line": 174,
+            "col": 38,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "database.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "database.c",
+            "line": 174,
+            "col": 38,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "database.c",
+            "line": 190,
+            "col": 8,
+            "feature": [ "Call", "valid_name" ]
+          },
+          {
+            "file": "database.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "database.c",
+            "line": 174,
+            "col": 38,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "database.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "database.c",
+            "line": 174,
+            "col": 38,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "database.c",
+            "line": 190,
+            "col": 8,
+            "feature": [ "Call", "valid_name" ]
+          },
+          {
+            "file": "database.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      }
+    ]
+  },
+  {
+    "program": "cron",
+    "src": 343,
+    "sink": 268,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 344,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 346,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 378,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 380,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "user.c",
+            "line": 302,
+            "col": 17,
+            "feature": [ "Call", "env_set" ]
+          },
+          {
+            "file": "user.c",
+            "line": 267,
+            "col": 12,
+            "feature": [ "Call", "load_env" ]
+          },
+          {
+            "file": "env.c",
+            "line": 161,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 344,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 346,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 378,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 380,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "user.c",
+            "line": 302,
+            "col": 17,
+            "feature": [ "Call", "env_set" ]
+          },
+          {
+            "file": "env.c",
+            "line": 93,
+            "col": 8,
+            "feature": [ "Call", "strcmp_until" ]
+          },
+          {
+            "file": "user.c",
+            "line": 267,
+            "col": 12,
+            "feature": [ "Call", "load_env" ]
+          },
+          {
+            "file": "env.c",
+            "line": 161,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 344,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 346,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 378,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 380,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "user.c",
+            "line": 267,
+            "col": 12,
+            "feature": [ "Call", "load_env" ]
+          },
+          {
+            "file": "env.c",
+            "line": 161,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 344,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 346,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 378,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 380,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "user.c",
+            "line": 302,
+            "col": 17,
+            "feature": [ "Call", "env_set" ]
+          },
+          {
+            "file": "user.c",
+            "line": 267,
+            "col": 12,
+            "feature": [ "Call", "load_env" ]
+          },
+          {
+            "file": "env.c",
+            "line": 161,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "misc.c",
+            "line": 343,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 344,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "misc.c",
+            "line": 346,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 378,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "misc.c",
+            "line": 380,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "user.c",
+            "line": 302,
+            "col": 17,
+            "feature": [ "Call", "env_set" ]
+          },
+          {
+            "file": "env.c",
+            "line": 93,
+            "col": 8,
+            "feature": [ "Call", "strcmp_until" ]
+          },
+          {
+            "file": "user.c",
+            "line": 267,
+            "col": 12,
+            "feature": [ "Call", "load_env" ]
+          },
+          {
+            "file": "env.c",
+            "line": 161,
+            "col": 13,
+            "feature": [ "Call", "get_string" ]
+          },
+          {
+            "file": "env.c",
+            "line": 207,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "env.c",
+            "line": 254,
+            "col": 13,
+            "feature": [ "Call", "strdtb" ]
+          },
+          {
+            "file": "env.c",
+            "line": 266,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "env.c",
+            "line": 268,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.3268602252303067
+      }
+    ]
+  }
+]

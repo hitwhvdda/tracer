@@ -1,0 +1,542 @@
+[
+  {
+    "program": "aumix-common",
+    "src": 632,
+    "sink": 634,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 632,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 633,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 634,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 632,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 633,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 634,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 632,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 633,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 634,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 632,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 633,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 634,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 632,
+            "col": 10,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 633,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 634,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "aumix-common",
+    "src": 144,
+    "sink": 285,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 183,
+            "col": 20,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 285,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 183,
+            "col": 20,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 273,
+            "col": 17,
+            "feature": [ "Call", "InitializeMixer" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 285,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 178,
+            "col": 21,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 285,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 178,
+            "col": 21,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 273,
+            "col": 17,
+            "feature": [ "Call", "InitializeMixer" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 285,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 174,
+            "col": 23,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 285,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  },
+  {
+    "program": "aumix-common",
+    "src": 144,
+    "sink": 288,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 183,
+            "col": 20,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 288,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 183,
+            "col": 20,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 273,
+            "col": 17,
+            "feature": [ "Call", "InitializeMixer" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 288,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 178,
+            "col": 21,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 288,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 178,
+            "col": 21,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 273,
+            "col": 17,
+            "feature": [ "Call", "InitializeMixer" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 288,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/common.c",
+            "line": 144,
+            "col": 10,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 174,
+            "col": 23,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 278,
+            "col": 18,
+            "feature": [ "Call", "InitColors" ]
+          },
+          {
+            "file": "src/curses.c",
+            "line": 288,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Input getopt": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  }
+]

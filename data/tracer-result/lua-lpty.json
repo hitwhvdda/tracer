@@ -1,0 +1,886 @@
+[
+  {
+    "program": "lua-lpty",
+    "src": 472,
+    "sink": 482,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "lua-lpty",
+    "src": 472,
+    "sink": 489,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  },
+  {
+    "program": "lua-lpty",
+    "src": 472,
+    "sink": 483,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 483,
+            "col": 4,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 483,
+            "col": 4,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 483,
+            "col": 4,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 483,
+            "col": 4,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 483,
+            "col": 4,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  },
+  {
+    "program": "lua-lpty",
+    "src": 472,
+    "sink": 490,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 490,
+            "col": 3,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 490,
+            "col": 3,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 490,
+            "col": 3,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 490,
+            "col": 3,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "lpty.c",
+            "line": 472,
+            "col": 21,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 473,
+            "col": 16,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 475,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 482,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 489,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "lpty.c",
+            "line": 490,
+            "col": 3,
+            "feature": [ "CmdInjection", "execve", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall sprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  }
+]

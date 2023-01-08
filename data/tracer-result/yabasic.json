@@ -1,0 +1,1110 @@
+[
+  {
+    "program": "yabasic",
+    "src": 2390,
+    "sink": 2099,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2099,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_05-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2099,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_61-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2099,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_43-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2099,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402214
+      },
+      {
+        "signature":
+          "CWE190_64-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2099,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402214
+      }
+    ]
+  },
+  {
+    "program": "yabasic",
+    "src": 2390,
+    "sink": 2394,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2394,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2394,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2394,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2394,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2394,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "yabasic",
+    "src": 2401,
+    "sink": 2405,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2401,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2405,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2401,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2405,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2401,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2405,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2401,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2405,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2401,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2405,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "yabasic",
+    "src": 2411,
+    "sink": 2415,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2411,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2415,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2411,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2415,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2411,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2415,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2411,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2415,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2411,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2415,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "yabasic",
+    "src": 2450,
+    "sink": 2456,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2450,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2454,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2456,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fgets": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2450,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2454,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2456,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fgets": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2450,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2454,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2456,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fgets": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2450,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2454,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2456,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fgets": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2450,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2454,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2456,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fgets": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "yabasic",
+    "src": 2390,
+    "sink": 2101,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2101,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2101,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2101,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.3407771005482389
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2101,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 2390,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2400,
+            "col": 25,
+            "feature": [ "Call", "my_malloc" ]
+          },
+          {
+            "file": "main.c",
+            "line": 2095,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "-",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Sizeof" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "main.c",
+            "line": 2101,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.31622776601683794
+      }
+    ]
+  },
+  { "program": "yabasic", "src": -1, "sink": -1, "weighted_traces": [] }
+]

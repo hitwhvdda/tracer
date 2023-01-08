@@ -1,0 +1,573 @@
+[
+  {
+    "program": "fcgiwrap",
+    "src": 411,
+    "sink": 578,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 411,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 422,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 423,
+            "col": 13,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 429,
+            "col": 10,
+            "feature": [ "Call", "check_file_perms" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 433,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7453559924999299
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 411,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 422,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 423,
+            "col": 13,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 433,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7453559924999299
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 411,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 422,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 423,
+            "col": 13,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 429,
+            "col": 10,
+            "feature": [ "Call", "check_file_perms" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 433,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7453559924999299
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 411,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 422,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 423,
+            "col": 13,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 433,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7453559924999299
+      },
+      {
+        "signature": "picocom-2.0a-1",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 411,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 412,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 422,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 423,
+            "col": 13,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 429,
+            "col": 10,
+            "feature": [ "Call", "check_file_perms" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 433,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5443310539518174
+      }
+    ]
+  },
+  {
+    "program": "fcgiwrap",
+    "src": 397,
+    "sink": 578,
+    "weighted_traces": [
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 397,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 398,
+            "col": 7,
+            "feature": [ "Call", "check_file_perms" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 400,
+            "col": 10,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 397,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 400,
+            "col": 10,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 397,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 398,
+            "col": 7,
+            "feature": [ "Call", "check_file_perms" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 400,
+            "col": 10,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6123724356957946
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 397,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 400,
+            "col": 10,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6123724356957946
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "fcgiwrap.c",
+            "line": 397,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 398,
+            "col": 7,
+            "feature": [ "Call", "check_file_perms" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 400,
+            "col": 10,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 565,
+            "col": 9,
+            "feature": [ "Call", "is_allowed_program" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 501,
+            "col": 8,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "fcgiwrap.c",
+            "line": 578,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      }
+    ]
+  }
+]

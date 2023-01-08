@@ -1,0 +1,1901 @@
+[
+  {
+    "program": "libacl1",
+    "src": 40,
+    "sink": 37,
+    "weighted_traces": [
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "libmisc/next_line.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 34,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 51,
+            "col": 8,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 313,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5443310539518174
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "libmisc/next_line.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 34,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 51,
+            "col": 8,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 313,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5443310539518174
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "libmisc/next_line.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 34,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 313,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5443310539518174
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "libmisc/next_line.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 34,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 51,
+            "col": 8,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 313,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5443310539518174
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "libmisc/next_line.c",
+            "line": 40,
+            "col": 8,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 34,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 51,
+            "col": 8,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/next_line.c",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 313,
+            "col": 11,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 314,
+            "col": 13,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5443310539518174
+      }
+    ]
+  },
+  {
+    "program": "libacl1",
+    "src": 331,
+    "sink": 37,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__int_connect_socket_add-2",
+        "trace": [
+          {
+            "file": "tools/setfacl.c",
+            "line": 331,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "Prune < true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input main": 1
+        },
+        "score": 0.3903600291794133
+      },
+      {
+        "signature": "CWE190_12-CWE190_Integer_Overflow__int_fscanf_preinc-2",
+        "trace": [
+          {
+            "file": "tools/setfacl.c",
+            "line": 331,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "Prune < true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input main": 1
+        },
+        "score": 0.3903600291794133
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__int_listen_socket_add-2",
+        "trace": [
+          {
+            "file": "tools/setfacl.c",
+            "line": 331,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "Prune < true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input main": 1
+        },
+        "score": 0.3903600291794133
+      },
+      {
+        "signature": "CWE190_12-CWE190_Integer_Overflow__int_fscanf_add-2",
+        "trace": [
+          {
+            "file": "tools/setfacl.c",
+            "line": 331,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "Prune < true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input main": 1
+        },
+        "score": 0.3903600291794133
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__int_fscanf_postinc-2",
+        "trace": [
+          {
+            "file": "tools/setfacl.c",
+            "line": 331,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 645,
+            "col": 12,
+            "feature": [ "Call", "next_file" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 312,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tools/setfacl.c",
+            "line": 321,
+            "col": 12,
+            "feature": [ "Call", "walk_tree" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 226,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "libmisc/walk_tree.c",
+            "line": 228,
+            "col": 10,
+            "feature": [ "Call", "do_print" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 471,
+            "col": 9,
+            "feature": [ "Call", "acl_get_file" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 514,
+            "col": 7,
+            "feature": [ "Call", "do_show" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 366,
+            "col": 34,
+            "feature": [ "Call", "xquote" ]
+          },
+          {
+            "file": "tools/getfacl.c",
+            "line": 92,
+            "col": 18,
+            "feature": [ "Call", "__acl_quote" ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 35,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 38,
+            "col": 56,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "libmisc/quote.c",
+            "line": 44,
+            "col": 6,
+            "feature": [ "Call", "__acl_high_water_alloc" ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 33,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 36,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 256 ] ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "UnOp",
+                    "~",
+                    [
+                      "BinOp",
+                      "-",
+                      [ "Const", [ "Cint", 256 ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "libmisc/high_water_alloc.c",
+            "line": 37,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 2,
+          "Prune < true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input main": 1
+        },
+        "score": 0.3903600291794133
+      }
+    ]
+  }
+]

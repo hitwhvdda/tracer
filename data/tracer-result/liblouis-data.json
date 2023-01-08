@@ -1,0 +1,4903 @@
+[
+  {
+    "program": "liblouis-data",
+    "src": 3936,
+    "sink": 3939,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Prune != true": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Prune != true": 1, "Input getenv": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Prune != true": 1, "Input getenv": 1 },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Prune != true": 1, "Input getenv": 1 },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Prune != true": 1, "Input getenv": 1 },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 127,
+    "sink": 3907,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.5408420485294112
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.5408420485294112
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.18541926977182407
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.11470786693528087
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.11470786693528087
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 127,
+    "sink": 3914,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 65,
+            "col": 13,
+            "feature": [ "Call", "lou_backTranslateString" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 138,
+            "col": 9,
+            "feature": [ "Call", "lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "Call", "_lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.5408420485294112
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 65,
+            "col": 13,
+            "feature": [ "Call", "lou_backTranslateString" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 138,
+            "col": 9,
+            "feature": [ "Call", "lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "Call", "_lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.5408420485294112
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 65,
+            "col": 13,
+            "feature": [ "Call", "lou_backTranslateString" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 138,
+            "col": 9,
+            "feature": [ "Call", "lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "Call", "_lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.18541926977182407
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 65,
+            "col": 13,
+            "feature": [ "Call", "lou_backTranslateString" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 138,
+            "col": 9,
+            "feature": [ "Call", "lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "Call", "_lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.11470786693528087
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "tools/lou_translate.c",
+            "line": 127,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 142,
+            "col": 2,
+            "feature": [ "Call", "set_program_name" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 61,
+            "col": 28,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/gnulib/progname.c",
+            "line": 64,
+            "col": 11,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 184,
+            "col": 2,
+            "feature": [ "Call", "translate_input" ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 62,
+            "col": 13,
+            "feature": [ "Call", "lou_translateString" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1075,
+            "col": 9,
+            "feature": [ "Call", "lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1083,
+            "col": 9,
+            "feature": [ "Call", "_lou_translate" ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1141,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4298,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1130,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/lou_translateString.c",
+            "line": 1140,
+            "col": 32,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tools/lou_translate.c",
+            "line": 65,
+            "col": 13,
+            "feature": [ "Call", "lou_backTranslateString" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 138,
+            "col": 9,
+            "feature": [ "Call", "lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "Call", "_lou_backTranslate" ]
+          },
+          {
+            "file": "liblouis/lou_backTranslateString.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "Call", "_lou_getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4262,
+            "col": 2,
+            "feature": [ "Call", "getTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4349,
+            "col": 7,
+            "feature": [ "Call", "compileTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4196,
+            "col": 23,
+            "feature": [ "Call", "_lou_resolveTable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4045,
+            "col": 22,
+            "feature": [ "Call", "_lou_defaultTableResolver" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3864,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "Prune == true": 4,
+          "Prune ! true": 4,
+          "Input main": 1
+        },
+        "score": 0.11470786693528087
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 3936,
+    "sink": 3907,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.511833835518347
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.511833835518347
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.19425717247145283
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.15700328159671165
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.09712858623572641
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 3936,
+    "sink": 3914,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.511833835518347
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.511833835518347
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.19425717247145283
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.15700328159671165
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3900,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3902,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3901,
+            "col": 32,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3906,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 3,
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 3,
+          "Prune != true": 2,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.09712858623572641
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 563,
+    "sink": 564,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "liblouis/metadata.c",
+            "line": 563,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "liblouis/metadata.c",
+            "line": 563,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "liblouis/metadata.c",
+            "line": 563,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "liblouis/metadata.c",
+            "line": 563,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "liblouis/metadata.c",
+            "line": 563,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 3936,
+    "sink": 564,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 612,
+            "col": 11,
+            "feature": [ "Call", "listFiles" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 593,
+            "col": 10,
+            "feature": [ "Call", "listDir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.4447495899966607
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 612,
+            "col": 11,
+            "feature": [ "Call", "listFiles" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 593,
+            "col": 10,
+            "feature": [ "Call", "listDir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.4447495899966607
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 612,
+            "col": 11,
+            "feature": [ "Call", "listFiles" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 593,
+            "col": 10,
+            "feature": [ "Call", "listDir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 612,
+            "col": 11,
+            "feature": [ "Call", "listFiles" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 593,
+            "col": 10,
+            "feature": [ "Call", "listDir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.16800537625806175
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 612,
+            "col": 11,
+            "feature": [ "Call", "listFiles" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 596,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 593,
+            "col": 10,
+            "feature": [ "Call", "listDir" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 564,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 3,
+          "Prune == true": 2,
+          "Prune != true": 2,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.13363062095621217
+      }
+    ]
+  },
+  {
+    "program": "liblouis-data",
+    "src": 3936,
+    "sink": 393,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3896,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4046,
+            "col": 18,
+            "feature": [ "Call", "copyStringArray" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 393,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 6,
+          "Prune != true": 3,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3896,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4046,
+            "col": 18,
+            "feature": [ "Call", "copyStringArray" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 393,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 6,
+          "Prune != true": 3,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3896,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4046,
+            "col": 18,
+            "feature": [ "Call", "copyStringArray" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 393,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 6,
+          "Prune != true": 3,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3896,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4046,
+            "col": 18,
+            "feature": [ "Call", "copyStringArray" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 393,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 6,
+          "Prune != true": 3,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.10206207261596574
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3936,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3937,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3939,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3943,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3953,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3956,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4004,
+            "col": 27,
+            "feature": [ "Call", "resolveSubtable" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3896,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3914,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 3907,
+            "col": 4,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "liblouis/compileTranslationTable.c",
+            "line": 4046,
+            "col": 18,
+            "feature": [ "Call", "copyStringArray" ]
+          },
+          {
+            "file": "liblouis/metadata.c",
+            "line": 393,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall sprintf": 6,
+          "Prune != true": 3,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.05499266813300749
+      }
+    ]
+  }
+]

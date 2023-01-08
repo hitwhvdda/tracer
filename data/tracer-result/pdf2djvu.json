@@ -1,0 +1,155 @@
+[
+  {
+    "program": "pdf2djvu",
+    "src": 291,
+    "sink": 300,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "system.cc",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 298,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 300,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "system.cc",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 298,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 300,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "system.cc",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 298,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 300,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "system.cc",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 298,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 300,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "system.cc",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 298,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "system.cc",
+            "line": 300,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  { "program": "pdf2djvu", "src": -1, "sink": -1, "weighted_traces": [] }
+]

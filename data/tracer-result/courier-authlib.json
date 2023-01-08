@@ -1,0 +1,189 @@
+[
+  {
+    "program": "courier-authlib",
+    "src": 112,
+    "sink": 146,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE134_66-CWE134_Uncontrolled_Format_String__char_environment_vfprintf-1",
+        "trace": [
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 63,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 114,
+            "col": 2,
+            "feature": [ "Call", "courier_authdebug" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "FormatString", "fprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE134_53-CWE134_Uncontrolled_Format_String__char_environment_snprintf-1",
+        "trace": [
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 63,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 114,
+            "col": 2,
+            "feature": [ "Call", "courier_authdebug" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "FormatString", "fprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE134_09-CWE134_Uncontrolled_Format_String__char_environment_vprintf-1",
+        "trace": [
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 63,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 114,
+            "col": 2,
+            "feature": [ "Call", "courier_authdebug" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "FormatString", "fprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE134_01-CWE134_Uncontrolled_Format_String__char_environment_snprintf-1",
+        "trace": [
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 63,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 114,
+            "col": 2,
+            "feature": [ "Call", "courier_authdebug" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "FormatString", "fprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE134_07-CWE134_Uncontrolled_Format_String__char_environment_vfprintf-1",
+        "trace": [
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 63,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 112,
+            "col": 2,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 114,
+            "col": 2,
+            "feature": [ "Call", "courier_authdebug" ]
+          },
+          {
+            "file": "debug.c",
+            "line": 146,
+            "col": 9,
+            "feature": [ "FormatString", "fprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "FormatString": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  }
+]

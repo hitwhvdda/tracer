@@ -1,0 +1,2935 @@
+[
+  {
+    "program": "squeak-vm",
+    "src": 1004,
+    "sink": 762,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.10998533626601498
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 1004,
+    "sink": 769,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 769,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 769,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 769,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 769,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 769,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.10998533626601498
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 1004,
+    "sink": 142,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 773,
+            "col": 21,
+            "feature": [ "Call", "ioLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 160,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 179,
+            "col": 18,
+            "feature": [ "Call", "tryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 142,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3805211953235953
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 773,
+            "col": 21,
+            "feature": [ "Call", "ioLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 160,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 179,
+            "col": 18,
+            "feature": [ "Call", "tryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 142,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3805211953235953
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 773,
+            "col": 21,
+            "feature": [ "Call", "ioLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 160,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 179,
+            "col": 18,
+            "feature": [ "Call", "tryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 142,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.34299717028501764
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 773,
+            "col": 21,
+            "feature": [ "Call", "ioLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 160,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 179,
+            "col": 18,
+            "feature": [ "Call", "tryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 142,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.17149858514250882
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 1004,
+            "col": 34,
+            "feature": [ "Call", "requireModulesNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 870,
+            "col": 14,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 879,
+            "col": 7,
+            "feature": [ "Call", "requireModuleNamed" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 837,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 838,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 845,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 853,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 854,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 856,
+            "col": 13,
+            "feature": [ "Call", "canonicalModuleName" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 857,
+            "col": 15,
+            "feature": [ "Call", "requireModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 816,
+            "col": 23,
+            "feature": [ "Call", "loadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 811,
+            "col": 10,
+            "feature": [ "Call", "queryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 762,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/vm/sqUnixMain.c",
+            "line": 773,
+            "col": 21,
+            "feature": [ "Call", "ioLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 160,
+            "col": 29,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 179,
+            "col": 18,
+            "feature": [ "Call", "tryLoadModule" ]
+          },
+          {
+            "file": "unix/vm/sqUnixExternalPrims.c",
+            "line": 142,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 2,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 2,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "Input getenv": 1
+        },
+        "score": 0.15401027590842437
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 1661,
+    "sink": 1661,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1661,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1661,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1661,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1661,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1661,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 1660,
+    "sink": 1660,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1660,
+            "col": 13,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1660,
+            "col": 13,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1660,
+            "col": 13,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1660,
+            "col": 13,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/Squeak3D/Squeak3D.c",
+            "line": 1660,
+            "col": 13,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 150,
+    "sink": 150,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 150,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 150,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 150,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 150,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 150,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 162,
+    "sink": 162,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 162,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 162,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 162,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 162,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 162,
+            "col": 8,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 167,
+    "sink": 167,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 167,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 167,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 167,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 167,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 167,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 171,
+    "sink": 171,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 171,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 171,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 171,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 171,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 171,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 175,
+    "sink": 175,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 175,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 175,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 175,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 175,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 175,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 179,
+    "sink": 179,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 179,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 179,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 179,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 179,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/SlangTestSupportPlugin/SlangTestSupportPlugin.c",
+            "line": 179,
+            "col": 9,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 255,
+    "sink": 255,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 255,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 255,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 255,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 255,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 255,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 320,
+    "sink": 320,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 320,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 320,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 320,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 320,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/vm/intplugins/RePlugin/RePlugin.c",
+            "line": 320,
+            "col": 15,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 165,
+    "sink": 165,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 165,
+            "col": 20,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 165,
+            "col": 20,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 165,
+            "col": 20,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 165,
+            "col": 20,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 165,
+            "col": 20,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 212,
+    "sink": 212,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 212,
+            "col": 30,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 212,
+            "col": 30,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 212,
+            "col": 30,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 212,
+            "col": 30,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 212,
+            "col": 30,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 304,
+    "sink": 304,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 304,
+            "col": 37,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 304,
+            "col": 37,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 304,
+            "col": 37,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 304,
+            "col": 37,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file":
+              "unix/src/vm/intplugins/AsynchFilePlugin/AsynchFilePlugin.c",
+            "line": 304,
+            "col": 37,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 164,
+    "sink": 164,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/MIDIPlugin/MIDIPlugin.c",
+            "line": 164,
+            "col": 34,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/MIDIPlugin/MIDIPlugin.c",
+            "line": 164,
+            "col": 34,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/MIDIPlugin/MIDIPlugin.c",
+            "line": 164,
+            "col": 34,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/MIDIPlugin/MIDIPlugin.c",
+            "line": 164,
+            "col": 34,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/MIDIPlugin/MIDIPlugin.c",
+            "line": 164,
+            "col": 34,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 1799,
+    "sink": 1799,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1799,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1799,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1799,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1799,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1799,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  },
+  {
+    "program": "squeak-vm",
+    "src": 1833,
+    "sink": 1833,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1833,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1833,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1833,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1833,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "unix/src/plugins/DBusPlugin/DBusPlugin.c",
+            "line": 1833,
+            "col": 23,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  }
+]

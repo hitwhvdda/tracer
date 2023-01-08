@@ -1,0 +1,820 @@
+[
+  {
+    "program": "le",
+    "src": 208,
+    "sink": 219,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/history.cc",
+            "line": 208,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 214,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 219,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/history.cc",
+            "line": 208,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 214,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 219,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "src/history.cc",
+            "line": 208,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 214,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 219,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "src/history.cc",
+            "line": 208,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 214,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 219,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/history.cc",
+            "line": 208,
+            "col": 10,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 214,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/history.cc",
+            "line": 219,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      }
+    ]
+  },
+  {
+    "program": "le",
+    "src": 368,
+    "sink": 215,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "le",
+    "src": 368,
+    "sink": 217,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 368,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 369,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "le",
+    "src": 395,
+    "sink": 215,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 215,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "le",
+    "src": 395,
+    "sink": 217,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/highli.cc",
+            "line": 395,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 423,
+            "col": 16,
+            "feature": [ "Call", "open_syntax_d" ]
+          },
+          {
+            "file": "src/highli.cc",
+            "line": 217,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

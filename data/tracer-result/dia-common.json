@@ -1,0 +1,1142 @@
+[
+  {
+    "program": "dia-common",
+    "src": 488,
+    "sink": 338,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 348,
+            "col": 5,
+            "feature": [ "Call", "polyconn_init" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 338,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 348,
+            "col": 5,
+            "feature": [ "Call", "polyconn_init" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 338,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_51-CWE190_Integer_Overflow__unsigned_int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 348,
+            "col": 5,
+            "feature": [ "Call", "polyconn_init" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 338,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_07-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 348,
+            "col": 5,
+            "feature": [ "Call", "polyconn_init" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 338,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_09-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 348,
+            "col": 5,
+            "feature": [ "Call", "polyconn_init" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 338,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "program": "dia-common",
+    "src": 488,
+    "sink": 364,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 351,
+            "col": 5,
+            "feature": [ "Call", "polyconn_set_points" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 359,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 364,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 351,
+            "col": 5,
+            "feature": [ "Call", "polyconn_set_points" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 359,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 364,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_51-CWE190_Integer_Overflow__unsigned_int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 351,
+            "col": 5,
+            "feature": [ "Call", "polyconn_set_points" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 359,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 364,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_07-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 351,
+            "col": 5,
+            "feature": [ "Call", "polyconn_set_points" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 359,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 364,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_09-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polyline_create" ]
+          },
+          {
+            "file": "objects/standard/polyline.c",
+            "line": 351,
+            "col": 5,
+            "feature": [ "Call", "polyconn_set_points" ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 359,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/poly_conn.c",
+            "line": 364,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "program": "dia-common",
+    "src": 488,
+    "sink": 396,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polygon_create" ]
+          },
+          {
+            "file": "objects/standard/polygon.c",
+            "line": 281,
+            "col": 5,
+            "feature": [ "Call", "polyshape_init" ]
+          },
+          {
+            "file": "lib/polyshape.c",
+            "line": 396,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polygon_create" ]
+          },
+          {
+            "file": "objects/standard/polygon.c",
+            "line": 281,
+            "col": 5,
+            "feature": [ "Call", "polyshape_init" ]
+          },
+          {
+            "file": "lib/polyshape.c",
+            "line": 396,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_51-CWE190_Integer_Overflow__unsigned_int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polygon_create" ]
+          },
+          {
+            "file": "objects/standard/polygon.c",
+            "line": 281,
+            "col": 5,
+            "feature": [ "Call", "polyshape_init" ]
+          },
+          {
+            "file": "lib/polyshape.c",
+            "line": 396,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_07-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polygon_create" ]
+          },
+          {
+            "file": "objects/standard/polygon.c",
+            "line": 281,
+            "col": 5,
+            "feature": [ "Call", "polyshape_init" ]
+          },
+          {
+            "file": "lib/polyshape.c",
+            "line": 396,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_09-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "polygon_create" ]
+          },
+          {
+            "file": "objects/standard/polygon.c",
+            "line": 281,
+            "col": 5,
+            "feature": [ "Call", "polyshape_init" ]
+          },
+          {
+            "file": "lib/polyshape.c",
+            "line": 396,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "program": "dia-common",
+    "src": 488,
+    "sink": 521,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "zigzagline_create" ]
+          },
+          {
+            "file": "objects/standard/zigzagline.c",
+            "line": 260,
+            "col": 5,
+            "feature": [ "Call", "orthconn_set_points" ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 516,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 521,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "zigzagline_create" ]
+          },
+          {
+            "file": "objects/standard/zigzagline.c",
+            "line": 260,
+            "col": 5,
+            "feature": [ "Call", "orthconn_set_points" ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 516,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 521,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_51-CWE190_Integer_Overflow__unsigned_int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "zigzagline_create" ]
+          },
+          {
+            "file": "objects/standard/zigzagline.c",
+            "line": 260,
+            "col": 5,
+            "feature": [ "Call", "orthconn_set_points" ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 516,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 521,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_07-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "zigzagline_create" ]
+          },
+          {
+            "file": "objects/standard/zigzagline.c",
+            "line": 260,
+            "col": 5,
+            "feature": [ "Call", "orthconn_set_points" ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 516,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 521,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_09-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 488,
+            "col": 9,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "plug-ins/xfig/xfig-import.c",
+            "line": 570,
+            "col": 11,
+            "feature": [ "Call", "create_standard_polyline" ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 200,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/create.c",
+            "line": 203,
+            "col": 15,
+            "feature": [ "Call", "zigzagline_create" ]
+          },
+          {
+            "file": "objects/standard/zigzagline.c",
+            "line": 260,
+            "col": 5,
+            "feature": [ "Call", "orthconn_set_points" ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 516,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/orth_conn.c",
+            "line": 521,
+            "col": 18,
+            "feature": [
+              "IntOverflow",
+              "g_malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  }
+]

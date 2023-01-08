@@ -1,0 +1,1684 @@
+[
+  {
+    "program": "rsyslog",
+    "src": 1913,
+    "sink": 1197,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.5217491947499509
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_postdec-2",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.5217491947499509
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_connect_socket_postdec-2",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.5217491947499509
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_sub-2",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.5217491947499509
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_connect_socket_predec-2",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.5217491947499509
+      }
+    ]
+  },
+  {
+    "program": "rsyslog",
+    "src": 1913,
+    "sink": 1197,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.3810003810005715
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.3268602252303067
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.1178511301977579
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1913,
+            "col": 12,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1918,
+            "col": 4,
+            "feature": [ "Call", "DataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1330,
+            "col": 11,
+            "feature": [ "Call", "DataRcvdUncompressed" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1251,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1193,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1200,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1255,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1254,
+            "col": 3,
+            "feature": [ "Call", "processDataRcvd" ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1189,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1190,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1192,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "plugins/imptcp/imptcp.c",
+            "line": 1197,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 4,
+          "Input recv": 1
+        },
+        "score": 0.1178511301977579
+      }
+    ]
+  },
+  { "program": "rsyslog", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "rsyslog", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "rsyslog", "src": -1, "sink": -1, "weighted_traces": [] }
+]

@@ -1,0 +1,474 @@
+[
+  {
+    "program": "lua-cqueues",
+    "src": 6578,
+    "sink": 6431,
+    "weighted_traces": [
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/lib/dns.c",
+            "line": 6578,
+            "col": 16,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6587,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 8 ] ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 0 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6590,
+            "col": 17,
+            "feature": [ "Call", "dns_so_newanswer" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 768 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6431,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input recv": 1
+        },
+        "score": 0.6237449404683604
+      },
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "src/lib/dns.c",
+            "line": 6578,
+            "col": 16,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6587,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 8 ] ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 0 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6590,
+            "col": 17,
+            "feature": [ "Call", "dns_so_newanswer" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 768 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6431,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input recv": 1
+        },
+        "score": 0.5459208336840117
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "src/lib/dns.c",
+            "line": 6578,
+            "col": 16,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6587,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 8 ] ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 0 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6590,
+            "col": 17,
+            "feature": [ "Call", "dns_so_newanswer" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 768 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6431,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input recv": 1
+        },
+        "score": 0.5459208336840117
+      },
+      {
+        "signature": "sam2p-0.49.4-9",
+        "trace": [
+          {
+            "file": "src/lib/dns.c",
+            "line": 6578,
+            "col": 16,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6587,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 8 ] ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 0 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6590,
+            "col": 17,
+            "feature": [ "Call", "dns_so_newanswer" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 768 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6431,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input recv": 1
+        },
+        "score": 0.5041841733655161
+      },
+      {
+        "signature": "sam2p-0.49.4-14",
+        "trace": [
+          {
+            "file": "src/lib/dns.c",
+            "line": 6578,
+            "col": 16,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6587,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "|",
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 8 ] ]
+                  ],
+                  [
+                    "BinOp",
+                    "<<",
+                    [ "BinOp", "&", [ "Const", [ "Cint", 255 ] ], [ "Var" ] ],
+                    [ "Const", [ "Cint", 0 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6590,
+            "col": 17,
+            "feature": [ "Call", "dns_so_newanswer" ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 768 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6428,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Const", [ "Cint", 92 ] ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lib/dns.c",
+            "line": 6431,
+            "col": 12,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "BinOp |": 1,
+          "BinOp <<": 2,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input recv": 1
+        },
+        "score": 0.5041841733655161
+      }
+    ]
+  }
+]

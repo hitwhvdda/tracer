@@ -1,0 +1,1622 @@
+[
+  {
+    "program": "findutils",
+    "src": 200,
+    "sink": 248,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.6858571279792898
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.6666666666666666
+      },
+      {
+        "signature": "gimp-2.6.7-3",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.5820855000871991
+      },
+      {
+        "signature": "gimp-2.6.7-2",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 21,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 200,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.5820855000871991
+      }
+    ]
+  },
+  {
+    "program": "findutils",
+    "src": 201,
+    "sink": 248,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 9,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.6519761393619985
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 9,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.6433331570970116
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 9,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.6397632782164002
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__int_connect_socket_add-2",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 9,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.5749889084999459
+      },
+      {
+        "signature": "CWE190_12-CWE190_Integer_Overflow__int_fscanf_preinc-2",
+        "trace": [
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 9,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 201,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 255 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 202,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 530,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 333,
+            "col": 16,
+            "feature": [ "Call", "visit_locate02_format" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 532,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 256 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 536,
+            "col": 42,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 547,
+            "col": 11,
+            "feature": [ "Call", "locate_read_str" ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 245,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+                  ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "locate/locate.c",
+            "line": 248,
+            "col": 24,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune > true": 2,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp |": 1,
+          "BinOp -": 1,
+          "BinOp +": 4,
+          "BinOp &": 1,
+          "Input getc": 1
+        },
+        "score": 0.5749889084999459
+      }
+    ]
+  }
+]

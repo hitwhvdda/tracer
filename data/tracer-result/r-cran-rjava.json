@@ -1,0 +1,154 @@
+[
+  {
+    "program": "r-cran-rjava",
+    "src": 107,
+    "sink": 141,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/init.c",
+            "line": 107,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 140,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 141,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/init.c",
+            "line": 107,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 140,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 141,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/init.c",
+            "line": 107,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 140,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 141,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/init.c",
+            "line": 107,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 140,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 141,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/init.c",
+            "line": 107,
+            "col": 22,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 140,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/init.c",
+            "line": 141,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  }
+]

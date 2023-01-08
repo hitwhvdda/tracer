@@ -1,0 +1,1576 @@
+[
+  {
+    "program": "crafty",
+    "src": 647,
+    "sink": 686,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 683,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 684,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 4 ] ],
+                      [ "Const", [ "Cint", 1024 ] ]
+                    ],
+                    [ "Const", [ "Cint", 1024 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 686,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.8571428571428571
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 683,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 684,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 4 ] ],
+                      [ "Const", [ "Cint", 1024 ] ]
+                    ],
+                    [ "Const", [ "Cint", 1024 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 686,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6772962119561564
+      },
+      {
+        "signature": "gimp-2.6.7-3",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 683,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 684,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 4 ] ],
+                      [ "Const", [ "Cint", 1024 ] ]
+                    ],
+                    [ "Const", [ "Cint", 1024 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 686,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6667366910003156
+      },
+      {
+        "signature": "gimp-2.6.7-2",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 683,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 684,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 4 ] ],
+                      [ "Const", [ "Cint", 1024 ] ]
+                    ],
+                    [ "Const", [ "Cint", 1024 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 686,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6667366910003156
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 683,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 684,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "*",
+                    [
+                      "BinOp",
+                      "*",
+                      [ "Const", [ "Cint", 4 ] ],
+                      [ "Const", [ "Cint", 1024 ] ]
+                    ],
+                    [ "Const", [ "Cint", 1024 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 686,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp <<": 3,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6410477745379993
+      }
+    ]
+  },
+  {
+    "program": "crafty",
+    "src": 647,
+    "sink": 666,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 654,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 656,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 84 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 666,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.8106434833777777
+      },
+      {
+        "signature": "gimp-2.6.7-3",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 654,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 656,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 84 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 666,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.6436786858669364
+      },
+      {
+        "signature": "gimp-2.6.7-2",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 654,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 656,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 84 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 666,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.6436786858669364
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 654,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 656,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 84 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 666,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.6082990646724735
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 654,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 656,
+            "col": 36,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 84 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 666,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.5897678246195887
+      }
+    ]
+  },
+  {
+    "program": "crafty",
+    "src": 647,
+    "sink": 694,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 692,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ],
+                    [
+                      "BinOp",
+                      "/",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [
+                        "BinOp",
+                        "*",
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 2 ] ]
+                        ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 694,
+            "col": 31,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp +": 7,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.7640649901470707
+      },
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 692,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ],
+                    [
+                      "BinOp",
+                      "/",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [
+                        "BinOp",
+                        "*",
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 2 ] ]
+                        ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 694,
+            "col": 31,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp +": 7,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.5760230254359425
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 692,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ],
+                    [
+                      "BinOp",
+                      "/",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [
+                        "BinOp",
+                        "*",
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 2 ] ]
+                        ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 694,
+            "col": 31,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp +": 7,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.5642764926868786
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 692,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ],
+                    [
+                      "BinOp",
+                      "/",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [
+                        "BinOp",
+                        "*",
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 2 ] ]
+                        ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 694,
+            "col": 31,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp +": 7,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.5642764926868786
+      },
+      {
+        "signature":
+          "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "tbdecode.h",
+            "line": 647,
+            "col": 7,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 659,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 661,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 24 ] ] ],
+                    [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+                  ],
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+                ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 692,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 2 ] ] ],
+                    [
+                      "BinOp",
+                      "/",
+                      [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                      [
+                        "BinOp",
+                        "*",
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 2 ] ]
+                        ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tbdecode.h",
+            "line": 694,
+            "col": 31,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp <<": 3,
+          "BinOp /": 1,
+          "BinOp +": 7,
+          "BinOp *": 2,
+          "Input fread": 1
+        },
+        "score": 0.5642764926868786
+      }
+    ]
+  }
+]

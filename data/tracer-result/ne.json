@@ -1,0 +1,3819 @@
+[
+  {
+    "program": "ne",
+    "src": 40,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 40,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 42,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 40,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 42,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input getenv": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 40,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 42,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input getenv": 1 },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 40,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 42,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input getenv": 1 },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 40,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 42,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input getenv": 1 },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 296,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 194,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 295,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 932,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1039,
+            "col": 26,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47304991679126607
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 194,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 295,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 932,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1039,
+            "col": 26,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47304991679126607
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 194,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 295,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 932,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1039,
+            "col": 26,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.42640143271122083
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 194,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 295,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 932,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1039,
+            "col": 26,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 194,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 295,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 932,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1039,
+            "col": 26,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 2,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.19145989526687088
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 296,
+    "sink": 310,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 274,
+            "col": 25,
+            "feature": [ "Call", "file_mod_time" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/actions.c",
+            "line": 906,
+            "col": 12,
+            "feature": [ "Call", "save_buffer_to_file" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1527,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 310,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 310,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 274,
+            "col": 25,
+            "feature": [ "Call", "file_mod_time" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/actions.c",
+            "line": 906,
+            "col": 12,
+            "feature": [ "Call", "save_buffer_to_file" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1527,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 310,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 310,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 274,
+            "col": 25,
+            "feature": [ "Call", "file_mod_time" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/actions.c",
+            "line": 906,
+            "col": 12,
+            "feature": [ "Call", "save_buffer_to_file" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1527,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 310,
+            "col": 11,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 756,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 756,
+            "col": 41,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 757,
+            "col": 7,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 756,
+            "col": 41,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 757,
+            "col": 7,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 756,
+            "col": 41,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 757,
+            "col": 7,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 756,
+            "col": 41,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 757,
+            "col": 7,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 756,
+            "col": 41,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 757,
+            "col": 7,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 855,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 855,
+            "col": 43,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 856,
+            "col": 25,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 855,
+            "col": 43,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 856,
+            "col": 25,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 855,
+            "col": 43,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 856,
+            "col": 25,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 855,
+            "col": 43,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 856,
+            "col": 25,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 855,
+            "col": 43,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 856,
+            "col": 25,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input readdir": 1 },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 719,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 719,
+            "col": 42,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "Call", "str_dup" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 353,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 727,
+            "col": 15,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 719,
+            "col": 42,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 720,
+            "col": 8,
+            "feature": [ "Call", "is_prefix" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "Call", "str_dup" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 353,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 727,
+            "col": 15,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 719,
+            "col": 42,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "Call", "str_dup" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 353,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 727,
+            "col": 15,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 719,
+            "col": 42,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 720,
+            "col": 8,
+            "feature": [ "Call", "is_prefix" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "Call", "str_dup" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 353,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 727,
+            "col": 15,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/request.c",
+            "line": 719,
+            "col": 42,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "Call", "str_dup" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 353,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/request.c",
+            "line": 727,
+            "col": 15,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.19611613513818404
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 296,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-2",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 274,
+            "col": 25,
+            "feature": [ "Call", "file_mod_time" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/actions.c",
+            "line": 906,
+            "col": 12,
+            "feature": [ "Call", "save_buffer_to_file" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1527,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "schismtracker-20190722-2",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 274,
+            "col": 25,
+            "feature": [ "Call", "file_mod_time" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/actions.c",
+            "line": 906,
+            "col": 12,
+            "feature": [ "Call", "save_buffer_to_file" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1527,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.2581988897471611
+      },
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.2581988897471611
+      },
+      {
+        "signature":
+          "CWE191_53-CWE191_Integer_Underflow__char_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "src/support.c",
+            "line": 296,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 326,
+            "col": 65,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 328,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 274,
+            "col": 25,
+            "feature": [ "Call", "file_mod_time" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 291,
+            "col": 26,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 272,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/actions.c",
+            "line": 906,
+            "col": 12,
+            "feature": [ "Call", "save_buffer_to_file" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1527,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/buffer.c",
+            "line": 1529,
+            "col": 6,
+            "feature": [ "Call", "is_directory" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 213,
+            "col": 14,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "BinOp +": 1,
+          "Input getenv": 1
+        },
+        "score": 0.2581988897471611
+      }
+    ]
+  },
+  {
+    "program": "ne",
+    "src": 169,
+    "sink": 312,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/ne.c",
+            "line": 169,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 204,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 50,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 48,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 270,
+            "col": 3,
+            "feature": [ "Call", "get_menu_configuration" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1038,
+            "col": 2,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 939,
+            "col": 55,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 5,
+          "Prune == true": 2,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.12309149097933272
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/ne.c",
+            "line": 169,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 204,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 50,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 48,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 270,
+            "col": 3,
+            "feature": [ "Call", "get_menu_configuration" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1038,
+            "col": 2,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 939,
+            "col": 55,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 5,
+          "Prune == true": 2,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.12309149097933272
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/ne.c",
+            "line": 169,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 204,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 50,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 48,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 270,
+            "col": 3,
+            "feature": [ "Call", "get_menu_configuration" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1038,
+            "col": 2,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 939,
+            "col": 55,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 5,
+          "Prune == true": 2,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.10241831129983785
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/ne.c",
+            "line": 169,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 204,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 50,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 48,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 270,
+            "col": 3,
+            "feature": [ "Call", "get_menu_configuration" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1038,
+            "col": 2,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 939,
+            "col": 55,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 5,
+          "Prune == true": 2,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.10241831129983785
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/ne.c",
+            "line": 169,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 202,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 204,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 208,
+            "col": 50,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 14,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 212,
+            "col": 48,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/ne.c",
+            "line": 270,
+            "col": 3,
+            "feature": [ "Call", "get_menu_configuration" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 1038,
+            "col": 2,
+            "feature": [ "Call", "get_menu_conf" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 939,
+            "col": 55,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/menu.c",
+            "line": 943,
+            "col": 14,
+            "feature": [ "Call", "load_stream" ]
+          },
+          {
+            "file": "src/streams.c",
+            "line": 192,
+            "col": 9,
+            "feature": [ "Call", "tilde_expand" ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 289,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 304,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/support.c",
+            "line": 312,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 5,
+          "Prune == true": 2,
+          "BinOp +": 1,
+          "Input main": 1
+        },
+        "score": 0.022107884414269093
+      }
+    ]
+  },
+  { "program": "ne", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "ne", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "ne", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "ne", "src": -1, "sink": -1, "weighted_traces": [] }
+]

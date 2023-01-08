@@ -1,0 +1,3083 @@
+[
+  {
+    "program": "snap",
+    "src": 47,
+    "sink": 285,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 47,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 55,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 456,
+            "col": 4,
+            "feature": [ "Call", "zoeAmbiguateModel" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 271,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 5 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 272,
+            "col": 8,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 2, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE680_83-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 47,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 55,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 456,
+            "col": 4,
+            "feature": [ "Call", "zoeAmbiguateModel" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 271,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 5 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 272,
+            "col": 8,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 2, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE680_61-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 47,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 55,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 456,
+            "col": 4,
+            "feature": [ "Call", "zoeAmbiguateModel" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 271,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 5 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 272,
+            "col": 8,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 2, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE680_10-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 47,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 55,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 456,
+            "col": 4,
+            "feature": [ "Call", "zoeAmbiguateModel" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 271,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 5 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 272,
+            "col": 8,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 2, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE680_18-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 47,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 55,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 456,
+            "col": 4,
+            "feature": [ "Call", "zoeAmbiguateModel" ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 271,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "*", [ "Var" ], [ "Const", [ "Cint", 5 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeModel.c",
+            "line": 272,
+            "col": 8,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 2, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 102,
+    "sink": 107,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 102,
+            "col": 25,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 102,
+            "col": 25,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 102,
+            "col": 25,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 102,
+            "col": 25,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 102,
+            "col": 25,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 495,
+    "sink": 500,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 495,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 495,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 495,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 495,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 495,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 73,
+    "sink": 285,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 59,
+            "col": 14,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 59,
+            "col": 14,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 59,
+            "col": 14,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 59,
+            "col": 14,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 59,
+            "col": 14,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 73,
+    "sink": 60,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_53-CWE191_Integer_Underflow__char_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE191_03-CWE191_Integer_Underflow__unsigned_int_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE191_21-CWE191_Integer_Underflow__int64_t_fscanf_sub-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE191_66-CWE191_Integer_Underflow__char_fscanf_sub-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE191_66-CWE191_Integer_Underflow__int64_t_fscanf_predec-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 80,
+    "sink": 285,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 80,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 93,
+            "col": 17,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 80,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 93,
+            "col": 17,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 80,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 93,
+            "col": 17,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 80,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 93,
+            "col": 17,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 80,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDuration.c",
+            "line": 93,
+            "col": 17,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 399,
+    "sink": 285,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 399,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 410,
+            "col": 20,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 399,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 410,
+            "col": 20,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 399,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 410,
+            "col": 20,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 399,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 410,
+            "col": 20,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 399,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 410,
+            "col": 20,
+            "feature": [ "Call", "zoeMalloc" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 285,
+            "col": 16,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "Input fscanf": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 77,
+    "sink": 874,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 865,
+            "col": 14,
+            "feature": [ "Call", "zoe_file_type" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 821,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 828,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 829,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 103 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 830,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 833,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 834,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 837,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 838,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 90 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 874,
+            "col": 17,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 7,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7447456775420865
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 865,
+            "col": 14,
+            "feature": [ "Call", "zoe_file_type" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 821,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 828,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 829,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 103 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 830,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 833,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 834,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 837,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 838,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 90 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 874,
+            "col": 17,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 7,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7447456775420865
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 865,
+            "col": 14,
+            "feature": [ "Call", "zoe_file_type" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 821,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 828,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 829,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 103 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 830,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 833,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 834,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 837,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 838,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 90 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 874,
+            "col": 17,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 7,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7447456775420865
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 865,
+            "col": 14,
+            "feature": [ "Call", "zoe_file_type" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 821,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 828,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 829,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 103 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 830,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 833,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 834,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 837,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 838,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 90 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 874,
+            "col": 17,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 7,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7447456775420865
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 865,
+            "col": 14,
+            "feature": [ "Call", "zoe_file_type" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 821,
+            "col": 15,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 828,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 829,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 103 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 830,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 833,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 834,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 122 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 837,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 46 ] ] ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 838,
+            "col": 3,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 90 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 874,
+            "col": 17,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Prune == true": 7,
+          "Prune ! true": 3,
+          "Input main": 1
+        },
+        "score": 0.7447456775420865
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 77,
+    "sink": 107,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 93,
+            "col": 2,
+            "feature": [ "Call", "zoeSetProgramName" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 93,
+            "col": 2,
+            "feature": [ "Call", "zoeSetProgramName" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 107,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 77,
+    "sink": 320,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 93,
+            "col": 2,
+            "feature": [ "Call", "zoeSetProgramName" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 93,
+            "col": 2,
+            "feature": [ "Call", "zoeSetProgramName" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 77,
+    "sink": 500,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 93,
+            "col": 2,
+            "feature": [ "Call", "zoeSetProgramName" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 93,
+            "col": 2,
+            "feature": [ "Call", "zoeSetProgramName" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 77,
+    "sink": 873,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 191,
+            "col": 9,
+            "feature": [ "Call", "zoeGetIsochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "snap.c",
+            "line": 77,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Call", "file_is_isochore" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 195,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "snap.c",
+            "line": 221,
+            "col": 13,
+            "feature": [ "Call", "zoeOpenFile" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 873,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 88,
+    "sink": 500,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 88,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 91,
+            "col": 3,
+            "feature": [ "Call", "zoePushTVec" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 424,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 92,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 88,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 91,
+            "col": 3,
+            "feature": [ "Call", "zoePushTVec" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 424,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 92,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 88,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 91,
+            "col": 3,
+            "feature": [ "Call", "zoePushTVec" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 424,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 92,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 88,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 91,
+            "col": 3,
+            "feature": [ "Call", "zoePushTVec" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 424,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 92,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 88,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 91,
+            "col": 3,
+            "feature": [ "Call", "zoePushTVec" ]
+          },
+          {
+            "file": "Zoe/zoeTools.c",
+            "line": 424,
+            "col": 35,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "Zoe/zoeIsochore.c",
+            "line": 92,
+            "col": 9,
+            "feature": [ "Call", "zoeGetHMM" ]
+          },
+          {
+            "file": "Zoe/zoeHMM.c",
+            "line": 500,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "snap",
+    "src": 73,
+    "sink": 60,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.254000254000381
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.09805806756909202
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 73,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 81,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 106,
+            "col": 10,
+            "feature": [ "Call", "zoeNewDistribution" ]
+          },
+          {
+            "file": "Zoe/zoeDistribution.c",
+            "line": 60,
+            "col": 8,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.09805806756909202
+      }
+    ]
+  }
+]

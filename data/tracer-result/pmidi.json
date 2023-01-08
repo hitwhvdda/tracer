@@ -1,0 +1,604 @@
+[
+  {
+    "program": "pmidi",
+    "src": 506,
+    "sink": 472,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-11",
+        "trace": [
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 508,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 510,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 7 ] ] ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 514,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 334,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 335,
+            "col": 10,
+            "feature": [ "Call", "read_data" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 472,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune - true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 1,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input getc": 1
+        },
+        "score": 0.6233022919309994
+      },
+      {
+        "signature": "autotrace-20200219.65-17",
+        "trace": [
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 508,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 510,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 7 ] ] ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 514,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 334,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 335,
+            "col": 10,
+            "feature": [ "Call", "read_data" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 472,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune - true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 1,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input getc": 1
+        },
+        "score": 0.6233022919309994
+      },
+      {
+        "signature": "gimp-2.6.7-3",
+        "trace": [
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 508,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 510,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 7 ] ] ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 514,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 334,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 335,
+            "col": 10,
+            "feature": [ "Call", "read_data" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 472,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune - true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 1,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input getc": 1
+        },
+        "score": 0.6199304198780666
+      },
+      {
+        "signature": "gimp-2.6.7-2",
+        "trace": [
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 508,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 510,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 7 ] ] ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 514,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 334,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 335,
+            "col": 10,
+            "feature": [ "Call", "read_data" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 472,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune - true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 1,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input getc": 1
+        },
+        "score": 0.6199304198780666
+      },
+      {
+        "signature": "libxcursor-1.1.14-1",
+        "trace": [
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 7,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 506,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 508,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "UnOp", "-", [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 510,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 7 ] ] ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 511,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "&", [ "Var" ], [ "Const", [ "Cint", 127 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 514,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 334,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 335,
+            "col": 10,
+            "feature": [ "Call", "read_data" ]
+          },
+          {
+            "file": "src/midiread.c",
+            "line": 472,
+            "col": 24,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune - true": 1,
+          "Prune ! true": 1,
+          "BinOp |": 2,
+          "BinOp <<": 1,
+          "BinOp +": 1,
+          "BinOp &": 2,
+          "Input getc": 1
+        },
+        "score": 0.6025948617237675
+      }
+    ]
+  }
+]

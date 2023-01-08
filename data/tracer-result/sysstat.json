@@ -1,0 +1,4559 @@
+[
+  {
+    "program": "sysstat",
+    "src": 181,
+    "sink": 222,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 222,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_05-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 222,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_61-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 222,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_43-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 222,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_64-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 222,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 181,
+    "sink": 224,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_14-CWE190_Integer_Overflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 224,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_05-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 224,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_61-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 224,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_43-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 224,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      },
+      {
+        "signature":
+          "CWE190_64-CWE190_Integer_Overflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 217,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 219,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 224,
+            "col": 4,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 3,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7171371656006361
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 181,
+    "sink": 280,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 280,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 280,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7027642214999339
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 280,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6428571428571428
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 280,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6236095644623235
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 280,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6213697660012001
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 181,
+    "sink": 282,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 282,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 282,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.7027642214999339
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 282,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6428571428571428
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 282,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6236095644623235
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "tapestat.c",
+            "line": 181,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 184,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 185,
+            "col": 8,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 186,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 204,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 269,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 271,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tapestat.c",
+            "line": 282,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input readdir": 1
+        },
+        "score": 0.6213697660012001
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 166,
+    "sink": 307,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "ioconf.c",
+            "line": 166,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 307,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "ioconf.c",
+            "line": 166,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 307,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.558156305651438
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "ioconf.c",
+            "line": 166,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 307,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.22360679774997896
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "ioconf.c",
+            "line": 166,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 307,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.22360679774997896
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "ioconf.c",
+            "line": 166,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 168,
+            "col": 25,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ioconf.c",
+            "line": 307,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input fgets": 1
+        },
+        "score": 0.2008048322256247
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 876,
+    "sink": 371,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 876,
+    "sink": 374,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 876,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 881,
+            "col": 12,
+            "feature": [ "Call", "count_tid" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 848,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 371,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 371,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 374,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 796,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_stat" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 453,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 453,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 453,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 453,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 453,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 453,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 456,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 456,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 456,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 456,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 456,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 803,
+            "col": 2,
+            "feature": [ "Call", "read_proc_pid_sched" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 456,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 505,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 505,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 505,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 505,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 505,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 505,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 508,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 508,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 508,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 508,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 508,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 810,
+            "col": 6,
+            "feature": [ "Call", "read_proc_pid_status" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 508,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 560,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 560,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 560,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 560,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 560,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 560,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 563,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 563,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 563,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 563,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 563,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 814,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_smap" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 563,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 625,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 625,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 625,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 625,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 625,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 625,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 628,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 628,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 628,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 628,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 628,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 806,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_cmdline" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 628,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 683,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 683,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 683,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 683,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 683,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 683,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 686,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 686,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 686,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 686,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 686,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 825,
+            "col": 11,
+            "feature": [ "Call", "read_proc_pid_io" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 686,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 747,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 747,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 747,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 747,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 747,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 747,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "sysstat",
+    "src": 984,
+    "sink": 750,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 750,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 750,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 750,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 750,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "pidstat.c",
+            "line": 984,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 990,
+            "col": 7,
+            "feature": [ "Call", "read_pid_stats" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 819,
+            "col": 7,
+            "feature": [ "Call", "read_proc_pid_fd" ]
+          },
+          {
+            "file": "pidstat.c",
+            "line": 750,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

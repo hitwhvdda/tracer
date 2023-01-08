@@ -1,0 +1,5996 @@
+[
+  {
+    "program": "assaultcube",
+    "src": 1116,
+    "sink": 433,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 469,
+            "col": 26,
+            "feature": [ "Call", "vector<char>::reserve" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 28,
+            "feature": [ "Call", "vector<char>::growbuf" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 26,
+            "feature": [ "Call", "max<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 432,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 433,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "BinOp *": 2,
+          "Input main": 1
+        },
+        "score": 0.8038369524685003
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 469,
+            "col": 26,
+            "feature": [ "Call", "vector<char>::reserve" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 28,
+            "feature": [ "Call", "vector<char>::growbuf" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 26,
+            "feature": [ "Call", "max<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 432,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 433,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "BinOp *": 2,
+          "Input main": 1
+        },
+        "score": 0.8038369524685003
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 469,
+            "col": 26,
+            "feature": [ "Call", "vector<char>::reserve" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 28,
+            "feature": [ "Call", "vector<char>::growbuf" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 26,
+            "feature": [ "Call", "max<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 432,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 433,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "BinOp *": 2,
+          "Input main": 1
+        },
+        "score": 0.7262730392025628
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 469,
+            "col": 26,
+            "feature": [ "Call", "vector<char>::reserve" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 28,
+            "feature": [ "Call", "vector<char>::growbuf" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 26,
+            "feature": [ "Call", "max<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 432,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 433,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "BinOp *": 2,
+          "Input main": 1
+        },
+        "score": 0.7262730392025628
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 469,
+            "col": 26,
+            "feature": [ "Call", "vector<char>::reserve" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 444,
+            "col": 28,
+            "feature": [ "Call", "vector<char>::growbuf" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 26,
+            "feature": [ "Call", "max<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 55,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 430,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 432,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 433,
+            "col": 25,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune > true": 2,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "BinOp *": 2,
+          "Input main": 1
+        },
+        "score": 0.6138245895861674
+      }
+    ]
+  },
+  {
+    "program": "assaultcube",
+    "src": 1116,
+    "sink": 825,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 69,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 825,
+            "col": 58,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input main": 1
+        },
+        "score": 0.7434145850079608
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 69,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 825,
+            "col": 58,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input main": 1
+        },
+        "score": 0.7434145850079608
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 69,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 825,
+            "col": 58,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input main": 1
+        },
+        "score": 0.6203719910259222
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 69,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 825,
+            "col": 58,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input main": 1
+        },
+        "score": 0.6203719910259222
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 69,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 825,
+            "col": 58,
+            "feature": [
+              "IntOverflow",
+              "__new_array",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input main": 1
+        },
+        "score": 0.5642764926868786
+      }
+    ]
+  },
+  {
+    "program": "assaultcube",
+    "src": 1116,
+    "sink": 218,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.5508877785658665
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.5508877785658665
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.19323512725603548
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.08276058886023679
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.08276058886023679
+      }
+    ]
+  },
+  {
+    "program": "assaultcube",
+    "src": 1116,
+    "sink": 120,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 58,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 120,
+            "col": 75,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.3232634750642192
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 58,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 120,
+            "col": 75,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.3232634750642192
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 58,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 120,
+            "col": 75,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.3232634750642192
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 58,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 120,
+            "col": 75,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.3232634750642192
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1238,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 348,
+            "col": 35,
+            "feature": [ "Call", "parsequotes" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 305,
+            "col": 15,
+            "feature": [ "Call", "newstring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 826,
+            "col": 58,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 120,
+            "col": 75,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.12211366346410907
+      }
+    ]
+  },
+  {
+    "program": "assaultcube",
+    "src": 1116,
+    "sink": 218,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.19323512725603548
+      },
+      {
+        "signature": "schismtracker-20190722-2",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.08276058886023679
+      },
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.06757373783994861
+      },
+      {
+        "signature":
+          "CWE191_53-CWE191_Integer_Underflow__char_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.06757373783994861
+      },
+      {
+        "signature":
+          "CWE191_83-CWE191_Integer_Underflow__int_connect_socket_sub-1",
+        "trace": [
+          {
+            "file": "source/src/main.cpp",
+            "line": 1116,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1157,
+            "col": 13,
+            "feature": [ "Call", "servercommandline::checkarg" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1151,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1152,
+            "col": 34,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1240,
+            "col": 17,
+            "feature": [ "Call", "filterrichtext" ]
+          },
+          {
+            "file": "source/src/protocol.cpp",
+            "line": 352,
+            "col": 23,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1153,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 2 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/protos.h",
+            "line": 1237,
+            "col": 49,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1160,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1383,
+            "col": 9,
+            "feature": [ "Call", "copystring" ]
+          },
+          {
+            "file": "source/src/main.cpp",
+            "line": 1390,
+            "col": 20,
+            "feature": [ "Call", "execute" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 663,
+            "col": 17,
+            "feature": [ "Call", "executeret" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 487,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 489,
+            "col": 5,
+            "feature": [ "Call", "vector<char const *>::add" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 506,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 507,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 501,
+            "col": 23,
+            "feature": [ "Call", "parseword" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 410,
+            "col": 51,
+            "feature": [ "Call", "parseexp" ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 338,
+            "col": 13,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/command.cpp",
+            "line": 343,
+            "col": 17,
+            "feature": [ "Call", "vector<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 470,
+            "col": 9,
+            "feature": [ "Call", "databuf<char>::put" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 217,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 33,
+            "feature": [ "Call", "min<int>" ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 12,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 60,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "source/src/tools.h",
+            "line": 218,
+            "col": 9,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "Prune == true": 2,
+          "Prune < true": 2,
+          "Prune != true": 1,
+          "Prune ! true": 5,
+          "BinOp +": 6,
+          "Input main": 1
+        },
+        "score": 0.06757373783994861
+      }
+    ]
+  }
+]

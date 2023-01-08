@@ -1,0 +1,2770 @@
+[
+  {
+    "program": "cadaver",
+    "src": 181,
+    "sink": 213,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/tempname.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 182,
+            "col": 24,
+            "feature": [ "Call", "direxists" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 202,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 213,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/tempname.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 202,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 213,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/tempname.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 182,
+            "col": 24,
+            "feature": [ "Call", "direxists" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 202,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 213,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/tempname.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 202,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 213,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/tempname.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 182,
+            "col": 24,
+            "feature": [ "Call", "direxists" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 202,
+            "col": 10,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/tempname.c",
+            "line": 213,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 795,
+    "sink": 810,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 795,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 827,
+            "col": 9,
+            "feature": [ "Call", "spawn_pager" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 810,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 795,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 827,
+            "col": 9,
+            "feature": [ "Call", "spawn_pager" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 810,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 795,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 827,
+            "col": 9,
+            "feature": [ "Call", "spawn_pager" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 810,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 795,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 827,
+            "col": 9,
+            "feature": [ "Call", "spawn_pager" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 810,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 795,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 827,
+            "col": 9,
+            "feature": [ "Call", "spawn_pager" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 810,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 851,
+    "sink": 97,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 97,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 2, "Input main": 1 },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 97,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 2, "Input main": 1 },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 97,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 2, "Input main": 1 },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 97,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 2, "Input main": 1 },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 97,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 2, "Input main": 1 },
+        "score": 0.7071067811865476
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 61,
+    "sink": 72,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 61,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 66,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 61,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 66,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 61,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 66,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 61,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 66,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 61,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 66,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "debian/build/src/edit.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 512,
+    "sink": 871,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5913123959890826
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5913123959890826
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5913123959890826
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5913123959890826
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.4212117695871159
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 629,
+    "sink": 498,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/glob.c",
+            "line": 629,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 638,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 692,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 707,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 812,
+            "col": 11,
+            "feature": [ "Call", "davglob_stat" ]
+          },
+          {
+            "file": "debian/build/src/cmdline.c",
+            "line": 240,
+            "col": 11,
+            "feature": [ "Call", "resolve_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 906,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 909,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 912,
+            "col": 8,
+            "feature": [ "Call", "escape_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 755,
+            "col": 12,
+            "feature": [ "Call", "ne_path_escape" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 498,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.543557306504609
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/glob.c",
+            "line": 629,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 638,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 692,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 707,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 812,
+            "col": 11,
+            "feature": [ "Call", "davglob_stat" ]
+          },
+          {
+            "file": "debian/build/src/cmdline.c",
+            "line": 240,
+            "col": 11,
+            "feature": [ "Call", "resolve_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 906,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 909,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 912,
+            "col": 8,
+            "feature": [ "Call", "escape_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 755,
+            "col": 12,
+            "feature": [ "Call", "ne_path_escape" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 498,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.543557306504609
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/glob.c",
+            "line": 629,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 638,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 692,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 707,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 812,
+            "col": 11,
+            "feature": [ "Call", "davglob_stat" ]
+          },
+          {
+            "file": "debian/build/src/cmdline.c",
+            "line": 240,
+            "col": 11,
+            "feature": [ "Call", "resolve_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 906,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 909,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 912,
+            "col": 8,
+            "feature": [ "Call", "escape_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 755,
+            "col": 12,
+            "feature": [ "Call", "ne_path_escape" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 498,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.3015113445777636
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/glob.c",
+            "line": 629,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 638,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 692,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 707,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 812,
+            "col": 11,
+            "feature": [ "Call", "davglob_stat" ]
+          },
+          {
+            "file": "debian/build/src/cmdline.c",
+            "line": 240,
+            "col": 11,
+            "feature": [ "Call", "resolve_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 906,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 909,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 912,
+            "col": 8,
+            "feature": [ "Call", "escape_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 755,
+            "col": 12,
+            "feature": [ "Call", "ne_path_escape" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 498,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.18953562637585883
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/glob.c",
+            "line": 629,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 638,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 692,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 707,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lib/glob.c",
+            "line": 812,
+            "col": 11,
+            "feature": [ "Call", "davglob_stat" ]
+          },
+          {
+            "file": "debian/build/src/cmdline.c",
+            "line": 240,
+            "col": 11,
+            "feature": [ "Call", "resolve_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 906,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 909,
+            "col": 16,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 912,
+            "col": 8,
+            "feature": [ "Call", "escape_path" ]
+          },
+          {
+            "file": "debian/build/src/commands.c",
+            "line": 755,
+            "col": 12,
+            "feature": [ "Call", "ne_path_escape" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 498,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.1507556722888818
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 512,
+    "sink": 871,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5393598899705937
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5393598899705937
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_postdec-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5393598899705937
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_postdec-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5393598899705937
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_connect_socket_postdec-2",
+        "trace": [
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 512,
+            "col": 8,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 842,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 4096 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 845,
+            "col": 6,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 857,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 861,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 862,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 866,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Var" ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                  ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_socket.c",
+            "line": 871,
+            "col": 5,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune > true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input recv": 1
+        },
+        "score": 0.5393598899705937
+      }
+    ]
+  },
+  {
+    "program": "cadaver",
+    "src": 851,
+    "sink": 99,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 99,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input main": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 99,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input main": 1 },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 99,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input main": 1 },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 99,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input main": 1 },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 851,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 888,
+            "col": 5,
+            "feature": [ "Call", "parse_args" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 461,
+            "col": 2,
+            "feature": [ "Call", "open_connection" ]
+          },
+          {
+            "file": "debian/build/src/cadaver.c",
+            "line": 317,
+            "col": 6,
+            "feature": [ "Call", "ne_uri_parse" ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 156,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 162,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lib/neon/ne_uri.c",
+            "line": 165,
+            "col": 30,
+            "feature": [ "Call", "ne_strndup" ]
+          },
+          {
+            "file": "lib/neon/ne_alloc.c",
+            "line": 99,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "BinOp +": 1, "Input main": 1 },
+        "score": 0.07332355751067665
+      }
+    ]
+  }
+]

@@ -1,0 +1,1708 @@
+[
+  {
+    "program": "openbsd-inetd",
+    "src": 1209,
+    "sink": 1479,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.3535533905932738
+      },
+      {
+        "signature": "CWE191_31-CWE191_Integer_Underflow__int_fgets_predec-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.3535533905932738
+      },
+      {
+        "signature": "CWE191_07-CWE191_Integer_Underflow__int_fgets_predec-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.3535533905932738
+      },
+      {
+        "signature": "CWE191_31-CWE191_Integer_Underflow__int_fgets_sub-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.3535533905932738
+      },
+      {
+        "signature":
+          "CWE191_02-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.3535533905932738
+      }
+    ]
+  },
+  {
+    "program": "openbsd-inetd",
+    "src": 1209,
+    "sink": 1479,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.20016019225635895
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.20016019225635895
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.14433756729740646
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.14433756729740646
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1188,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 91 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1194,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1320,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1403,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1429,
+            "col": 26,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1557,
+            "col": 6,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1178,
+            "col": 8,
+            "feature": [ "Call", "skip" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1190,
+            "col": 23,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1211,
+            "col": 20,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1215,
+            "col": 6,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1231,
+            "col": 18,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1388,
+            "col": 17,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1391,
+            "col": 17,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 19,
+            "feature": [ "Call", "newstr" ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 19,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1566,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1567,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1402,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1428,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "inetd.c",
+            "line": 1479,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "LibraryCall strcmp": 4,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input fgets": 2
+        },
+        "score": 0.07777137710478189
+      }
+    ]
+  }
+]

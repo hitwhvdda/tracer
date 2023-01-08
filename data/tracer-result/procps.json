@@ -1,0 +1,1393 @@
+[
+  {
+    "program": "procps",
+    "src": 671,
+    "sink": 487,
+    "weighted_traces": [
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 767,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 487,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input main": 1
+        },
+        "score": 0.75
+      },
+      {
+        "signature": "picocom-2.0a-2",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 767,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 487,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input main": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 767,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 487,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input main": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 767,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 487,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input main": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 767,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 487,
+            "col": 8,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Input main": 1
+        },
+        "score": 0.4472135954999579
+      }
+    ]
+  },
+  {
+    "program": "procps",
+    "src": 671,
+    "sink": 492,
+    "weighted_traces": [
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 764,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 52,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 55,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 492,
+            "col": 13,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Prune ! true": 1,
+          "Input main": 2
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 764,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 769,
+            "col": 13,
+            "feature": [ "Call", "xrealloc" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 52,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 55,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 492,
+            "col": 13,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Prune ! true": 1,
+          "Input main": 2
+        },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 764,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 52,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 55,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 492,
+            "col": 13,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Prune ! true": 1,
+          "Input main": 2
+        },
+        "score": 0.6123724356957945
+      },
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 764,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 769,
+            "col": 13,
+            "feature": [ "Call", "xrealloc" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 52,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 55,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 492,
+            "col": 13,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Prune ! true": 1,
+          "Input main": 2
+        },
+        "score": 0.6123724356957945
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 8,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 764,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 671,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 12,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 52,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 54,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 55,
+            "col": 7,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "include/xalloc.h",
+            "line": 57,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 763,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "watch.c",
+            "line": 840,
+            "col": 7,
+            "feature": [ "Call", "run_command" ]
+          },
+          {
+            "file": "watch.c",
+            "line": 492,
+            "col": 13,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 1,
+          "Prune ! true": 1,
+          "Input main": 2
+        },
+        "score": 0.6123724356957945
+      }
+    ]
+  },
+  {
+    "program": "procps",
+    "src": 322,
+    "sink": 183,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "skill.c",
+            "line": 322,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 327,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 328,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 329,
+            "col": 4,
+            "feature": [ "Call", "check_proc" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input readdir": 1
+        },
+        "score": 0.6504436355879909
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "skill.c",
+            "line": 322,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 327,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 328,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 329,
+            "col": 4,
+            "feature": [ "Call", "check_proc" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input readdir": 1
+        },
+        "score": 0.6504436355879909
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "skill.c",
+            "line": 322,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 327,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 328,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 329,
+            "col": 4,
+            "feature": [ "Call", "check_proc" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "skill.c",
+            "line": 322,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 327,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 328,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 329,
+            "col": 4,
+            "feature": [ "Call", "check_proc" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "skill.c",
+            "line": 322,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 327,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 328,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "skill.c",
+            "line": 329,
+            "col": 4,
+            "feature": [ "Call", "check_proc" ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 180,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "skill.c",
+            "line": 183,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "Prune == true": 2,
+          "Prune ! true": 2,
+          "Input readdir": 1
+        },
+        "score": 0.19145989526687088
+      }
+    ]
+  },
+  {
+    "program": "procps",
+    "src": 484,
+    "sink": 491,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "proc/sysinfo.c",
+            "line": 484,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "proc/sysinfo.c",
+            "line": 491,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "proc/sysinfo.c",
+            "line": 484,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "proc/sysinfo.c",
+            "line": 491,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "proc/sysinfo.c",
+            "line": 484,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "proc/sysinfo.c",
+            "line": 491,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "proc/sysinfo.c",
+            "line": 484,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "proc/sysinfo.c",
+            "line": 491,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "proc/sysinfo.c",
+            "line": 484,
+            "col": 15,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "proc/sysinfo.c",
+            "line": 491,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "procps",
+    "src": 340,
+    "sink": 348,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "sysctl.c",
+            "line": 340,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 342,
+            "col": 28,
+            "feature": [ "Call", "is_deprecated" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 315,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 348,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input readdir": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "sysctl.c",
+            "line": 340,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 342,
+            "col": 28,
+            "feature": [ "Call", "is_deprecated" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 315,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 348,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input readdir": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "sysctl.c",
+            "line": 340,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 342,
+            "col": 28,
+            "feature": [ "Call", "is_deprecated" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 315,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 348,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input readdir": 1
+        },
+        "score": 0.19611613513818404
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "sysctl.c",
+            "line": 340,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 342,
+            "col": 28,
+            "feature": [ "Call", "is_deprecated" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 315,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 348,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input readdir": 1
+        },
+        "score": 0.19611613513818404
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "sysctl.c",
+            "line": 340,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 342,
+            "col": 28,
+            "feature": [ "Call", "is_deprecated" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 315,
+            "col": 7,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 346,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "sysctl.c",
+            "line": 348,
+            "col": 4,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcmp": 1,
+          "Input readdir": 1
+        },
+        "score": 0.06350006350009525
+      }
+    ]
+  }
+]

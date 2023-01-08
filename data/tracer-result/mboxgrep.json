@@ -1,0 +1,4754 @@
+[
+  {
+    "program": "mboxgrep",
+    "src": 362,
+    "sink": 374,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/mbox.c",
+            "line": 362,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/mbox.c",
+            "line": 362,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/mbox.c",
+            "line": 362,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/mbox.c",
+            "line": 362,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/mbox.c",
+            "line": 362,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 153,
+    "sink": 176,
+    "weighted_traces": [
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 187,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 176,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 176,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 187,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 176,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 176,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 187,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 176,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 153,
+    "sink": 184,
+    "weighted_traces": [
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 187,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 184,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 184,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 187,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 184,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 184,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "src/mh.c",
+            "line": 153,
+            "col": 14,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 155,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 156,
+            "col": 13,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 21,
+            "feature": [ "Call", "parse_return_path" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 11,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 190,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 196,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 133,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 172,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 179,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 187,
+            "col": 8,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/mh.c",
+            "line": 184,
+            "col": 12,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [
+                    "BinOp",
+                    "+",
+                    [ "BinOp", "+", [ "Const", [ "Cint", 1 ] ], [ "Var" ] ],
+                    [ "Var" ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.7223151185146154
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 61,
+    "sink": 374,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 368,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 368,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 368,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 368,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 361,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 368,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 374,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strdup": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.17038855027411945
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 61,
+    "sink": 82,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 82,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 82,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 82,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 82,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 82,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 61,
+    "sink": 96,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 96,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 96,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 96,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 96,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 96,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 61,
+    "sink": 280,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 280,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 280,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 280,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 280,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 280,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 61,
+    "sink": 285,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 285,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 285,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 285,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 285,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 285,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 61,
+    "sink": 290,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 290,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 290,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.26726124191242434
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 290,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 290,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.07412493166611012
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 61,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 247,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 309,
+            "col": 11,
+            "feature": [ "Call", "tmpfile_open" ]
+          },
+          {
+            "file": "src/mbox.c",
+            "line": 372,
+            "col": 36,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 326,
+            "col": 17,
+            "feature": [ "Call", "xstrdup" ]
+          },
+          {
+            "file": "src/wrap.c",
+            "line": 189,
+            "col": 9,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 331,
+            "col": 2,
+            "feature": [ "Call", "scan_mailbox" ]
+          },
+          {
+            "file": "src/scan.c",
+            "line": 137,
+            "col": 18,
+            "feature": [ "Call", "maildir_open" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 66,
+            "col": 9,
+            "feature": [ "Call", "m_opendir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 72,
+            "col": 13,
+            "feature": [ "Call", "maildir_check" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 290,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strdup": 2,
+          "Input main": 1
+        },
+        "score": 0.04800153607373193
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 143,
+    "sink": 180,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.03829197905337418
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 143,
+    "sink": 182,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 143,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.03829197905337418
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 152,
+    "sink": 180,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 180,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.03829197905337418
+      }
+    ]
+  },
+  {
+    "program": "mboxgrep",
+    "src": 152,
+    "sink": 182,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.21320071635561041
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.11826247919781652
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/maildir.c",
+            "line": 152,
+            "col": 16,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 171,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/maildir.c",
+            "line": 182,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Input readdir": 1
+        },
+        "score": 0.03829197905337418
+      }
+    ]
+  },
+  { "program": "mboxgrep", "src": -1, "sink": -1, "weighted_traces": [] }
+]

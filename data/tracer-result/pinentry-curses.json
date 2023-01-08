@@ -1,0 +1,982 @@
+[
+  {
+    "program": "pinentry-curses",
+    "src": 344,
+    "sink": 388,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 388,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.6864064729836442
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 388,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.6864064729836442
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 388,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 388,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 388,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.254000254000381
+      }
+    ]
+  },
+  {
+    "program": "pinentry-curses",
+    "src": 344,
+    "sink": 389,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.6864064729836442
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.6864064729836442
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.254000254000381
+      }
+    ]
+  },
+  {
+    "program": "pinentry-curses",
+    "src": 344,
+    "sink": 389,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-2",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature":
+          "CWE191_53-CWE191_Integer_Underflow__char_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature":
+          "CWE191_83-CWE191_Integer_Underflow__int_connect_socket_sub-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.2886751345948129
+      },
+      {
+        "signature":
+          "CWE191_03-CWE191_Integer_Underflow__unsigned_int_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 11,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 344,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 363,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tty/pinentry-tty.c",
+            "line": 334,
+            "col": 16,
+            "feature": [ "Call", "secmem_realloc" ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 384,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 385,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "secmem/secmem.c",
+            "line": 389,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memset",
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "Input getc": 1
+        },
+        "score": 0.2886751345948129
+      }
+    ]
+  }
+]

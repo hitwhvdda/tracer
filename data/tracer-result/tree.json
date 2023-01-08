@@ -1,0 +1,279 @@
+[
+  {
+    "program": "tree",
+    "src": 724,
+    "sink": 730,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "tree.c",
+            "line": 724,
+            "col": 33,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 39,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 98,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 730,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 3,
+          "Input readdir": 1
+        },
+        "score": 0.18257418583505533
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "tree.c",
+            "line": 724,
+            "col": 33,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 39,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 98,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 730,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 3,
+          "Input readdir": 1
+        },
+        "score": 0.18257418583505533
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "tree.c",
+            "line": 724,
+            "col": 33,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 39,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 98,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 730,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 3,
+          "Input readdir": 1
+        },
+        "score": 0.10127393670836667
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "tree.c",
+            "line": 724,
+            "col": 33,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 39,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 98,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 730,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 3,
+          "Input readdir": 1
+        },
+        "score": 0.10127393670836667
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "tree.c",
+            "line": 724,
+            "col": 33,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 10,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 725,
+            "col": 39,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 726,
+            "col": 19,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 21,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 729,
+            "col": 98,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "tree.c",
+            "line": 730,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcmp": 3,
+          "Input readdir": 1
+        },
+        "score": 0.032791291789197645
+      }
+    ]
+  }
+]

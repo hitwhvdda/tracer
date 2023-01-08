@@ -1,0 +1,488 @@
+[
+  {
+    "program": "wdiff",
+    "src": 542,
+    "sink": 565,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 542,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 558,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 565,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 542,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 558,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 565,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 542,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 558,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 565,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 542,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 558,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 565,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 542,
+            "col": 9,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 558,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 565,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "wdiff",
+    "src": 1061,
+    "sink": 50,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1061,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1061,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1061,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1061,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1061,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "wdiff",
+    "src": 1063,
+    "sink": 50,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1063,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1063,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1063,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1063,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/wdiff.c",
+            "line": 1063,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/wdiff.c",
+            "line": 1100,
+            "col": 21,
+            "feature": [ "Call", "writepipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 8,
+            "feature": [ "Call", "openpipe" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 50,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  }
+]

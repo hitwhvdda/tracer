@@ -1,0 +1,322 @@
+[
+  {
+    "program": "liblrcalc1",
+    "src": 59,
+    "sink": 25,
+    "weighted_traces": [
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/lrcalc.c",
+            "line": 59,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 69,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 141,
+            "col": 2,
+            "feature": [ "Call", "fusion_reduce" ]
+          },
+          {
+            "file": "src/symfcn.c",
+            "line": 857,
+            "col": 9,
+            "feature": [ "Call", "v_new" ]
+          },
+          {
+            "file": "src/vector.c",
+            "line": 14,
+            "col": 26,
+            "feature": [ "Call", "amalloc" ]
+          },
+          {
+            "file": "src/alloc.c",
+            "line": 25,
+            "col": 13,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.4216370213557839
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "src/lrcalc.c",
+            "line": 59,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 69,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 141,
+            "col": 2,
+            "feature": [ "Call", "fusion_reduce" ]
+          },
+          {
+            "file": "src/symfcn.c",
+            "line": 857,
+            "col": 9,
+            "feature": [ "Call", "v_new" ]
+          },
+          {
+            "file": "src/vector.c",
+            "line": 14,
+            "col": 26,
+            "feature": [ "Call", "amalloc" ]
+          },
+          {
+            "file": "src/alloc.c",
+            "line": 25,
+            "col": 13,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.41311822359545775
+      },
+      {
+        "signature":
+          "CWE191_66-CWE191_Integer_Underflow__int_connect_socket_multiply-1",
+        "trace": [
+          {
+            "file": "src/lrcalc.c",
+            "line": 59,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 69,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 141,
+            "col": 2,
+            "feature": [ "Call", "fusion_reduce" ]
+          },
+          {
+            "file": "src/symfcn.c",
+            "line": 857,
+            "col": 9,
+            "feature": [ "Call", "v_new" ]
+          },
+          {
+            "file": "src/vector.c",
+            "line": 14,
+            "col": 26,
+            "feature": [ "Call", "amalloc" ]
+          },
+          {
+            "file": "src/alloc.c",
+            "line": 25,
+            "col": 13,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3999999999999999
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__int_connect_socket_add-2",
+        "trace": [
+          {
+            "file": "src/lrcalc.c",
+            "line": 59,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 69,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 141,
+            "col": 2,
+            "feature": [ "Call", "fusion_reduce" ]
+          },
+          {
+            "file": "src/symfcn.c",
+            "line": 857,
+            "col": 9,
+            "feature": [ "Call", "v_new" ]
+          },
+          {
+            "file": "src/vector.c",
+            "line": 14,
+            "col": 26,
+            "feature": [ "Call", "amalloc" ]
+          },
+          {
+            "file": "src/alloc.c",
+            "line": 25,
+            "col": 13,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3999999999999999
+      },
+      {
+        "signature":
+          "CWE191_14-CWE191_Integer_Underflow__int64_t_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "src/lrcalc.c",
+            "line": 59,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 69,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lrcalc.c",
+            "line": 141,
+            "col": 2,
+            "feature": [ "Call", "fusion_reduce" ]
+          },
+          {
+            "file": "src/symfcn.c",
+            "line": 857,
+            "col": 9,
+            "feature": [ "Call", "v_new" ]
+          },
+          {
+            "file": "src/vector.c",
+            "line": 14,
+            "col": 26,
+            "feature": [ "Call", "amalloc" ]
+          },
+          {
+            "file": "src/alloc.c",
+            "line": 25,
+            "col": 13,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3999999999999999
+      }
+    ]
+  }
+]

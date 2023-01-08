@@ -1,0 +1,902 @@
+[
+  {
+    "program": "dvbstreamer",
+    "src": 94,
+    "sink": 94,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 47,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 47,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 47,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 47,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 47,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 94,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dvbstreamer",
+    "src": 100,
+    "sink": 65,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 212,
+            "col": 5,
+            "feature": [ "Call", "DBaseInit" ]
+          },
+          {
+            "file": "src/dbase.c",
+            "line": 65,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 212,
+            "col": 5,
+            "feature": [ "Call", "DBaseInit" ]
+          },
+          {
+            "file": "src/dbase.c",
+            "line": 65,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 212,
+            "col": 5,
+            "feature": [ "Call", "DBaseInit" ]
+          },
+          {
+            "file": "src/dbase.c",
+            "line": 65,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 212,
+            "col": 5,
+            "feature": [ "Call", "DBaseInit" ]
+          },
+          {
+            "file": "src/dbase.c",
+            "line": 65,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 212,
+            "col": 5,
+            "feature": [ "Call", "DBaseInit" ]
+          },
+          {
+            "file": "src/dbase.c",
+            "line": 65,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dvbstreamer",
+    "src": 100,
+    "sink": 193,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 117,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getopt": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "dvbstreamer",
+    "src": 100,
+    "sink": 110,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 110,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 110,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 110,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 110,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 110,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.17038855027411945
+      }
+    ]
+  },
+  {
+    "program": "dvbstreamer",
+    "src": 100,
+    "sink": 114,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 114,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 114,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.3508232077228117
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 114,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 114,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/setup.c",
+            "line": 100,
+            "col": 13,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 110,
+            "col": 23,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 183,
+            "col": 9,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 193,
+            "col": 9,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "src/setup.c",
+            "line": 194,
+            "col": 13,
+            "feature": [ "Call", "LoggingInit" ]
+          },
+          {
+            "file": "src/logging.c",
+            "line": 114,
+            "col": 9,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strcpy": 1,
+          "LibraryCall sprintf": 1,
+          "Prune ! true": 1,
+          "Input getopt": 1
+        },
+        "score": 0.17038855027411945
+      }
+    ]
+  }
+]

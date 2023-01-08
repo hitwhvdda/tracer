@@ -1,0 +1,5314 @@
+[
+  {
+    "program": "libdebconfclient0",
+    "src": 165,
+    "sink": 227,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/debconf.c",
+            "line": 165,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/debconf.c",
+            "line": 181,
+            "col": 13,
+            "feature": [ "Call", "confmodule_run" ]
+          },
+          {
+            "file": "src/confmodule.c",
+            "line": 227,
+            "col": 17,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/debconf.c",
+            "line": 165,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/debconf.c",
+            "line": 181,
+            "col": 13,
+            "feature": [ "Call", "confmodule_run" ]
+          },
+          {
+            "file": "src/confmodule.c",
+            "line": 227,
+            "col": 17,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/debconf.c",
+            "line": 165,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/debconf.c",
+            "line": 181,
+            "col": 13,
+            "feature": [ "Call", "confmodule_run" ]
+          },
+          {
+            "file": "src/confmodule.c",
+            "line": 227,
+            "col": 17,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/debconf.c",
+            "line": 165,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/debconf.c",
+            "line": 181,
+            "col": 13,
+            "feature": [ "Call", "confmodule_run" ]
+          },
+          {
+            "file": "src/confmodule.c",
+            "line": 227,
+            "col": 17,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/debconf.c",
+            "line": 165,
+            "col": 29,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/debconf.c",
+            "line": 181,
+            "col": 13,
+            "feature": [ "Call", "confmodule_run" ]
+          },
+          {
+            "file": "src/confmodule.c",
+            "line": 227,
+            "col": 17,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 194,
+    "sink": 46,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 46,
+            "col": 17,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 2,
+          "Input fgets": 2
+        },
+        "score": 0.6467555047518569
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 46,
+            "col": 17,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 2,
+          "Input fgets": 2
+        },
+        "score": 0.6052183065690196
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 46,
+            "col": 17,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 2,
+          "Input fgets": 2
+        },
+        "score": 0.5164961690883358
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 46,
+            "col": 17,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 2,
+          "Input fgets": 2
+        },
+        "score": 0.5153471216826172
+      },
+      {
+        "signature": "autotrace-20200219.65-7",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 46,
+            "col": 17,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 2,
+          "Input fgets": 2
+        },
+        "score": 0.4120214081795097
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 194,
+    "sink": 48,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.5255079675749084
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.5255079675749084
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.17015320686031377
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.05572782125753528
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.05572782125753528
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 247,
+    "sink": 168,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 168,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 168,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 168,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_connect_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 168,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_16-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 168,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 247,
+    "sink": 408,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 497,
+            "col": 14,
+            "feature": [ "Call", "control_path" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 408,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 497,
+            "col": 14,
+            "feature": [ "Call", "control_path" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 408,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 497,
+            "col": 14,
+            "feature": [ "Call", "control_path" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 408,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 492,
+            "col": 27,
+            "feature": [ "Call", "getfield" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 497,
+            "col": 14,
+            "feature": [ "Call", "control_path" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 408,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 247,
+            "col": 4,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 651,
+            "col": 15,
+            "feature": [ "LibraryCall", "strtok" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 654,
+            "col": 10,
+            "feature": [ "Call", "reconfigure" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 497,
+            "col": 14,
+            "feature": [ "Call", "control_path" ]
+          },
+          {
+            "file": "src/dpkg-reconfigure.c",
+            "line": 408,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strtok": 1,
+          "Input fread": 1
+        },
+        "score": 0.40824829046386296
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 123,
+    "sink": 147,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.32444284226152503
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.16222142113076252
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 147,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.029135827337403247
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 123,
+    "sink": 149,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 149,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.32444284226152503
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 149,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.16222142113076252
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 149,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 149,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.04499212706658475
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 123,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 128,
+            "col": 12,
+            "feature": [ "LibraryCall", "strdup" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 138,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 146,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/dpkg-preconfigure.c",
+            "line": 149,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 4,
+          "LibraryCall strdup": 1,
+          "Input getenv": 1
+        },
+        "score": 0.029135827337403247
+      }
+    ]
+  },
+  {
+    "program": "libdebconfclient0",
+    "src": 194,
+    "sink": 48,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.17015320686031377
+      },
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.13650472655798704
+      },
+      {
+        "signature": "CWE191_31-CWE191_Integer_Underflow__int_fgets_predec-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.13650472655798704
+      },
+      {
+        "signature": "CWE191_07-CWE191_Integer_Underflow__int_fgets_predec-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.13650472655798704
+      },
+      {
+        "signature": "CWE191_31-CWE191_Integer_Underflow__int_fgets_sub-1",
+        "trace": [
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 50,
+            "col": 14,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 260,
+            "col": 23,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 279,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 47,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 194,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 9,
+            "feature": [ "Call", "strstrip" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 45,
+            "col": 37,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 197,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 302,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncat" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 317,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 332,
+            "col": 9,
+            "feature": [ "Call", "strparsecword" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 99,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 105,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 117,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 120,
+            "col": 4,
+            "feature": [ "Call", "strunescape" ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 338,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 362,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/strutl.c",
+            "line": 132,
+            "col": 2,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 387,
+            "col": 6,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 405,
+            "col": 5,
+            "feature": [ "Call", "config_set" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 150,
+            "col": 28,
+            "feature": [ "Call", "config_lookup" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 70,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 73,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 81,
+            "col": 11,
+            "feature": [ "Call", "config_lookuphlp" ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 30,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "!=",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/configuration.c",
+            "line": 48,
+            "col": 2,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 2,
+          "LibraryCall strncat": 1,
+          "LibraryCall strlen": 2,
+          "Prune == true": 9,
+          "Prune != true": 1,
+          "Prune ! true": 8,
+          "BinOp +": 1,
+          "Input fgets": 2
+        },
+        "score": 0.13650472655798704
+      }
+    ]
+  }
+]

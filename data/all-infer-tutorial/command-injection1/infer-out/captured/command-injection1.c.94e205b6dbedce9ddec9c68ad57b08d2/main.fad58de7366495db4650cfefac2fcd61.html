@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>main.fad58de7366495db4650cfefac2fcd61</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../command-injection1.c.94e205b6dbedce9ddec9c68ad57b08d2.html#LINE8">main</a></h1></center>
+<a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:9 exn: Start
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:1 succs:8 exn: Instructions
+VARIABLE_DECLARED(cat:char[5*1]); [line 9, column 3];
+*&amp;cat:char[5*1]="cat " [line 9, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:9 succs:7 exn: Instructions
+n$13=_fun_strlen(&amp;cat:char*) [line 13, column 19];
+n$14=*&amp;argv:char** [line 13, column 40];
+n$15=*n$14[1]:char* [line 13, column 40];
+n$16=_fun_strlen(n$15:char*) [line 13, column 33];
+*&amp;commandLength:unsigned long=((n$13 + n$16) + (unsigned long)1) [line 13, column 3];
+EXIT_SCOPE(n$13,n$14,n$15,n$16); [line 13, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:8 succs:6 exn: Instructions
+n$11=*&amp;commandLength:unsigned long [line 14, column 28];
+n$12=_fun_malloc(n$11:unsigned long) [line 14, column 21];
+*&amp;command:char*=(char*)n$12 [line 14, column 3];
+EXIT_SCOPE(n$11,n$12); [line 14, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:7 succs:5 exn: Instructions
+n$8=*&amp;command:char* [line 15, column 11];
+n$9=*&amp;commandLength:unsigned long [line 15, column 25];
+n$10=_fun_strncpy(n$8:char*,&amp;cat:char*,n$9:unsigned long) [line 15, column 3];
+EXIT_SCOPE(n$8,n$9,n$10); [line 15, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:6 succs:4 exn: Instructions
+n$2=*&amp;command:char* [line 16, column 11];
+n$3=*&amp;argv:char** [line 16, column 20];
+n$4=*n$3[1]:char* [line 16, column 20];
+n$5=*&amp;commandLength:unsigned long [line 16, column 30];
+n$6=_fun_strlen(&amp;cat:char*) [line 16, column 46];
+n$7=_fun_strncat(n$2:char*,n$4:char*,(n$5 - n$6):unsigned long) [line 16, column 3];
+NULLIFY(&amp;commandLength); [line 16, column 3];
+NULLIFY(&amp;argv); [line 16, column 3];
+EXIT_SCOPE(n$2,n$3,n$4,n$5,n$6,n$7,cat,commandLength,argv); [line 16, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:5 succs:3 exn: Instructions
+n$0=*&amp;command:char* [line 18, column 10];
+n$1=_fun_system(n$0:char*) [line 18, column 3];
+NULLIFY(&amp;command); [line 18, column 3];
+EXIT_SCOPE(n$0,n$1,command); [line 18, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:4 succs:2 exn: Instructions
+*&amp;return:int=0 [line 19, column 3];
+APPLY_ABSTRACTION; [line 19, column 3];
+</span></span></a> <a href="./nodes/main.fad58de7366495db4650cfefac2fcd61_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:3 succs: exn: Exit
+NULLIFY(&amp;cat); [line 20, column 1];
+</span></span></a><br />@
+
+<span class='color_black'>int main(int argc, char** argv)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+<br>Api Misuse CmdInjection <a href="./nodes/node0.html">node0</a>(<a href="./../command-injection1.c.94e205b6dbedce9ddec9c68ad57b08d2.html#LINE18">18</a>)
+<hr width="100%">
+<LISTING>
+C++ API misuse checker: {mem: { cat -> {powloc: { main-72223805-1-1(cat) }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                command -> {powloc: { malloc-333406275-0-1 }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                commandLength -> {powloc: { }, init: Init, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                argv -> {powloc: { *argv }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                return -> {powloc: { }, init: Init, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                *argv -> {powloc: { **argv }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                **argv -> {powloc: { }, init: Bot, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { (1: 0)  line 8, column 1 }, str: Bot, traces: { [Input (line 8, column 1), ],
+                                                                    [LibraryCall (line 13, column 33), Input (line 8, column 1), ] }},
+                                main-72223805-1-1(cat) -> {powloc: { }, init: Init, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { }, str: Bot, traces: { }},
+                                malloc-333406275-0-1 -> {powloc: { }, init: Init, int_overflow: No IntOverflow, int_underflow: No IntUnderflow, user_input: { (1: 0)  line 8, column 1 }, str: Bot, traces: { [LibraryCall (line 16, column 3), Input (line 8, column 1), ],
+                                                                    [LibraryCall (line 16, column 3), LibraryCall (line 13, column 33), Input (line 8, column 1), ] }} }, condset: 
+{ {user_input: (1: 0)  line 8, column 1, loc: line 18, column 3, traces: { [CmdInjection (line 18, column 3), LibraryCall (line 16, column 3), Input (line 8, column 1), ],
+                                                                    [CmdInjection (line 18, column 3), LibraryCall (line 16, column 3), LibraryCall (line 13, column 33), Input (line 8, column 1), ] }} }}
+BufferOverrunAnalysis: StackLocs: { } MemPure:
+{ return -> (0(updated by +), ⊥, { }, Assign `{ return }` (tutorial/command-injection1.c:19:3)),
+  *argv -> M(⊥(updated by +), ⊥, { **argv -> offset : [*argv.offset.lb(s), *argv.offset.ub(s)], size : [*argv.length.lb(u), *argv.length.ub(u)] }, Parameter `**argv` (tutorial/command-injection1.c:8:1)) }
+Alias: { ret= }
+
+</LISTING>
+<hr />
+<pre>
+{ proc_name= main
+; translation_unit= tutorial/command-injection1.c
+; formals= [(argc,int);  (argv,char**)]
+; is_defined= true
+; loc= tutorial/command-injection1.c:8:1
+; locals= [{ name= commandLength; typ= unsigned long; modify_in_block= false; is_declared_unused= false }; 
+           { name= command; typ= char*; modify_in_block= false; is_declared_unused= false }; 
+           { name= cat; typ= char[5*1]; modify_in_block= false; is_declared_unused= false }]
+; ret_type= int 
+; proc_id= main }</pre>
+</body>
+</html>

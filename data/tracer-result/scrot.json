@@ -1,0 +1,1318 @@
+[
+  {
+    "program": "scrot",
+    "src": 36,
+    "sink": 290,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "IntUnderflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.3086066999241839
+      },
+      {
+        "signature":
+          "CWE191_53-CWE191_Integer_Underflow__char_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "IntUnderflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.3086066999241839
+      },
+      {
+        "signature":
+          "CWE191_83-CWE191_Integer_Underflow__int_connect_socket_sub-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "IntUnderflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.3086066999241839
+      },
+      {
+        "signature":
+          "CWE191_03-CWE191_Integer_Underflow__unsigned_int_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "IntUnderflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.3086066999241839
+      },
+      {
+        "signature":
+          "CWE191_21-CWE191_Integer_Underflow__int64_t_fscanf_sub-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "IntUnderflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntUnderflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.3086066999241839
+      }
+    ]
+  },
+  {
+    "program": "scrot",
+    "src": 36,
+    "sink": 295,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.22645540682891918
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.20412414523193148
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 295,
+            "col": 7,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.10998533626601498
+      }
+    ]
+  },
+  {
+    "program": "scrot",
+    "src": 36,
+    "sink": 290,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.20965696734438366
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.20965696734438366
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.2036532699906392
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.1889822365046136
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/main.c",
+            "line": 36,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/main.c",
+            "line": 50,
+            "col": 3,
+            "feature": [ "Call", "init_parse_options" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 54,
+            "col": 4,
+            "feature": [ "Call", "scrot_parse_option_array" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 282,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 253,
+            "col": 15,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 257,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 263,
+            "col": 33,
+            "feature": [ "Call", "name_thumbnail" ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 288,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "/",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/options.c",
+            "line": 290,
+            "col": 7,
+            "feature": [ "BufferOverflow", "strncpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 3,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "Input main": 1
+        },
+        "score": 0.1889822365046136
+      }
+    ]
+  }
+]

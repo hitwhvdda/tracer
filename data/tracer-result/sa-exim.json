@@ -1,0 +1,184 @@
+[
+  {
+    "program": "sa-exim",
+    "src": 658,
+    "sink": 974,
+    "weighted_traces": [
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 658,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "sa-exim.c",
+            "line": 974,
+            "col": 6,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input fgets": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature":
+          "CWE78_16-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 658,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "sa-exim.c",
+            "line": 974,
+            "col": 6,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input fgets": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "CWE78_31-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 658,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "sa-exim.c",
+            "line": 974,
+            "col": 6,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input fgets": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature":
+          "CWE78_17-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 658,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "sa-exim.c",
+            "line": 974,
+            "col": 6,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input fgets": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_file_execlp-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 658,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "sa-exim.c",
+            "line": 974,
+            "col": 6,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input fgets": 1 },
+        "score": 0.9999999999999998
+      }
+    ]
+  },
+  {
+    "program": "sa-exim",
+    "src": 1404,
+    "sink": 1404,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_04-CWE680_Integer_Overflow_to_Buffer_Overflow__new_connect_socket-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 1404,
+            "col": 29,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE134_65-CWE134_Uncontrolled_Format_String__char_listen_socket_printf-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 1404,
+            "col": 29,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 1404,
+            "col": 29,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 1404,
+            "col": 29,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "sa-exim.c",
+            "line": 1404,
+            "col": 29,
+            "feature": [ "Unknown" ]
+          }
+        ],
+        "vec": {},
+        "score": 0.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,647 @@
+[
+  {
+    "program": "liblockfile-bin",
+    "src": 141,
+    "sink": 146,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "liblockfile-bin",
+    "src": 338,
+    "sink": 414,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 338,
+            "col": 16,
+            "feature": [ "Call", "is_maillock" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 292,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 123,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 376,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_set_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 382,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 386,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_save_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 261,
+            "col": 11,
+            "feature": [ "Call", "lockfilename" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 356,
+            "col": 7,
+            "feature": [ "Call", "lockfile_check" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6454972243679028
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 292,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 376,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_set_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 382,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 386,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_save_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 261,
+            "col": 11,
+            "feature": [ "Call", "lockfilename" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 356,
+            "col": 7,
+            "feature": [ "Call", "lockfile_check" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6454972243679028
+      },
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 292,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 114,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 376,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_set_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 386,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_save_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 261,
+            "col": 11,
+            "feature": [ "Call", "lockfilename" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 356,
+            "col": 7,
+            "feature": [ "Call", "lockfile_check" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6454972243679028
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 338,
+            "col": 16,
+            "feature": [ "Call", "is_maillock" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 292,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 123,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 376,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_set_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 382,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 386,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_save_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 261,
+            "col": 11,
+            "feature": [ "Call", "lockfilename" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 356,
+            "col": 7,
+            "feature": [ "Call", "lockfile_check" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "dotlockfile.c",
+            "line": 141,
+            "col": 6,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 143,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 146,
+            "col": 3,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 292,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 376,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_set_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 382,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 386,
+            "col": 6,
+            "feature": [ "Call", "lockfile_create_save_tmplock" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 261,
+            "col": 11,
+            "feature": [ "Call", "lockfilename" ]
+          },
+          {
+            "file": "lockfile.c",
+            "line": 356,
+            "col": 7,
+            "feature": [ "Call", "lockfile_check" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 325,
+            "col": 7,
+            "feature": [ "Call", "fn_split" ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 337,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "dotlockfile.c",
+            "line": 414,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      }
+    ]
+  }
+]

@@ -1,0 +1,1141 @@
+[
+  {
+    "program": "readline-common",
+    "src": 380,
+    "sink": 530,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 380,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 426,
+            "col": 5,
+            "feature": [ "Call", "read_history" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 253,
+            "col": 11,
+            "feature": [ "Call", "read_history_range" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 280,
+            "col": 11,
+            "feature": [ "Call", "history_filename" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 152,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 530,
+            "col": 4,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.561514476627884
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 380,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 426,
+            "col": 5,
+            "feature": [ "Call", "read_history" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 253,
+            "col": 11,
+            "feature": [ "Call", "read_history_range" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 280,
+            "col": 11,
+            "feature": [ "Call", "history_filename" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 152,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 530,
+            "col": 4,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.5303300858899106
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 380,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 426,
+            "col": 5,
+            "feature": [ "Call", "read_history" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 253,
+            "col": 11,
+            "feature": [ "Call", "read_history_range" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 280,
+            "col": 11,
+            "feature": [ "Call", "history_filename" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 152,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 530,
+            "col": 4,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 380,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 426,
+            "col": 5,
+            "feature": [ "Call", "read_history" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 253,
+            "col": 11,
+            "feature": [ "Call", "read_history_range" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 280,
+            "col": 11,
+            "feature": [ "Call", "history_filename" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 152,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 530,
+            "col": 4,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 380,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 404,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 45 ] ] ]
+            ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 426,
+            "col": 5,
+            "feature": [ "Call", "read_history" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 253,
+            "col": 11,
+            "feature": [ "Call", "read_history_range" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 280,
+            "col": 11,
+            "feature": [ "Call", "history_filename" ]
+          },
+          {
+            "file": "histfile.c",
+            "line": 152,
+            "col": 27,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "build/examples/rlfe/rlfe.c",
+            "line": 530,
+            "col": 4,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Prune != true": 2,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.4743416490252569
+      }
+    ]
+  },
+  {
+    "program": "readline-common",
+    "src": 151,
+    "sink": 132,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 286,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 288,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 295,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 304,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 132,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 286,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 288,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 295,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 304,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 132,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 286,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 288,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 295,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 304,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 132,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.2626128657194451
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 286,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 288,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 295,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 304,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 132,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.16508332072280238
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 286,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 288,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 295,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 304,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 132,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.13130643285972254
+      }
+    ]
+  },
+  {
+    "program": "readline-common",
+    "src": 151,
+    "sink": 135,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 267,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 269,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 276,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 301,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 267,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 269,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 276,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 301,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.3641785203646149
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 267,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 269,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 276,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 301,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.2626128657194451
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 267,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 269,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 276,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 301,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.16508332072280238
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "shell.c",
+            "line": 151,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 267,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 269,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 276,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 301,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "terminal.c",
+            "line": 311,
+            "col": 5,
+            "feature": [ "Call", "sh_set_lines_and_columns" ]
+          },
+          {
+            "file": "shell.c",
+            "line": 135,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 3,
+          "BufferOverflow": 1,
+          "Prune <= true": 3,
+          "Prune ! true": 3,
+          "Input getenv": 1
+        },
+        "score": 0.13130643285972254
+      }
+    ]
+  }
+]

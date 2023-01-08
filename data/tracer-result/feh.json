@@ -1,0 +1,694 @@
+[
+  {
+    "program": "feh",
+    "src": 195,
+    "sink": 561,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 195,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 196,
+            "col": 19,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Call", "_estrdup" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 73,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 76,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1129,
+            "col": 11,
+            "feature": [ "Call", "feh_wrap_string" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1322,
+            "col": 10,
+            "feature": [ "Call", "gib_string_split" ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 545,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 548,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 549,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 558,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 561,
+            "col": 10,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.2956561979945413
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 195,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 196,
+            "col": 19,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Call", "_estrdup" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 73,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 76,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1129,
+            "col": 11,
+            "feature": [ "Call", "feh_wrap_string" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1322,
+            "col": 10,
+            "feature": [ "Call", "gib_string_split" ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 545,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 548,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 549,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 558,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 561,
+            "col": 10,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.2956561979945413
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 195,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 196,
+            "col": 19,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Call", "_estrdup" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 73,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 76,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1129,
+            "col": 11,
+            "feature": [ "Call", "feh_wrap_string" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1322,
+            "col": 10,
+            "feature": [ "Call", "gib_string_split" ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 545,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 548,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 549,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 558,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 561,
+            "col": 10,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.2956561979945413
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 195,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 196,
+            "col": 19,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Call", "_estrdup" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 73,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 76,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1129,
+            "col": 11,
+            "feature": [ "Call", "feh_wrap_string" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1322,
+            "col": 10,
+            "feature": [ "Call", "gib_string_split" ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 545,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 548,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 549,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 558,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 561,
+            "col": 10,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.2956561979945413
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/utils.c",
+            "line": 195,
+            "col": 10,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 196,
+            "col": 19,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 203,
+            "col": 9,
+            "feature": [ "Call", "_estrdup" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 73,
+            "col": 22,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/utils.c",
+            "line": 76,
+            "col": 2,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1129,
+            "col": 11,
+            "feature": [ "Call", "feh_wrap_string" ]
+          },
+          {
+            "file": "src/imlib.c",
+            "line": 1322,
+            "col": 10,
+            "feature": [ "Call", "gib_string_split" ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 545,
+            "col": 9,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 548,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 549,
+            "col": 8,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 565,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 566,
+            "col": 10,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 558,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/gib_list.c",
+            "line": 561,
+            "col": 10,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.26804385337361925
+      }
+    ]
+  },
+  { "program": "feh", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "feh", "src": -1, "sink": -1, "weighted_traces": [] }
+]

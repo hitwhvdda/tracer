@@ -1,0 +1,442 @@
+[
+  {
+    "program": "xbuffy",
+    "src": 186,
+    "sink": 186,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "nntp.c",
+            "line": 186,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "xbuffy",
+    "src": 899,
+    "sink": 922,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 922,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 922,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 922,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 922,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 922,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "xbuffy",
+    "src": 899,
+    "sink": 924,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 924,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 924,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 924,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 924,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.2773500981126146
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 899,
+            "col": 18,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 924,
+            "col": 6,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input readdir": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "xbuffy",
+    "src": 1428,
+    "sink": 1458,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 1428,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1457,
+            "col": 19,
+            "feature": [ "Call", "EliminatePath" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1458,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 1428,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1457,
+            "col": 19,
+            "feature": [ "Call", "EliminatePath" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1458,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 1428,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1457,
+            "col": 19,
+            "feature": [ "Call", "EliminatePath" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1458,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 1428,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1457,
+            "col": 19,
+            "feature": [ "Call", "EliminatePath" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1458,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "xbuffy.c",
+            "line": 1428,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1457,
+            "col": 19,
+            "feature": [ "Call", "EliminatePath" ]
+          },
+          {
+            "file": "xbuffy.c",
+            "line": 1458,
+            "col": 5,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input main": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  { "program": "xbuffy", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "xbuffy", "src": -1, "sink": -1, "weighted_traces": [] }
+]

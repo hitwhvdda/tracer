@@ -1,0 +1,267 @@
+[
+  {
+    "program": "sane",
+    "src": 1020,
+    "sink": 1037,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/preview.c",
+            "line": 1020,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1035,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1037,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Const", [ "Cint", 3 ] ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8685990362153791
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "src/preview.c",
+            "line": 1020,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1035,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1037,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Const", [ "Cint", 3 ] ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8685990362153791
+      },
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/preview.c",
+            "line": 1020,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1035,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1037,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Const", [ "Cint", 3 ] ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/preview.c",
+            "line": 1020,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1035,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1037,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Const", [ "Cint", 3 ] ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE680_83-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/preview.c",
+            "line": 1020,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1035,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/preview.c",
+            "line": 1037,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "BinOp", "*", [ "Const", [ "Cint", 3 ] ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      }
+    ]
+  }
+]

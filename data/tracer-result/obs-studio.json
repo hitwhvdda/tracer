@@ -1,0 +1,550 @@
+[{
+    "program": "obs-studio",
+    "src": -1,
+    "sink": -1,
+    "weighted_traces": []
+  },
+  {
+    "program": "obs-studio",
+    "src": -1,
+    "sink": -1,
+    "weighted_traces": []
+  },
+  {
+    "program": "obs-studio",
+    "src": 45,
+    "sink": 726,
+    "weighted_traces": [{
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 717,
+            "col": 2,
+            "feature": ["Call", "bfree"]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 134,
+            "col": 2,
+            "feature": ["Call", "swig_delete_obs_source_audio"]
+          },
+          {
+            "file": "obj-x86_64-linux-gnu/deps/obs-scripting/obslua/CMakeFiles/obslua.dir/obsluaLUA_wrap.c",
+            "line": 29757,
+            "col": 1,
+            "feature": [
+              "Free",
+              "free",
+              ["Cast", ["Unsupported"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 132,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 722,
+            "col": 7,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1308,
+            "col": 9,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1310,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1312,
+            "col": 2,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 586,
+            "col": 3,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          }
+        ],
+        "vec": {
+          "Free": 1,
+          "Prune ! true": 2
+        },
+        "score": 0.3999999999999999
+      },
+      {
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 717,
+            "col": 2,
+            "feature": ["Call", "bfree"]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 134,
+            "col": 2,
+            "feature": ["Call", "swig_delete_obs_key_combination"]
+          },
+          {
+            "file": "obj-x86_64-linux-gnu/deps/obs-scripting/obslua/CMakeFiles/obslua.dir/obsluaLUA_wrap.c",
+            "line": 26722,
+            "col": 1,
+            "feature": [
+              "Free",
+              "free",
+              ["Cast", ["Unsupported"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 132,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 722,
+            "col": 7,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1308,
+            "col": 9,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1310,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1312,
+            "col": 2,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 586,
+            "col": 3,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          }
+        ],
+        "vec": {
+          "Free": 1,
+          "Prune ! true": 2
+        },
+        "score": 0.3999999999999999
+      },
+      {
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 717,
+            "col": 2,
+            "feature": ["Call", "bfree"]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 134,
+            "col": 2,
+            "feature": ["Call", "swig_delete_gs_sampler_info"]
+          },
+          {
+            "file": "obj-x86_64-linux-gnu/deps/obs-scripting/obslua/CMakeFiles/obslua.dir/obsluaLUA_wrap.c",
+            "line": 4418,
+            "col": 1,
+            "feature": [
+              "Free",
+              "free",
+              ["Cast", ["Unsupported"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 132,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 722,
+            "col": 7,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1308,
+            "col": 9,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1310,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1312,
+            "col": 2,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 586,
+            "col": 3,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          }
+        ],
+        "vec": {
+          "Free": 1,
+          "Prune ! true": 2
+        },
+        "score": 0.3999999999999999
+      },
+      {
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 717,
+            "col": 2,
+            "feature": ["Call", "bfree"]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 134,
+            "col": 2,
+            "feature": ["Call", "swig_delete_gs_image_file"]
+          },
+          {
+            "file": "obj-x86_64-linux-gnu/deps/obs-scripting/obslua/CMakeFiles/obslua.dir/obsluaLUA_wrap.c",
+            "line": 18575,
+            "col": 1,
+            "feature": [
+              "Free",
+              "free",
+              ["Cast", ["Unsupported"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 132,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 722,
+            "col": 7,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1308,
+            "col": 9,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1310,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1312,
+            "col": 2,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 586,
+            "col": 3,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 589,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          }
+        ],
+        "vec": {
+          "Free": 1,
+          "Prune ! true": 2
+        },
+        "score": 0.3999999999999999
+      },
+      {
+        "signature": "CWE415_09-CWE415_Double_Free__malloc_free_int-1",
+        "trace": [{
+            "file": "libobs/obs.c",
+            "line": 1976,
+            "col": 26,
+            "feature": ["Call", "obs_load_source"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1308,
+            "col": 9,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1310,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1312,
+            "col": 2,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs.c",
+            "line": 1975,
+            "col": 3,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs.c",
+            "line": 1980,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 717,
+            "col": 2,
+            "feature": ["Call", "bfree"]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 134,
+            "col": 2,
+            "feature": ["Call", "swig_delete_gs_sampler_info"]
+          },
+          {
+            "file": "obj-x86_64-linux-gnu/deps/obs-scripting/obslua/CMakeFiles/obslua.dir/obsluaLUA_wrap.c",
+            "line": 4418,
+            "col": 1,
+            "feature": [
+              "Free",
+              "free",
+              ["Cast", ["Unsupported"],
+                ["Var"]
+              ]
+            ]
+          },
+          {
+            "file": "libobs/util/bmem.c",
+            "line": 132,
+            "col": 6,
+            "feature": ["Prune", ["UnOp", "!", ["Var"]]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 722,
+            "col": 7,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1308,
+            "col": 9,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1310,
+            "col": 6,
+            "feature": ["Prune", ["Var"]]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 1312,
+            "col": 2,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs.c",
+            "line": 1975,
+            "col": 3,
+            "feature": ["Store", ["Var"],
+              ["Var"]
+            ]
+          },
+          {
+            "file": "libobs/obs.c",
+            "line": 1980,
+            "col": 3,
+            "feature": ["Call", "obs_data_release"]
+          },
+          {
+            "file": "libobs/obs-data.c",
+            "line": 726,
+            "col": 3,
+            "feature": ["Call", "obs_data_destroy"]
+          }
+        ],
+        "vec": {
+          "Free": 1,
+          "Prune ! true": 2
+        },
+        "score": 0.3999999999999999
+      }
+    ]
+  }
+]

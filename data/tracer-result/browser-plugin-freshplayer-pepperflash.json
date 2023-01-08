@@ -1,0 +1,942 @@
+[
+  {
+    "program": "browser-plugin-freshplayer-pepperflash",
+    "src": 199,
+    "sink": 416,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 199,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 771,
+            "col": 20,
+            "feature": [ "Call", "json_parse_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 787,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 789,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 792,
+            "col": 12,
+            "feature": [ "Call", "parse_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 469,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 472,
+            "col": 20,
+            "feature": [ "Call", "parse_object_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 496,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 358,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 363,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 526,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 462,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 2 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 463,
+            "col": 12,
+            "feature": [ "Call", "process_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 416,
+            "col": 27,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.643650304346789
+      },
+      {
+        "signature":
+          "CWE190_16-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 199,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 771,
+            "col": 20,
+            "feature": [ "Call", "json_parse_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 787,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 789,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 792,
+            "col": 12,
+            "feature": [ "Call", "parse_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 469,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 472,
+            "col": 20,
+            "feature": [ "Call", "parse_object_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 496,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 358,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 363,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 526,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 462,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 2 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 463,
+            "col": 12,
+            "feature": [ "Call", "process_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 416,
+            "col": 27,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6064784348631227
+      },
+      {
+        "signature":
+          "CWE190_04-CWE190_Integer_Overflow__int_listen_socket_add-1",
+        "trace": [
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 199,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 771,
+            "col": 20,
+            "feature": [ "Call", "json_parse_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 787,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 789,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 792,
+            "col": 12,
+            "feature": [ "Call", "parse_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 469,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 472,
+            "col": 20,
+            "feature": [ "Call", "parse_object_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 496,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 358,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 363,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 526,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 462,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 2 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 463,
+            "col": 12,
+            "feature": [ "Call", "process_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 416,
+            "col": 27,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6064784348631227
+      },
+      {
+        "signature":
+          "CWE190_06-CWE190_Integer_Overflow__int_connect_socket_add-1",
+        "trace": [
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 199,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 771,
+            "col": 20,
+            "feature": [ "Call", "json_parse_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 787,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 789,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 792,
+            "col": 12,
+            "feature": [ "Call", "parse_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 469,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 472,
+            "col": 20,
+            "feature": [ "Call", "parse_object_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 496,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 358,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 363,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 526,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 462,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 2 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 463,
+            "col": 12,
+            "feature": [ "Call", "process_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 416,
+            "col": 27,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6064784348631227
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 199,
+            "col": 9,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 771,
+            "col": 20,
+            "feature": [ "Call", "json_parse_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 787,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 789,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 792,
+            "col": 12,
+            "feature": [ "Call", "parse_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 469,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 472,
+            "col": 20,
+            "feature": [ "Call", "parse_object_value" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 496,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 358,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 363,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 526,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 503,
+            "col": 19,
+            "feature": [ "Call", "get_quoted_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 459,
+            "col": 5,
+            "feature": [ "Call", "skip_quotes" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 462,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "-",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 2 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 463,
+            "col": 12,
+            "feature": [ "Call", "process_string" ]
+          },
+          {
+            "file": "3rdparty/parson/parson.c",
+            "line": 416,
+            "col": 27,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "BinOp",
+                  "+",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 7,
+          "BinOp *": 1,
+          "Input fread": 1
+        },
+        "score": 0.6064784348631227
+      }
+    ]
+  }
+]

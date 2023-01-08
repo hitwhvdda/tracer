@@ -1,0 +1,2968 @@
+[
+  {
+    "program": "liblrs0",
+    "src": 4232,
+    "sink": 477,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_14-CWE191_Integer_Underflow__int64_t_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 4232,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4237,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4243,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.9128709291752769
+      },
+      {
+        "signature":
+          "CWE191_10-CWE191_Integer_Underflow__int_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 4232,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4237,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4243,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.9128709291752769
+      },
+      {
+        "signature":
+          "CWE191_06-CWE191_Integer_Underflow__char_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 4232,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4237,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4243,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.9128709291752769
+      },
+      {
+        "signature":
+          "CWE191_17-CWE191_Integer_Underflow__short_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 4232,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4237,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4243,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.9128709291752769
+      },
+      {
+        "signature":
+          "CWE191_43-CWE191_Integer_Underflow__short_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 4232,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4237,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4243,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.9128709291752769
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 438,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 438,
+            "col": 30,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 438,
+            "col": 30,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 438,
+            "col": 30,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 438,
+            "col": 30,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 438,
+            "col": 30,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 4597,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4597,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4597,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4597,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4597,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4597,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 4598,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4598,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4598,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4598,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4598,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4764,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4767,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4598,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7745966692414834
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 4594,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4594,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4594,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4594,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4594,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4594,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 4595,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4595,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4595,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4595,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4595,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4595,
+            "col": 3,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.769800358919501
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 434,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4768,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 434,
+            "col": 23,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7637626158259734
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4768,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 434,
+            "col": 23,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7637626158259734
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4768,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 434,
+            "col": 23,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7637626158259734
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4768,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 434,
+            "col": 23,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4768,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4776,
+            "col": 7,
+            "feature": [ "Call", "new_lrs_dic" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4607,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_mp_matrix_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 434,
+            "col": 23,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      }
+    ]
+  },
+  {
+    "program": "liblrs0",
+    "src": 1005,
+    "sink": 477,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4808,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7637626158259734
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4808,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7637626158259734
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrsnashlib.c",
+            "line": 821,
+            "col": 8,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4808,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7637626158259734
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 131,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4808,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "lrslib.c",
+            "line": 1005,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 1017,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 284,
+            "col": 7,
+            "feature": [ "Call", "lrs_alloc_dic_gmp" ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4774,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "lrslib.c",
+            "line": 4808,
+            "col": 31,
+            "feature": [ "Call", "xcalloc_gmp" ]
+          },
+          {
+            "file": "lrsgmp.c",
+            "line": 477,
+            "col": 9,
+            "feature": [
+              "IntOverflow",
+              "calloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      }
+    ]
+  }
+]

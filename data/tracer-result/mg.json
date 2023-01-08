@@ -1,0 +1,4960 @@
+[
+  {
+    "program": "mg",
+    "src": 496,
+    "sink": 546,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "region.c",
+            "line": 496,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "region.c",
+            "line": 498,
+            "col": 8,
+            "feature": [ "Call", "pipeio" ]
+          },
+          {
+            "file": "region.c",
+            "line": 546,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "region.c",
+            "line": 496,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "region.c",
+            "line": 498,
+            "col": 8,
+            "feature": [ "Call", "pipeio" ]
+          },
+          {
+            "file": "region.c",
+            "line": 546,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "region.c",
+            "line": 496,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "region.c",
+            "line": 498,
+            "col": 8,
+            "feature": [ "Call", "pipeio" ]
+          },
+          {
+            "file": "region.c",
+            "line": 546,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "region.c",
+            "line": 496,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "region.c",
+            "line": 498,
+            "col": 8,
+            "feature": [ "Call", "pipeio" ]
+          },
+          {
+            "file": "region.c",
+            "line": 546,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "region.c",
+            "line": 496,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "region.c",
+            "line": 498,
+            "col": 8,
+            "feature": [ "Call", "pipeio" ]
+          },
+          {
+            "file": "region.c",
+            "line": 546,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "mg",
+    "src": 202,
+    "sink": 73,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 14,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 731,
+            "col": 11,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 743,
+            "col": 12,
+            "feature": [ "Call", "name_function" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 675,
+            "col": 14,
+            "feature": [ "Call", "ffgetline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 727,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 763,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 10,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 784,
+            "col": 10,
+            "feature": [ "Call", "lalloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 60,
+            "col": 6,
+            "feature": [ "Call", "lrealloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 72,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "line.c",
+            "line": 73,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 18,
+          "Prune < true": 1,
+          "Prune != true": 4,
+          "Prune ! true": 22,
+          "BinOp +": 10,
+          "Input getc": 1
+        },
+        "score": 0.7383763054842289
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 14,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 731,
+            "col": 11,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 743,
+            "col": 12,
+            "feature": [ "Call", "name_function" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 675,
+            "col": 14,
+            "feature": [ "Call", "ffgetline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 727,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 763,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 10,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 784,
+            "col": 10,
+            "feature": [ "Call", "lalloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 60,
+            "col": 6,
+            "feature": [ "Call", "lrealloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 72,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "line.c",
+            "line": 73,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 18,
+          "Prune < true": 1,
+          "Prune != true": 4,
+          "Prune ! true": 22,
+          "BinOp +": 10,
+          "Input getc": 1
+        },
+        "score": 0.6846848490946403
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 14,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 731,
+            "col": 11,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 743,
+            "col": 12,
+            "feature": [ "Call", "name_function" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 675,
+            "col": 14,
+            "feature": [ "Call", "ffgetline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 727,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 763,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 10,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 784,
+            "col": 10,
+            "feature": [ "Call", "lalloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 60,
+            "col": 6,
+            "feature": [ "Call", "lrealloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 72,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "line.c",
+            "line": 73,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 18,
+          "Prune < true": 1,
+          "Prune != true": 4,
+          "Prune ! true": 22,
+          "BinOp +": 10,
+          "Input getc": 1
+        },
+        "score": 0.5728693673064412
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 14,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 731,
+            "col": 11,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 743,
+            "col": 12,
+            "feature": [ "Call", "name_function" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 675,
+            "col": 14,
+            "feature": [ "Call", "ffgetline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 727,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 763,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 10,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 784,
+            "col": 10,
+            "feature": [ "Call", "lalloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 60,
+            "col": 6,
+            "feature": [ "Call", "lrealloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 72,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "line.c",
+            "line": 73,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 18,
+          "Prune < true": 1,
+          "Prune != true": 4,
+          "Prune ! true": 22,
+          "BinOp +": 10,
+          "Input getc": 1
+        },
+        "score": 0.5027662728386045
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 14,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 202,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 203,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 731,
+            "col": 11,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 743,
+            "col": 12,
+            "feature": [ "Call", "name_function" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 930,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 933,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 675,
+            "col": 14,
+            "feature": [ "Call", "ffgetline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 679,
+            "col": 7,
+            "feature": [ "Call", "excline" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 939,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 950,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 92 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 728,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 727,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 763,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 722,
+            "col": 10,
+            "feature": [ "Call", "skipwhite" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 59 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 931,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 35 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 9,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 725,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 10,
+            "feature": [ "Call", "parsetoken" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 951,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 952,
+            "col": 12,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "extend.c",
+            "line": 953,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 766,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "extend.c",
+            "line": 784,
+            "col": 10,
+            "feature": [ "Call", "lalloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 60,
+            "col": 6,
+            "feature": [ "Call", "lrealloc" ]
+          },
+          {
+            "file": "line.c",
+            "line": 72,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "line.c",
+            "line": 73,
+            "col": 14,
+            "feature": [
+              "IntOverflow",
+              "realloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 18,
+          "Prune < true": 1,
+          "Prune != true": 4,
+          "Prune ! true": 22,
+          "BinOp +": 10,
+          "Input getc": 1
+        },
+        "score": 0.4664817016706309
+      }
+    ]
+  },
+  {
+    "program": "mg",
+    "src": 60,
+    "sink": 739,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "ttykbd.c",
+            "line": 60,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 14,
+            "feature": [ "Call", "startupfile" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 5,
+          "Prune ! true": 5,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5974529834860508
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "ttykbd.c",
+            "line": 60,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 14,
+            "feature": [ "Call", "startupfile" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 5,
+          "Prune ! true": 5,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5974529834860508
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "ttykbd.c",
+            "line": 60,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 14,
+            "feature": [ "Call", "startupfile" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 5,
+          "Prune ! true": 5,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.25232366634468334
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "ttykbd.c",
+            "line": 60,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 14,
+            "feature": [ "Call", "startupfile" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 5,
+          "Prune ! true": 5,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.18731716231633877
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "ttykbd.c",
+            "line": 60,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 14,
+            "feature": [ "Call", "startupfile" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 5,
+          "Prune ! true": 5,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.09365858115816939
+      }
+    ]
+  },
+  {
+    "program": "mg",
+    "src": 353,
+    "sink": 739,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 41,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 6,
+          "Prune ! true": 6,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5957493052149286
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 41,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 357,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 6,
+          "Prune ! true": 6,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5957493052149286
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 41,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 6,
+          "Prune ! true": 6,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5957493052149286
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 41,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 357,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 6,
+          "Prune ! true": 6,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5957493052149286
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 353,
+            "col": 41,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 361,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "ttykbd.c",
+            "line": 61,
+            "col": 44,
+            "feature": [ "Call", "load" ]
+          },
+          {
+            "file": "extend.c",
+            "line": 663,
+            "col": 15,
+            "feature": [ "Call", "adjustname" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 318,
+            "col": 13,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 324,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 126 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 320,
+            "col": 15,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 47 ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 330,
+            "col": 14,
+            "feature": [ "Call", "expandtilde" ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 730,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 731,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 736,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Var" ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "fileio.c",
+            "line": 739,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall snprintf": 1,
+          "Prune >= true": 1,
+          "Prune == true": 6,
+          "Prune ! true": 6,
+          "BinOp -": 1,
+          "Input getenv": 1
+        },
+        "score": 0.24290672071677075
+      }
+    ]
+  }
+]

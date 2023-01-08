@@ -1,0 +1,662 @@
+[
+  {
+    "program": "msmtp",
+    "src": 53,
+    "sink": 282,
+    "weighted_traces": [
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/msmtpd.c",
+            "line": 53,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 55,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 56,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 59,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 244,
+            "col": 17,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 250,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 253,
+            "col": 17,
+            "feature": [ "Call", "get_addr" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 73,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 60 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 75,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 76,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 77,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 62 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 97,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 282,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 5,
+          "Input fgets": 1
+        },
+        "score": 0.8375515132297433
+      },
+      {
+        "signature": "firejail-0.9.62-1",
+        "trace": [
+          {
+            "file": "src/msmtpd.c",
+            "line": 53,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 55,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 56,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 59,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 238,
+            "col": 17,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 250,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 253,
+            "col": 17,
+            "feature": [ "Call", "get_addr" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 73,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 60 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 75,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 76,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 77,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 62 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 97,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 282,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 5,
+          "Input fgets": 1
+        },
+        "score": 0.8375515132297433
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/msmtpd.c",
+            "line": 53,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 55,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 56,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 59,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 244,
+            "col": 17,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 250,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 253,
+            "col": 17,
+            "feature": [ "Call", "get_addr" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 73,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 60 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 75,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 76,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 77,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 62 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 97,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 282,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 5,
+          "Input fgets": 1
+        },
+        "score": 0.7175608803587864
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/msmtpd.c",
+            "line": 53,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 55,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 56,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 59,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 238,
+            "col": 17,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 250,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 253,
+            "col": 17,
+            "feature": [ "Call", "get_addr" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 73,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 60 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 75,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 76,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 77,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 62 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 97,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 282,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 5,
+          "Input fgets": 1
+        },
+        "score": 0.7175608803587864
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "src/msmtpd.c",
+            "line": 53,
+            "col": 10,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 55,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 56,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 59,
+            "col": 24,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 244,
+            "col": 17,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 250,
+            "col": 13,
+            "feature": [ "LibraryCall", "strcmp" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 253,
+            "col": 17,
+            "feature": [ "Call", "get_addr" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 73,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 60 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 75,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 76,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 77,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "!=", [ "Var" ], [ "Const", [ "Cint", 62 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 97,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/msmtpd.c",
+            "line": 282,
+            "col": 12,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "LibraryCall strcmp": 1,
+          "Prune == true": 2,
+          "Prune != true": 3,
+          "Prune ! true": 5,
+          "Input fgets": 1
+        },
+        "score": 0.7175608803587864
+      }
+    ]
+  }
+]

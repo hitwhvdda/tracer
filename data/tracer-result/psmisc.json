@@ -1,0 +1,104 @@
+[
+  {
+    "program": "psmisc",
+    "src": 402,
+    "sink": 411,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/fuser.c",
+            "line": 402,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/fuser.c",
+            "line": 411,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/fuser.c",
+            "line": 402,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/fuser.c",
+            "line": 411,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/fuser.c",
+            "line": 402,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/fuser.c",
+            "line": 411,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/fuser.c",
+            "line": 402,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/fuser.c",
+            "line": 411,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/fuser.c",
+            "line": 402,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/fuser.c",
+            "line": 411,
+            "col": 10,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fscanf": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

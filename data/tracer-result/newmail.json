@@ -1,0 +1,2008 @@
+[
+  {
+    "program": "newmail",
+    "src": 123,
+    "sink": 132,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE134_66-CWE134_Uncontrolled_Format_String__char_environment_vfprintf-1",
+        "trace": [
+          {
+            "file": "folder.c",
+            "line": 123,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "folder.c",
+            "line": 132,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "FormatString": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE134_53-CWE134_Uncontrolled_Format_String__char_environment_snprintf-1",
+        "trace": [
+          {
+            "file": "folder.c",
+            "line": 123,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "folder.c",
+            "line": 132,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "FormatString": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE134_09-CWE134_Uncontrolled_Format_String__char_environment_vprintf-1",
+        "trace": [
+          {
+            "file": "folder.c",
+            "line": 123,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "folder.c",
+            "line": 132,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "FormatString": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE134_01-CWE134_Uncontrolled_Format_String__char_environment_snprintf-1",
+        "trace": [
+          {
+            "file": "folder.c",
+            "line": 123,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "folder.c",
+            "line": 132,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "FormatString": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE134_07-CWE134_Uncontrolled_Format_String__char_environment_vfprintf-1",
+        "trace": [
+          {
+            "file": "folder.c",
+            "line": 123,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "folder.c",
+            "line": 132,
+            "col": 5,
+            "feature": [ "FormatString", "snprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "FormatString": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "newmail",
+    "src": 178,
+    "sink": 48,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.25482359571881275
+      },
+      {
+        "signature": "CWE191_12-CWE191_Integer_Underflow__int_fgets_predec-2",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.25482359571881275
+      },
+      {
+        "signature": "CWE191_12-CWE191_Integer_Underflow__int_fgets_sub-2",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.25482359571881275
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.2038588765750502
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.2038588765750502
+      }
+    ]
+  },
+  {
+    "program": "newmail",
+    "src": 178,
+    "sink": 48,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.20114557032045338
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.20114557032045338
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.1447300768338894
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.08058229640253801
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "mbox.c",
+            "line": 178,
+            "col": 15,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 9,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 180,
+            "col": 28,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 10 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 181,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 34,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 182,
+            "col": 30,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 13 ] ] ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 183,
+            "col": 6,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 218,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 241,
+            "col": 4,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 223,
+            "col": 11,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 224,
+            "col": 26,
+            "feature": [ "Call", "reduce_from_" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 142,
+            "col": 8,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 145,
+            "col": 7,
+            "feature": [ "Prune", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "+",
+                      [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                      [ "Const", [ "Cint", 1 ] ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 147,
+            "col": 10,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 146,
+            "col": 5,
+            "feature": [ "Call", "stringcopy" ]
+          },
+          {
+            "file": "mbox.c",
+            "line": 48,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "strncpy",
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 8,
+          "Prune > true": 1,
+          "Prune == true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "Input fgets": 1
+        },
+        "score": 0.08058229640253801
+      }
+    ]
+  },
+  { "program": "newmail", "src": -1, "sink": -1, "weighted_traces": [] },
+  { "program": "newmail", "src": -1, "sink": -1, "weighted_traces": [] }
+]

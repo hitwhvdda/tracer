@@ -1,0 +1,3686 @@
+[
+  {
+    "program": "altermime",
+    "src": 128,
+    "sink": 626,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.6865437954763621
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.6865437954763621
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.6163649961485784
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.6163649961485784
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4268057964177472
+      }
+    ]
+  },
+  {
+    "program": "altermime",
+    "src": 128,
+    "sink": 643,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.53813823519705
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.53813823519705
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4506939094329987
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4506939094329987
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 2,
+          "BinOp +": 1,
+          "Input fread": 1
+        },
+        "score": 0.4138264997755805
+      }
+    ]
+  },
+  {
+    "program": "altermime",
+    "src": 128,
+    "sink": 643,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int64_t_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4743416490252569
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 643,
+            "col": 5,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 2,
+          "Prune <= true": 2,
+          "Prune ! true": 2,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4743416490252569
+      }
+    ]
+  },
+  {
+    "program": "altermime",
+    "src": 128,
+    "sink": 626,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 4,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "Input fread": 1
+        },
+        "score": 0.4268057964177472
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.399143256286313
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.3833259389999639
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.3833259389999639
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "ffget.c",
+            "line": 128,
+            "col": 8,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 156,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 157,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 495,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 516,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 529,
+            "col": 10,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 637,
+            "col": 4,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 641,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">=", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 646,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 648,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 623,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 625,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "ffget.c",
+            "line": 626,
+            "col": 4,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 2,
+          "IfLargerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune >= true": 3,
+          "Prune > true": 1,
+          "Prune <= true": 1,
+          "Prune < true": 2,
+          "Prune ! true": 3,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "Input fread": 1
+        },
+        "score": 0.3833259389999639
+      }
+    ]
+  }
+]

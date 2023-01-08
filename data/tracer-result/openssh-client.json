@@ -1,0 +1,1566 @@
+[
+  {
+    "program": "openssh-client",
+    "src": 161,
+    "sink": 80,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 161,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 166,
+            "col": 14,
+            "feature": [ "Call", "ssh_askpass" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 80,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 161,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 166,
+            "col": 14,
+            "feature": [ "Call", "ssh_askpass" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 80,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 161,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 166,
+            "col": 14,
+            "feature": [ "Call", "ssh_askpass" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 80,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 161,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 166,
+            "col": 14,
+            "feature": [ "Call", "ssh_askpass" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 80,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 161,
+            "col": 14,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 166,
+            "col": 14,
+            "feature": [ "Call", "ssh_askpass" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 80,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 136,
+    "sink": 181,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 136,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 181,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 136,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 181,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 136,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 181,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 136,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 181,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 136,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 181,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 239,
+    "sink": 261,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 239,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 261,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 239,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 261,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 239,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 261,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 239,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 261,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "readpass.c",
+            "line": 239,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readpass.c",
+            "line": 261,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 515,
+    "sink": 547,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "readconf.c",
+            "line": 515,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readconf.c",
+            "line": 547,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "readconf.c",
+            "line": 515,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readconf.c",
+            "line": 547,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "readconf.c",
+            "line": 515,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readconf.c",
+            "line": 547,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "readconf.c",
+            "line": 515,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readconf.c",
+            "line": 547,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "readconf.c",
+            "line": 515,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "readconf.c",
+            "line": 547,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 58,
+    "sink": 98,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "ssh-sk-client.c",
+            "line": 58,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 59,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 98,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "ssh-sk-client.c",
+            "line": 58,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 59,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 98,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "ssh-sk-client.c",
+            "line": 58,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 59,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 98,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "ssh-sk-client.c",
+            "line": 58,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 59,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 98,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "ssh-sk-client.c",
+            "line": 58,
+            "col": 11,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 59,
+            "col": 24,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-sk-client.c",
+            "line": 98,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 300,
+    "sink": 305,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 300,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 301,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 305,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.7745966692414834
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 300,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 301,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 305,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 300,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 301,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 305,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 300,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 301,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 305,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 300,
+            "col": 12,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 301,
+            "col": 25,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "ssh-pkcs11-client.c",
+            "line": 305,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 218,
+    "sink": 263,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 263,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 263,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 263,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 263,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 218,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 263,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 325,
+    "sink": 335,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 335,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 335,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 335,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 335,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 335,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 325,
+    "sink": 338,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 338,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 338,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 338,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 338,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 325,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sftp.c",
+            "line": 338,
+            "col": 4,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": 1390,
+    "sink": 1398,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1398,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1398,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1398,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_33-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1398,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 15,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1390,
+            "col": 43,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "sshconnect.c",
+            "line": 1398,
+            "col": 3,
+            "feature": [ "CmdInjection", "execlp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      }
+    ]
+  },
+  {
+    "program": "openssh-client",
+    "src": -1,
+    "sink": -1,
+    "weighted_traces": []
+  }
+]

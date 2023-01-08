@@ -1,0 +1,321 @@
+[
+  {
+    "program": "streamripper",
+    "src": 313,
+    "sink": 1148,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "lib/socklib.c",
+            "line": 313,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1116,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1119,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1124,
+            "col": 8,
+            "feature": [ "Call", "get_track_from_metadata" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1148,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.6543303050815759
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "lib/socklib.c",
+            "line": 313,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1116,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1119,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1124,
+            "col": 8,
+            "feature": [ "Call", "get_track_from_metadata" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1148,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.6285393610547089
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "lib/socklib.c",
+            "line": 313,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1116,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1119,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1124,
+            "col": 8,
+            "feature": [ "Call", "get_track_from_metadata" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1148,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.6009252125773316
+      },
+      {
+        "signature":
+          "CWE191_66-CWE191_Integer_Underflow__int_connect_socket_multiply-1",
+        "trace": [
+          {
+            "file": "lib/socklib.c",
+            "line": 313,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1116,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1119,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1124,
+            "col": 8,
+            "feature": [ "Call", "get_track_from_metadata" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1148,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.5962847939999439
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__int_connect_socket_add-2",
+        "trace": [
+          {
+            "file": "lib/socklib.c",
+            "line": 313,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1116,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1119,
+            "col": 16,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1124,
+            "col": 8,
+            "feature": [ "Call", "get_track_from_metadata" ]
+          },
+          {
+            "file": "lib/ripstream.c",
+            "line": 1148,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "Input recv": 1
+        },
+        "score": 0.5962847939999439
+      }
+    ]
+  }
+]

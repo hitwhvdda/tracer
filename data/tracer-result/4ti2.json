@@ -1,0 +1,1583 @@
+[
+  {
+    "program": "4ti2",
+    "src": 59,
+    "sink": 859,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 859,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 859,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_51-CWE190_Integer_Overflow__unsigned_int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 859,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_07-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 859,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_09-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 859,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp *": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "program": "4ti2",
+    "src": 59,
+    "sink": 75,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 63,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 843,
+            "col": 4,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 63,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 843,
+            "col": 4,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 63,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      }
+    ]
+  },
+  {
+    "program": "4ti2",
+    "src": 60,
+    "sink": 75,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 62,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 256,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 62,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 256,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 60,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 62,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      }
+    ]
+  },
+  {
+    "program": "4ti2",
+    "src": 70,
+    "sink": 75,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 71,
+            "col": 7,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 71,
+            "col": 7,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 71,
+            "col": 7,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 71,
+            "col": 7,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 71,
+            "col": 7,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.8660254037844387
+      }
+    ]
+  },
+  {
+    "program": "4ti2",
+    "src": 73,
+    "sink": 75,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 454,
+            "col": 11,
+            "feature": [ "Call", "appendVectorToListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 88,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8164965809277261
+      },
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 454,
+            "col": 11,
+            "feature": [ "Call", "appendVectorToListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 454,
+            "col": 11,
+            "feature": [ "Call", "appendVectorToListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 88,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8164965809277261
+      },
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 454,
+            "col": 11,
+            "feature": [ "Call", "appendVectorToListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 88,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8164965809277261
+      },
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 73,
+            "col": 34,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 454,
+            "col": 11,
+            "feature": [ "Call", "appendVectorToListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 88,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8164965809277261
+      },
+      {
+        "signature":
+          "CWE680_83-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "src/util/genmodel.c",
+            "line": 70,
+            "col": 5,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 72,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 74,
+            "col": 28,
+            "feature": [ "Call", "createListVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 454,
+            "col": 11,
+            "feature": [ "Call", "appendVectorToListVector" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 88,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 263,
+            "col": 18,
+            "feature": [ "Call", "decomposeIntegerIntoLevelIndices" ]
+          },
+          {
+            "file": "src/util/genmodel.c",
+            "line": 86,
+            "col": 5,
+            "feature": [ "Call", "createVector" ]
+          },
+          {
+            "file": "src/util/vector.c",
+            "line": 75,
+            "col": 15,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [
+                  "Cast",
+                  [ "Unsupported" ],
+                  [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input fscanf": 1
+        },
+        "score": 0.8164965809277261
+      }
+    ]
+  },
+  {
+    "program": "4ti2",
+    "src": 59,
+    "sink": 720,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_42-CWE190_Integer_Overflow__int64_t_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 715,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 720,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 715,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 720,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature":
+          "CWE190_51-CWE190_Integer_Overflow__unsigned_int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 715,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 720,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "CWE190_07-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 715,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 720,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "CWE190_09-CWE190_Integer_Overflow__int_fscanf_square-1",
+        "trace": [
+          {
+            "file": "src/util/output.c",
+            "line": 59,
+            "col": 3,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 715,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "!=", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "src/util/output.c",
+            "line": 720,
+            "col": 20,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Sizeof" ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfNotEqualToVar": 1,
+          "IntOverflow": 1,
+          "Prune != true": 1,
+          "Prune ! true": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      }
+    ]
+  },
+  { "program": "4ti2", "src": -1, "sink": -1, "weighted_traces": [] }
+]

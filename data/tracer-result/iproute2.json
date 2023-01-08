@@ -1,0 +1,5597 @@
+[
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 172,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_04-CWE191_Integer_Underflow__int_fgets_postdec-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5163977794943222
+      },
+      {
+        "signature":
+          "CWE191_53-CWE191_Integer_Underflow__char_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5163977794943222
+      },
+      {
+        "signature":
+          "CWE191_83-CWE191_Integer_Underflow__int_connect_socket_sub-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5163977794943222
+      },
+      {
+        "signature":
+          "CWE191_03-CWE191_Integer_Underflow__unsigned_int_fscanf_postdec-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5163977794943222
+      },
+      {
+        "signature":
+          "CWE191_21-CWE191_Integer_Underflow__int64_t_fscanf_sub-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntUnderflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5163977794943222
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 172,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5111656508223583
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.30697030675746023
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.30697030675746023
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.15811388300841897
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 53,
+            "col": 3,
+            "feature": [ "Call", "print_class" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 304,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 313,
+            "col": 2,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "Sizeof" ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 314,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 320,
+            "col": 3,
+            "feature": [ "Call", "graph_node_add" ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 169,
+            "col": 14,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "tc/tc_class.c",
+            "line": 172,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "Prune < true": 1,
+          "Prune ! true": 1,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.15811388300841897
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 117,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5018177156807757
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4931289675734429
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4931289675734429
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.1270001270001905
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.1270001270001905
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 117,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.5018177156807757
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4819315973414993
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4819315973414993
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4819315973414993
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int64_t_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 288,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 297,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [
+                    "BinOp",
+                    "-",
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                    [
+                      "BinOp",
+                      "+",
+                      [
+                        "BinOp",
+                        "&",
+                        [
+                          "BinOp",
+                          "-",
+                          [
+                            "BinOp",
+                            "+",
+                            [ "Sizeof" ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 4 ] ]
+                            ]
+                          ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [
+                            "UnOp",
+                            "~",
+                            [
+                              "BinOp",
+                              "-",
+                              [ "Const", [ "Cint", 4 ] ],
+                              [
+                                "Cast",
+                                [ "Unsupported" ],
+                                [ "Const", [ "Cint", 1 ] ]
+                              ]
+                            ]
+                          ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 0 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Sizeof" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 323,
+            "col": 3,
+            "feature": [ "Call", "print_size_table" ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "<",
+                [
+                  "BinOp",
+                  "-",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Sizeof" ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 4 ] ]
+                          ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [
+                          "UnOp",
+                          "~",
+                          [
+                            "BinOp",
+                            "-",
+                            [ "Const", [ "Cint", 4 ] ],
+                            [
+                              "Cast",
+                              [ "Unsupported" ],
+                              [ "Const", [ "Cint", 1 ] ]
+                            ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                  ]
+                ],
+                [ "Sizeof" ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 118,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [
+                  "BinOp",
+                  "+",
+                  [
+                    "BinOp",
+                    "&",
+                    [
+                      "BinOp",
+                      "-",
+                      [
+                        "BinOp",
+                        "+",
+                        [ "Sizeof" ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 1 ] ]
+                      ]
+                    ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "tc/tc_stab.c",
+            "line": 117,
+            "col": 3,
+            "feature": [ "IntUnderflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "Prune >= true": 2,
+          "Prune < true": 1,
+          "Prune ! true": 2,
+          "UnOp ~": 1,
+          "BinOp -": 3,
+          "BinOp +": 2,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.4819315973414993
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 262,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 262,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 262,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 262,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.17960530202677488
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 262,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 262,
+            "col": 2,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 16 ] ] ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.1386750490563073
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 265,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 265,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 265,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 265,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.17960530202677488
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 265,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "accept_tcmsg" ]
+          },
+          {
+            "file": "tc/tc_monitor.c",
+            "line": 57,
+            "col": 3,
+            "feature": [ "Call", "print_qdisc" ]
+          },
+          {
+            "file": "tc/tc_qdisc.c",
+            "line": 265,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.1386750490563073
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 4536,
+    "sink": 1421,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "misc/ss.c",
+            "line": 4536,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4541,
+            "col": 3,
+            "feature": [ "Call", "netlink_show_one" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4425,
+            "col": 3,
+            "feature": [ "Call", "int_to_str" ]
+          },
+          {
+            "file": "lib/utils.c",
+            "line": 1421,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "misc/ss.c",
+            "line": 4536,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4541,
+            "col": 3,
+            "feature": [ "Call", "netlink_show_one" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4425,
+            "col": 3,
+            "feature": [ "Call", "int_to_str" ]
+          },
+          {
+            "file": "lib/utils.c",
+            "line": 1421,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "misc/ss.c",
+            "line": 4536,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4541,
+            "col": 3,
+            "feature": [ "Call", "netlink_show_one" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4425,
+            "col": 3,
+            "feature": [ "Call", "int_to_str" ]
+          },
+          {
+            "file": "lib/utils.c",
+            "line": 1421,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "misc/ss.c",
+            "line": 4536,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4541,
+            "col": 3,
+            "feature": [ "Call", "netlink_show_one" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4425,
+            "col": 3,
+            "feature": [ "Call", "int_to_str" ]
+          },
+          {
+            "file": "lib/utils.c",
+            "line": 1421,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "misc/ss.c",
+            "line": 4536,
+            "col": 9,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4541,
+            "col": 3,
+            "feature": [ "Call", "netlink_show_one" ]
+          },
+          {
+            "file": "misc/ss.c",
+            "line": 4425,
+            "col": 3,
+            "feature": [ "Call", "int_to_str" ]
+          },
+          {
+            "file": "lib/utils.c",
+            "line": 1421,
+            "col": 2,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fgets": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "iproute2",
+    "src": 1185,
+    "sink": 762,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "show_handler" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 2263,
+            "col": 2,
+            "feature": [ "Call", "print_route" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 756,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 762,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fread": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "show_handler" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 2263,
+            "col": 2,
+            "feature": [ "Call", "print_route" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 756,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 762,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fread": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "show_handler" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 2263,
+            "col": 2,
+            "feature": [ "Call", "print_route" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 756,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 762,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fread": 1
+        },
+        "score": 0.3810003810005715
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "show_handler" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 2263,
+            "col": 2,
+            "feature": [ "Call", "print_route" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 756,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 762,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fread": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1185,
+            "col": 12,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "lib/libnetlink.c",
+            "line": 1216,
+            "col": 9,
+            "feature": [ "Call", "show_handler" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 2263,
+            "col": 2,
+            "feature": [ "Call", "print_route" ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 756,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "-",
+                        [
+                          "BinOp",
+                          "+",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [ "Const", [ "Cint", 4 ] ]
+                        ],
+                        [
+                          "Cast",
+                          [ "Unsupported" ],
+                          [ "Const", [ "Cint", 1 ] ]
+                        ]
+                      ],
+                      [
+                        "UnOp",
+                        "~",
+                        [
+                          "BinOp",
+                          "-",
+                          [ "Const", [ "Cint", 4 ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 1 ] ]
+                          ]
+                        ]
+                      ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "ip/iproute.c",
+            "line": 762,
+            "col": 3,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "Input fread": 1
+        },
+        "score": 0.35355339059327373
+      }
+    ]
+  }
+]

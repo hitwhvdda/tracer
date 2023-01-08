@@ -1,0 +1,2342 @@
+[
+  {
+    "program": "elvis-tiny",
+    "src": 264,
+    "sink": 267,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 264,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 267,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.9999999999999998
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 264,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 267,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 264,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 267,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 264,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 267,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 264,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 267,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input getenv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "elvis-tiny",
+    "src": 273,
+    "sink": 241,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.498135481386718
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.498135481386718
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.17960530202677488
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.14516129032258066
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "elvis-tiny",
+    "src": 273,
+    "sink": 255,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.498135481386718
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.498135481386718
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.17960530202677488
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.14516129032258066
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 273,
+            "col": 8,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 17,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 276,
+            "col": 3,
+            "feature": [ "Call", "exstring" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 345,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 34 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 362,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 37 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 369,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 48 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 409,
+            "col": 7,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 416,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                "==",
+                [
+                  "BinOp",
+                  "&",
+                  [ "Var" ],
+                  [ "UnOp", "~", [ "Const", [ "Cint", 127 ] ] ]
+                ],
+                [ "Const", [ "Cint", 0 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 431,
+            "col": 32,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 449,
+            "col": 23,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 33 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 670,
+            "col": 7,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 679,
+            "col": 3,
+            "feature": [ "Call", "doexcmd" ]
+          },
+          {
+            "file": "ex.c",
+            "line": 357,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "ex.c",
+            "line": 372,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 400,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 405,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "ex.c",
+            "line": 442,
+            "col": 3,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToPercentage": 1,
+          "IfEqualToVar": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 6,
+          "Prune ! true": 4,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "elvis-tiny",
+    "src": 31,
+    "sink": 241,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 241,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.19050019050028574
+      }
+    ]
+  },
+  {
+    "program": "elvis-tiny",
+    "src": 31,
+    "sink": 255,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.35355339059327373
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "main.c",
+            "line": 31,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "main.c",
+            "line": 47,
+            "col": 18,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "main.c",
+            "line": 136,
+            "col": 8,
+            "feature": [ "Prune", [ "UnOp", "!", [ "Var" ] ] ]
+          },
+          {
+            "file": "main.c",
+            "line": 177,
+            "col": 4,
+            "feature": [ "Call", "msg" ]
+          },
+          {
+            "file": "tio.c",
+            "line": 255,
+            "col": 3,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.19050019050028574
+      }
+    ]
+  }
+]

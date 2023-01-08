@@ -1,0 +1,1743 @@
+[
+  {
+    "program": "brandy",
+    "src": 504,
+    "sink": 714,
+    "weighted_traces": [
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 504,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 505,
+            "col": 14,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 31 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 14,
+            "feature": [ "Call", "get_linelen" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 386,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 551,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 552,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 562,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 578,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 584,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "BinOp",
+                        "+",
+                        [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "UnOp", "-", [ "Sizeof" ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 707,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 714,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 2,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "UnOp -": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7097954098256227
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 504,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 505,
+            "col": 14,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 31 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 547,
+            "col": 7,
+            "feature": [ "Call", "save_lineno" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 14,
+            "feature": [ "Call", "get_linelen" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 386,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 551,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 552,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 562,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 578,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 584,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "BinOp",
+                        "+",
+                        [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "UnOp", "-", [ "Sizeof" ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 707,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 714,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 2,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "UnOp -": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7097954098256227
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 504,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 505,
+            "col": 14,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 31 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 546,
+            "col": 9,
+            "feature": [ "Call", "get_lineno" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 14,
+            "feature": [ "Call", "get_linelen" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 386,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 551,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 552,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 562,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 578,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 584,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "BinOp",
+                        "+",
+                        [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "UnOp", "-", [ "Sizeof" ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 707,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 714,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 2,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "UnOp -": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7097954098256227
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 504,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 505,
+            "col": 14,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 31 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 546,
+            "col": 9,
+            "feature": [ "Call", "get_lineno" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 547,
+            "col": 7,
+            "feature": [ "Call", "save_lineno" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 14,
+            "feature": [ "Call", "get_linelen" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 386,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 551,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 552,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 562,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 578,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 584,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "BinOp",
+                        "+",
+                        [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "UnOp", "-", [ "Sizeof" ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 707,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 714,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 2,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "UnOp -": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7097954098256227
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 504,
+            "col": 3,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 505,
+            "col": 14,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "==", [ "Var" ], [ "Const", [ "Cint", 31 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 545,
+            "col": 5,
+            "feature": [ "Call", "tokenize" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 14,
+            "feature": [ "Call", "get_linelen" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 386,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "Var" ],
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 550,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 551,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 552,
+            "col": 11,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">=",
+                  [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 562,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 578,
+            "col": 7,
+            "feature": [
+              "Prune",
+              [
+                "BinOp",
+                ">=",
+                [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 584,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "-",
+                  [
+                    "BinOp",
+                    "+",
+                    [ "Sizeof" ],
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [
+                        "BinOp",
+                        "+",
+                        [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                        [ "Const", [ "Cint", 8 ] ]
+                      ]
+                    ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 1 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "UnOp", "-", [ "Sizeof" ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 707,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 714,
+            "col": 19,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune >= true": 2,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune ! true": 2,
+          "UnOp -": 1,
+          "BinOp |": 1,
+          "BinOp <<": 1,
+          "BinOp -": 2,
+          "BinOp +": 3,
+          "BinOp &": 1,
+          "Input fread": 1
+        },
+        "score": 0.7097954098256227
+      }
+    ]
+  },
+  {
+    "program": "brandy",
+    "src": 456,
+    "sink": 2133,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2117,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2123,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2128,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2020,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2021,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "^",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                  [ "Var" ]
+                ],
+                [ "Const", [ "Cint", 255 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2022,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [
+                  "BinOp",
+                  "&",
+                  [
+                    "BinOp",
+                    "^",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Var" ],
+                        [ "Const", [ "Cint", 2 ] ]
+                      ],
+                      [ "Const", [ "Cint", 192 ] ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 255 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 15,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp ^": 2,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "BinOp &": 3,
+          "Input fread": 1
+        },
+        "score": 0.6316299207100965
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2117,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2123,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2128,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2018,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2021,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "^",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                  [ "Var" ]
+                ],
+                [ "Const", [ "Cint", 255 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2022,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [
+                  "BinOp",
+                  "&",
+                  [
+                    "BinOp",
+                    "^",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Var" ],
+                        [ "Const", [ "Cint", 2 ] ]
+                      ],
+                      [ "Const", [ "Cint", 192 ] ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 255 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 15,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp ^": 2,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "BinOp &": 3,
+          "Input fread": 1
+        },
+        "score": 0.6316299207100965
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2117,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2123,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2128,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2020,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2021,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "^",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                  [ "Var" ]
+                ],
+                [ "Const", [ "Cint", 255 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2022,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [
+                  "BinOp",
+                  "&",
+                  [
+                    "BinOp",
+                    "^",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Var" ],
+                        [ "Const", [ "Cint", 2 ] ]
+                      ],
+                      [ "Const", [ "Cint", 192 ] ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 255 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 15,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp ^": 2,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "BinOp &": 3,
+          "Input fread": 1
+        },
+        "score": 0.12126781251816648
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2117,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2123,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2128,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2018,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2021,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "^",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                  [ "Var" ]
+                ],
+                [ "Const", [ "Cint", 255 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2022,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [
+                  "BinOp",
+                  "&",
+                  [
+                    "BinOp",
+                    "^",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Var" ],
+                        [ "Const", [ "Cint", 2 ] ]
+                      ],
+                      [ "Const", [ "Cint", 192 ] ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 255 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 15,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp ^": 2,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "BinOp &": 3,
+          "Input fread": 1
+        },
+        "score": 0.12126781251816648
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2117,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 3 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2123,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2128,
+            "col": 11,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 33,
+            "feature": [ "Call", "expand_linenum" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2020,
+            "col": 3,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2021,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "&",
+                [
+                  "BinOp",
+                  "^",
+                  [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 4 ] ] ],
+                  [ "Var" ]
+                ],
+                [ "Const", [ "Cint", 255 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2022,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "|",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [
+                  "BinOp",
+                  "&",
+                  [
+                    "BinOp",
+                    "^",
+                    [
+                      "BinOp",
+                      "&",
+                      [
+                        "BinOp",
+                        "<<",
+                        [ "Var" ],
+                        [ "Const", [ "Cint", 2 ] ]
+                      ],
+                      [ "Const", [ "Cint", 192 ] ]
+                    ],
+                    [ "Var" ]
+                  ],
+                  [ "Const", [ "Cint", 255 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2133,
+            "col": 15,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "BinOp |": 1,
+          "BinOp ^": 2,
+          "BinOp <<": 3,
+          "BinOp +": 3,
+          "BinOp &": 3,
+          "Input fread": 1
+        },
+        "score": 0.12126781251816648
+      }
+    ]
+  },
+  {
+    "program": "brandy",
+    "src": 456,
+    "sink": 2115,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2115,
+            "col": 11,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2115,
+            "col": 11,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2115,
+            "col": 11,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.17960530202677488
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2115,
+            "col": 11,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/editor.c",
+            "line": 456,
+            "col": 13,
+            "feature": [ "Input", "fread" ]
+          },
+          {
+            "file": "src/editor.c",
+            "line": 462,
+            "col": 14,
+            "feature": [ "Call", "reformat" ]
+          },
+          {
+            "file": "src/tokens.c",
+            "line": 2115,
+            "col": 11,
+            "feature": [
+              "BufferOverflow",
+              "sprintf",
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "<<", [ "Var" ], [ "Const", [ "Cint", 8 ] ] ],
+                [ "Var" ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input fread": 1 },
+        "score": 0.1386750490563073
+      }
+    ]
+  }
+]

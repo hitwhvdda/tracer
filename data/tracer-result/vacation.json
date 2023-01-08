@@ -1,0 +1,823 @@
+[
+  {
+    "program": "vacation",
+    "src": 715,
+    "sink": 759,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 715,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 715,
+            "col": 52,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 715,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 715,
+            "col": 52,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 715,
+            "col": 20,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "vacation",
+    "src": 717,
+    "sink": 753,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 753,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 753,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 753,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 753,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 753,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6666666666666667
+      }
+    ]
+  },
+  {
+    "program": "vacation",
+    "src": 169,
+    "sink": 576,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 576,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 278,
+            "col": 3,
+            "feature": [ "Call", "initialize" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 174,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 576,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 576,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 278,
+            "col": 3,
+            "feature": [ "Call", "initialize" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 174,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 576,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 576,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "vacation",
+    "src": 169,
+    "sink": 579,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 579,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 278,
+            "col": 3,
+            "feature": [ "Call", "initialize" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 174,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 579,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 579,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_listen_socket_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 278,
+            "col": 3,
+            "feature": [ "Call", "initialize" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 174,
+            "col": 4,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 579,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "CWE78_54-CWE78_OS_Command_Injection__char_file_popen-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 169,
+            "col": 15,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 291,
+            "col": 3,
+            "feature": [ "Call", "sendmessage" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 579,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getopt": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "vacation",
+    "src": 717,
+    "sink": 759,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "vacation.c",
+            "line": 717,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 752,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 758,
+            "col": 6,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "vacation.c",
+            "line": 759,
+            "col": 6,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall snprintf": 2,
+          "Input getenv": 1
+        },
+        "score": 0.47140452079103173
+      }
+    ]
+  }
+]

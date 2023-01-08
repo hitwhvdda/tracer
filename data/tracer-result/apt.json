@@ -1,0 +1,859 @@
+[
+  {
+    "program": "apt",
+    "src": 30,
+    "sink": 32,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 32,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 32,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 32,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 32,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 32,
+            "col": 6,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 30,
+    "sink": 35,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 35,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 35,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 35,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 35,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 35,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 30,
+    "sink": 39,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 39,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 39,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 39,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 39,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 30,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 39,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 62,
+    "sink": 64,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 64,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 64,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 64,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 64,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 64,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 62,
+    "sink": 68,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 62,
+    "sink": 71,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 62,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 66,
+    "sink": 68,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 68,
+            "col": 3,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "apt",
+    "src": 66,
+    "sink": 71,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 66,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "apt-private/private-utils.cc",
+            "line": 71,
+            "col": 7,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  { "program": "apt", "src": -1, "sink": -1, "weighted_traces": [] }
+]

@@ -1,0 +1,3801 @@
+[
+  {
+    "program": "putty-tools",
+    "src": 1210,
+    "sink": 1216,
+    "weighted_traces": [
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.40824829046386296
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.11322770341445959
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Input getenv": 1
+        },
+        "score": 0.07332355751067665
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 1205,
+    "sink": 1207,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1205,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1207,
+            "col": 21,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1205,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1207,
+            "col": 21,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1205,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1207,
+            "col": 21,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1205,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1207,
+            "col": 21,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1205,
+            "col": 31,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1207,
+            "col": 21,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 1219,
+    "sink": 1219,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 19,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 1210,
+    "sink": 1219,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.6708203932499369
+      },
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "unix/uxpty.c",
+            "line": 1210,
+            "col": 27,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1214,
+            "col": 29,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1216,
+            "col": 17,
+            "feature": [ "LibraryCall", "sprintf" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1219,
+            "col": 13,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall sprintf": 1,
+          "Input getenv": 1
+        },
+        "score": 0.5773502691896258
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 493,
+    "sink": 56,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 56,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6000991981489791
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 56,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 56,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 56,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 56,
+            "col": 17,
+            "feature": [ "IntOverflow", "malloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 493,
+    "sink": 62,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 62,
+            "col": 17,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.6000991981489791
+      },
+      {
+        "signature": "CWE190_64-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 62,
+            "col": 17,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      },
+      {
+        "signature": "CWE190_22-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 62,
+            "col": 17,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      },
+      {
+        "signature": "CWE190_02-CWE190_Integer_Overflow__int_fgets_preinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 62,
+            "col": 17,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__int_fgets_postinc-1",
+        "trace": [
+          {
+            "file": "utils.c",
+            "line": 493,
+            "col": 12,
+            "feature": [ "Input", "fgets" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 494,
+            "col": 16,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [ "Call", "safegrowarray" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 100,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "utils.c",
+            "line": 497,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "utils.c",
+            "line": 504,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1743,
+            "col": 15,
+            "feature": [ "Prune", [ "Var" ] ]
+          },
+          {
+            "file": "import.c",
+            "line": 1760,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1766,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Var" ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1782,
+            "col": 17,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+              ]
+            ]
+          },
+          {
+            "file": "import.c",
+            "line": 1780,
+            "col": 24,
+            "feature": [ "Call", "saferealloc" ]
+          },
+          {
+            "file": "memory.c",
+            "line": 48,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [
+                      "Cast",
+                      [ "Unsupported" ],
+                      [ "Const", [ "Cint", 2147483647 ] ]
+                    ],
+                    [ "Var" ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 51,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "memory.c",
+            "line": 62,
+            "col": 17,
+            "feature": [ "IntOverflow", "realloc", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune > true": 1,
+          "Prune ! true": 1,
+          "BinOp -": 3,
+          "BinOp +": 3,
+          "BinOp *": 1,
+          "Input fgets": 1
+        },
+        "score": 0.5892556509887896
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 334,
+    "sink": 1221,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxsftp.c",
+            "line": 334,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "unix/uxsftp.c",
+            "line": 341,
+            "col": 12,
+            "feature": [ "Call", "dupstr" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 244,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 246,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1616,
+            "col": 9,
+            "feature": [ "Call", "open_existing_file" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "rlogin_send" ]
+          },
+          {
+            "file": "rlogin.c",
+            "line": 278,
+            "col": 5,
+            "feature": [ "Call", "bufchain_add" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1608,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1702,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1703,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1699,
+            "col": 28,
+            "feature": [ "Call", "read_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "telnet_send" ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 827,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 833,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 830,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 834,
+            "col": 27,
+            "feature": [ "Call", "sk_write" ]
+          },
+          {
+            "file": "network.h",
+            "line": 153,
+            "col": 10,
+            "feature": [ "Call", "sk_net_write_oob" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1220,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1221,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5661385170722979
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxsftp.c",
+            "line": 334,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "unix/uxsftp.c",
+            "line": 341,
+            "col": 12,
+            "feature": [ "Call", "dupstr" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 244,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 246,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1616,
+            "col": 9,
+            "feature": [ "Call", "open_existing_file" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "pty_send" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1378,
+            "col": 5,
+            "feature": [ "Call", "bufchain_add" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1608,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1702,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1703,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1699,
+            "col": 28,
+            "feature": [ "Call", "read_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "telnet_send" ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 827,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 833,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 830,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 834,
+            "col": 27,
+            "feature": [ "Call", "sk_write" ]
+          },
+          {
+            "file": "network.h",
+            "line": 153,
+            "col": 10,
+            "feature": [ "Call", "sk_net_write_oob" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1220,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1221,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5661385170722979
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxsftp.c",
+            "line": 334,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "unix/uxsftp.c",
+            "line": 341,
+            "col": 12,
+            "feature": [ "Call", "dupstr" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 244,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 246,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1616,
+            "col": 9,
+            "feature": [ "Call", "open_existing_file" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "rlogin_send" ]
+          },
+          {
+            "file": "rlogin.c",
+            "line": 278,
+            "col": 5,
+            "feature": [ "Call", "bufchain_add" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1608,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1702,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1703,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1699,
+            "col": 28,
+            "feature": [ "Call", "read_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "telnet_send" ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 827,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 833,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 830,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 834,
+            "col": 27,
+            "feature": [ "Call", "sk_write" ]
+          },
+          {
+            "file": "network.h",
+            "line": 153,
+            "col": 10,
+            "feature": [ "Call", "sk_net_write_oob" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1220,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1221,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5661385170722979
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxsftp.c",
+            "line": 334,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "unix/uxsftp.c",
+            "line": 341,
+            "col": 12,
+            "feature": [ "Call", "dupstr" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 244,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 246,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1616,
+            "col": 9,
+            "feature": [ "Call", "open_existing_file" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "pty_send" ]
+          },
+          {
+            "file": "unix/uxpty.c",
+            "line": 1378,
+            "col": 5,
+            "feature": [ "Call", "bufchain_add" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1608,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1702,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1703,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1699,
+            "col": 28,
+            "feature": [ "Call", "read_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "telnet_send" ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 827,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 833,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 830,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 834,
+            "col": 27,
+            "feature": [ "Call", "sk_write" ]
+          },
+          {
+            "file": "network.h",
+            "line": 153,
+            "col": 10,
+            "feature": [ "Call", "sk_net_write_oob" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1220,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1221,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5661385170722979
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/uxsftp.c",
+            "line": 334,
+            "col": 14,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "unix/uxsftp.c",
+            "line": 341,
+            "col": 12,
+            "feature": [ "Call", "dupstr" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 244,
+            "col": 19,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "utils.c",
+            "line": 246,
+            "col": 9,
+            "feature": [ "LibraryCall", "strcpy" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1616,
+            "col": 9,
+            "feature": [ "Call", "open_existing_file" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 37,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "rlogin_send" ]
+          },
+          {
+            "file": "rlogin.c",
+            "line": 278,
+            "col": 5,
+            "feature": [ "Call", "bufchain_add" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1608,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1613,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1702,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1703,
+            "col": 13,
+            "feature": [ "Call", "safefree" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1699,
+            "col": 28,
+            "feature": [ "Call", "read_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1701,
+            "col": 13,
+            "feature": [ "Call", "source" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1576,
+            "col": 12,
+            "feature": [ "Call", "file_type" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 1631,
+            "col": 9,
+            "feature": [ "Call", "scp_send_filename" ]
+          },
+          {
+            "file": "pscp.c",
+            "line": 798,
+            "col": 9,
+            "feature": [ "Call", "backend_send" ]
+          },
+          {
+            "file": "putty.h",
+            "line": 542,
+            "col": 10,
+            "feature": [ "Call", "telnet_send" ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 827,
+            "col": 5,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 833,
+            "col": 13,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 830,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "telnet.c",
+            "line": 834,
+            "col": 27,
+            "feature": [ "Call", "sk_write" ]
+          },
+          {
+            "file": "network.h",
+            "line": 153,
+            "col": 10,
+            "feature": [ "Call", "sk_net_write_oob" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1220,
+            "col": 5,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<=", [ "Var" ], [ "Sizeof" ] ] ]
+            ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1221,
+            "col": 5,
+            "feature": [ "BufferOverflow", "memcpy", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 2,
+          "IfSmallerThanConst": 1,
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 2,
+          "LibraryCall strcpy": 1,
+          "Prune == true": 2,
+          "Prune <= true": 1,
+          "Prune ! true": 3,
+          "BinOp +": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5661385170722979
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 1286,
+    "sink": 367,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1286,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1302,
+            "col": 17,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1286,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1302,
+            "col": 17,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1286,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1302,
+            "col": 17,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1286,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1302,
+            "col": 17,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1286,
+            "col": 19,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1302,
+            "col": 17,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  },
+  {
+    "program": "putty-tools",
+    "src": 1369,
+    "sink": 367,
+    "weighted_traces": [
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1369,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1392,
+            "col": 13,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1369,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1392,
+            "col": 13,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.4999999999999999
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1369,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1392,
+            "col": 13,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1369,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1392,
+            "col": 13,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.1386750490563073
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "unix/uxnet.c",
+            "line": 1369,
+            "col": 15,
+            "feature": [ "Input", "recv" ]
+          },
+          {
+            "file": "unix/uxnet.c",
+            "line": 1392,
+            "col": 13,
+            "feature": [ "Call", "plug_receive" ]
+          },
+          {
+            "file": "network.h",
+            "line": 166,
+            "col": 3,
+            "feature": [ "Call", "server_receive" ]
+          },
+          {
+            "file": "sshserver.c",
+            "line": 151,
+            "col": 9,
+            "feature": [ "Call", "log_packet" ]
+          },
+          {
+            "file": "logging.c",
+            "line": 366,
+            "col": 17,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "logging.c",
+            "line": 367,
+            "col": 17,
+            "feature": [ "BufferOverflow", "sprintf", [ "Var" ] ]
+          }
+        ],
+        "vec": { "BufferOverflow": 1, "Input recv": 1 },
+        "score": 0.08980265101338744
+      }
+    ]
+  }
+]

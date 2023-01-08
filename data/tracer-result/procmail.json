@@ -1,0 +1,1927 @@
+[
+  {
+    "program": "procmail",
+    "src": 33,
+    "sink": 33,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 44,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 44,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 44,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 44,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 17,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/setid.c",
+            "line": 33,
+            "col": 44,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "procmail",
+    "src": 144,
+    "sink": 26,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "procmail",
+    "src": 144,
+    "sink": 30,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/variables.c",
+            "line": 144,
+            "col": 13,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  },
+  {
+    "program": "procmail",
+    "src": 32,
+    "sink": 26,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 26,
+            "col": 27,
+            "feature": [ "CmdInjection", "execvp", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      }
+    ]
+  },
+  {
+    "program": "procmail",
+    "src": 32,
+    "sink": 30,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "src/goodies.c",
+            "line": 32,
+            "col": 18,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 316,
+            "col": 11,
+            "feature": [ "Call", "sstrlcpy" ]
+          },
+          {
+            "file": "src/sublib.c",
+            "line": 166,
+            "col": 2,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 115,
+            "col": 15,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 53,
+            "col": 3,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 62,
+            "col": 24,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 102,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/goodies.c",
+            "line": 124,
+            "col": 17,
+            "feature": [ "Call", "fromprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 301,
+            "col": 29,
+            "feature": [ "Call", "inittmout" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 44,
+            "col": 12,
+            "feature": [ "Call", "cstr" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 241,
+            "col": 10,
+            "feature": [ "Call", "tstrdup" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 305,
+            "col": 54,
+            "feature": [ "Call", "callnewprog" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 94,
+            "col": 6,
+            "feature": [ "Call", "yell" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 181,
+            "col": 14,
+            "feature": [ "Call", "logqnl" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 207,
+            "col": 16,
+            "feature": [ "Call", "elog" ]
+          },
+          {
+            "file": "src/misc.c",
+            "line": 71,
+            "col": 6,
+            "feature": [ "Call", "rwrite" ]
+          },
+          {
+            "file": "src/pipes.c",
+            "line": 95,
+            "col": 52,
+            "feature": [ "Call", "shexec" ]
+          },
+          {
+            "file": "src/common.c",
+            "line": 30,
+            "col": 3,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "Prune < true": 2,
+          "BinOp +": 2,
+          "Input getenv": 1
+        },
+        "score": 0.3651483716701107
+      }
+    ]
+  }
+]

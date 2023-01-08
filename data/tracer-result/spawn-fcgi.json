@@ -1,0 +1,445 @@
+[
+  {
+    "program": "spawn-fcgi",
+    "src": 471,
+    "sink": 282,
+    "weighted_traces": [
+      {
+        "signature": "command-injection2-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 471,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 282,
+            "col": 5,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection4-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 471,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 282,
+            "col": 5,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 471,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 282,
+            "col": 5,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.7071067811865475
+      },
+      {
+        "signature": "amanda-3.3.1-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 471,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 282,
+            "col": 5,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_18-CWE78_OS_Command_Injection__char_listen_socket_execl-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 471,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 282,
+            "col": 5,
+            "feature": [ "CmdInjection", "execv", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input main": 1 },
+        "score": 0.4999999999999999
+      }
+    ]
+  },
+  {
+    "program": "spawn-fcgi",
+    "src": 497,
+    "sink": 290,
+    "weighted_traces": [
+      {
+        "signature": "command-injection3-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 497,
+            "col": 20,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 547,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 655,
+            "col": 24,
+            "feature": [ "Call", "bind_socket" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 102,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 285,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 287,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 290,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 1,
+          "Input getopt": 1
+        },
+        "score": 0.6454972243679028
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 497,
+            "col": 20,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 547,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 655,
+            "col": 24,
+            "feature": [ "Call", "bind_socket" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 102,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 285,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 287,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 290,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5773502691896258
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 497,
+            "col": 20,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 547,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 655,
+            "col": 24,
+            "feature": [ "Call", "bind_socket" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 102,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 285,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 287,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 290,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5163977794943222
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 497,
+            "col": 20,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 547,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 655,
+            "col": 24,
+            "feature": [ "Call", "bind_socket" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 102,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 285,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 287,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 290,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5163977794943222
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_console_execlp-1",
+        "trace": [
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 497,
+            "col": 20,
+            "feature": [ "Input", "getopt" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 547,
+            "col": 20,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 655,
+            "col": 24,
+            "feature": [ "Call", "bind_socket" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 102,
+            "col": 7,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 664,
+            "col": 9,
+            "feature": [ "Call", "fcgi_spawn_connection" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 285,
+            "col": 46,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 287,
+            "col": 5,
+            "feature": [ "LibraryCall", "strcat" ]
+          },
+          {
+            "file": "src/spawn-fcgi.c",
+            "line": 290,
+            "col": 5,
+            "feature": [ "CmdInjection", "execl", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strlen": 3,
+          "LibraryCall strcat": 1,
+          "Input getopt": 1
+        },
+        "score": 0.5163977794943222
+      }
+    ]
+  }
+]

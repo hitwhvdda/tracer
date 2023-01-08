@@ -1,0 +1,2717 @@
+[
+  {
+    "program": "lsscsi",
+    "src": 4576,
+    "sink": 4476,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fgets_postdec-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.6674238124719145
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_listen_socket_predec-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.6674238124719145
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_predec-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.6674238124719145
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int64_t_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.6674238124719145
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_postdec-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "IntUnderflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntUnderflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.6674238124719145
+      }
+    ]
+  },
+  {
+    "program": "lsscsi",
+    "src": 1474,
+    "sink": 619,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1474,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1479,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1509,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5262348115842176
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1474,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1479,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1509,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.5262348115842176
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1474,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1479,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1509,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1474,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1479,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1509,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1474,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1479,
+            "col": 21,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1509,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strstr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.17038855027411945
+      }
+    ]
+  },
+  {
+    "program": "lsscsi",
+    "src": 4576,
+    "sink": 619,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4548,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4550,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4548,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4550,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.43852900965351466
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4548,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4550,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4548,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4550,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.31622776601683794
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4548,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4550,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall strlen": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input main": 1
+        },
+        "score": 0.17038855027411945
+      }
+    ]
+  },
+  {
+    "program": "lsscsi",
+    "src": 4576,
+    "sink": 4476,
+    "weighted_traces": [
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.40614777080541176
+      },
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.16724840200141816
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.16724840200141816
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.1507556722888818
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 4576,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4738,
+            "col": 31,
+            "feature": [ "Call", "decode_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4532,
+            "col": 19,
+            "feature": [ "LibraryCall", "strncmp" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4542,
+            "col": 26,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4544,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4567,
+            "col": 24,
+            "feature": [ "Call", "one_filter_arg" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4455,
+            "col": 9,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4466,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "-",
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ],
+                [ "Const", [ "Cint", 1 ] ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4460,
+            "col": 26,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "+", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4463,
+            "col": 25,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4470,
+            "col": 21,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  ">",
+                  [ "Var" ],
+                  [ "BinOp", "-", [ "Sizeof" ], [ "Const", [ "Cint", 1 ] ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4475,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [ "BinOp", ">", [ "Var" ], [ "Const", [ "Cint", 0 ] ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 4476,
+            "col": 25,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "BufferOverflow": 1,
+          "LibraryCall strncmp": 1,
+          "LibraryCall strlen": 1,
+          "LibraryCall memchr": 1,
+          "Prune > true": 2,
+          "Prune ! true": 1,
+          "BinOp -": 2,
+          "BinOp +": 2,
+          "Input main": 1
+        },
+        "score": 0.1507556722888818
+      }
+    ]
+  },
+  {
+    "program": "lsscsi",
+    "src": 1324,
+    "sink": 619,
+    "weighted_traces": [
+      {
+        "signature": "zsh-5.4.2-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1324,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall snprintf": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "zsh-5.4.2-2",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1324,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall snprintf": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.3922322702763681
+      },
+      {
+        "signature": "schismtracker-20190722-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1324,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall snprintf": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2357022603955158
+      },
+      {
+        "signature": "buffer-overflow1-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1324,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall snprintf": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.2357022603955158
+      },
+      {
+        "signature": "gdk-pixbuf-2.36.11-1",
+        "trace": [
+          {
+            "file": "src/lsscsi.c",
+            "line": 1324,
+            "col": 23,
+            "feature": [ "Input", "readdir" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 28,
+            "feature": [ "LibraryCall", "memchr" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1328,
+            "col": 17,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 1358,
+            "col": 17,
+            "feature": [ "Call", "my_strcopy" ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 614,
+            "col": 9,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 615,
+            "col": 13,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [ "Var" ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "src/lsscsi.c",
+            "line": 619,
+            "col": 17,
+            "feature": [
+              "BufferOverflow",
+              "memcpy",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "+",
+                  [ "BinOp", "-", [ "Var" ], [ "Var" ] ],
+                  [ "Const", [ "Cint", 1 ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "BufferOverflow": 1,
+          "LibraryCall snprintf": 2,
+          "LibraryCall memchr": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "Input readdir": 1
+        },
+        "score": 0.12700012700019048
+      }
+    ]
+  }
+]

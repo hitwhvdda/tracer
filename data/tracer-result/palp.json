@@ -1,0 +1,4255 @@
+[
+  {
+    "program": "palp",
+    "src": 267,
+    "sink": 284,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 267,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 267,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 267,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 267,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 267,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": { "IntOverflow": 1, "BinOp +": 1, "Input fscanf": 1 },
+        "score": 1.0000000000000002
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 190,
+    "sink": 210,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 39,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.8908708063747479
+      },
+      {
+        "signature": "autotrace-20200219.65-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 39,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.8189230248533256
+      },
+      {
+        "signature": "sam2p-0.49.4-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 39,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.7817359599705717
+      },
+      {
+        "signature": "sam2p-0.49.4-3",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 39,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.7817359599705717
+      },
+      {
+        "signature": "sam2p-0.49.4-2",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 39,
+            "feature": [ "Input", "getc" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 1,
+          "BinOp *": 2,
+          "Input getc": 1
+        },
+        "score": 0.7817359599705717
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 1418,
+    "sink": 1635,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1477,
+            "col": 3,
+            "feature": [ "Call", "Test_INCI" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1635,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune < true": 2,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7944299095067363
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1635,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune < true": 2,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7944299095067363
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1477,
+            "col": 3,
+            "feature": [ "Call", "Test_INCI" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1477,
+            "col": 3,
+            "feature": [ "Call", "Test_INCI" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1635,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune < true": 2,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7944299095067363
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1477,
+            "col": 3,
+            "feature": [ "Call", "Test_INCI" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1635,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune < true": 2,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7944299095067363
+      },
+      {
+        "signature": "shntool-3.0.5-2",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1477,
+            "col": 3,
+            "feature": [ "Call", "Test_INCI" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1635,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune < true": 2,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7311261550139309
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 38,
+    "sink": 528,
+    "weighted_traces": [
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "LG.c",
+            "line": 38,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 58,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 47,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 139,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "poly.c",
+            "line": 199,
+            "col": 27,
+            "feature": [ "Call", "LGO_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 742,
+            "col": 14,
+            "feature": [ "Call", "Calc_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 900,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 39,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 909,
+            "col": 6,
+            "feature": [ "Call", "AllocPoCoLi" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "BinOp", "+", [ "Sizeof" ], [ "Sizeof" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 5,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.7881104062391007
+      },
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "LG.c",
+            "line": 38,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 58,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 47,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 139,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "poly.c",
+            "line": 199,
+            "col": 27,
+            "feature": [ "Call", "LGO_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 742,
+            "col": 14,
+            "feature": [ "Call", "Calc_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 900,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 39,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 909,
+            "col": 6,
+            "feature": [ "Call", "AllocPoCoLi" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "BinOp", "+", [ "Sizeof" ], [ "Sizeof" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 5,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.7769677791040541
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "LG.c",
+            "line": 38,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 58,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 47,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 139,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "poly.c",
+            "line": 199,
+            "col": 27,
+            "feature": [ "Call", "LGO_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 742,
+            "col": 14,
+            "feature": [ "Call", "Calc_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 900,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 39,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 909,
+            "col": 6,
+            "feature": [ "Call", "AllocPoCoLi" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "BinOp", "+", [ "Sizeof" ], [ "Sizeof" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 5,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.7645528515426075
+      },
+      {
+        "signature": "shntool-3.0.5-3",
+        "trace": [
+          {
+            "file": "LG.c",
+            "line": 38,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 58,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 47,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 139,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "poly.c",
+            "line": 199,
+            "col": 27,
+            "feature": [ "Call", "LGO_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 742,
+            "col": 14,
+            "feature": [ "Call", "Calc_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 900,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 39,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 909,
+            "col": 6,
+            "feature": [ "Call", "AllocPoCoLi" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "BinOp", "+", [ "Sizeof" ], [ "Sizeof" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 5,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.7029399400673935
+      },
+      {
+        "signature": "optipng-0.5.3-1",
+        "trace": [
+          {
+            "file": "LG.c",
+            "line": 38,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", ">", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 44,
+            "col": 58,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 47,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 139,
+            "col": 47,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "==", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "poly.c",
+            "line": 199,
+            "col": 27,
+            "feature": [ "Call", "LGO_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 742,
+            "col": 14,
+            "feature": [ "Call", "Calc_VaHo" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 900,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 9,
+            "feature": [
+              "Prune",
+              [ "UnOp", "!", [ "BinOp", "%", [ "Var" ], [ "Var" ] ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 903,
+            "col": 39,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [ "BinOp", "/", [ "Var" ], [ "Var" ] ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ],
+                [ "BinOp", "*", [ "Const", [ "Cint", 2 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 908,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "LG.c",
+            "line": 909,
+            "col": 6,
+            "feature": [ "Call", "AllocPoCoLi" ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "LG.c",
+            "line": 528,
+            "col": 22,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "BinOp", "+", [ "Sizeof" ], [ "Sizeof" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfEqualToVar": 1,
+          "IfLargerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune > true": 1,
+          "Prune == true": 1,
+          "Prune < true": 1,
+          "Prune ! true": 5,
+          "BinOp /": 1,
+          "BinOp +": 2,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.6978227007909176
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 153,
+    "sink": 161,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 153,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7396002616336389
+      },
+      {
+        "signature": "sam2p-0.49.4-4",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 153,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 153,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 153,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.6236095644623235
+      },
+      {
+        "signature":
+          "CWE191_14-CWE191_Integer_Underflow__int64_t_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 153,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.5962847939999439
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 154,
+    "sink": 161,
+    "weighted_traces": [
+      {
+        "signature": "autotrace-20200219.65-5",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 154,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7396002616336389
+      },
+      {
+        "signature": "sam2p-0.49.4-4",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 154,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "gimp-2.6.7-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 154,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.7071067811865476
+      },
+      {
+        "signature": "gocr-0.40-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 154,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.6236095644623235
+      },
+      {
+        "signature":
+          "CWE191_14-CWE191_Integer_Underflow__int64_t_fscanf_multiply-1",
+        "trace": [
+          {
+            "file": "Subdb.c",
+            "line": 154,
+            "col": 7,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 155,
+            "col": 7,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Var" ],
+                  [
+                    "BinOp",
+                    "/",
+                    [ "BinOp", "-", [ "Var" ], [ "Const", [ "Cint", 1 ] ] ],
+                    [ "Const", [ "Cint", 128 ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 159,
+            "col": 22,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "<=",
+                  [ "Var" ],
+                  [ "Const", [ "Cint", 2147483647 ] ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 161,
+            "col": 32,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfSmallerThanConst": 1,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune ! true": 1,
+          "BinOp /": 1,
+          "BinOp -": 1,
+          "BinOp +": 1,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.5962847939999439
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 175,
+    "sink": 210,
+    "weighted_traces": [
+      {
+        "signature": "sam2p-0.49.4-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 5,
+          "Input fscanf": 1
+        },
+        "score": 0.7309879850882874
+      },
+      {
+        "signature": "sam2p-0.49.4-3",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 5,
+          "Input fscanf": 1
+        },
+        "score": 0.7309879850882874
+      },
+      {
+        "signature": "sam2p-0.49.4-2",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 5,
+          "Input fscanf": 1
+        },
+        "score": 0.7309879850882874
+      },
+      {
+        "signature":
+          "CWE680_17-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 5,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402215
+      },
+      {
+        "signature":
+          "CWE680_83-CWE680_Integer_Overflow_to_Buffer_Overflow__new_fscanf-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 190,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 191,
+            "col": 16,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [ "Var" ],
+                [ "BinOp", "*", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 6,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [
+                  "BinOp",
+                  "==",
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 0 ] ] ],
+                  [
+                    "Cast",
+                    [ "Unsupported" ],
+                    [ "BinOp", "-", [ "Var" ], [ "Var" ] ]
+                  ]
+                ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 194,
+            "col": 50,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 210,
+            "col": 35,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [
+                  "BinOp",
+                  "*",
+                  [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                  [ "Cast", [ "Unsupported" ], [ "Sizeof" ] ]
+                ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "Prune == true": 1,
+          "Prune ! true": 1,
+          "BinOp +": 4,
+          "BinOp *": 5,
+          "Input fscanf": 1
+        },
+        "score": 0.7302967433402215
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 175,
+    "sink": 284,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE190_11-CWE190_Integer_Overflow__int64_t_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 186,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 4,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.6666666666666666
+      },
+      {
+        "signature": "CWE190_21-CWE190_Integer_Overflow__int_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 186,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 4,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.6666666666666666
+      },
+      {
+        "signature": "CWE190_14-CWE190_Integer_Overflow__short_fscanf_add-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 186,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 4,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.6666666666666666
+      },
+      {
+        "signature":
+          "CWE190_09-CWE190_Integer_Overflow__int64_t_fscanf_postinc-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 186,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 4,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.6666666666666666
+      },
+      {
+        "signature":
+          "CWE190_21-CWE190_Integer_Overflow__short_fscanf_preinc-1",
+        "trace": [
+          {
+            "file": "Subadd.c",
+            "line": 175,
+            "col": 6,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 176,
+            "col": 6,
+            "feature": [
+              "Store",
+              [ "Var" ],
+              [
+                "BinOp",
+                "+",
+                [
+                  "BinOp",
+                  "*",
+                  [
+                    "BinOp",
+                    "+",
+                    [
+                      "BinOp",
+                      "*",
+                      [
+                        "BinOp",
+                        "+",
+                        [
+                          "BinOp",
+                          "*",
+                          [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                          [
+                            "Cast",
+                            [ "Unsupported" ],
+                            [ "Const", [ "Cint", 256 ] ]
+                          ]
+                        ],
+                        [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                      ],
+                      [
+                        "Cast",
+                        [ "Unsupported" ],
+                        [ "Const", [ "Cint", 256 ] ]
+                      ]
+                    ],
+                    [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+                  ],
+                  [ "Cast", [ "Unsupported" ], [ "Const", [ "Cint", 256 ] ] ]
+                ],
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "Subadd.c",
+            "line": 186,
+            "col": 52,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 283,
+            "col": 10,
+            "feature": [ "Prune", [ "BinOp", "+", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "Subdb.c",
+            "line": 284,
+            "col": 6,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "Cast",
+                [ "Unsupported" ],
+                [ "BinOp", "+", [ "Var" ], [ "Var" ] ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IntOverflow": 1,
+          "BinOp +": 4,
+          "BinOp *": 3,
+          "Input fscanf": 1
+        },
+        "score": 0.6666666666666666
+      }
+    ]
+  },
+  {
+    "program": "palp",
+    "src": 1418,
+    "sink": 1473,
+    "weighted_traces": [
+      {
+        "signature": "shntool-3.0.5-4",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1472,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1469,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1471,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1473,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.6657502859356828
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__short_fscanf_multiply-2",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1472,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1469,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1471,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1473,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.659828879073858
+      },
+      {
+        "signature":
+          "CWE190_12-CWE190_Integer_Overflow__unsigned_int_fscanf_multiply-2",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1472,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1469,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1471,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1473,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.659828879073858
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__int_fscanf_multiply-2",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1472,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1469,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1471,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1473,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.659828879073858
+      },
+      {
+        "signature":
+          "CWE191_12-CWE191_Integer_Underflow__char_fscanf_multiply-2",
+        "trace": [
+          {
+            "file": "MoriCone.c",
+            "line": 1418,
+            "col": 24,
+            "feature": [ "Input", "fscanf" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1419,
+            "col": 55,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1472,
+            "col": 5,
+            "feature": [ "Store", [ "Var" ], [ "Var" ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1633,
+            "col": 5,
+            "feature": [ "Call", "Read_Tri" ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1469,
+            "col": 17,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<=", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1470,
+            "col": 6,
+            "feature": [ "Prune", [ "BinOp", "<", [ "Var" ], [ "Var" ] ] ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1471,
+            "col": 8,
+            "feature": [
+              "Prune",
+              [
+                "UnOp",
+                "!",
+                [ "BinOp", "<", [ "Const", [ "Cint", 0 ] ], [ "Var" ] ]
+              ]
+            ]
+          },
+          {
+            "file": "MoriCone.c",
+            "line": 1473,
+            "col": 5,
+            "feature": [
+              "IntOverflow",
+              "malloc",
+              [
+                "BinOp",
+                "*",
+                [ "Cast", [ "Unsupported" ], [ "Var" ] ],
+                [ "Sizeof" ]
+              ]
+            ]
+          }
+        ],
+        "vec": {
+          "IfLargerThanConst": 2,
+          "IntOverflow": 1,
+          "Prune <= true": 1,
+          "Prune < true": 3,
+          "Prune ! true": 2,
+          "BinOp *": 1,
+          "Input fscanf": 1
+        },
+        "score": 0.659828879073858
+      }
+    ]
+  },
+  { "program": "palp", "src": -1, "sink": -1, "weighted_traces": [] }
+]

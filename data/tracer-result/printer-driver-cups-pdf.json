@@ -1,0 +1,1218 @@
+[
+  {
+    "program": "printer-driver-cups-pdf",
+    "src": 815,
+    "sink": 1067,
+    "weighted_traces": [
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 501,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1060,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1065,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1067,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 7,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.5417363388859614
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 490,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1060,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1065,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1067,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 7,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.5417363388859614
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 501,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1060,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1065,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1067,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 7,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.4307055216465324
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 490,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1060,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1065,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1067,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 7,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.4307055216465324
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 501,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1060,
+            "col": 40,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1065,
+            "col": 9,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1067,
+            "col": 14,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 7,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.4307055216465324
+      }
+    ]
+  },
+  {
+    "program": "printer-driver-cups-pdf",
+    "src": 815,
+    "sink": 1052,
+    "weighted_traces": [
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 501,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1012,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1052,
+            "col": 10,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 6,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.5345224838248488
+      },
+      {
+        "signature": "command-injection1-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 490,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1012,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1052,
+            "col": 10,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 6,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.5345224838248488
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 501,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1012,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1052,
+            "col": 10,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 6,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.4183300132670378
+      },
+      {
+        "signature":
+          "CWE78_08-CWE78_OS_Command_Injection__char_console_system-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 490,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1012,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1052,
+            "col": 10,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 6,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.4183300132670378
+      },
+      {
+        "signature":
+          "CWE78_44-CWE78_OS_Command_Injection__char_console_execl-1",
+        "trace": [
+          {
+            "file": "src/cups-pdf.c",
+            "line": 815,
+            "col": 1,
+            "feature": [ "Input", "main" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 843,
+            "col": 32,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 897,
+            "col": 18,
+            "feature": [ "Call", "preparedirname" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 450,
+            "col": 10,
+            "feature": [ "LibraryCall", "strstr" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 451,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 471,
+            "col": 7,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 474,
+            "col": 5,
+            "feature": [ "LibraryCall", "strncpy" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 476,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 480,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 904,
+            "col": 12,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 934,
+            "col": 7,
+            "feature": [ "Call", "prepareuser" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 501,
+            "col": 11,
+            "feature": [ "Call", "create_dir" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 979,
+            "col": 8,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 993,
+            "col": 5,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 998,
+            "col": 73,
+            "feature": [ "LibraryCall", "strlen" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1012,
+            "col": 3,
+            "feature": [ "LibraryCall", "snprintf" ]
+          },
+          {
+            "file": "src/cups-pdf.c",
+            "line": 1052,
+            "col": 10,
+            "feature": [ "CmdInjection", "system", [ "Var" ] ]
+          }
+        ],
+        "vec": {
+          "CmdInjection": 1,
+          "LibraryCall strstr": 1,
+          "LibraryCall strncpy": 1,
+          "LibraryCall strlen": 6,
+          "LibraryCall snprintf": 4,
+          "Input main": 1
+        },
+        "score": 0.4183300132670378
+      }
+    ]
+  },
+  {
+    "program": "printer-driver-cups-pdf",
+    "src": -1,
+    "sink": -1,
+    "weighted_traces": []
+  }
+]

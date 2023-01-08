@@ -1,0 +1,109 @@
+[
+  {
+    "program": "dctrl-tools",
+    "src": 34,
+    "sink": 42,
+    "weighted_traces": [
+      {
+        "signature":
+          "CWE78_04-CWE78_OS_Command_Injection__char_environment_system-1",
+        "trace": [
+          {
+            "file": "lib/misc.c",
+            "line": 34,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/misc.c",
+            "line": 42,
+            "col": 14,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_09-CWE78_OS_Command_Injection__char_environment_execl-1",
+        "trace": [
+          {
+            "file": "lib/misc.c",
+            "line": 34,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/misc.c",
+            "line": 42,
+            "col": 14,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_54-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "lib/misc.c",
+            "line": 34,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/misc.c",
+            "line": 42,
+            "col": 14,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_01-CWE78_OS_Command_Injection__char_environment_execlp-1",
+        "trace": [
+          {
+            "file": "lib/misc.c",
+            "line": 34,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/misc.c",
+            "line": 42,
+            "col": 14,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      },
+      {
+        "signature":
+          "CWE78_53-CWE78_OS_Command_Injection__char_environment_popen-1",
+        "trace": [
+          {
+            "file": "lib/misc.c",
+            "line": 34,
+            "col": 16,
+            "feature": [ "Input", "getenv" ]
+          },
+          {
+            "file": "lib/misc.c",
+            "line": 42,
+            "col": 14,
+            "feature": [ "CmdInjection", "popen", [ "Var" ] ]
+          }
+        ],
+        "vec": { "CmdInjection": 1, "Input getenv": 1 },
+        "score": 0.8164965809277259
+      }
+    ]
+  }
+]
