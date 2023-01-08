@@ -1,0 +1,2655 @@
+[14][      debug] Loading models took 16.068ms
+[15][      debug] Sqlite write daemon: starting up
+[15][      debug] Sqlite write daemon: set up complete, waiting for connections
+[14][environment] CWD = /src/unzip
+[14][environment] No .inferconfig file found
+[14][environment] Project root = /src/unzip
+[14][environment] INFER_ARGS =   @/tmp/args.tmp.53c2a5
+[14][environment] command line arguments:   /infer/infer/bin/infer capture -- make generic -j
+[14][environment] Available memory at startup: 164952 MB
+[14][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[14][environment] Scheduler: file
+[14][environment] Cores used: 32
+[14][environment] Infer version v1.0.0-c13db4e62
+[14][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[14][environment] 
+[14][   progress] Capturing in make/cc mode...
+[14][environment] Running command make with env:
+[14][environment] (Extend((PATH /infer/infer/bin/../lib/wrappers:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)(INFER_OLD_PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)))
+[14][environment] 
+
+[20][environment] CWD = /src/unzip
+[20][environment] No .inferconfig file found
+[20][environment] Project root = /src/unzip
+[20][environment] INFER_ARGS =   @/tmp/args.tmp.ed7dc1
+[20][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[20][environment] Available memory at startup: 164929 MB
+[20][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[20][      debug] 
+[20][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[20][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[20][      debug] Elapsed: 24.407ms.
+[20][      debug] GC stats for capture:
+[20][      debug]   minor_words: 134660
+[20][      debug]   promoted_words: 0
+[20][      debug]   major_words: 9218
+[20][      debug]   minor_collections: 0
+[20][      debug]   major_collections: 0
+[20][      debug]   compactions: 0
+[20][      debug]   top_heap_words: 188416
+[20][      debug]   
+[20][      debug] GC stats for main_process_full:
+[20][      debug]   minor_words: 1.71374e+06
+[20][      debug]   promoted_words: 155720
+[20][      debug]   major_words: 182394
+[20][      debug]   minor_collections: 4
+[20][      debug]   major_collections: 2
+[20][      debug]   compactions: 1
+[20][      debug]   top_heap_words: 188416
+[20][      debug]   
+[20][environment] Scheduler: file
+[20][environment] Cores used: 32
+[20][environment] 
+[26][environment] CWD = /src/unzip
+[26][environment] No .inferconfig file found
+[26][environment] Project root = /src/unzip
+[26][environment] INFER_ARGS =   @/tmp/args.tmp.0895de
+[26][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[26][environment] Available memory at startup: 164927 MB
+[26][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[26][      debug] 
+[26][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[26][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[26][      debug] Merging capture data for already-captured 'conftest.c'
+[26][      debug] Elapsed: 21.879ms.
+[26][      debug] 
+[26][ extern err] Error: the following clang command did not run successfully:
+[26][ extern err]     /infer/facebook-clang-plugins/clang/install/bin/clang-10
+[26][ extern err]     @/src/unzip/infer-out/tmp/clang_command_.tmp.873eed.txt  ++Contents of '/src/unzip/infer-out/tmp/clang_command_.tmp.873eed.txt':
+[26][ extern err]                                                                "-cc1" "-load"
+[26][ extern err]                                                                "/infer/infer/bin/../../facebook-clang-plugins/libtooling/build/FacebookClangPlugin.dylib"
+[26][ extern err]                                                                "-add-plugin"
+[26][ extern err]                                                                "BiniouASTExporter"
+[26][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[26][ extern err]                                                                "-"
+[26][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[26][ extern err]                                                                "PREPEND_CURRENT_DIR=1"
+[26][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[26][ extern err]                                                                "MAX_STRING_SIZE=65535"
+[26][ extern err]                                                                "-cc1"
+[26][ extern err]                                                                "-triple"
+[26][ extern err]                                                                "x86_64-unknown-linux-gnu"
+[26][ extern err]                                                                "-emit-obj"
+[26][ extern err]                                                                "-mrelax-all"
+[26][ extern err]                                                                "-disable-free"
+[26][ extern err]                                                                "-disable-llvm-verifier"
+[26][ extern err]                                                                "-discard-value-names"
+[26][ extern err]                                                                "-main-file-name"
+[26][ extern err]                                                                "conftest.c"
+[26][ extern err]                                                                "-mrelocation-model"
+[26][ extern err]                                                                "static"
+[26][ extern err]                                                                "-mthread-model"
+[26][ extern err]                                                                "posix"
+[26][ extern err]                                                                "-mframe-pointer=all"
+[26][ extern err]                                                                "-fmath-errno"
+[26][ extern err]                                                                "-fno-rounding-math"
+[26][ extern err]                                                                "-masm-verbose"
+[26][ extern err]                                                                "-mconstructor-aliases"
+[26][ extern err]                                                                "-munwind-tables"
+[26][ extern err]                                                                "-target-cpu"
+[26][ extern err]                                                                "x86-64"
+[26][ extern err]                                                                "-dwarf-column-info"
+[26][ extern err]                                                                "-fno-split-dwarf-inlining"
+[26][ extern err]                                                                "-debugger-tuning=gdb"
+[26][ extern err]                                                                "-resource-dir"
+[26][ extern err]                                                                "/infer/facebook-clang-plugins/clang/install/lib/clang/10.0.1"
+[26][ extern err]                                                                "-include"
+[26][ extern err]                                                                "/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[26][ extern err]                                                                "-I" "." "-I"
+[26][ extern err]                                                                "bzip2" "-D"
+[26][ extern err]                                                                "UNIX" "-I"
+[26][ extern err]                                                                "." "-D"
+[26][ extern err]                                                                "UNIX"
+[26][ extern err]                                                                "-internal-isystem"
+[26][ extern err]                                                                "/usr/local/include"
+[26][ extern err]                                                                "-internal-isystem"
+[26][ extern err]                                                                "/infer/facebook-clang-plugins/clang/install/lib/clang/10.0.1/include"
+[26][ extern err]                                                                "-internal-externc-isystem"
+[26][ extern err]                                                                "/usr/include/x86_64-linux-gnu"
+[26][ extern err]                                                                "-internal-externc-isystem"
+[26][ extern err]                                                                "/include"
+[26][ extern err]                                                                "-internal-externc-isystem"
+[26][ extern err]                                                                "/usr/include"
+[26][ extern err]                                                                "-Wno-ignored-optimization-argument"
+[26][ extern err]                                                                "-Wno-everything"
+[26][ extern err]                                                                "-fdebug-compilation-dir"
+[26][ extern err]                                                                "/src/unzip"
+[26][ extern err]                                                                "-ferror-limit"
+[26][ extern err]                                                                "19"
+[26][ extern err]                                                                "-fmessage-length"
+[26][ extern err]                                                                "0"
+[26][ extern err]                                                                "-fgnuc-version=4.2.1"
+[26][ extern err]                                                                "-fobjc-runtime=gcc"
+[26][ extern err]                                                                "-fdiagnostics-show-option"
+[26][ extern err]                                                                "-o"
+[26][ extern err]                                                                "conftest.o"
+[26][ extern err]                                                                "-x" "c"
+[26][ extern err]                                                                "conftest.c"
+[26][ extern err]                                                                "-O0"
+[26][ extern err]                                                                "-include"
+[26][ extern err]                                                                "/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[26][ extern err]                                                                "-Wno-everything"
+[26][ extern err]                                                              
+[26][ extern err] 
+[26][environment] Scheduler: file
+[26][environment] Cores used: 32
+[26][environment] 
+[32][environment] CWD = /src/unzip
+[32][environment] No .inferconfig file found
+[32][environment] Project root = /src/unzip
+[32][environment] INFER_ARGS =   @/tmp/args.tmp.c7dfa7
+[32][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[32][environment] Available memory at startup: 164922 MB
+[32][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[32][      debug] 
+[32][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[32][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[32][      debug] Merging capture data for already-captured 'conftest.c'
+[32][      debug] Elapsed: 18.278ms.
+[32][      debug] 
+[32][ extern err] Error: the following clang command did not run successfully:
+[32][ extern err]     /infer/facebook-clang-plugins/clang/install/bin/clang-10
+[32][ extern err]     @/src/unzip/infer-out/tmp/clang_command_.tmp.2f0104.txt  ++Contents of '/src/unzip/infer-out/tmp/clang_command_.tmp.2f0104.txt':
+[32][ extern err]                                                                "-cc1" "-load"
+[32][ extern err]                                                                "/infer/infer/bin/../../facebook-clang-plugins/libtooling/build/FacebookClangPlugin.dylib"
+[32][ extern err]                                                                "-add-plugin"
+[32][ extern err]                                                                "BiniouASTExporter"
+[32][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[32][ extern err]                                                                "-"
+[32][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[32][ extern err]                                                                "PREPEND_CURRENT_DIR=1"
+[32][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[32][ extern err]                                                                "MAX_STRING_SIZE=65535"
+[32][ extern err]                                                                "-cc1"
+[32][ extern err]                                                                "-triple"
+[32][ extern err]                                                                "x86_64-unknown-linux-gnu"
+[32][ extern err]                                                                "-emit-obj"
+[32][ extern err]                                                                "-mrelax-all"
+[32][ extern err]                                                                "-disable-free"
+[32][ extern err]                                                                "-disable-llvm-verifier"
+[32][ extern err]                                                                "-discard-value-names"
+[32][ extern err]                                                                "-main-file-name"
+[32][ extern err]                                                                "conftest.c"
+[32][ extern err]                                                                "-mrelocation-model"
+[32][ extern err]                                                                "static"
+[32][ extern err]                                                                "-mthread-model"
+[32][ extern err]                                                                "posix"
+[32][ extern err]                                                                "-mframe-pointer=all"
+[32][ extern err]                                                                "-fmath-errno"
+[32][ extern err]                                                                "-fno-rounding-math"
+[32][ extern err]                                                                "-masm-verbose"
+[32][ extern err]                                                                "-mconstructor-aliases"
+[32][ extern err]                                                                "-munwind-tables"
+[32][ extern err]                                                                "-target-cpu"
+[32][ extern err]                                                                "x86-64"
+[32][ extern err]                                                                "-dwarf-column-info"
+[32][ extern err]                                                                "-fno-split-dwarf-inlining"
+[32][ extern err]                                                                "-debugger-tuning=gdb"
+[32][ extern err]                                                                "-resource-dir"
+[32][ extern err]                                                                "/infer/facebook-clang-plugins/clang/install/lib/clang/10.0.1"
+[32][ extern err]                                                                "-include"
+[32][ extern err]                                                                "/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[32][ extern err]                                                                "-I" "." "-I"
+[32][ extern err]                                                                "bzip2" "-D"
+[32][ extern err]                                                                "UNIX" "-I"
+[32][ extern err]                                                                "." "-D"
+[32][ extern err]                                                                "UNIX"
+[32][ extern err]                                                                "-internal-isystem"
+[32][ extern err]                                                                "/usr/local/include"
+[32][ extern err]                                                                "-internal-isystem"
+[32][ extern err]                                                                "/infer/facebook-clang-plugins/clang/install/lib/clang/10.0.1/include"
+[32][ extern err]                                                                "-internal-externc-isystem"
+[32][ extern err]                                                                "/usr/include/x86_64-linux-gnu"
+[32][ extern err]                                                                "-internal-externc-isystem"
+[32][ extern err]                                                                "/include"
+[32][ extern err]                                                                "-internal-externc-isystem"
+[32][ extern err]                                                                "/usr/include"
+[32][ extern err]                                                                "-Wno-ignored-optimization-argument"
+[32][ extern err]                                                                "-Wno-everything"
+[32][ extern err]                                                                "-fdebug-compilation-dir"
+[32][ extern err]                                                                "/src/unzip"
+[32][ extern err]                                                                "-ferror-limit"
+[32][ extern err]                                                                "19"
+[32][ extern err]                                                                "-fmessage-length"
+[32][ extern err]                                                                "0"
+[32][ extern err]                                                                "-fgnuc-version=4.2.1"
+[32][ extern err]                                                                "-fobjc-runtime=gcc"
+[32][ extern err]                                                                "-fdiagnostics-show-option"
+[32][ extern err]                                                                "-o"
+[32][ extern err]                                                                "conftest.o"
+[32][ extern err]                                                                "-x" "c"
+[32][ extern err]                                                                "conftest.c"
+[32][ extern err]                                                                "-O0"
+[32][ extern err]                                                                "-include"
+[32][ extern err]                                                                "/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[32][ extern err]                                                                "-Wno-everything"
+[32][ extern err]                                                              
+[32][ extern err] 
+[32][environment] Scheduler: file
+[32][environment] Cores used: 32
+[32][environment] 
+[38][environment] CWD = /src/unzip
+[38][environment] No .inferconfig file found
+[38][environment] Project root = /src/unzip
+[38][environment] INFER_ARGS =   @/tmp/args.tmp.dd75fe
+[38][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[38][environment] Available memory at startup: 164920 MB
+[38][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[38][      debug] 
+[38][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[38][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[38][      debug] Merging capture data for already-captured 'conftest.c'
+[38][      debug] Elapsed: 22.926ms.
+[38][      debug] 
+[38][ extern err] Error: the following clang command did not run successfully:
+[38][ extern err]     /infer/facebook-clang-plugins/clang/install/bin/clang-10
+[38][ extern err]     @/src/unzip/infer-out/tmp/clang_command_.tmp.58387b.txt  ++Contents of '/src/unzip/infer-out/tmp/clang_command_.tmp.58387b.txt':
+[38][ extern err]                                                                "-cc1" "-load"
+[38][ extern err]                                                                "/infer/infer/bin/../../facebook-clang-plugins/libtooling/build/FacebookClangPlugin.dylib"
+[38][ extern err]                                                                "-add-plugin"
+[38][ extern err]                                                                "BiniouASTExporter"
+[38][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[38][ extern err]                                                                "-"
+[38][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[38][ extern err]                                                                "PREPEND_CURRENT_DIR=1"
+[38][ extern err]                                                                "-plugin-arg-BiniouASTExporter"
+[38][ extern err]                                                                "MAX_STRING_SIZE=65535"
+[38][ extern err]                                                                "-cc1"
+[38][ extern err]                                                                "-triple"
+[38][ extern err]                                                                "x86_64-unknown-linux-gnu"
+[38][ extern err]                                                                "-emit-obj"
+[38][ extern err]                                                                "-mrelax-all"
+[38][ extern err]                                                                "-disable-free"
+[38][ extern err]                                                                "-disable-llvm-verifier"
+[38][ extern err]                                                                "-discard-value-names"
+[38][ extern err]                                                                "-main-file-name"
+[38][ extern err]                                                                "conftest.c"
+[38][ extern err]                                                                "-mrelocation-model"
+[38][ extern err]                                                                "static"
+[38][ extern err]                                                                "-mthread-model"
+[38][ extern err]                                                                "posix"
+[38][ extern err]                                                                "-mframe-pointer=all"
+[38][ extern err]                                                                "-fmath-errno"
+[38][ extern err]                                                                "-fno-rounding-math"
+[38][ extern err]                                                                "-masm-verbose"
+[38][ extern err]                                                                "-mconstructor-aliases"
+[38][ extern err]                                                                "-munwind-tables"
+[38][ extern err]                                                                "-target-cpu"
+[38][ extern err]                                                                "x86-64"
+[38][ extern err]                                                                "-dwarf-column-info"
+[38][ extern err]                                                                "-fno-split-dwarf-inlining"
+[38][ extern err]                                                                "-debugger-tuning=gdb"
+[38][ extern err]                                                                "-resource-dir"
+[38][ extern err]                                                                "/infer/facebook-clang-plugins/clang/install/lib/clang/10.0.1"
+[38][ extern err]                                                                "-include"
+[38][ extern err]                                                                "/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[38][ extern err]                                                                "-I" "." "-I"
+[38][ extern err]                                                                "bzip2" "-D"
+[38][ extern err]                                                                "UNIX" "-I"
+[38][ extern err]                                                                "." "-D"
+[38][ extern err]                                                                "UNIX"
+[38][ extern err]                                                                "-internal-isystem"
+[38][ extern err]                                                                "/usr/local/include"
+[38][ extern err]                                                                "-internal-isystem"
+[38][ extern err]                                                                "/infer/facebook-clang-plugins/clang/install/lib/clang/10.0.1/include"
+[38][ extern err]                                                                "-internal-externc-isystem"
+[38][ extern err]                                                                "/usr/include/x86_64-linux-gnu"
+[38][ extern err]                                                                "-internal-externc-isystem"
+[38][ extern err]                                                                "/include"
+[38][ extern err]                                                                "-internal-externc-isystem"
+[38][ extern err]                                                                "/usr/include"
+[38][ extern err]                                                                "-Wno-ignored-optimization-argument"
+[38][ extern err]                                                                "-Wno-everything"
+[38][ extern err]                                                                "-fdebug-compilation-dir"
+[38][ extern err]                                                                "/src/unzip"
+[38][ extern err]                                                                "-ferror-limit"
+[38][ extern err]                                                                "19"
+[38][ extern err]                                                                "-fmessage-length"
+[38][ extern err]                                                                "0"
+[38][ extern err]                                                                "-fgnuc-version=4.2.1"
+[38][ extern err]                                                                "-fobjc-runtime=gcc"
+[38][ extern err]                                                                "-fdiagnostics-show-option"
+[38][ extern err]                                                                "-o"
+[38][ extern err]                                                                "conftest.o"
+[38][ extern err]                                                                "-x" "c"
+[38][ extern err]                                                                "conftest.c"
+[38][ extern err]                                                                "-O0"
+[38][ extern err]                                                                "-include"
+[38][ extern err]                                                                "/infer/infer/bin/../lib/clang_wrappers/global_defines.h"
+[38][ extern err]                                                                "-Wno-everything"
+[38][ extern err]                                                              
+[38][ extern err] 
+[38][environment] Scheduler: file
+[38][environment] Cores used: 32
+[38][environment] 
+[44][environment] CWD = /src/unzip
+[44][environment] No .inferconfig file found
+[44][environment] Project root = /src/unzip
+[44][environment] INFER_ARGS =   @/tmp/args.tmp.381054
+[44][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[44][environment] Available memory at startup: 164917 MB
+[44][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[44][      debug] 
+[44][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[44][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[44][      debug] Merging capture data for already-captured 'conftest.c'
+[44][      debug] Elapsed: 24.156ms.
+[44][      debug] GC stats for capture:
+[44][      debug]   minor_words: 135003
+[44][      debug]   promoted_words: 0
+[44][      debug]   major_words: 10292
+[44][      debug]   minor_collections: 0
+[44][      debug]   major_collections: 0
+[44][      debug]   compactions: 0
+[44][      debug]   top_heap_words: 188416
+[44][      debug]   
+[44][      debug] GC stats for main_process_full:
+[44][      debug]   minor_words: 1.71408e+06
+[44][      debug]   promoted_words: 155720
+[44][      debug]   major_words: 183468
+[44][      debug]   minor_collections: 4
+[44][      debug]   major_collections: 2
+[44][      debug]   compactions: 1
+[44][      debug]   top_heap_words: 188416
+[44][      debug]   
+[44][environment] Scheduler: file
+[44][environment] Cores used: 32
+[44][environment] 
+[57][environment] CWD = /src/unzip
+[57][environment] No .inferconfig file found
+[57][environment] Project root = /src/unzip
+[57][environment] INFER_ARGS =   @/tmp/args.tmp.9b6525
+[57][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[57][environment] Available memory at startup: 164913 MB
+[57][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[57][      debug] 
+[57][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[57][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[57][      debug] Merging capture data for already-captured 'conftest.c'
+[57][      debug] Elapsed: 23.868ms.
+[57][      debug] GC stats for capture:
+[57][      debug]   minor_words: 135003
+[57][      debug]   promoted_words: 0
+[57][      debug]   major_words: 10292
+[57][      debug]   minor_collections: 0
+[57][      debug]   major_collections: 0
+[57][      debug]   compactions: 0
+[57][      debug]   top_heap_words: 188416
+[57][      debug]   
+[57][      debug] GC stats for main_process_full:
+[57][      debug]   minor_words: 1.71408e+06
+[57][      debug]   promoted_words: 155720
+[57][      debug]   major_words: 183468
+[57][      debug]   minor_collections: 4
+[57][      debug]   major_collections: 2
+[57][      debug]   compactions: 1
+[57][      debug]   top_heap_words: 188416
+[57][      debug]   
+[57][environment] Scheduler: file
+[57][environment] Cores used: 32
+[57][environment] 
+[62][environment] CWD = /src/unzip
+[62][environment] No .inferconfig file found
+[62][environment] Project root = /src/unzip
+[62][environment] INFER_ARGS =   @/tmp/args.tmp.02f12f
+[62][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[62][environment] Available memory at startup: 164909 MB
+[62][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[62][      debug] 
+[62][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[62][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[62][      debug] Merging capture data for already-captured 'conftest.c'
+[62][      debug] Elapsed: 43.062ms.
+[62][      debug] GC stats for capture:
+[62][      debug]   minor_words: 137095
+[62][      debug]   promoted_words: 0
+[62][      debug]   major_words: 10292
+[62][      debug]   minor_collections: 0
+[62][      debug]   major_collections: 0
+[62][      debug]   compactions: 0
+[62][      debug]   top_heap_words: 188416
+[62][      debug]   
+[62][      debug] GC stats for main_process_full:
+[62][      debug]   minor_words: 1.71618e+06
+[62][      debug]   promoted_words: 155720
+[62][      debug]   major_words: 183468
+[62][      debug]   minor_collections: 4
+[62][      debug]   major_collections: 2
+[62][      debug]   compactions: 1
+[62][      debug]   top_heap_words: 188416
+[62][      debug]   
+[62][environment] Scheduler: file
+[62][environment] Cores used: 32
+[62][environment] 
+[68][environment] CWD = /src/unzip
+[68][environment] No .inferconfig file found
+[68][environment] Project root = /src/unzip
+[68][environment] INFER_ARGS =   @/tmp/args.tmp.30e4eb
+[68][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[68][environment] Available memory at startup: 164883 MB
+[68][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[68][      debug] 
+[68][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[68][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[68][      debug] Merging capture data for already-captured 'conftest.c'
+[68][      debug] Elapsed: 24.55ms.
+[68][      debug] GC stats for capture:
+[68][      debug]   minor_words: 139811
+[68][      debug]   promoted_words: 0
+[68][      debug]   major_words: 10292
+[68][      debug]   minor_collections: 0
+[68][      debug]   major_collections: 0
+[68][      debug]   compactions: 0
+[68][      debug]   top_heap_words: 188416
+[68][      debug]   
+[68][      debug] GC stats for main_process_full:
+[68][      debug]   minor_words: 1.71889e+06
+[68][      debug]   promoted_words: 155720
+[68][      debug]   major_words: 183468
+[68][      debug]   minor_collections: 4
+[68][      debug]   major_collections: 2
+[68][      debug]   compactions: 1
+[68][      debug]   top_heap_words: 188416
+[68][      debug]   
+[68][environment] Scheduler: file
+[68][environment] Cores used: 32
+[68][environment] 
+[74][environment] CWD = /src/unzip
+[74][environment] No .inferconfig file found
+[74][environment] Project root = /src/unzip
+[74][environment] INFER_ARGS =   @/tmp/args.tmp.96797c
+[74][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[74][environment] Available memory at startup: 164871 MB
+[74][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[74][      debug] 
+[74][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[74][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[74][      debug] Merging capture data for already-captured 'conftest.c'
+[74][      debug] Elapsed: 37.835ms.
+[74][      debug] GC stats for capture:
+[74][      debug]   minor_words: 600691
+[74][      debug]   promoted_words: 256620
+[74][      debug]   major_words: 268233
+[74][      debug]   minor_collections: 1
+[74][      debug]   major_collections: 0
+[74][      debug]   compactions: 0
+[74][      debug]   top_heap_words: 434176
+[74][      debug]   
+[74][      debug] GC stats for main_process_full:
+[74][      debug]   minor_words: 2.17977e+06
+[74][      debug]   promoted_words: 412340
+[74][      debug]   major_words: 441409
+[74][      debug]   minor_collections: 5
+[74][      debug]   major_collections: 2
+[74][      debug]   compactions: 1
+[74][      debug]   top_heap_words: 434176
+[74][      debug]   
+[74][environment] Scheduler: file
+[74][environment] Cores used: 32
+[74][environment] 
+[80][environment] CWD = /src/unzip
+[80][environment] No .inferconfig file found
+[80][environment] Project root = /src/unzip
+[80][environment] INFER_ARGS =   @/tmp/args.tmp.ef32b6
+[80][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[80][environment] Available memory at startup: 164864 MB
+[80][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[80][      debug] 
+[80][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[80][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[80][      debug] Merging capture data for already-captured 'conftest.c'
+[80][      debug] Elapsed: 28.452ms.
+[80][      debug] GC stats for capture:
+[80][      debug]   minor_words: 499099
+[80][      debug]   promoted_words: 254413
+[80][      debug]   major_words: 264705
+[80][      debug]   minor_collections: 1
+[80][      debug]   major_collections: 0
+[80][      debug]   compactions: 0
+[80][      debug]   top_heap_words: 434176
+[80][      debug]   
+[80][      debug] GC stats for main_process_full:
+[80][      debug]   minor_words: 2.07818e+06
+[80][      debug]   promoted_words: 410133
+[80][      debug]   major_words: 437881
+[80][      debug]   minor_collections: 5
+[80][      debug]   major_collections: 2
+[80][      debug]   compactions: 1
+[80][      debug]   top_heap_words: 434176
+[80][      debug]   
+[80][environment] Scheduler: file
+[80][environment] Cores used: 32
+[80][environment] 
+[86][environment] CWD = /src/unzip
+[86][environment] No .inferconfig file found
+[86][environment] Project root = /src/unzip
+[86][environment] INFER_ARGS =   @/tmp/args.tmp.a9a6c6
+[86][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[86][environment] Available memory at startup: 164858 MB
+[86][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[86][      debug] 
+[86][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[86][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[86][      debug] Merging capture data for already-captured 'conftest.c'
+[86][      debug] Elapsed: 38.226ms.
+[86][      debug] GC stats for capture:
+[86][      debug]   minor_words: 499102
+[86][      debug]   promoted_words: 254416
+[86][      debug]   major_words: 264708
+[86][      debug]   minor_collections: 1
+[86][      debug]   major_collections: 0
+[86][      debug]   compactions: 0
+[86][      debug]   top_heap_words: 434176
+[86][      debug]   
+[86][      debug] GC stats for main_process_full:
+[86][      debug]   minor_words: 2.07818e+06
+[86][      debug]   promoted_words: 410136
+[86][      debug]   major_words: 437884
+[86][      debug]   minor_collections: 5
+[86][      debug]   major_collections: 2
+[86][      debug]   compactions: 1
+[86][      debug]   top_heap_words: 434176
+[86][      debug]   
+[86][environment] Scheduler: file
+[86][environment] Cores used: 32
+[86][environment] 
+[92][environment] CWD = /src/unzip
+[92][environment] No .inferconfig file found
+[92][environment] Project root = /src/unzip
+[92][environment] INFER_ARGS =   @/tmp/args.tmp.445721
+[92][environment] command line arguments:   cc -o conftest conftest.c
+[92][environment] Available memory at startup: 164854 MB
+[92][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[92][      debug] 
+[92][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[92][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[92][      debug] Merging capture data for already-captured 'conftest.c'
+[92][      debug] Elapsed: 49.129ms.
+[92][      debug] GC stats for capture:
+[92][      debug]   minor_words: 1.37052e+06
+[92][      debug]   promoted_words: 383742
+[92][      debug]   major_words: 400149
+[92][      debug]   minor_collections: 3
+[92][      debug]   major_collections: 0
+[92][      debug]   compactions: 0
+[92][      debug]   top_heap_words: 574976
+[92][      debug]   
+[92][      debug] GC stats for main_process_full:
+[92][      debug]   minor_words: 2.94821e+06
+[92][      debug]   promoted_words: 539432
+[92][      debug]   major_words: 573295
+[92][      debug]   minor_collections: 7
+[92][      debug]   major_collections: 2
+[92][      debug]   compactions: 1
+[92][      debug]   top_heap_words: 574976
+[92][      debug]   
+[92][environment] Scheduler: file
+[92][environment] Cores used: 32
+[92][environment] 
+[101][environment] CWD = /src/unzip
+[101][environment] No .inferconfig file found
+[101][environment] Project root = /src/unzip
+[101][environment] INFER_ARGS =   @/tmp/args.tmp.0dadb6
+[101][environment] command line arguments:   cc -o conftest conftest.c
+[101][environment] Available memory at startup: 164850 MB
+[101][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[101][      debug] 
+[101][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[101][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[101][      debug] Merging capture data for already-captured 'conftest.c'
+[101][      debug] Elapsed: 53.337ms.
+[101][      debug] GC stats for capture:
+[101][      debug]   minor_words: 1.43028e+06
+[101][      debug]   promoted_words: 377801
+[101][      debug]   major_words: 394799
+[101][      debug]   minor_collections: 3
+[101][      debug]   major_collections: 0
+[101][      debug]   compactions: 0
+[101][      debug]   top_heap_words: 574976
+[101][      debug]   
+[101][      debug] GC stats for main_process_full:
+[101][      debug]   minor_words: 3.00797e+06
+[101][      debug]   promoted_words: 533491
+[101][      debug]   major_words: 567945
+[101][      debug]   minor_collections: 7
+[101][      debug]   major_collections: 2
+[101][      debug]   compactions: 1
+[101][      debug]   top_heap_words: 574976
+[101][      debug]   
+[101][environment] Scheduler: file
+[101][environment] Cores used: 32
+[101][environment] 
+[110][environment] CWD = /src/unzip
+[110][environment] No .inferconfig file found
+[110][environment] Project root = /src/unzip
+[110][environment] INFER_ARGS =   @/tmp/args.tmp.a80a08
+[110][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[110][environment] Available memory at startup: 164844 MB
+[110][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[110][      debug] 
+[110][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[110][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[110][      debug] Merging capture data for already-captured 'conftest.c'
+[110][      debug] Elapsed: 25.741ms.
+[110][      debug] GC stats for capture:
+[110][      debug]   minor_words: 177494
+[110][      debug]   promoted_words: 0
+[110][      debug]   major_words: 10711
+[110][      debug]   minor_collections: 0
+[110][      debug]   major_collections: 0
+[110][      debug]   compactions: 0
+[110][      debug]   top_heap_words: 188416
+[110][      debug]   
+[110][      debug] GC stats for main_process_full:
+[110][      debug]   minor_words: 1.75657e+06
+[110][      debug]   promoted_words: 155720
+[110][      debug]   major_words: 183887
+[110][      debug]   minor_collections: 4
+[110][      debug]   major_collections: 2
+[110][      debug]   compactions: 1
+[110][      debug]   top_heap_words: 188416
+[110][      debug]   
+[110][environment] Scheduler: file
+[110][environment] Cores used: 32
+[110][environment] 
+[116][environment] CWD = /src/unzip
+[116][environment] No .inferconfig file found
+[116][environment] Project root = /src/unzip
+[116][environment] INFER_ARGS =   @/tmp/args.tmp.118288
+[116][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[116][environment] Available memory at startup: 164884 MB
+[116][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[116][      debug] 
+[116][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[116][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[116][      debug] Merging capture data for already-captured 'conftest.c'
+[116][      debug] Elapsed: 18.749ms.
+[116][      debug] GC stats for capture:
+[116][      debug]   minor_words: 135115
+[116][      debug]   promoted_words: 0
+[116][      debug]   major_words: 10711
+[116][      debug]   minor_collections: 0
+[116][      debug]   major_collections: 0
+[116][      debug]   compactions: 0
+[116][      debug]   top_heap_words: 188416
+[116][      debug]   
+[116][      debug] GC stats for main_process_full:
+[116][      debug]   minor_words: 1.71419e+06
+[116][      debug]   promoted_words: 155720
+[116][      debug]   major_words: 183887
+[116][      debug]   minor_collections: 4
+[116][      debug]   major_collections: 2
+[116][      debug]   compactions: 1
+[116][      debug]   top_heap_words: 188416
+[116][      debug]   
+[116][environment] Scheduler: file
+[116][environment] Cores used: 32
+[116][environment] 
+[121][environment] CWD = /src/unzip
+[121][environment] No .inferconfig file found
+[121][environment] Project root = /src/unzip
+[121][environment] INFER_ARGS =   @/tmp/args.tmp.420715
+[121][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[121][environment] Available memory at startup: 164885 MB
+[121][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[121][      debug] 
+[121][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[121][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[121][      debug] Merging capture data for already-captured 'conftest.c'
+[121][      debug] Elapsed: 23.889ms.
+[121][      debug] GC stats for capture:
+[121][      debug]   minor_words: 142563
+[121][      debug]   promoted_words: 0
+[121][      debug]   major_words: 10711
+[121][      debug]   minor_collections: 0
+[121][      debug]   major_collections: 0
+[121][      debug]   compactions: 0
+[121][      debug]   top_heap_words: 188416
+[121][      debug]   
+[121][      debug] GC stats for main_process_full:
+[121][      debug]   minor_words: 1.72057e+06
+[121][      debug]   promoted_words: 155700
+[121][      debug]   major_words: 183867
+[121][      debug]   minor_collections: 4
+[121][      debug]   major_collections: 2
+[121][      debug]   compactions: 1
+[121][      debug]   top_heap_words: 188416
+[121][      debug]   
+[121][environment] Scheduler: file
+[121][environment] Cores used: 32
+[121][environment] 
+[128][environment] CWD = /src/unzip
+[128][environment] No .inferconfig file found
+[128][environment] Project root = /src/unzip
+[128][environment] INFER_ARGS =   @/tmp/args.tmp.ec5108
+[128][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[128][environment] Available memory at startup: 164880 MB
+[128][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[128][      debug] 
+[128][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[128][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[128][      debug] Merging capture data for already-captured 'conftest.c'
+[128][      debug] Elapsed: 23.55ms.
+[128][      debug] GC stats for capture:
+[128][      debug]   minor_words: 142555
+[128][      debug]   promoted_words: 0
+[128][      debug]   major_words: 10711
+[128][      debug]   minor_collections: 0
+[128][      debug]   major_collections: 0
+[128][      debug]   compactions: 0
+[128][      debug]   top_heap_words: 188416
+[128][      debug]   
+[128][      debug] GC stats for main_process_full:
+[128][      debug]   minor_words: 1.72056e+06
+[128][      debug]   promoted_words: 155700
+[128][      debug]   major_words: 183867
+[128][      debug]   minor_collections: 4
+[128][      debug]   major_collections: 2
+[128][      debug]   compactions: 1
+[128][      debug]   top_heap_words: 188416
+[128][      debug]   
+[128][environment] Scheduler: file
+[128][environment] Cores used: 32
+[128][environment] 
+[135][environment] CWD = /src/unzip
+[135][environment] No .inferconfig file found
+[135][environment] Project root = /src/unzip
+[135][environment] INFER_ARGS =   @/tmp/args.tmp.33321a
+[135][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[135][environment] Available memory at startup: 164876 MB
+[135][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[135][      debug] 
+[135][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[135][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[135][      debug] Merging capture data for already-captured 'conftest.c'
+[135][      debug] Elapsed: 18.964ms.
+[135][      debug] GC stats for capture:
+[135][      debug]   minor_words: 142563
+[135][      debug]   promoted_words: 0
+[135][      debug]   major_words: 10711
+[135][      debug]   minor_collections: 0
+[135][      debug]   major_collections: 0
+[135][      debug]   compactions: 0
+[135][      debug]   top_heap_words: 188416
+[135][      debug]   
+[135][      debug] GC stats for main_process_full:
+[135][      debug]   minor_words: 1.72057e+06
+[135][      debug]   promoted_words: 155700
+[135][      debug]   major_words: 183867
+[135][      debug]   minor_collections: 4
+[135][      debug]   major_collections: 2
+[135][      debug]   compactions: 1
+[135][      debug]   top_heap_words: 188416
+[135][      debug]   
+[135][environment] Scheduler: file
+[135][environment] Cores used: 32
+[135][environment] 
+[142][environment] CWD = /src/unzip
+[142][environment] No .inferconfig file found
+[142][environment] Project root = /src/unzip
+[142][environment] INFER_ARGS =   @/tmp/args.tmp.ebb9e5
+[142][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[142][environment] Available memory at startup: 164874 MB
+[142][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[142][      debug] 
+[142][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[142][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[142][      debug] Merging capture data for already-captured 'conftest.c'
+[142][      debug] Elapsed: 24.142ms.
+[142][      debug] GC stats for capture:
+[142][      debug]   minor_words: 142580
+[142][      debug]   promoted_words: 0
+[142][      debug]   major_words: 10711
+[142][      debug]   minor_collections: 0
+[142][      debug]   major_collections: 0
+[142][      debug]   compactions: 0
+[142][      debug]   top_heap_words: 188416
+[142][      debug]   
+[142][      debug] GC stats for main_process_full:
+[142][      debug]   minor_words: 1.72059e+06
+[142][      debug]   promoted_words: 155700
+[142][      debug]   major_words: 183867
+[142][      debug]   minor_collections: 4
+[142][      debug]   major_collections: 2
+[142][      debug]   compactions: 1
+[142][      debug]   top_heap_words: 188416
+[142][      debug]   
+[142][environment] Scheduler: file
+[142][environment] Cores used: 32
+[142][environment] 
+[151][environment] CWD = /src/unzip
+[151][environment] No .inferconfig file found
+[151][environment] Project root = /src/unzip
+[151][environment] INFER_ARGS =   @/tmp/args.tmp.eadca1
+[151][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[151][environment] Available memory at startup: 164872 MB
+[151][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[151][      debug] 
+[151][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[151][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[151][      debug] Merging capture data for already-captured 'conftest.c'
+[151][      debug] Elapsed: 47.861ms.
+[151][      debug] GC stats for capture:
+[151][      debug]   minor_words: 641319
+[151][      debug]   promoted_words: 286645
+[151][      debug]   major_words: 298894
+[151][      debug]   minor_collections: 1
+[151][      debug]   major_collections: 0
+[151][      debug]   compactions: 0
+[151][      debug]   top_heap_words: 499712
+[151][      debug]   
+[151][      debug] GC stats for main_process_full:
+[151][      debug]   minor_words: 2.21933e+06
+[151][      debug]   promoted_words: 442345
+[151][      debug]   major_words: 472050
+[151][      debug]   minor_collections: 5
+[151][      debug]   major_collections: 2
+[151][      debug]   compactions: 1
+[151][      debug]   top_heap_words: 499712
+[151][      debug]   
+[151][environment] Scheduler: file
+[151][environment] Cores used: 32
+[151][environment] 
+[160][environment] CWD = /src/unzip
+[160][environment] No .inferconfig file found
+[160][environment] Project root = /src/unzip
+[160][environment] INFER_ARGS =   @/tmp/args.tmp.f63a4c
+[160][environment] command line arguments:   cc -o conftest conftest.c
+[160][environment] Available memory at startup: 164869 MB
+[160][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[160][      debug] 
+[160][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[160][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[160][      debug] Merging capture data for already-captured 'conftest.c'
+[160][      debug] Elapsed: 28.528ms.
+[160][      debug] GC stats for capture:
+[160][      debug]   minor_words: 157791
+[160][      debug]   promoted_words: 0
+[160][      debug]   major_words: 10711
+[160][      debug]   minor_collections: 0
+[160][      debug]   major_collections: 0
+[160][      debug]   compactions: 0
+[160][      debug]   top_heap_words: 188416
+[160][      debug]   
+[160][      debug] GC stats for main_process_full:
+[160][      debug]   minor_words: 1.73548e+06
+[160][      debug]   promoted_words: 155690
+[160][      debug]   major_words: 183857
+[160][      debug]   minor_collections: 4
+[160][      debug]   major_collections: 2
+[160][      debug]   compactions: 1
+[160][      debug]   top_heap_words: 188416
+[160][      debug]   
+[160][environment] Scheduler: file
+[160][environment] Cores used: 32
+[160][environment] 
+[168][environment] CWD = /src/unzip
+[168][environment] No .inferconfig file found
+[168][environment] Project root = /src/unzip
+[168][environment] INFER_ARGS =   @/tmp/args.tmp.1fcba6
+[168][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[168][environment] Available memory at startup: 164867 MB
+[168][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[168][      debug] 
+[168][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[168][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[168][      debug] Merging capture data for already-captured 'conftest.c'
+[168][      debug] Elapsed: 20.067ms.
+[168][      debug] GC stats for capture:
+[168][      debug]   minor_words: 147655
+[168][      debug]   promoted_words: 0
+[168][      debug]   major_words: 10711
+[168][      debug]   minor_collections: 0
+[168][      debug]   major_collections: 0
+[168][      debug]   compactions: 0
+[168][      debug]   top_heap_words: 188416
+[168][      debug]   
+[168][      debug] GC stats for main_process_full:
+[168][      debug]   minor_words: 1.72673e+06
+[168][      debug]   promoted_words: 155720
+[168][      debug]   major_words: 183887
+[168][      debug]   minor_collections: 4
+[168][      debug]   major_collections: 2
+[168][      debug]   compactions: 1
+[168][      debug]   top_heap_words: 188416
+[168][      debug]   
+[168][environment] Scheduler: file
+[168][environment] Cores used: 32
+[168][environment] 
+[174][environment] CWD = /src/unzip
+[174][environment] No .inferconfig file found
+[174][environment] Project root = /src/unzip
+[174][environment] INFER_ARGS =   @/tmp/args.tmp.b95bef
+[174][environment] command line arguments:   cc -o conftest conftest.c
+[174][environment] Available memory at startup: 164867 MB
+[174][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[174][      debug] 
+[174][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[174][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[174][      debug] Merging capture data for already-captured 'conftest.c'
+[174][      debug] Elapsed: 34.243ms.
+[174][      debug] GC stats for capture:
+[174][      debug]   minor_words: 148972
+[174][      debug]   promoted_words: 231026
+[174][      debug]   major_words: 241737
+[174][      debug]   minor_collections: 1
+[174][      debug]   major_collections: 0
+[174][      debug]   compactions: 0
+[174][      debug]   top_heap_words: 434176
+[174][      debug]   
+[174][      debug] GC stats for main_process_full:
+[174][      debug]   minor_words: 1.72666e+06
+[174][      debug]   promoted_words: 386716
+[174][      debug]   major_words: 414883
+[174][      debug]   minor_collections: 5
+[174][      debug]   major_collections: 2
+[174][      debug]   compactions: 1
+[174][      debug]   top_heap_words: 434176
+[174][      debug]   
+[174][environment] Scheduler: file
+[174][environment] Cores used: 32
+[174][environment] 
+[181][environment] CWD = /src/unzip
+[181][environment] No .inferconfig file found
+[181][environment] Project root = /src/unzip
+[181][environment] INFER_ARGS =   @/tmp/args.tmp.2de485
+[181][environment] command line arguments:   cc -o conftest conftest.c
+[181][environment] Available memory at startup: 164863 MB
+[181][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[181][      debug] 
+[181][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[181][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[181][      debug] Merging capture data for already-captured 'conftest.c'
+[181][      debug] Elapsed: 17.592ms.
+[181][      debug] GC stats for capture:
+[181][      debug]   minor_words: 141679
+[181][      debug]   promoted_words: 0
+[181][      debug]   major_words: 10711
+[181][      debug]   minor_collections: 0
+[181][      debug]   major_collections: 0
+[181][      debug]   compactions: 0
+[181][      debug]   top_heap_words: 188416
+[181][      debug]   
+[181][      debug] GC stats for main_process_full:
+[181][      debug]   minor_words: 1.71937e+06
+[181][      debug]   promoted_words: 155690
+[181][      debug]   major_words: 183857
+[181][      debug]   minor_collections: 4
+[181][      debug]   major_collections: 2
+[181][      debug]   compactions: 1
+[181][      debug]   top_heap_words: 188416
+[181][      debug]   
+[181][environment] Scheduler: file
+[181][environment] Cores used: 32
+[181][environment] 
+[215][environment] CWD = /src/unzip
+[215][environment] No .inferconfig file found
+[215][environment] Project root = /src/unzip
+[215][environment] INFER_ARGS =   @/tmp/args.tmp.7a9c2c
+[215][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -I. -Ibzip2 -DUNIX
+[215][environment]                           -O3 -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT
+[215][environment]                           -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[215][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[215][environment]                           -DHAVE_TERMIOS_H -o conftest conftest.c
+[215][environment] Available memory at startup: 164858 MB
+[215][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[215][      debug] 
+[215][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[215][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[215][      debug] Merging capture data for already-captured 'conftest.c'
+[215][      debug] Elapsed: 55.532ms.
+[215][      debug] GC stats for capture:
+[215][      debug]   minor_words: 1.38945e+06
+[215][      debug]   promoted_words: 376105
+[215][      debug]   major_words: 393103
+[215][      debug]   minor_collections: 3
+[215][      debug]   major_collections: 0
+[215][      debug]   compactions: 0
+[215][      debug]   top_heap_words: 574976
+[215][      debug]   
+[215][      debug] GC stats for main_process_full:
+[215][      debug]   minor_words: 2.97256e+06
+[215][      debug]   promoted_words: 531941
+[215][      debug]   major_words: 566395
+[215][      debug]   minor_collections: 7
+[215][      debug]   major_collections: 2
+[215][      debug]   compactions: 1
+[215][      debug]   top_heap_words: 574976
+[215][      debug]   
+[215][environment] Scheduler: file
+[215][environment] Cores used: 32
+[215][environment] 
+[222][environment] CWD = /src/unzip
+[222][environment] No .inferconfig file found
+[222][environment] Project root = /src/unzip
+[222][environment] INFER_ARGS =   @/tmp/args.tmp.4a753d
+[222][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[222][environment] Available memory at startup: 164858 MB
+[222][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[222][      debug] 
+[222][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[222][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[222][      debug] Merging capture data for already-captured 'conftest.c'
+[222][      debug] Elapsed: 22.205ms.
+[222][      debug] 
+[222][ extern err] Error: the following clang command did not run successfully:
+[222][ extern err]     /usr/bin/ld -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64
+[222][ extern err]     -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o conftest
+[222][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crt1.o
+[222][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+[222][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/crtbegin.o
+[222][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9
+[222][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu
+[222][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib64
+[222][ extern err]     -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu
+[222][ extern err]     -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64
+[222][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9/../../..
+[222][ extern err]     -L/infer/facebook-clang-plugins/clang/install/bin/../lib -L/lib
+[222][ extern err]     -L/usr/lib /tmp/conftest-5d7aa6.o -lgcc --as-needed -lgcc_s
+[222][ extern err]     --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed
+[222][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/crtend.o
+[222][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+[222][environment] Scheduler: file
+[222][environment] Cores used: 32
+[222][environment] 
+[229][environment] CWD = /src/unzip
+[229][environment] No .inferconfig file found
+[229][environment] Project root = /src/unzip
+[229][environment] INFER_ARGS =   @/tmp/args.tmp.3787cc
+[229][environment] command line arguments:   cc -fno-builtin -o conftest conftest.c
+[229][environment] Available memory at startup: 164856 MB
+[229][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[229][      debug] 
+[229][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[229][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[229][      debug] Merging capture data for already-captured 'conftest.c'
+[229][      debug] Elapsed: 24.652ms.
+[229][      debug] 
+[229][ extern err] Error: the following clang command did not run successfully:
+[229][ extern err]     /usr/bin/ld -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64
+[229][ extern err]     -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o conftest
+[229][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crt1.o
+[229][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+[229][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/crtbegin.o
+[229][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9
+[229][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu
+[229][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib64
+[229][ extern err]     -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu
+[229][ extern err]     -L/usr/lib/../lib64 -L/usr/lib/x86_64-linux-gnu/../../lib64
+[229][ extern err]     -L/usr/lib/gcc/x86_64-linux-gnu/9/../../..
+[229][ extern err]     -L/infer/facebook-clang-plugins/clang/install/bin/../lib -L/lib
+[229][ extern err]     -L/usr/lib /tmp/conftest-38821f.o -lgcc --as-needed -lgcc_s
+[229][ extern err]     --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed
+[229][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/crtend.o
+[229][ extern err]     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+[229][environment] Scheduler: file
+[229][environment] Cores used: 32
+[229][environment] 
+[237][environment] CWD = /src/unzip
+[237][environment] No .inferconfig file found
+[237][environment] Project root = /src/unzip
+[237][environment] INFER_ARGS =   @/tmp/args.tmp.69e543
+[237][environment] command line arguments:   cc -I. -Ibzip2 -DUNIX -I. -DUNIX -c conftest.c
+[237][environment] Available memory at startup: 164856 MB
+[237][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[237][      debug] 
+[237][      debug] *** Beginning capture of file /src/unzip/conftest.c ***
+[237][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[237][      debug] Merging capture data for already-captured 'conftest.c'
+[237][      debug] Elapsed: 21.791ms.
+[237][      debug] GC stats for capture:
+[237][      debug]   minor_words: 133092
+[237][      debug]   promoted_words: 0
+[237][      debug]   major_words: 10711
+[237][      debug]   minor_collections: 0
+[237][      debug]   major_collections: 0
+[237][      debug]   compactions: 0
+[237][      debug]   top_heap_words: 188416
+[237][      debug]   
+[237][      debug] GC stats for main_process_full:
+[237][      debug]   minor_words: 1.71217e+06
+[237][      debug]   promoted_words: 155720
+[237][      debug]   major_words: 183887
+[237][      debug]   minor_collections: 4
+[237][      debug]   major_collections: 2
+[237][      debug]   compactions: 1
+[237][      debug]   top_heap_words: 188416
+[237][      debug]   
+[237][environment] Scheduler: file
+[237][environment] Cores used: 32
+[237][environment] 
+[262][environment] CWD = /src/unzip
+[262][environment] No .inferconfig file found
+[262][environment] Project root = /src/unzip
+[262][environment] INFER_ARGS =   @/tmp/args.tmp.ab84df
+[262][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[262][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[262][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[262][environment]                           -DHAVE_TERMIOS_H -D_MBCS ubz2err.c
+[262][environment] Available memory at startup: 164304 MB
+[262][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+
+
+[283][environment] CWD = /src/unzip
+[283][environment] No .inferconfig file found
+[283][environment] Project root = /src/unzip
+[283][environment] INFER_ARGS =   @/tmp/args.tmp.a8775e
+[283][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[283][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[283][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[283][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o unix_.o
+[283][environment]                           unix/unix.c
+[283][environment] Available memory at startup: 164304 MB
+[283][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[281][environment] CWD = /src/unzip
+[281][environment] No .inferconfig file found
+[281][environment] Project root = /src/unzip
+[281][environment] INFER_ARGS =   @/tmp/args.tmp.96850c
+[281][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[281][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[281][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[281][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o ttyio_.o ttyio.c
+[281][environment] Available memory at startup: 164304 MB
+[281][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[280][environment] CWD = /src/unzip
+[280][environment] No .inferconfig file found
+[280][environment] Project root = /src/unzip
+[280][environment] INFER_ARGS =   @/tmp/args.tmp.828b2f
+[280][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[280][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[280][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[280][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o process_.o
+[280][environment]                           process.c
+[280][environment] Available memory at startup: 164304 MB
+[280][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[282][environment] CWD = /src/unzip
+[282][environment] No .inferconfig file found
+[282][environment] Project root = /src/unzip
+[282][environment] INFER_ARGS =   @/tmp/args.tmp.59f70f
+[282][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[282][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[282][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[282][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o ubz2err_.o
+[282][environment]                           ubz2err.c
+[282][environment] Available memory at startup: 164304 MB
+[282][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+[260][environment] CWD = /src/unzip
+[260][environment] No .inferconfig file found
+[260][environment] Project root = /src/unzip
+[260][environment] INFER_ARGS =   @/tmp/args.tmp.dc9f7d
+[260][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[260][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[260][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[260][environment]                           -DHAVE_TERMIOS_H -D_MBCS process.c
+[260][environment] Available memory at startup: 164266 MB
+[260][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+[258][environment] CWD = /src/unzip
+[258][environment] No .inferconfig file found
+[258][environment] Project root = /src/unzip
+[258][environment] INFER_ARGS =   @/tmp/args.tmp.909fb5
+[258][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[258][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[258][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[258][environment]                           -DHAVE_TERMIOS_H -D_MBCS list.c
+[258][environment] Available memory at startup: 164258 MB
+[258][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[256][environment] CWD = /src/unzip
+[256][environment] No .inferconfig file found
+[256][environment] Project root = /src/unzip
+[256][environment] INFER_ARGS =   @/tmp/args.tmp.3c627e
+[256][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[256][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[256][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[256][environment]                           -DHAVE_TERMIOS_H -D_MBCS globals.c
+[256][environment] Available memory at startup: 164255 MB
+[256][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+
+[264][environment] CWD = /src/unzip
+[264][environment] No .inferconfig file found
+[264][environment] Project root = /src/unzip
+[264][environment] INFER_ARGS =   @/tmp/args.tmp.5812f5
+[264][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[264][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[264][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[264][environment]                           -DHAVE_TERMIOS_H -D_MBCS unshrink.c
+[264][environment] Available memory at startup: 164241 MB
+[264][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[255][environment] CWD = /src/unzip
+[255][environment] No .inferconfig file found
+[255][environment] Project root = /src/unzip
+[255][environment] INFER_ARGS =   @/tmp/args.tmp.cf71e5
+[255][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[255][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[255][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[255][environment]                           -DHAVE_TERMIOS_H -D_MBCS fileio.c
+[255][environment] Available memory at startup: 164239 MB
+[255][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+[254][environment] CWD = /src/unzip
+[254][environment] No .inferconfig file found
+[254][environment] Project root = /src/unzip
+[254][environment] INFER_ARGS =   @/tmp/args.tmp.e2a537
+[254][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[254][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[254][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[254][environment]                           -DHAVE_TERMIOS_H -D_MBCS extract.c
+[254][environment] Available memory at startup: 164233 MB
+[254][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+
+[259][environment] CWD = /src/unzip
+[259][environment] No .inferconfig file found
+[259][environment] Project root = /src/unzip
+[259][environment] INFER_ARGS =   @/tmp/args.tmp.82d692
+[259][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[259][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[259][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[259][environment]                           -DHAVE_TERMIOS_H -D_MBCS match.c
+[259][environment] Available memory at startup: 164229 MB
+[259][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+[250][environment] CWD = /src/unzip
+[250][environment] No .inferconfig file found
+[250][environment] Project root = /src/unzip
+[250][environment] INFER_ARGS =   @/tmp/args.tmp.be5006
+[250][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[250][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[250][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[250][environment]                           -DHAVE_TERMIOS_H -D_MBCS crc32.c
+[250][environment] Available memory at startup: 164227 MB
+[250][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[251][environment] CWD = /src/unzip
+[251][environment] No .inferconfig file found
+[251][environment] Project root = /src/unzip
+[251][environment] INFER_ARGS =   @/tmp/args.tmp.745acb
+[251][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[251][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[251][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[251][environment]                           -DHAVE_TERMIOS_H -D_MBCS crypt.c
+[251][environment] Available memory at startup: 164226 MB
+[251][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[249][environment] CWD = /src/unzip
+[249][environment] No .inferconfig file found
+[249][environment] Project root = /src/unzip
+[249][environment] INFER_ARGS =   @/tmp/args.tmp.1fd93c
+[249][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[249][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[249][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[249][environment]                           -DHAVE_TERMIOS_H -D_MBCS unzip.c
+[249][environment] Available memory at startup: 164226 MB
+[249][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[253][environment] CWD = /src/unzip
+[253][environment] No .inferconfig file found
+[253][environment] Project root = /src/unzip
+[253][environment] INFER_ARGS =   @/tmp/args.tmp.955c3a
+[253][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[253][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[253][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[253][environment]                           -DHAVE_TERMIOS_H -D_MBCS explode.c
+[253][environment] Available memory at startup: 164223 MB
+[253][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[252][environment] CWD = /src/unzip
+[252][environment] No .inferconfig file found
+[252][environment] Project root = /src/unzip
+[252][environment] INFER_ARGS =   @/tmp/args.tmp.bdf961
+[252][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[252][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[252][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[252][environment]                           -DHAVE_TERMIOS_H -D_MBCS envargs.c
+[252][environment] Available memory at startup: 164223 MB
+[252][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+[257][environment] CWD = /src/unzip
+[257][environment] No .inferconfig file found
+[257][environment] Project root = /src/unzip
+[257][environment] INFER_ARGS =   @/tmp/args.tmp.f0eb6f
+[257][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[257][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[257][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[257][environment]                           -DHAVE_TERMIOS_H -D_MBCS inflate.c
+[257][environment] Available memory at startup: 164215 MB
+[257][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+[265][environment] CWD = /src/unzip
+[265][environment] No .inferconfig file found
+[265][environment] Project root = /src/unzip
+[265][environment] INFER_ARGS =   @/tmp/args.tmp.d2c7f6
+[265][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[265][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[265][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[265][environment]                           -DHAVE_TERMIOS_H -D_MBCS zipinfo.c
+[265][environment] Available memory at startup: 164204 MB
+[265][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[266][environment] CWD = /src/unzip
+[266][environment] No .inferconfig file found
+[266][environment] Project root = /src/unzip
+[266][environment] INFER_ARGS =   @/tmp/args.tmp.0a106e
+[266][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[266][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[266][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[266][environment]                           -DHAVE_TERMIOS_H -D_MBCS unix/unix.c
+[266][environment] Available memory at startup: 164202 MB
+[266][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+
+
+
+[268][environment] CWD = /src/unzip
+[268][environment] No .inferconfig file found
+[268][environment] Project root = /src/unzip
+[268][environment] INFER_ARGS =   @/tmp/args.tmp.2c5717
+[268][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[268][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[268][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[268][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DFUNZIP -o cryptf.o
+[268][environment]                           crypt.c
+[268][environment] Available memory at startup: 164199 MB
+[268][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[267][environment] CWD = /src/unzip
+[267][environment] No .inferconfig file found
+[267][environment] Project root = /src/unzip
+[267][environment] INFER_ARGS =   @/tmp/args.tmp.a97da1
+[267][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[267][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[267][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[267][environment]                           -DHAVE_TERMIOS_H -D_MBCS funzip.c
+[267][environment] Available memory at startup: 164199 MB
+[267][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[276][environment] CWD = /src/unzip
+[276][environment] No .inferconfig file found
+[276][environment] Project root = /src/unzip
+[276][environment] INFER_ARGS =   @/tmp/args.tmp.d8ec51
+[276][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[276][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[276][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[276][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o fileio_.o
+[276][environment]                           fileio.c
+[276][environment] Available memory at startup: 164199 MB
+[276][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[270][environment] CWD = /src/unzip
+[270][environment] No .inferconfig file found
+[270][environment] Project root = /src/unzip
+[270][environment] INFER_ARGS =   @/tmp/args.tmp.7936fc
+[270][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[270][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[270][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[270][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DFUNZIP -o inflatef.o
+[270][environment]                           inflate.c
+[270][environment] Available memory at startup: 164199 MB
+[270][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+[261][environment] CWD = /src/unzip
+[261][environment] No .inferconfig file found
+[261][environment] Project root = /src/unzip
+[261][environment] INFER_ARGS =   @/tmp/args.tmp.8e0b35
+[261][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[261][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[261][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[261][environment]                           -DHAVE_TERMIOS_H -D_MBCS ttyio.c
+[261][environment] Available memory at startup: 164199 MB
+[261][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[263][environment] CWD = /src/unzip
+[263][environment] No .inferconfig file found
+[263][environment] Project root = /src/unzip
+[263][environment] INFER_ARGS =   @/tmp/args.tmp.e82fe7
+[263][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[263][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[263][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[263][environment]                           -DHAVE_TERMIOS_H -D_MBCS unreduce.c
+[263][environment] Available memory at startup: 164198 MB
+[263][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+[279][environment] CWD = /src/unzip
+[279][environment] No .inferconfig file found
+[279][environment] Project root = /src/unzip
+[279][environment] INFER_ARGS =   @/tmp/args.tmp.029376
+[279][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[279][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[279][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[279][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o match_.o match.c
+[279][environment] Available memory at startup: 164154 MB
+[279][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+[278][environment] CWD = /src/unzip
+[278][environment] No .inferconfig file found
+[278][environment] Project root = /src/unzip
+[278][environment] INFER_ARGS =   @/tmp/args.tmp.be3dbd
+[278][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[278][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[278][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[278][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o inflate_.o
+[278][environment]                           inflate.c
+[278][environment] Available memory at startup: 164152 MB
+[278][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[275][environment] CWD = /src/unzip
+[275][environment] No .inferconfig file found
+[275][environment] Project root = /src/unzip
+[275][environment] INFER_ARGS =   @/tmp/args.tmp.ef749e
+[275][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[275][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[275][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[275][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o extract_.o
+[275][environment]                           extract.c
+[275][environment] Available memory at startup: 164149 MB
+[275][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[274][environment] CWD = /src/unzip
+[274][environment] No .inferconfig file found
+[274][environment] Project root = /src/unzip
+[274][environment] INFER_ARGS =   @/tmp/args.tmp.380b1d
+[274][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[274][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[274][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[274][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o crypt_.o crypt.c
+[274][environment] Available memory at startup: 164147 MB
+[274][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+
+
+
+[273][environment] CWD = /src/unzip
+[273][environment] No .inferconfig file found
+[273][environment] Project root = /src/unzip
+[273][environment] INFER_ARGS =   @/tmp/args.tmp.63934d
+[273][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[273][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[273][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[273][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o crc32_.o crc32.c
+[273][environment] Available memory at startup: 164123 MB
+[273][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+
+[269][environment] CWD = /src/unzip
+[269][environment] No .inferconfig file found
+[269][environment] Project root = /src/unzip
+[269][environment] INFER_ARGS =   @/tmp/args.tmp.79eefe
+[269][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[269][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[269][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[269][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DFUNZIP -o globalsf.o
+[269][environment]                           globals.c
+[269][environment] Available memory at startup: 164119 MB
+[269][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[277][environment] CWD = /src/unzip
+[277][environment] No .inferconfig file found
+[277][environment] Project root = /src/unzip
+[277][environment] INFER_ARGS =   @/tmp/args.tmp.90506a
+[277][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[277][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[277][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[277][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o globals_.o
+[277][environment]                           globals.c
+[277][environment] Available memory at startup: 164119 MB
+[277][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[271][environment] CWD = /src/unzip
+[271][environment] No .inferconfig file found
+[271][environment] Project root = /src/unzip
+[271][environment] INFER_ARGS =   @/tmp/args.tmp.f02c6f
+[271][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[271][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[271][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[271][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DFUNZIP -o ttyiof.o
+[271][environment]                           ttyio.c
+[271][environment] Available memory at startup: 164118 MB
+[271][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[272][environment] CWD = /src/unzip
+[272][environment] No .inferconfig file found
+[272][environment] Project root = /src/unzip
+[272][environment] INFER_ARGS =   @/tmp/args.tmp.fc5ed6
+[272][environment] command line arguments:   cc -c -I. -Ibzip2 -DUNIX -O3 -DLARGE_FILE_SUPPORT
+[272][environment]                           -DUNICODE_SUPPORT -DUNICODE_WCHAR -DUNICODE_SUPPORT
+[272][environment]                           -DUTF8_MAYBE_NATIVE -DHAVE_DIRENT_H
+[272][environment]                           -DHAVE_TERMIOS_H -D_MBCS -DSFX -o unzipsfx.o
+[272][environment]                           unzip.c
+[272][environment] Available memory at startup: 164118 MB
+[272][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[282][      debug] 
+[282][      debug] *** Beginning capture of file /src/unzip/ubz2err.c ***
+[282][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[282][      debug] Elapsed: 127ms.
+[282][      debug] GC stats for capture:
+[282][      debug]   minor_words: 2.96702e+06
+[282][      debug]   promoted_words: 629588
+[282][      debug]   major_words: 653645
+[282][      debug]   minor_collections: 4
+[282][      debug]   major_collections: 0
+[282][      debug]   compactions: 0
+[282][      debug]   top_heap_words: 875008
+[282][      debug]   
+[282][      debug] GC stats for main_process_full:
+[282][      debug]   minor_words: 4.54957e+06
+[282][      debug]   promoted_words: 785409
+[282][      debug]   major_words: 826922
+[282][      debug]   minor_collections: 8
+[282][      debug]   major_collections: 2
+[282][      debug]   compactions: 1
+[282][      debug]   top_heap_words: 875008
+[282][      debug]   
+[282][environment] Scheduler: file
+[282][environment] Cores used: 32
+[282][environment] [269][      debug] 
+[269][      debug] *** Beginning capture of file /src/unzip/globals.c ***
+[269][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[269][      debug] Elapsed: 116ms.
+[269][      debug] GC stats for capture:
+[269][      debug]   minor_words: 3.11969e+06
+[269][      debug]   promoted_words: 627844
+[269][      debug]   major_words: 653402
+[269][      debug]   minor_collections: 4
+[269][      debug]   major_collections: 0
+[269][      debug]   compactions: 0
+[269][      debug]   top_heap_words: 875008
+[269][      debug]   
+[269][      debug] GC stats for main_process_full:
+[269][      debug]   minor_words: 4.70224e+06
+[269][      debug]   promoted_words: 783666
+[269][      debug]   major_words: 826680
+[269][      debug]   minor_collections: 8
+[269][      debug]   major_collections: 2
+[269][      debug]   compactions: 1
+[269][      debug]   top_heap_words: 875008
+[269][      debug]   
+[269][environment] Scheduler: file
+[269][environment] Cores used: 32
+[269][environment] [262][      debug] 
+[262][      debug] *** Beginning capture of file /src/unzip/ubz2err.c ***
+[262][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[262][      debug] Merging capture data for already-captured 'ubz2err.c'
+[262][      debug] Elapsed: 140ms.
+[262][      debug] GC stats for capture:
+[262][      debug]   minor_words: 3.00229e+06
+[262][      debug]   promoted_words: 633334
+[262][      debug]   major_words: 658487
+[262][      debug]   minor_collections: 4
+[262][      debug]   major_collections: 0
+[262][      debug]   compactions: 0
+[262][      debug]   top_heap_words: 875008
+[262][      debug]   
+[262][      debug] GC stats for main_process_full:
+[262][      debug]   minor_words: 4.58405e+06
+[262][      debug]   promoted_words: 789130
+[262][      debug]   major_words: 831739
+[262][      debug]   minor_collections: 8
+[262][      debug]   major_collections: 2
+[262][      debug]   compactions: 1
+[262][      debug]   top_heap_words: 875008
+[262][      debug]   
+[262][environment] Scheduler: file
+[262][environment] Cores used: 32
+[262][environment] [261][      debug] 
+[261][      debug] *** Beginning capture of file /src/unzip/ttyio.c ***
+[261][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[261][      debug] Elapsed: 137ms.
+[261][      debug] GC stats for capture:
+[261][      debug]   minor_words: 3.79644e+06
+[261][      debug]   promoted_words: 689862
+[261][      debug]   major_words: 717741
+[261][      debug]   minor_collections: 5
+[261][      debug]   major_collections: 0
+[261][      debug]   compactions: 0
+[261][      debug]   top_heap_words: 875008
+[261][      debug]   
+[263][      debug] 
+[263][      debug] *** Beginning capture of file /src/unzip/unreduce.c ***
+[263][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[263][      debug] Elapsed: 135ms.
+[263][      debug] GC stats for capture:
+[263][      debug]   minor_words: 3.00197e+06
+[263][      debug]   promoted_words: 633334
+[263][      debug]   major_words: 657413
+[263][      debug]   minor_collections: 4
+[263][      debug]   major_collections: 0
+[263][      debug]   compactions: 0
+[263][      debug]   top_heap_words: 875008
+[263][      debug]   
+[268][      debug] 
+[268][      debug] *** Beginning capture of file /src/unzip/crypt.c ***
+[268][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[268][      debug] Elapsed: 138ms.
+[268][      debug] GC stats for capture:
+[268][      debug]   minor_words: 3.30379e+06
+[268][      debug]   promoted_words: 640759
+[268][      debug]   major_words: 666332
+[268][      debug]   minor_collections: 4
+[268][      debug]   major_collections: 0
+[268][      debug]   compactions: 0
+[268][      debug]   top_heap_words: 875008
+[268][      debug]   
+[263][      debug] GC stats for main_process_full:
+[263][      debug]   minor_words: 4.58373e+06
+[263][      debug]   promoted_words: 789131
+[263][      debug]   major_words: 830666
+[263][      debug]   minor_collections: 8
+[263][      debug]   major_collections: 2
+[263][      debug]   compactions: 1
+[263][      debug]   top_heap_words: 875008
+[263][      debug]   
+[263][environment] Scheduler: file
+[263][environment] Cores used: 32
+[263][environment] [261][      debug] GC stats for main_process_full:
+[261][      debug]   minor_words: 5.37819e+06
+[261][      debug]   promoted_words: 845657
+[261][      debug]   major_words: 890992
+[261][      debug]   minor_collections: 9
+[261][      debug]   major_collections: 2
+[261][      debug]   compactions: 1
+[261][      debug]   top_heap_words: 875008
+[261][      debug]   
+[261][environment] Scheduler: file
+[261][environment] Cores used: 32
+[261][environment] [274][      debug] 
+[274][      debug] *** Beginning capture of file /src/unzip/crypt.c ***
+[274][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[274][      debug] Merging capture data for already-captured 'crypt.c'
+[274][      debug] Elapsed: 134ms.
+[274][      debug] GC stats for capture:
+[274][      debug]   minor_words: 2.9745e+06
+[274][      debug]   promoted_words: 630157
+[274][      debug]   major_words: 658515
+[274][      debug]   minor_collections: 4
+[274][      debug]   major_collections: 0
+[274][      debug]   compactions: 0
+[274][      debug]   top_heap_words: 875008
+[274][      debug]   
+[268][      debug] GC stats for main_process_full:
+[268][      debug]   minor_words: 4.88633e+06
+[268][      debug]   promoted_words: 796580
+[268][      debug]   major_words: 839609
+[268][      debug]   minor_collections: 8
+[268][      debug]   major_collections: 2
+[268][      debug]   compactions: 1
+[268][      debug]   top_heap_words: 875008
+[268][      debug]   
+[268][environment] Scheduler: file
+[268][environment] Cores used: 32
+[268][environment] [274][      debug] GC stats for main_process_full:
+[274][      debug]   minor_words: 4.55703e+06
+[274][      debug]   promoted_words: 785976
+[274][      debug]   major_words: 831790
+[274][      debug]   minor_collections: 8
+[274][      debug]   major_collections: 2
+[274][      debug]   compactions: 1
+[274][      debug]   top_heap_words: 875008
+[274][      debug]   
+[274][environment] Scheduler: file
+[274][environment] Cores used: 32
+[274][environment] [281][      debug] 
+[281][      debug] *** Beginning capture of file /src/unzip/ttyio.c ***
+[281][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[281][      debug] Elapsed: 155ms.
+[281][      debug] GC stats for capture:
+[281][      debug]   minor_words: 3.53278e+06
+[281][      debug]   promoted_words: 656289
+[281][      debug]   major_words: 683476
+[281][      debug]   minor_collections: 4
+[281][      debug]   major_collections: 0
+[281][      debug]   compactions: 0
+[281][      debug]   top_heap_words: 875008
+[281][      debug]   
+[271][      debug] 
+[271][      debug] *** Beginning capture of file /src/unzip/ttyio.c ***
+[271][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[271][      debug] Elapsed: 133ms.
+[271][      debug] GC stats for capture:
+[271][      debug]   minor_words: 3.42951e+06
+[271][      debug]   promoted_words: 645234
+[271][      debug]   major_words: 671484
+[271][      debug]   minor_collections: 4
+[271][      debug]   major_collections: 0
+[271][      debug]   compactions: 0
+[271][      debug]   top_heap_words: 875008
+[271][      debug]   
+[271][      debug] GC stats for main_process_full:
+[271][      debug]   minor_words: 5.01205e+06
+[271][      debug]   promoted_words: 801055
+[271][      debug]   major_words: 844761
+[271][      debug]   minor_collections: 8
+[271][      debug]   major_collections: 2
+[271][      debug]   compactions: 1
+[271][      debug]   top_heap_words: 875008
+[271][      debug]   
+[271][environment] Scheduler: file
+[271][environment] Cores used: 32
+[271][environment] [281][      debug] GC stats for main_process_full:
+[281][      debug]   minor_words: 5.11532e+06
+[281][      debug]   promoted_words: 812108
+[281][      debug]   major_words: 856751
+[281][      debug]   minor_collections: 8
+[281][      debug]   major_collections: 2
+[281][      debug]   compactions: 1
+[281][      debug]   top_heap_words: 875008
+[281][      debug]   
+[281][environment] Scheduler: file
+[281][environment] Cores used: 32
+[281][environment] [273][      debug] 
+[273][      debug] *** Beginning capture of file /src/unzip/crc32.c ***
+[273][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[273][      debug] Elapsed: 142ms.
+[273][      debug] GC stats for capture:
+[273][      debug]   minor_words: 3.54643e+06
+[273][      debug]   promoted_words: 656596
+[273][      debug]   major_words: 683071
+[273][      debug]   minor_collections: 4
+[273][      debug]   major_collections: 0
+[273][      debug]   compactions: 0
+[273][      debug]   top_heap_words: 875008
+[273][      debug]   
+[250][      debug] 
+[250][      debug] *** Beginning capture of file /src/unzip/crc32.c ***
+[250][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[250][      debug] Elapsed: 158ms.
+[250][      debug] GC stats for capture:
+[250][      debug]   minor_words: 3.58137e+06
+[250][      debug]   promoted_words: 675222
+[250][      debug]   major_words: 701719
+[250][      debug]   minor_collections: 5
+[250][      debug]   major_collections: 0
+[250][      debug]   compactions: 0
+[250][      debug]   top_heap_words: 875008
+[250][      debug]   
+[273][      debug] GC stats for main_process_full:
+[273][      debug]   minor_words: 5.12897e+06
+[273][      debug]   promoted_words: 812415
+[273][      debug]   major_words: 856346
+[273][      debug]   minor_collections: 8
+[273][      debug]   major_collections: 2
+[273][      debug]   compactions: 1
+[273][      debug]   top_heap_words: 875008
+[273][      debug]   
+[273][environment] Scheduler: file
+[273][environment] Cores used: 32
+[273][environment] [264][      debug] 
+[264][      debug] *** Beginning capture of file /src/unzip/unshrink.c ***
+[264][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[264][      debug] Elapsed: 154ms.
+[264][      debug] GC stats for capture:
+[264][      debug]   minor_words: 4.43509e+06
+[264][      debug]   promoted_words: 732037
+[264][      debug]   major_words: 764688
+[264][      debug]   minor_collections: 6
+[264][      debug]   major_collections: 1
+[264][      debug]   compactions: 0
+[264][      debug]   top_heap_words: 1006592
+[264][      debug]   
+[250][      debug] GC stats for main_process_full:
+[250][      debug]   minor_words: 5.16313e+06
+[250][      debug]   promoted_words: 831017
+[250][      debug]   major_words: 874970
+[250][      debug]   minor_collections: 9
+[250][      debug]   major_collections: 2
+[250][      debug]   compactions: 1
+[250][      debug]   top_heap_words: 875008
+[250][      debug]   
+[250][environment] Scheduler: file
+[250][environment] Cores used: 32
+[250][environment] [279][      debug] 
+[279][      debug] *** Beginning capture of file /src/unzip/match.c ***
+[279][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[279][      debug] Elapsed: 150ms.
+[279][      debug] GC stats for capture:
+[279][      debug]   minor_words: 4.39105e+06
+[279][      debug]   promoted_words: 707335
+[279][      debug]   major_words: 738905
+[279][      debug]   minor_collections: 5
+[279][      debug]   major_collections: 0
+[279][      debug]   compactions: 0
+[279][      debug]   top_heap_words: 1006592
+[279][      debug]   
+[277][      debug] 
+[277][      debug] *** Beginning capture of file /src/unzip/globals.c ***
+[277][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[277][      debug] Merging capture data for already-captured 'globals.c'
+[277][      debug] Elapsed: 145ms.
+[277][      debug] GC stats for capture:
+[277][      debug]   minor_words: 3.40915e+06
+[277][      debug]   promoted_words: 639607
+[277][      debug]   major_words: 669845
+[277][      debug]   minor_collections: 4
+[277][      debug]   major_collections: 0
+[277][      debug]   compactions: 0
+[277][      debug]   top_heap_words: 875008
+[277][      debug]   
+[264][      debug] GC stats for main_process_full:
+[264][      debug]   minor_words: 6.01685e+06
+[264][      debug]   promoted_words: 887834
+[264][      debug]   major_words: 937941
+[264][      debug]   minor_collections: 10
+[264][      debug]   major_collections: 3
+[264][      debug]   compactions: 1
+[264][      debug]   top_heap_words: 1006592
+[264][      debug]   
+[264][environment] Scheduler: file
+[264][environment] Cores used: 32
+[264][environment] [256][      debug] 
+[256][      debug] *** Beginning capture of file /src/unzip/globals.c ***
+[256][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[256][      debug] Merging capture data for already-captured 'globals.c'
+[256][      debug] Elapsed: 158ms.
+[256][      debug] GC stats for capture:
+[256][      debug]   minor_words: 3.46338e+06
+[256][      debug]   promoted_words: 643448
+[256][      debug]   major_words: 673757
+[256][      debug]   minor_collections: 4
+[256][      debug]   major_collections: 0
+[256][      debug]   compactions: 0
+[256][      debug]   top_heap_words: 875008
+[256][      debug]   
+[259][      debug] 
+[259][      debug] *** Beginning capture of file /src/unzip/match.c ***
+[259][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[259][      debug] Elapsed: 156ms.
+[259][      debug] GC stats for capture:
+[259][      debug]   minor_words: 4.42601e+06
+[259][      debug]   promoted_words: 726512
+[259][      debug]   major_words: 758104
+[259][      debug]   minor_collections: 6
+[259][      debug]   major_collections: 1
+[259][      debug]   compactions: 0
+[259][      debug]   top_heap_words: 1006592
+[259][      debug]   
+[277][      debug] GC stats for main_process_full:
+[277][      debug]   minor_words: 4.9917e+06
+[277][      debug]   promoted_words: 795428
+[277][      debug]   major_words: 843122
+[277][      debug]   minor_collections: 8
+[277][      debug]   major_collections: 2
+[277][      debug]   compactions: 1
+[277][      debug]   top_heap_words: 875008
+[277][      debug]   
+[277][environment] Scheduler: file
+[277][environment] Cores used: 32
+[277][environment] [279][      debug] GC stats for main_process_full:
+[279][      debug]   minor_words: 5.97359e+06
+[279][      debug]   promoted_words: 863154
+[279][      debug]   major_words: 912180
+[279][      debug]   minor_collections: 9
+[279][      debug]   major_collections: 2
+[279][      debug]   compactions: 1
+[279][      debug]   top_heap_words: 1006592
+[279][      debug]   
+[252][      debug] 
+[252][      debug] *** Beginning capture of file /src/unzip/envargs.c ***
+[252][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[252][      debug] Elapsed: 160ms.
+[252][      debug] GC stats for capture:
+[252][      debug]   minor_words: 3.91769e+06
+[252][      debug]   promoted_words: 692322
+[252][      debug]   major_words: 722445
+[252][      debug]   minor_collections: 5
+[252][      debug]   major_collections: 0
+[252][      debug]   compactions: 0
+[252][      debug]   top_heap_words: 1006592
+[252][      debug]   
+[279][environment] Scheduler: file
+[279][environment] Cores used: 32
+[279][environment] [256][      debug] GC stats for main_process_full:
+[256][      debug]   minor_words: 5.04514e+06
+[256][      debug]   promoted_words: 799244
+[256][      debug]   major_words: 847009
+[256][      debug]   minor_collections: 8
+[256][      debug]   major_collections: 2
+[256][      debug]   compactions: 1
+[256][      debug]   top_heap_words: 875008
+[256][      debug]   
+[256][environment] Scheduler: file
+[256][environment] Cores used: 32
+[256][environment] [259][      debug] GC stats for main_process_full:
+[259][      debug]   minor_words: 6.00776e+06
+[259][      debug]   promoted_words: 882307
+[259][      debug]   major_words: 931355
+[259][      debug]   minor_collections: 10
+[259][      debug]   major_collections: 3
+[259][      debug]   compactions: 1
+[259][      debug]   top_heap_words: 1006592
+[259][      debug]   
+[259][environment] Scheduler: file
+[259][environment] Cores used: 32
+[259][environment] [251][      debug] 
+[251][      debug] *** Beginning capture of file /src/unzip/crypt.c ***
+[251][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[251][      debug] Merging capture data for already-captured 'crypt.c'
+[251][      debug] Elapsed: 158ms.
+[251][      debug] GC stats for capture:
+[251][      debug]   minor_words: 4.15024e+06
+[251][      debug]   promoted_words: 701800
+[251][      debug]   major_words: 736115
+[251][      debug]   minor_collections: 5
+[251][      debug]   major_collections: 0
+[251][      debug]   compactions: 0
+[251][      debug]   top_heap_words: 1006592
+[251][      debug]   
+[252][      debug] GC stats for main_process_full:
+[252][      debug]   minor_words: 5.49945e+06
+[252][      debug]   promoted_words: 848118
+[252][      debug]   major_words: 895697
+[252][      debug]   minor_collections: 9
+[252][      debug]   major_collections: 2
+[252][      debug]   compactions: 1
+[252][      debug]   top_heap_words: 1006592
+[252][      debug]   
+[252][environment] Scheduler: file
+[252][environment] Cores used: 32
+[252][environment] [251][      debug] GC stats for main_process_full:
+[251][      debug]   minor_words: 5.732e+06
+[251][      debug]   promoted_words: 857595
+[251][      debug]   major_words: 909366
+[251][      debug]   minor_collections: 9
+[251][      debug]   major_collections: 2
+[251][      debug]   compactions: 1
+[251][      debug]   top_heap_words: 1006592
+[251][      debug]   
+[251][environment] Scheduler: file
+[251][environment] Cores used: 32
+[251][environment] [267][      debug] 
+[267][      debug] *** Beginning capture of file /src/unzip/funzip.c ***
+[267][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[267][      debug] Elapsed: 170ms.
+[267][      debug] GC stats for capture:
+[267][      debug]   minor_words: 5.83353e+06
+[267][      debug]   promoted_words: 796722
+[267][      debug]   major_words: 834473
+[267][      debug]   minor_collections: 7
+[267][      debug]   major_collections: 1
+[267][      debug]   compactions: 0
+[267][      debug]   top_heap_words: 1006592
+[267][      debug]   
+[267][      debug] GC stats for main_process_full:
+[267][      debug]   minor_words: 7.41528e+06
+[267][      debug]   promoted_words: 952518
+[267][      debug]   major_words: 1.00772e+06
+[267][      debug]   minor_collections: 11
+[267][      debug]   major_collections: 3
+[267][      debug]   compactions: 1
+[267][      debug]   top_heap_words: 1006592
+[267][      debug]   
+[267][environment] Scheduler: file
+[267][environment] Cores used: 32
+[267][environment] [272][      debug] 
+[272][      debug] *** Beginning capture of file /src/unzip/unzip.c ***
+[272][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[272][      debug] /usr/include/langinfo.h:669:1-58: ERROR translating statement 'DeclStmt'
+[272][      debug] Aborting translation of method 'unzip' in file 'unzip.c'
+[272][      debug] Unimplemented feature:
+[272][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":6535,"parent_pointer":1,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":1},{"file":"/usr/include/langinfo.h","line":669,"column":57})},{"name":"nl_langinfo_l","qual_name":["nl_langinfo_l"]},{"type_ptr":6536},{"parameters":[<"ParmVarDecl":({"pointer":6537,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":29},{"file":"/usr/include/langinfo.h","line":669,"column":37})},{"name":"__item","qual_name":["__item"]},{"type_ptr":5995},{"parm_index_in_function":0})>,<"ParmVarDecl":({"pointer":6538,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":45},{"file":"/usr/include/langinfo.h","line":669,"column":54})},{"name":"__l","qual_name":["__l"]},{"type_ptr":1703},{"parm_index_in_function":1})>]})>
+[272][      debug] /usr/include/langinfo.h:669:1-58: ERROR translating statement 'DeclStmt'
+[272][      debug] Aborting translation of method 'unzip' in file 'unzip.c'
+[272][      debug] Unimplemented feature:
+[272][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":6535,"parent_pointer":1,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":1},{"file":"/usr/include/langinfo.h","line":669,"column":57})},{"name":"nl_langinfo_l","qual_name":["nl_langinfo_l"]},{"type_ptr":6536},{"parameters":[<"ParmVarDecl":({"pointer":6537,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":29},{"file":"/usr/include/langinfo.h","line":669,"column":37})},{"name":"__item","qual_name":["__item"]},{"type_ptr":5995},{"parm_index_in_function":0})>,<"ParmVarDecl":({"pointer":6538,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":45},{"file":"/usr/include/langinfo.h","line":669,"column":54})},{"name":"__l","qual_name":["__l"]},{"type_ptr":1703},{"parm_index_in_function":1})>]})>
+[272][      debug] Elapsed: 171ms.
+[272][      debug] GC stats for capture:
+[272][      debug]   minor_words: 7.03918e+06
+[272][      debug]   promoted_words: 905366
+[272][      debug]   major_words: 952816
+[272][      debug]   minor_collections: 9
+[272][      debug]   major_collections: 1
+[272][      debug]   compactions: 0
+[272][      debug]   top_heap_words: 1157632
+[272][      debug]   
+[272][      debug] GC stats for main_process_full:
+[272][      debug]   minor_words: 8.62172e+06
+[272][      debug]   promoted_words: 1.06119e+06
+[272][      debug]   major_words: 1.12609e+06
+[272][      debug]   minor_collections: 13
+[272][      debug]   major_collections: 3
+[272][      debug]   compactions: 1
+[272][      debug]   top_heap_words: 1157632
+[272][      debug]   
+[272][environment] Scheduler: file
+[272][environment] Cores used: 32
+[272][environment] [258][      debug] 
+[258][      debug] *** Beginning capture of file /src/unzip/list.c ***
+[258][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[258][      debug] Elapsed: 203ms.
+[258][      debug] GC stats for capture:
+[258][      debug]   minor_words: 6.56225e+06
+[258][      debug]   promoted_words: 864005
+[258][      debug]   major_words: 905948
+[258][      debug]   minor_collections: 8
+[258][      debug]   major_collections: 1
+[258][      debug]   compactions: 0
+[258][      debug]   top_heap_words: 1157632
+[258][      debug]   
+[253][      debug] 
+[253][      debug] *** Beginning capture of file /src/unzip/explode.c ***
+[253][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[253][      debug] Elapsed: 203ms.
+[253][      debug] GC stats for capture:
+[253][      debug]   minor_words: 7.29479e+06
+[253][      debug]   promoted_words: 913633
+[253][      debug]   major_words: 960265
+[253][      debug]   minor_collections: 8
+[253][      debug]   major_collections: 1
+[253][      debug]   compactions: 0
+[253][      debug]   top_heap_words: 1157632
+[253][      debug]   
+[258][      debug] GC stats for main_process_full:
+[258][      debug]   minor_words: 8.144e+06
+[258][      debug]   promoted_words: 1.0198e+06
+[258][      debug]   major_words: 1.0792e+06
+[258][      debug]   minor_collections: 12
+[258][      debug]   major_collections: 3
+[258][      debug]   compactions: 1
+[258][      debug]   top_heap_words: 1157632
+[258][      debug]   
+[258][environment] Scheduler: file
+[258][environment] Cores used: 32
+[258][environment] [253][      debug] GC stats for main_process_full:
+[253][      debug]   minor_words: 8.87655e+06
+[253][      debug]   promoted_words: 1.06943e+06
+[253][      debug]   major_words: 1.13352e+06
+[253][      debug]   minor_collections: 12
+[253][      debug]   major_collections: 3
+[253][      debug]   compactions: 1
+[253][      debug]   top_heap_words: 1157632
+[253][      debug]   
+[253][environment] Scheduler: file
+[253][environment] Cores used: 32
+[253][environment] [278][      debug] 
+[278][      debug] *** Beginning capture of file /src/unzip/inflate.c ***
+[278][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[278][      debug] Elapsed: 208ms.
+[278][      debug] GC stats for capture:
+[278][      debug]   minor_words: 8.75886e+06
+[278][      debug]   promoted_words: 1.04428e+06
+[278][      debug]   major_words: 1.10338e+06
+[278][      debug]   minor_collections: 10
+[278][      debug]   major_collections: 2
+[278][      debug]   compactions: 0
+[278][      debug]   top_heap_words: 1331712
+[278][      debug]   
+[278][      debug] GC stats for main_process_full:
+[278][      debug]   minor_words: 1.03414e+07
+[278][      debug]   promoted_words: 1.2001e+06
+[278][      debug]   major_words: 1.27665e+06
+[278][      debug]   minor_collections: 14
+[278][      debug]   major_collections: 4
+[278][      debug]   compactions: 1
+[278][      debug]   top_heap_words: 1331712
+[278][      debug]   
+[278][environment] Scheduler: file
+[278][environment] Cores used: 32
+[278][environment] [283][      debug] 
+[283][      debug] *** Beginning capture of file /src/unzip/unix/unix.c ***
+[283][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[283][      debug] Elapsed: 240ms.
+[283][      debug] GC stats for capture:
+[283][      debug]   minor_words: 9.1901e+06
+[283][      debug]   promoted_words: 1.0137e+06
+[283][      debug]   major_words: 1.06836e+06
+[283][      debug]   minor_collections: 11
+[283][      debug]   major_collections: 2
+[283][      debug]   compactions: 0
+[283][      debug]   top_heap_words: 1331712
+[283][      debug]   
+[283][      debug] GC stats for main_process_full:
+[283][      debug]   minor_words: 1.07727e+07
+[283][      debug]   promoted_words: 1.16952e+06
+[283][      debug]   major_words: 1.24164e+06
+[283][      debug]   minor_collections: 15
+[283][      debug]   major_collections: 4
+[283][      debug]   compactions: 1
+[283][      debug]   top_heap_words: 1331712
+[283][      debug]   
+[283][environment] Scheduler: file
+[283][environment] Cores used: 32
+[283][environment] [270][      debug] 
+[270][      debug] *** Beginning capture of file /src/unzip/inflate.c ***
+[270][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[270][      debug] Merging capture data for already-captured 'inflate.c'
+[270][      debug] Elapsed: 241ms.
+[270][      debug] GC stats for capture:
+[270][      debug]   minor_words: 9.39091e+06
+[270][      debug]   promoted_words: 1.07826e+06
+[270][      debug]   major_words: 1.14611e+06
+[270][      debug]   minor_collections: 11
+[270][      debug]   major_collections: 2
+[270][      debug]   compactions: 0
+[270][      debug]   top_heap_words: 1331712
+[270][      debug]   
+[270][      debug] GC stats for main_process_full:
+[270][      debug]   minor_words: 1.09735e+07
+[270][      debug]   promoted_words: 1.23409e+06
+[270][      debug]   major_words: 1.31938e+06
+[270][      debug]   minor_collections: 15
+[270][      debug]   major_collections: 4
+[270][      debug]   compactions: 1
+[270][      debug]   top_heap_words: 1331712
+[270][      debug]   
+[270][environment] Scheduler: file
+[270][environment] Cores used: 32
+[270][environment] [257][      debug] 
+[257][      debug] *** Beginning capture of file /src/unzip/inflate.c ***
+[257][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[257][      debug] Merging capture data for already-captured 'inflate.c'
+[257][      debug] Elapsed: 243ms.
+[257][      debug] GC stats for capture:
+[257][      debug]   minor_words: 9.25674e+06
+[257][      debug]   promoted_words: 1.08492e+06
+[257][      debug]   major_words: 1.15315e+06
+[257][      debug]   minor_collections: 11
+[257][      debug]   major_collections: 2
+[257][      debug]   compactions: 0
+[257][      debug]   top_heap_words: 1331712
+[257][      debug]   
+[257][      debug] GC stats for main_process_full:
+[257][      debug]   minor_words: 1.08385e+07
+[257][      debug]   promoted_words: 1.24072e+06
+[257][      debug]   major_words: 1.3264e+06
+[257][      debug]   minor_collections: 15
+[257][      debug]   major_collections: 4
+[257][      debug]   compactions: 1
+[257][      debug]   top_heap_words: 1331712
+[257][      debug]   
+[257][environment] Scheduler: file
+[257][environment] Cores used: 32
+[257][environment] [266][      debug] 
+[266][      debug] *** Beginning capture of file /src/unzip/unix/unix.c ***
+[266][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[266][      debug] Merging capture data for already-captured 'unix/unix.c'
+[266][      debug] Elapsed: 254ms.
+[266][      debug] GC stats for capture:
+[266][      debug]   minor_words: 1.0227e+07
+[266][      debug]   promoted_words: 1.07099e+06
+[266][      debug]   major_words: 1.13687e+06
+[266][      debug]   minor_collections: 12
+[266][      debug]   major_collections: 2
+[266][      debug]   compactions: 0
+[266][      debug]   top_heap_words: 1331712
+[266][      debug]   
+[266][      debug] GC stats for main_process_full:
+[266][      debug]   minor_words: 1.18088e+07
+[266][      debug]   promoted_words: 1.22678e+06
+[266][      debug]   major_words: 1.31012e+06
+[266][      debug]   minor_collections: 16
+[266][      debug]   major_collections: 4
+[266][      debug]   compactions: 1
+[266][      debug]   top_heap_words: 1331712
+[266][      debug]   
+[266][environment] Scheduler: file
+[266][environment] Cores used: 32
+[266][environment] [280][      debug] 
+[280][      debug] *** Beginning capture of file /src/unzip/process.c ***
+[280][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[280][      debug] Elapsed: 274ms.
+[280][      debug] GC stats for capture:
+[280][      debug]   minor_words: 1.13953e+07
+[280][      debug]   promoted_words: 1.16108e+06
+[280][      debug]   major_words: 1.22455e+06
+[280][      debug]   minor_collections: 13
+[280][      debug]   major_collections: 2
+[280][      debug]   compactions: 0
+[280][      debug]   top_heap_words: 1331712
+[280][      debug]   
+[280][      debug] GC stats for main_process_full:
+[280][      debug]   minor_words: 1.29779e+07
+[280][      debug]   promoted_words: 1.3169e+06
+[280][      debug]   major_words: 1.39783e+06
+[280][      debug]   minor_collections: 17
+[280][      debug]   major_collections: 4
+[280][      debug]   compactions: 1
+[280][      debug]   top_heap_words: 1331712
+[280][      debug]   
+[280][environment] Scheduler: file
+[280][environment] Cores used: 32
+[280][environment] 
+[424][environment] CWD = /src/unzip
+[424][environment] No .inferconfig file found
+[424][environment] Project root = /src/unzip
+[424][environment] INFER_ARGS =   @/tmp/args.tmp.d5cf29
+[424][environment] command line arguments:   cc -o funzip funzip.o crc32.o cryptf.o globalsf.o
+[424][environment]                           inflatef.o ttyiof.o -s
+[424][environment] Available memory at startup: 164578 MB
+[424][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[249][      debug] 
+[249][      debug] *** Beginning capture of file /src/unzip/unzip.c ***
+[249][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[249][      debug] /usr/include/langinfo.h:669:1-58: ERROR translating statement 'DeclStmt'
+[249][      debug] Aborting translation of method 'unzip' in file 'unzip.c'
+[249][      debug] Unimplemented feature:
+[249][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":6726,"parent_pointer":1,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":1},{"file":"/usr/include/langinfo.h","line":669,"column":57})},{"name":"nl_langinfo_l","qual_name":["nl_langinfo_l"]},{"type_ptr":6727},{"parameters":[<"ParmVarDecl":({"pointer":6728,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":29},{"file":"/usr/include/langinfo.h","line":669,"column":37})},{"name":"__item","qual_name":["__item"]},{"type_ptr":6186},{"parm_index_in_function":0})>,<"ParmVarDecl":({"pointer":6729,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":45},{"file":"/usr/include/langinfo.h","line":669,"column":54})},{"name":"__l","qual_name":["__l"]},{"type_ptr":1703},{"parm_index_in_function":1})>]})>
+[249][      debug] /usr/include/langinfo.h:669:1-58: ERROR translating statement 'DeclStmt'
+[249][      debug] Aborting translation of method 'unzip' in file 'unzip.c'
+[249][      debug] Unimplemented feature:
+[249][      debug]   In DeclStmt found an unknown declaration type <"FunctionDecl":({"pointer":6726,"parent_pointer":1,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":1},{"file":"/usr/include/langinfo.h","line":669,"column":57})},{"name":"nl_langinfo_l","qual_name":["nl_langinfo_l"]},{"type_ptr":6727},{"parameters":[<"ParmVarDecl":({"pointer":6728,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":29},{"file":"/usr/include/langinfo.h","line":669,"column":37})},{"name":"__item","qual_name":["__item"]},{"type_ptr":6186},{"parm_index_in_function":0})>,<"ParmVarDecl":({"pointer":6729,"source_range":({"file":"/usr/include/langinfo.h","line":669,"column":45},{"file":"/usr/include/langinfo.h","line":669,"column":54})},{"name":"__l","qual_name":["__l"]},{"type_ptr":1703},{"parm_index_in_function":1})>]})>
+[249][      debug] Merging capture data for already-captured 'unzip.c'
+[249][      debug] Elapsed: 309ms.
+[249][      debug] GC stats for capture:
+[249][      debug]   minor_words: 1.14058e+07
+[249][      debug]   promoted_words: 1.19633e+06
+[249][      debug]   major_words: 1.26975e+06
+[249][      debug]   minor_collections: 14
+[249][      debug]   major_collections: 2
+[249][      debug]   compactions: 0
+[249][      debug]   top_heap_words: 1531904
+[249][      debug]   
+[249][      debug] GC stats for main_process_full:
+[249][      debug]   minor_words: 1.29875e+07
+[249][      debug]   promoted_words: 1.35213e+06
+[249][      debug]   major_words: 1.443e+06
+[249][      debug]   minor_collections: 18
+[249][      debug]   major_collections: 4
+[249][      debug]   compactions: 1
+[249][      debug]   top_heap_words: 1531904
+[249][      debug]   
+[249][environment] Scheduler: file
+[249][environment] Cores used: 32
+[249][environment] [275][      debug] 
+[275][      debug] *** Beginning capture of file /src/unzip/extract.c ***
+[275][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[275][      debug] Elapsed: 310ms.
+[275][      debug] GC stats for capture:
+[275][      debug]   minor_words: 1.35744e+07
+[275][      debug]   promoted_words: 1.26181e+06
+[275][      debug]   major_words: 1.32772e+06
+[275][      debug]   minor_collections: 15
+[275][      debug]   major_collections: 2
+[275][      debug]   compactions: 0
+[275][      debug]   top_heap_words: 1531904
+[275][      debug]   
+[275][      debug] GC stats for main_process_full:
+[275][      debug]   minor_words: 1.5157e+07
+[275][      debug]   promoted_words: 1.41763e+06
+[275][      debug]   major_words: 1.501e+06
+[275][      debug]   minor_collections: 19
+[275][      debug]   major_collections: 4
+[275][      debug]   compactions: 1
+[275][      debug]   top_heap_words: 1531904
+[275][      debug]   
+[275][environment] Scheduler: file
+[275][environment] Cores used: 32
+[275][environment] [424][      debug] GC stats for capture:
+[424][      debug]   minor_words: 7172
+[424][      debug]   promoted_words: 0
+[424][      debug]   major_words: 0
+[424][      debug]   minor_collections: 0
+[424][      debug]   major_collections: 0
+[424][      debug]   compactions: 0
+[424][      debug]   top_heap_words: 188416
+[424][      debug]   
+[424][      debug] GC stats for main_process_full:
+[424][      debug]   minor_words: 1.586e+06
+[424][      debug]   promoted_words: 155741
+[424][      debug]   major_words: 173197
+[424][      debug]   minor_collections: 4
+[424][      debug]   major_collections: 2
+[424][      debug]   compactions: 1
+[424][      debug]   top_heap_words: 188416
+[424][      debug]   
+[424][environment] Scheduler: file
+[424][environment] Cores used: 32
+[424][environment] [260][      debug] 
+[260][      debug] *** Beginning capture of file /src/unzip/process.c ***
+[260][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[260][      debug] Elapsed: 339ms.
+[260][      debug] GC stats for capture:
+[260][      debug]   minor_words: 1.42942e+07
+[260][      debug]   promoted_words: 1.32941e+06
+[260][      debug]   major_words: 1.40037e+06
+[260][      debug]   minor_collections: 16
+[260][      debug]   major_collections: 2
+[260][      debug]   compactions: 0
+[260][      debug]   top_heap_words: 1531904
+[260][      debug]   
+[276][      debug] 
+[276][      debug] *** Beginning capture of file /src/unzip/fileio.c ***
+[276][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[276][      debug] Elapsed: 340ms.
+[276][      debug] GC stats for capture:
+[276][      debug]   minor_words: 1.1042e+07
+[276][      debug]   promoted_words: 1.14898e+06
+[276][      debug]   major_words: 1.20922e+06
+[276][      debug]   minor_collections: 13
+[276][      debug]   major_collections: 2
+[276][      debug]   compactions: 0
+[276][      debug]   top_heap_words: 1331712
+[276][      debug]   
+[276][      debug] GC stats for main_process_full:
+[276][      debug]   minor_words: 1.26246e+07
+[276][      debug]   promoted_words: 1.3048e+06
+[276][      debug]   major_words: 1.3825e+06
+[276][      debug]   minor_collections: 17
+[276][      debug]   major_collections: 4
+[276][      debug]   compactions: 1
+[276][      debug]   top_heap_words: 1331712
+[276][      debug]   
+[276][environment] Scheduler: file
+[276][environment] Cores used: 32
+[276][environment] [260][      debug] GC stats for main_process_full:
+[260][      debug]   minor_words: 1.5876e+07
+[260][      debug]   promoted_words: 1.48521e+06
+[260][      debug]   major_words: 1.57362e+06
+[260][      debug]   minor_collections: 20
+[260][      debug]   major_collections: 4
+[260][      debug]   compactions: 1
+[260][      debug]   top_heap_words: 1531904
+[260][      debug]   
+[260][environment] Scheduler: file
+[260][environment] Cores used: 32
+[260][environment] [255][      debug] 
+[255][      debug] *** Beginning capture of file /src/unzip/fileio.c ***
+[255][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[255][      debug] Elapsed: 354ms.
+[255][      debug] GC stats for capture:
+[255][      debug]   minor_words: 1.28226e+07
+[255][      debug]   promoted_words: 1.261e+06
+[255][      debug]   major_words: 1.32696e+06
+[255][      debug]   minor_collections: 14
+[255][      debug]   major_collections: 2
+[255][      debug]   compactions: 0
+[255][      debug]   top_heap_words: 1531904
+[255][      debug]   
+[255][      debug] GC stats for main_process_full:
+[255][      debug]   minor_words: 1.44043e+07
+[255][      debug]   promoted_words: 1.4168e+06
+[255][      debug]   major_words: 1.50022e+06
+[255][      debug]   minor_collections: 18
+[255][      debug]   major_collections: 4
+[255][      debug]   compactions: 1
+[255][      debug]   top_heap_words: 1531904
+[255][      debug]   
+[255][environment] Scheduler: file
+[255][environment] Cores used: 32
+[255][environment] 
+[254][      debug] 
+[254][      debug] *** Beginning capture of file /src/unzip/extract.c ***
+[254][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[254][      debug] Elapsed: 389ms.
+[254][      debug] GC stats for capture:
+[254][      debug]   minor_words: 1.90301e+07
+[254][      debug]   promoted_words: 1.59262e+06
+[254][      debug]   major_words: 1.6872e+06
+[254][      debug]   minor_collections: 21
+[254][      debug]   major_collections: 2
+[254][      debug]   compactions: 0
+[254][      debug]   top_heap_words: 1761792
+[254][      debug]   
+[429][environment] CWD = /src/unzip
+[429][environment] No .inferconfig file found
+[429][environment] Project root = /src/unzip
+[429][environment] INFER_ARGS =   @/tmp/args.tmp.359a20
+[429][environment] command line arguments:   cc -o unzipsfx unzipsfx.o crc32_.o crypt_.o
+[429][environment]                           extract_.o fileio_.o globals_.o inflate_.o match_.o
+[429][environment]                           process_.o ttyio_.o ubz2err_.o unix_.o -s
+[429][environment] Available memory at startup: 164724 MB
+[429][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[254][      debug] GC stats for main_process_full:
+[254][      debug]   minor_words: 2.06119e+07
+[254][      debug]   promoted_words: 1.74842e+06
+[254][      debug]   major_words: 1.86045e+06
+[254][      debug]   minor_collections: 25
+[254][      debug]   major_collections: 4
+[254][      debug]   compactions: 1
+[254][      debug]   top_heap_words: 1761792
+[254][      debug]   
+[254][environment] Scheduler: file
+[254][environment] Cores used: 32
+[254][environment] [265][      debug] 
+[265][      debug] *** Beginning capture of file /src/unzip/zipinfo.c ***
+[265][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[265][      debug] Elapsed: 397ms.
+[265][      debug] GC stats for capture:
+[265][      debug]   minor_words: 1.9594e+07
+[265][      debug]   promoted_words: 1.69396e+06
+[265][      debug]   major_words: 1.79516e+06
+[265][      debug]   minor_collections: 23
+[265][      debug]   major_collections: 3
+[265][      debug]   compactions: 0
+[265][      debug]   top_heap_words: 2026496
+[265][      debug]   
+[265][      debug] GC stats for main_process_full:
+[265][      debug]   minor_words: 2.11758e+07
+[265][      debug]   promoted_words: 1.84976e+06
+[265][      debug]   major_words: 1.96841e+06
+[265][      debug]   minor_collections: 27
+[265][      debug]   major_collections: 5
+[265][      debug]   compactions: 1
+[265][      debug]   top_heap_words: 2026496
+[265][      debug]   
+[265][environment] Scheduler: file
+[265][environment] Cores used: 32
+[265][environment] [429][      debug] GC stats for capture:
+[429][      debug]   minor_words: 7868
+[429][      debug]   promoted_words: 0
+[429][      debug]   major_words: 0
+[429][      debug]   minor_collections: 0
+[429][      debug]   major_collections: 0
+[429][      debug]   compactions: 0
+[429][      debug]   top_heap_words: 188416
+[429][      debug]   
+[429][      debug] GC stats for main_process_full:
+[429][      debug]   minor_words: 1.58768e+06
+[429][      debug]   promoted_words: 155798
+[429][      debug]   major_words: 173254
+[429][      debug]   minor_collections: 4
+[429][      debug]   major_collections: 2
+[429][      debug]   compactions: 1
+[429][      debug]   top_heap_words: 188416
+[429][      debug]   
+[429][environment] Scheduler: file
+[429][environment] Cores used: 32
+[429][environment] 
+[433][environment] CWD = /src/unzip
+[433][environment] No .inferconfig file found
+[433][environment] Project root = /src/unzip
+[433][environment] INFER_ARGS =   @/tmp/args.tmp.506093
+[433][environment] command line arguments:   cc -o unzip -Lbzip2 unzip.o crc32.o crypt.o
+[433][environment]                           envargs.o explode.o extract.o fileio.o globals.o
+[433][environment]                           inflate.o list.o match.o process.o ttyio.o
+[433][environment]                           ubz2err.o unreduce.o unshrink.o zipinfo.o unix.o -s
+[433][environment] Available memory at startup: 164805 MB
+[433][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[433][      debug] GC stats for capture:
+[433][      debug]   minor_words: 8648
+[433][      debug]   promoted_words: 0
+[433][      debug]   major_words: 0
+[433][      debug]   minor_collections: 0
+[433][      debug]   major_collections: 0
+[433][      debug]   compactions: 0
+[433][      debug]   top_heap_words: 188416
+[433][      debug]   
+[433][      debug] GC stats for main_process_full:
+[433][      debug]   minor_words: 1.58973e+06
+[433][      debug]   promoted_words: 155852
+[433][      debug]   major_words: 173308
+[433][      debug]   minor_collections: 4
+[433][      debug]   major_collections: 2
+[433][      debug]   compactions: 1
+[433][      debug]   top_heap_words: 188416
+[433][      debug]   
+[433][environment] Scheduler: file
+[433][environment] Cores used: 32
+[433][environment] [14][      debug] GC stats for capture:
+[14][      debug]   minor_words: 938
+[14][      debug]   promoted_words: 0
+[14][      debug]   major_words: 0
+[14][      debug]   minor_collections: 0
+[14][      debug]   major_collections: 0
+[14][      debug]   compactions: 0
+[14][      debug]   top_heap_words: 372736
+[14][      debug]   
+[14][      debug] GC stats for main_process_full:
+[14][      debug]   minor_words: 1.80694e+06
+[14][      debug]   promoted_words: 167849
+[14][      debug]   major_words: 367344
+[14][      debug]   minor_collections: 5
+[14][      debug]   major_collections: 2
+[14][      debug]   compactions: 1
+[14][      debug]   top_heap_words: 372736
+[14][      debug]   
+[15][      debug] Sqlite write daemon: terminating
+
+[1652740][      phase] ============================================================
+[1652740][      phase] = New infer execution begins
+[1652740][      phase] ============================================================
+[1652741][      debug] Sqlite write daemon: starting up
+[1652741][      debug] Sqlite write daemon: set up complete, waiting for connections
+[1652740][      phase] ============================================================
+[1652740][      phase] = New infer execution begins
+[1652740][      phase] ============================================================
+[1652740][environment] CWD = /data/pattern/result/all-bench-2021.09.03-14:55:14/unzip-6.0
+[1652740][environment] No .inferconfig file found
+[1652740][environment] Project root = /data/pattern/result/all-bench-2021.09.03-14:55:14/unzip-6.0
+[1652740][environment] INFER_ARGS =   @/tmp/args.tmp.37a6a5
+[1652740][environment] command line arguments:   /home/wooseok/workspace/infer-experiment/infer/infer/bin/infer
+[1652740][environment]                           analyze --api-misuse-only -j 20 --api-misuse-max-fp
+[1652740][environment]                           5 --api-misuse-max-set 10
+[1652740][environment] Available memory at startup: 164610 MB
+[1652740][environment] Active checkers: api-misuse (C/C++/ObjC), bufferoverrun-analysis (C/C++/ObjC, Java)
+[1652740][environment] Scheduler: file
+[1652740][environment] Cores used: 20
+[1652740][environment] Infer version v1.0.0-c13db4e62
+[1652740][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[1652740][environment] 
+[1652740][      debug] GC stats for capture:
+[1652740][      debug]   minor_words: 63
+[1652740][      debug]   promoted_words: 0
+[1652740][      debug]   major_words: 0
+[1652740][      debug]   minor_collections: 0
+[1652740][      debug]   major_collections: 0
+[1652740][      debug]   compactions: 0
+[1652740][      debug]   top_heap_words: 434176
+[1652740][      debug]   
+[1652740][environment] Parallel jobs: 20
+[1652740][   progress] Found 20 source files to analyze in /data/pattern/result/all-bench-2021.09.03-14:55:14/unzip-6.0/infer-out
+[1652744][   progress] crc32.c starting
+[1652752][   progress] unshrink.c starting
+[1652742][   progress] match.c starting
+[1652745][   progress] ubz2err.c starting
+[1652743][   progress] explode.c starting
+[1652748][   progress] zipinfo.c starting
+[1652746][   progress] envargs.c starting
+[1652749][   progress] fileio.c starting
+[1652747][   progress] inflate.c starting
+[1652751][   progress] unreduce.c starting
+[1652750][   progress] funzip.c starting
+[1652745][   progress] ubz2err.c DONE
+[1652751][   progress] unreduce.c DONE
+[1652753][   progress] crypt.c starting
+[1652755][   progress] conftest.c starting
+[1652757][   progress] list.c starting
+[1652756][   progress] unzip.c starting
+[1652754][   progress] extract.c starting
+[1652761][   progress] process.c starting
+[1652760][   progress] ttyio.c starting
+[1652759][   progress] globals.c starting
+[1652758][   progress] unix/unix.c starting
+[1652755][   progress] conftest.c DONE
+[1652760][   progress] ttyio.c DONE
+[1652744][   progress] crc32.c DONE
+[1652759][   progress] globals.c DONE
+[1652750][   progress] funzip.c DONE
+[1652742][   progress] match.c DONE
+[1652746][   progress] envargs.c DONE
+[1652753][   progress] crypt.c DONE
+[1652752][   progress] unshrink.c DONE
+[1652758][   progress] unix/unix.c DONE
+[1652747][   progress] inflate.c DONE
+[1652743][   progress] explode.c DONE
+[1652756][   progress] unzip.c DONE
+[1652749][   progress] fileio.c DONE
+[1652757][   progress] list.c DONE
+[1652748][   progress] zipinfo.c DONE
+[1652754][   progress] extract.c DONE
+[1652761][   progress] process.c DONE
+[1652740][      debug] Backend stats:
+[1652740][      debug]   summary_file_try_load= 2611
+[1652740][      debug]   summary_read_from_disk= 192
+[1652740][      debug]   summary_cache_hits= 10380 (79%)
+[1652740][      debug]   summary_cache_misses= 2611
+[1652740][      debug]   ondemand_procs_analyzed= 608
+[1652740][      debug]   ondemand_local_cache_hits= 10348 (91%)
+[1652740][      debug]   ondemand_local_cache_misses= 1006
+[1652740][      debug]   proc_locker_lock_time_user= 0.00000000
+[1652740][      debug]   proc_locker_lock_time_sys= 0.00000000
+[1652740][      debug]   proc_locker_lock_time_wall= 0.00000000
+[1652740][      debug]   proc_locker_unlock_time_user= 0.00000000
+[1652740][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[1652740][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[1652740][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[1652740][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[1652740][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[1652740][      debug]   restart_scheduler_total_time_user= 0.00000000
+[1652740][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[1652740][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[1652740][      debug]   
+[1652740][      debug] GC stats for backend_stats.gc_stats_add.:
+[1652740][      debug]   minor_words: 6.9655e+08
+[1652740][      debug]   promoted_words: 4.25099e+07
+[1652740][      debug]   major_words: 1.05481e+08
+[1652740][      debug]   minor_collections: 692
+[1652740][      debug]   major_collections: 95
+[1652740][      debug]   compactions: 2
+[1652740][      debug]   top_heap_words: 47030784
+[1652740][      debug]   
+[1652740][      debug] GC stats for backend_stats.gc_stats_max.:
+[1652740][      debug]   minor_words: 1.94447e+08
+[1652740][      debug]   promoted_words: 1.10836e+07
+[1652740][      debug]   major_words: 2.5173e+07
+[1652740][      debug]   minor_collections: 192
+[1652740][      debug]   major_collections: 20
+[1652740][      debug]   compactions: 2
+[1652740][      debug]   top_heap_words: 7132160
+[1652740][      debug]   
+[1652740][      debug] Average over 20 processes
+[1652740][      debug] GC stats for backend_stats.gc_stats_average.:
+[1652740][      debug]   minor_words: 3.48275e+07
+[1652740][      debug]   promoted_words: 2.12549e+06
+[1652740][      debug]   major_words: 5.27406e+06
+[1652740][      debug]   minor_collections: 34
+[1652740][      debug]   major_collections: 4
+[1652740][      debug]   compactions: 0
+[1652740][      debug]   top_heap_words: 2351539
+[1652740][      debug]   
+[1652740][      debug] Analysis phase finished in 1.821s
+[1652740][      debug] backend_stats.scheduler_process_analysis_time_user= 0.31494000
+[1652740][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.11899400
+[1652740][      debug] backend_stats.scheduler_process_analysis_time_wall= 1.82079457
+[1652740][      debug] GC stats for analysis_scheduler:
+[1652740][      debug]   minor_words: 4.04392e+07
+[1652740][      debug]   promoted_words: 15040
+[1652740][      debug]   major_words: 23746
+[1652740][      debug]   minor_collections: 42
+[1652740][      debug]   major_collections: 5
+[1652740][      debug]   compactions: 1
+[1652740][      debug]   top_heap_words: 434176
+[1652740][      debug]   
+[1652740][      debug] GC stats for report:
+[1652740][      debug]   minor_words: 178946
+[1652740][      debug]   promoted_words: 0
+[1652740][      debug]   major_words: 16959
+[1652740][      debug]   minor_collections: 0
+[1652740][      debug]   major_collections: 0
+[1652740][      debug]   compactions: 0
+[1652740][      debug]   top_heap_words: 434176
+[1652740][      debug]   
+[1652740][      debug] GC stats for main_process_full:
+[1652740][      debug]   minor_words: 4.23679e+07
+[1652740][      debug]   promoted_words: 415151
+[1652740][      debug]   major_words: 458530
+[1652740][      debug]   minor_collections: 54
+[1652740][      debug]   major_collections: 8
+[1652740][      debug]   compactions: 2
+[1652740][      debug]   top_heap_words: 434176
+[1652740][      debug]   
+[1652741][      debug] Sqlite write daemon: terminating

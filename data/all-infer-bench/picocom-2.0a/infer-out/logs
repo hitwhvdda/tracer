@@ -1,0 +1,302 @@
+[13][      debug] Loading models took 17.501ms
+[14][      debug] Sqlite write daemon: starting up
+[14][      debug] Sqlite write daemon: set up complete, waiting for connections
+[13][environment] CWD = /src/picocom
+[13][environment] No .inferconfig file found
+[13][environment] Project root = /src/picocom
+[13][environment] INFER_ARGS =   @/tmp/args.tmp.cbcde4
+[13][environment] command line arguments:   /infer/infer/bin/infer capture -- make
+[13][environment] Available memory at startup: 152297 MB
+[13][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[13][environment] Scheduler: file
+[13][environment] Cores used: 32
+[13][environment] Infer version v1.0.0-c13db4e62
+[13][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[13][environment] 
+[13][   progress] Capturing in make/cc mode...
+[13][environment] Running command make with env:
+[13][environment] (Extend((PATH /infer/infer/bin/../lib/wrappers:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)(INFER_OLD_PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)))
+[13][environment] 
+
+[16][environment] CWD = /src/picocom
+[16][environment] No .inferconfig file found
+[16][environment] Project root = /src/picocom
+[16][environment] INFER_ARGS =   @/tmp/args.tmp.273ad0
+[16][environment] command line arguments:   cc -Wall -g -DVERSION_STR="2.0a" -DTTY_Q_SZ=1024
+[16][environment]                           -DHIGH_BAUD -DUSE_FLOCK
+[16][environment]                           -DSEND_RECEIVE_HISTFILE=".picocom_send_receive"
+[16][environment]                           -DLINENOISE -c -o picocom.o picocom.c
+[16][environment] Available memory at startup: 152275 MB
+[16][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[16][      debug] 
+[16][      debug] *** Beginning capture of file /src/picocom/picocom.c ***
+[16][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[16][      debug] picocom.c:968:2-971:9: ERROR translating statement 'DeclStmt'
+[16][      debug] Aborting translation of method 'loop' in file 'picocom.c'
+[16][      debug] Unimplemented feature:
+[16][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":7340,"source_range":({"file":"/src/picocom/picocom.c","line":968,"column":2},{"file":"/src/picocom/picocom.c","line":971,"column":2})},{"name":"","qual_name":["anonymous_enum_picocom.c:968:2","loop"]},7341,[<"EnumConstantDecl":({"pointer":7342,"source_range":({"file":"/src/picocom/picocom.c","line":969,"column":3},{"file":"/src/picocom/picocom.c","line":969,"column":3}),"is_this_declaration_referenced":true},{"name":"ST_COMMAND","qual_name":["ST_COMMAND","anonymous_enum_picocom.c:968:2","loop"]},{"type_ptr":15},{})>,<"EnumConstantDecl":({"pointer":7343,"source_range":({"file":"/src/picocom/picocom.c","line":970,"column":3},{"file":"/src/picocom/picocom.c","line":970,"column":3}),"is_this_declaration_referenced":true},{"name":"ST_TRANSPARENT","qual_name":["ST_TRANSPARENT","anonymous_enum_picocom.c:968:2","loop"]},{"type_ptr":15},{})>],{},<"TTK_Enum">,{})>
+[16][      debug] picocom.c:968:2-971:9: ERROR translating statement 'DeclStmt'
+[16][      debug] Aborting translation of method 'loop' in file 'picocom.c'
+[16][      debug] Unimplemented feature:
+[16][      debug]   In DeclStmt found an unknown declaration type <"EnumDecl":({"pointer":7340,"source_range":({"file":"/src/picocom/picocom.c","line":968,"column":2},{"file":"/src/picocom/picocom.c","line":971,"column":2})},{"name":"","qual_name":["anonymous_enum_picocom.c:968:2","loop"]},7341,[<"EnumConstantDecl":({"pointer":7342,"source_range":({"file":"/src/picocom/picocom.c","line":969,"column":3},{"file":"/src/picocom/picocom.c","line":969,"column":3}),"is_this_declaration_referenced":true},{"name":"ST_COMMAND","qual_name":["ST_COMMAND","anonymous_enum_picocom.c:968:2","loop"]},{"type_ptr":15},{})>,<"EnumConstantDecl":({"pointer":7343,"source_range":({"file":"/src/picocom/picocom.c","line":970,"column":3},{"file":"/src/picocom/picocom.c","line":970,"column":3}),"is_this_declaration_referenced":true},{"name":"ST_TRANSPARENT","qual_name":["ST_TRANSPARENT","anonymous_enum_picocom.c:968:2","loop"]},{"type_ptr":15},{})>],{},<"TTK_Enum">,{})>
+[16][      debug] Elapsed: 213ms.
+[16][      debug] GC stats for capture:
+[16][      debug]   minor_words: 1.06147e+07
+[16][      debug]   promoted_words: 1.01142e+06
+[16][      debug]   major_words: 1.06554e+06
+[16][      debug]   minor_collections: 13
+[16][      debug]   major_collections: 2
+[16][      debug]   compactions: 0
+[16][      debug]   top_heap_words: 1157632
+[16][      debug]   
+[16][      debug] GC stats for main_process_full:
+[16][      debug]   minor_words: 1.21957e+07
+[16][      debug]   promoted_words: 1.16721e+06
+[16][      debug]   major_words: 1.23878e+06
+[16][      debug]   minor_collections: 17
+[16][      debug]   major_collections: 4
+[16][      debug]   compactions: 1
+[16][      debug]   top_heap_words: 1157632
+[16][      debug]   
+[16][environment] Scheduler: file
+[16][environment] Cores used: 32
+[16][environment] 
+[21][environment] CWD = /src/picocom
+[21][environment] No .inferconfig file found
+[21][environment] Project root = /src/picocom
+[21][environment] INFER_ARGS =   @/tmp/args.tmp.4e35d8
+[21][environment] command line arguments:   cc -Wall -g -DVERSION_STR="2.0a" -DTTY_Q_SZ=1024
+[21][environment]                           -DHIGH_BAUD -DUSE_FLOCK
+[21][environment]                           -DSEND_RECEIVE_HISTFILE=".picocom_send_receive"
+[21][environment]                           -DLINENOISE -c -o linenoise-1.0/linenoise.o
+[21][environment]                           linenoise-1.0/linenoise.c
+[21][environment] Available memory at startup: 152249 MB
+[21][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[21][      debug] 
+[21][      debug] *** Beginning capture of file /src/picocom/linenoise-1.0/linenoise.c ***
+[21][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[21][      debug] Elapsed: 169ms.
+[21][      debug] GC stats for capture:
+[21][      debug]   minor_words: 8.25454e+06
+[21][      debug]   promoted_words: 873441
+[21][      debug]   major_words: 929817
+[21][      debug]   minor_collections: 11
+[21][      debug]   major_collections: 2
+[21][      debug]   compactions: 0
+[21][      debug]   top_heap_words: 1157632
+[21][      debug]   
+[21][      debug] GC stats for main_process_full:
+[21][      debug]   minor_words: 9.83548e+06
+[21][      debug]   promoted_words: 1.02923e+06
+[21][      debug]   major_words: 1.10306e+06
+[21][      debug]   minor_collections: 15
+[21][      debug]   major_collections: 4
+[21][      debug]   compactions: 1
+[21][      debug]   top_heap_words: 1157632
+[21][      debug]   
+[21][environment] Scheduler: file
+[21][environment] Cores used: 32
+[21][environment] 
+[26][environment] CWD = /src/picocom
+[26][environment] No .inferconfig file found
+[26][environment] Project root = /src/picocom
+[26][environment] INFER_ARGS =   @/tmp/args.tmp.09449c
+[26][environment] command line arguments:   cc -Wall -g -DVERSION_STR="2.0a" -DTTY_Q_SZ=1024
+[26][environment]                           -DHIGH_BAUD -DUSE_FLOCK
+[26][environment]                           -DSEND_RECEIVE_HISTFILE=".picocom_send_receive"
+[26][environment]                           -DLINENOISE -c -o term.o term.c
+[26][environment] Available memory at startup: 152236 MB
+[26][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[26][      debug] 
+[26][      debug] *** Beginning capture of file /src/picocom/term.c ***
+[26][      debug] Loading the following linters files: /infer/infer/bin/../lib/linter_rules/linters.al
+[26][      debug] Elapsed: 147ms.
+[26][      debug] GC stats for capture:
+[26][      debug]   minor_words: 6.62167e+06
+[26][      debug]   promoted_words: 770425
+[26][      debug]   major_words: 813452
+[26][      debug]   minor_collections: 8
+[26][      debug]   major_collections: 1
+[26][      debug]   compactions: 0
+[26][      debug]   top_heap_words: 1006592
+[26][      debug]   
+[26][      debug] GC stats for main_process_full:
+[26][      debug]   minor_words: 8.20258e+06
+[26][      debug]   promoted_words: 926203
+[26][      debug]   major_words: 986686
+[26][      debug]   minor_collections: 12
+[26][      debug]   major_collections: 3
+[26][      debug]   compactions: 1
+[26][      debug]   top_heap_words: 1006592
+[26][      debug]   
+[26][environment] Scheduler: file
+[26][environment] Cores used: 32
+[26][environment] 
+[31][environment] CWD = /src/picocom
+[31][environment] No .inferconfig file found
+[31][environment] Project root = /src/picocom
+[31][environment] INFER_ARGS =   @/tmp/args.tmp.b8af7e
+[31][environment] command line arguments:   cc -g picocom.o linenoise-1.0/linenoise.o term.o -o
+[31][environment]                           picocom
+[31][environment] Available memory at startup: 152231 MB
+[31][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java)
+[31][      debug] GC stats for capture:
+[31][      debug]   minor_words: 6812
+[31][      debug]   promoted_words: 0
+[31][      debug]   major_words: 0
+[31][      debug]   minor_collections: 0
+[31][      debug]   major_collections: 0
+[31][      debug]   compactions: 0
+[31][      debug]   top_heap_words: 188416
+[31][      debug]   
+[31][      debug] GC stats for main_process_full:
+[31][      debug]   minor_words: 1.58517e+06
+[31][      debug]   promoted_words: 155717
+[31][      debug]   major_words: 173173
+[31][      debug]   minor_collections: 4
+[31][      debug]   major_collections: 2
+[31][      debug]   compactions: 1
+[31][      debug]   top_heap_words: 188416
+[31][      debug]   
+[31][environment] Scheduler: file
+[31][environment] Cores used: 32
+[31][environment] [13][      debug] GC stats for capture:
+[13][      debug]   minor_words: 938
+[13][      debug]   promoted_words: 0
+[13][      debug]   major_words: 0
+[13][      debug]   minor_collections: 0
+[13][      debug]   major_collections: 0
+[13][      debug]   compactions: 0
+[13][      debug]   top_heap_words: 372736
+[13][      debug]   
+[13][      debug] GC stats for main_process_full:
+[13][      debug]   minor_words: 1.80647e+06
+[13][      debug]   promoted_words: 167835
+[13][      debug]   major_words: 367330
+[13][      debug]   minor_collections: 5
+[13][      debug]   major_collections: 2
+[13][      debug]   compactions: 1
+[13][      debug]   top_heap_words: 372736
+[13][      debug]   
+[14][      debug] Sqlite write daemon: terminating
+
+[1688912][      phase] ============================================================
+[1688912][      phase] = New infer execution begins
+[1688912][      phase] ============================================================
+[1688913][      debug] Sqlite write daemon: starting up
+[1688913][      debug] Sqlite write daemon: set up complete, waiting for connections
+[1688912][      phase] ============================================================
+[1688912][      phase] = New infer execution begins
+[1688912][      phase] ============================================================
+[1688912][environment] CWD = /data/pattern/result/all-bench-2021.09.03-14:55:14/picocom-2.0a
+[1688912][environment] No .inferconfig file found
+[1688912][environment] Project root = /data/pattern/result/all-bench-2021.09.03-14:55:14/picocom-2.0a
+[1688912][environment] INFER_ARGS =   @/tmp/args.tmp.5ed5ba
+[1688912][environment] command line arguments:   /home/wooseok/workspace/infer-experiment/infer/infer/bin/infer
+[1688912][environment]                           analyze --api-misuse-only -j 20 --api-misuse-max-fp
+[1688912][environment]                           5 --api-misuse-max-set 10
+[1688912][environment] Available memory at startup: 151974 MB
+[1688912][environment] Active checkers: api-misuse (C/C++/ObjC), bufferoverrun-analysis (C/C++/ObjC, Java)
+[1688912][environment] Scheduler: file
+[1688912][environment] Cores used: 20
+[1688912][environment] Infer version v1.0.0-c13db4e62
+[1688912][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[1688912][environment] 
+[1688912][      debug] GC stats for capture:
+[1688912][      debug]   minor_words: 63
+[1688912][      debug]   promoted_words: 0
+[1688912][      debug]   major_words: 0
+[1688912][      debug]   minor_collections: 0
+[1688912][      debug]   major_collections: 0
+[1688912][      debug]   compactions: 0
+[1688912][      debug]   top_heap_words: 434176
+[1688912][      debug]   
+[1688912][environment] Parallel jobs: 20
+[1688912][   progress] Found 3 source files to analyze in /data/pattern/result/all-bench-2021.09.03-14:55:14/picocom-2.0a/infer-out
+[1688916][   progress] picocom.c starting
+[1688918][   progress] term.c starting
+[1688917][   progress] linenoise-1.0/linenoise.c starting
+[1688918][   progress] term.c DONE
+[1688917][   progress] linenoise-1.0/linenoise.c DONE
+[1688916][   progress] picocom.c DONE
+[1688912][      debug] Backend stats:
+[1688912][      debug]   summary_file_try_load= 743
+[1688912][      debug]   summary_read_from_disk= 50
+[1688912][      debug]   summary_cache_hits= 1825 (71%)
+[1688912][      debug]   summary_cache_misses= 743
+[1688912][      debug]   ondemand_procs_analyzed= 119
+[1688912][      debug]   ondemand_local_cache_hits= 1874 (88%)
+[1688912][      debug]   ondemand_local_cache_misses= 255
+[1688912][      debug]   proc_locker_lock_time_user= 0.00000000
+[1688912][      debug]   proc_locker_lock_time_sys= 0.00000000
+[1688912][      debug]   proc_locker_lock_time_wall= 0.00000000
+[1688912][      debug]   proc_locker_unlock_time_user= 0.00000000
+[1688912][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[1688912][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[1688912][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[1688912][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[1688912][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[1688912][      debug]   restart_scheduler_total_time_user= 0.00000000
+[1688912][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[1688912][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[1688912][      debug]   
+[1688912][      debug] GC stats for backend_stats.gc_stats_add.:
+[1688912][      debug]   minor_words: 7.02195e+07
+[1688912][      debug]   promoted_words: 3.59241e+06
+[1688912][      debug]   major_words: 7.08423e+06
+[1688912][      debug]   minor_collections: 71
+[1688912][      debug]   major_collections: 14
+[1688912][      debug]   compactions: 0
+[1688912][      debug]   top_heap_words: 12750848
+[1688912][      debug]   
+[1688912][      debug] GC stats for backend_stats.gc_stats_max.:
+[1688912][      debug]   minor_words: 3.44553e+07
+[1688912][      debug]   promoted_words: 1.82315e+06
+[1688912][      debug]   major_words: 3.61344e+06
+[1688912][      debug]   minor_collections: 34
+[1688912][      debug]   major_collections: 7
+[1688912][      debug]   compactions: 0
+[1688912][      debug]   top_heap_words: 2680320
+[1688912][      debug]   
+[1688912][      debug] Average over 20 processes
+[1688912][      debug] GC stats for backend_stats.gc_stats_average.:
+[1688912][      debug]   minor_words: 3.51098e+06
+[1688912][      debug]   promoted_words: 179620
+[1688912][      debug]   major_words: 354211
+[1688912][      debug]   minor_collections: 3
+[1688912][      debug]   major_collections: 0
+[1688912][      debug]   compactions: 0
+[1688912][      debug]   top_heap_words: 637542
+[1688912][      debug]   
+[1688912][      debug] Analysis phase finished in 349ms
+[1688912][      debug] backend_stats.scheduler_process_analysis_time_user= 0.08102200
+[1688912][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.02467300
+[1688912][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.34864850
+[1688912][      debug] GC stats for analysis_scheduler:
+[1688912][      debug]   minor_words: 1.02496e+07
+[1688912][      debug]   promoted_words: 5445
+[1688912][      debug]   major_words: 14151
+[1688912][      debug]   minor_collections: 12
+[1688912][      debug]   major_collections: 4
+[1688912][      debug]   compactions: 1
+[1688912][      debug]   top_heap_words: 434176
+[1688912][      debug]   
+[1688912][      debug] GC stats for report:
+[1688912][      debug]   minor_words: 125873
+[1688912][      debug]   promoted_words: 0
+[1688912][      debug]   major_words: 20356
+[1688912][      debug]   minor_collections: 0
+[1688912][      debug]   major_collections: 0
+[1688912][      debug]   compactions: 0
+[1688912][      debug]   top_heap_words: 434176
+[1688912][      debug]   
+[1688912][      debug] GC stats for main_process_full:
+[1688912][      debug]   minor_words: 1.21253e+07
+[1688912][      debug]   promoted_words: 405557
+[1688912][      debug]   major_words: 452333
+[1688912][      debug]   minor_collections: 24
+[1688912][      debug]   major_collections: 7
+[1688912][      debug]   compactions: 2
+[1688912][      debug]   top_heap_words: 434176
+[1688912][      debug]   
+[1688913][      debug] Sqlite write daemon: terminating
